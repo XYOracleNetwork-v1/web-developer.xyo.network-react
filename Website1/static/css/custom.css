@@ -1,0 +1,273 @@
+/* your custom css */
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:700);
+
+@-ms-viewport{
+  width: device-width;
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+  color: #43318b;
+}
+
+.fixedHeaderContainer {
+  background-color: #141631;
+}
+
+.fixedHeaderContainer header img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.container.paddingBottom.paddingTop {
+  padding: 30px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+div.blockImage {
+  height: 90px;
+  width: 90px;
+}
+
+.nav-footer {
+  background-color: #232756;
+  display: grid;
+  grid-template-columns: [copyright] 1fr [sitemap] 1fr;
+}
+
+.nav-footer .copyright {
+  align-self: center;
+}
+
+.nav-footer .sitemap {
+  margin: 0px;
+}
+
+.docsNavContainer {
+  box-shadow: 2px 2px 6px -2px #3f3b3b;
+  padding: 10px;
+}
+
+.xyoContainer {
+  background-color: #232756;
+  color: white;
+}
+
+.xyoContainer a {
+  color: white;
+}
+
+.productShowcaseSection.paddingBottom.xyoContainer {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  box-shadow: 2px 2px 6px -2px #3f3b3b;
+}
+
+.productShowcaseSection.paddingBottom {
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+.carousel {
+  max-height: 700px;
+  overflow: hidden;
+}
+
+.carousel.carousel-item img {
+  width: 100%;
+  height: auto;  
+}
+
+.mainContainer {
+  padding: 0px;
+}
+
+.button{
+  min-width: 230px;
+  margin-right: 25px;
+}
+
+.docMainWrapper.wrapper {
+  padding-top: 20px;
+}
+
+.ethHomeContainer {
+  text-align: center;
+  background-image: url("/img/hero_image.svg");
+  background-size: cover;
+  background-position: center;
+  padding: 4rem;
+  color: white;
+  box-shadow: 2px 2px 6px -2px #3f3b3b;
+}
+
+.ethHomeContainer h2 {
+  padding-bottom: 30px;
+}
+
+.ethHomeContainer a.button {
+  border-radius: 25px;
+  background: linear-gradient(to right,#f04510 0,#f2c110 100%);
+  color: #fff;
+  border: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.heroDescription {
+  color: #9191d2;
+}
+
+.heroButtonContainer {
+  padding: 1rem;
+}
+
+.rp {
+  font-size: calc(12px + .75vw);
+}
+
+.steps a {
+  text-align: left;
+}
+
+.partnerContainer {
+  background-image: linear-gradient(to right, #8A2BE2, #8d8fc6, #58a0d7);
+  box-shadow: 2px 2px 8px -2px #3f3b3b;
+  padding: 20px;
+  color: #fff;
+}
+
+.partnerContainer h2 {
+  color: #fff;
+}
+
+.partnerContainer .button {
+  color: #fff;
+}
+
+.card {
+  position: relative;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+}
+
+.card-text {
+  word-wrap: normal;
+}
+
+.shadow {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important
+}
+
+.smallest {
+  font-size: 16px;
+}
+
+.btn-light-purple {
+  background-color: #7345c0;
+  color: #fff;
+  border: transparent;
+  font-family: 'Titillium Web', sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;  
+}
+
+.btn-light-purple a{
+  color: #fff;
+}
+
+.rounded {
+  border-radius: .25rem!important;
+}
+
+.img-fluid {
+  max-width: 70px;
+  height: 50px;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.cardTitle {
+  font-size: 24px;
+}
+
+.smaller {
+  font-size: 18px;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;  
+}
+
+div {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logos a{
+  padding: 2rem;
+}
+
+.productShowcaseSection .logos img {
+  max-height: 200px;
+  width: 200px;
+}
+
+.productShowcaseSection h1 {
+  padding: 2rem;
+}
+
+.floating{
+	animation-name: floating;
+	-webkit-animation-name: floating;
+
+	animation-duration: 1.5s;
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+	0% {
+		transform: translateY(0%);
+	}
+	50% {
+		transform: translateY(8%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+@-webkit-keyframes floating {
+	0% {
+		-webkit-transform: translateY(0%);
+	}
+	50% {
+		-webkit-transform: translateY(8%);
+	}
+	100% {
+		-webkit-transform: translateY(0%);
+	}
+}

@@ -1,0 +1,23 @@
+{
+  "docs": {
+    "Getting Started": ["getting-started"],
+    "XYO Nodes Introduction": ["Introduction"],
+    "Payable on Delivery Demo": ["payable-demo"],
+    "Core Products": ["dapploy", "dapper"],
+    "Sentinel": ["sentinel-sdk"],
+    "Archivist": ["archivist"],
+    "Diviner": ["diviner"],
+    "Bridge": ["bridge"],
+    "SDKs": [
+      "SDK-Package-Node",
+      "SDK-ObjectModel-Swift",
+      "SDK-ObjectModel-Kotlin",
+      "SDK-Core-Android",
+      "SDK-Ble-Android",
+      "sentinel-sdk"
+    ]
+  },
+  "docs-other": {
+    "API-Reference": ["kotlin-api", "node-api", "swift-api", "c-api", "sentinel-api", "bridge-api", "archivist-api", "diviner-api", "core-api"]
+  }
+}

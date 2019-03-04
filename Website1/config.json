@@ -1,0 +1,5 @@
+{
+  "s3BucketName": "developers.xyo.network",
+  "region": "us-east-1",
+  "cloudFrontDistributionId": "E19H5GLFUJD1LP"
+}
