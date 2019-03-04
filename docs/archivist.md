@@ -6,220 +6,174 @@ title: Archivist App
 # Getting started with an XYO Archivist
 
 An archivist in the XYO network serves as the data-layer component between the bridge and the diviner.
-It accepts and aggregates data from bridges and makes that data available to Diviners via a GraphQL API.
+It accepts and aggregates data from bridges and makes that data available to Diviners via a GraphQL API. In essence it is the scribe node of the XYO network.
 
 As long as an archivist follows the protocols of the XYO network specified in the [yellow paper](https://docs.xyo.network/XYO-Yellow-Paper.pdf)
 they may implement the component however they wish. This application supports using MySQL as the persistence engine that
 backs the archivist repository, LevelDb to persist origin-chain data specific to this node, and TCP as the transport
 layer for doing bound-witness interactions between the Archivist and other Bridges.
 
+# Prerequisites
+
+- You must have [docker](https://www.docker.com/get-started) installled and running
+  - There are instructions on how to install and run docker in the [get started]((https://www.docker.com/get-started)) guide
+  - [Download the Docker Desktop for Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac) for easiest entry
+
+- This node app wizard works optimally with MacOS, and at this time this app is not Windows compatible
+
 # Getting Started
 
-## Docker
+##### Clone the repository 
 
-A quick and accessible way to get up and running is with Docker. Make sure that you are logged into Docker. More info on installation and setup for Docker [here](https://www.docker.com/get-started). For terminal commands on checking containers you can use `docker` the base command for the Docker CLI, see `docker --help` for commands. Also, if you are using VSCode, you will be able to check your container status and logs through the VSCode in-house terminal.
-
-First, satisfy the MySQL requirement, this will create a new container running a mySQL Database:
-
-```sh
-  docker run \
-  -d \
-  -p 3306:3306 \
-  -e MYSQL_USER={user} \
-  -e MYSQL_PASSWORD={password} \
-  -e MYSQL_DATABASE={database} \
-  -e MYSQL_RANDOM_ROOT_PASSWORD=yes \
-  mysql:5.7.24 --sql_mode=NO_ENGINE_SUBSTITUTION
-
+```bash
+git clone https://github.com/XYOracleNetwork/sdk-core-nodejs.git -b develop
 ```
 
-**NOTE** Please substitute variable `{user}` `{password}` and `{database}` with your own values.
-
-When the docker command is executed it will return a docker-container id, copy that id. 
-To get the ip address of the docker container you can run:
+##### Go into the directory
 
 ```sh
-docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' {docker-container-id}
+cd sdk-core-nodejs
 ```
 
-Take note of the ip address as this will be required configure the Archivist application (use the ip as your SQL__HOST). Make sure that you have the path set for logs and private data as seen in the configuration below where you can actively access:
+##### Install dependencies
 
 ```sh
-  docker run \
-  -d \
-  -p 11000:11000 \
-  -p 11001:11001 \
-  -v {path-to-logs-folder}:/workspace/logs \
-  -v {path-to-private-data-folder}:/workspace/archivist-db \
-  -e NODE_NAME={archivist-name} \
-  -e IP_OVERRIDE={publicly-accessible-ip} \
-  -e SQL__HOST={ip-address-of-mysql-service} \
-  -e SQL__USER={user-of-mysql-service} \
-  -e SQL__PASSWORD={name-of-user-on-mysql-service} \
-  -e SQL__DATABASE={name-of-database-on-mysql-service} \
-  -e SQL__PORT={port-of-database-on-mysql-service} \
-  xyonetwork/app-archivist:latest
+yarn install
 ```
 
-List of parameters:
-
-- `-d` run docker as daemon
-
-- `-p 11000:11000` bind port 11000 from docker container to local network, this is the node port.
-
-- `-p 11001:11001` bind port 11001 from docker container to local network, this is the graphQL port. Later you can use this on localhost to query in graphQL playground.
-
-- `-v {path-to-logs-folder}:/workspace/logs` Mount **logs** folder from local disk to docker container
-
-- `-v {path-to-private-data-folder}:/workspace/archivist-db` Mount **private-data** folder from local disk to docker container
-
-- `-e NODE_NAME={archivist-name}` The name of the Archivist
-
-- `-e IP_OVERRIDE={publicly-accessible-ip}` The publicly addressable ip address of this Archivist
-
-- `-e SQL__*` SQL configuration settings
-
-- `xyonetwork/app-archivist:latest` Run the latest archivist image from docker-hub.
-
-After running with the configuration you should see this at the tail of your log: 
+##### Build the SDK
 
 ```sh
-GraphQLServer: Graphql server ready at url: http://localhost:11001/
+yarn build
 ```
-You can now use that URL to start working in the GraphQL playground. For more info on GraphQL, check out the intro and learn page [here](https://graphql.org/learn/).
 
-When you are interacting with the playground, you can search the schema for data available to the Archivist. 
+**Note** This will take a moment, so be patient, it will take around 30 seconds.
 
-## Running Locally 
-
-If you want to run the archivist locally, follow these steps to install: 
-
-Before downloading the application, there are number of System requirements that will need to be satisfied.
-
-- [NodeJS](https://nodejs.org/en/) The application is built using NodeJS. Internally we've tested against version 10.13.0. Consider using [nvm](https://github.com/creationix/nvm) to satisfy this dependency. Among other benefits, it may save you the trouble of using `sudo` in upcoming commands.
-
-- [MySQL](https://dev.mysql.com/downloads/mysql/5.7.html#downloads) A MySQL service is currently required to meet the Archivist feature set. This will likely change in the future and there will be support for a number of different database providers. At the moment though a MySQL service dependency will need to be satisfied for the archivist to run properly. Internally we've tested against version 5.7.24
-
-Download as a global npm package.
+##### Bootstrap or manage your MySQL service
 
 ```sh
-  npm install -g @xyo-network/app-archivist
+  yarn manage:db
 ```
-
-If this command fails you may need to use the `sudo` modifier.
 
 ```sh
-  sudo npm install -g @xyo-network/app-archivist
+Existing XyoDb container found. Status: Running
+? What would you like to do with the existing XyoDb service? …
+❯ Restart the existing database 
+  Kill it and start a new one // SELECT THIS OPTION
+  No action
 ```
 
-If this fails again it it likely because the LevelDB dependency is being built from source in protected user-space on the System OS. To get around this the npm option of `--unsafe-perm=true` may be used.
+**Note that you should go ahead and kill any processes, and allow the wizard to select your db credentials**
+
+- These credentials are a simple username and password
 
 ```sh
-  sudo npm install -g @xyo-network/app-archivist --unsafe-perm=true
+? Enter a username for the sql database › admin
+? Enter a password for the sql database › password
 ```
 
-Assuming one of the above 3 commands succeed, you now have a downloaded version of the archivist on your system. To confirm run
+Once you confirm these values your MySQL service will start up
 
 ```sh
-which xyo-archivist
+Starting MySQL service with credentials:
+	Username: admin
+	password: password
+
+Successfully started a MySQL service @ 127.0.0.1:3306
+
 ```
+**NOTE** No need to paste the command into your shell for the developmeny environment
 
-It should print something that approximates `/usr/local/bin/xyo-archivist`. If nothing is printed out you may have to close and reopen your terminal window.
-
-## Running the Application
-
-Once the MySQL service is available with the correct schema please note the values for your MySQL service.
-
-- host
-- port
-- user
-- password
-- database
-
-The application can then be started passing these arguments to application.
+##### Start the Archivist
 
 ```sh
-  SQL__HOST={host} \
-  SQL__PORT={port} \
-  SQL__USER={user} \
-  SQL__PASSWORD={password} \
-  SQL__DATABASE={database} \
-  xyo-archivist
+yarn start:archivist
 ```
 
-For example,
+**NOTE** Keep this terminal window open and leave it alone after starting the archivist
+
+##### Pull in some mock data
+**You'll have to do this in another terminal window or tab and keep this open as well**
 
 ```sh
-  SQL__HOST=127.0.0.1 \
-  SQL__PORT=3306 \
-  SQL__USER=ryan \
-  SQL__PASSWORD=password \
-  SQL__DATABASE=Xyo \
-  xyo-archivist
+yarn mock-data
 ```
 
-A number of things should happen at this point. You should see a number of logs come up on the screen informing you that you've created and origin chain and other log statements displaying the output of a number of SQL logs. This is good. If the application is stopped you'll notice two folders in the directory that you started the application in.
-
-- `archivist-db` This folder contains the data relevant to origin chain owner of this archive. It is very important as it contains private/public key pairs which make it possible to create new blocks on the origin chain. DO NOT DELETE OR SHARE THIS FOLDER
-
-- `logs` Logs relating to the routines of the application. These will be deleted every 14 days
-
-** Happy Archiving **
-
-## Contributing
-
-If you'd like to contribute to the project as a developer or just run the project from source the directions below should help you get started.
-
-First, clone the repository. And set the branch to the develop branch
+##### Run your package with a simple node command
 
 ```sh
-  git clone -b develop https://github.com/XYOracleNetwork/app-archivist-nodejs.git
+node packages/app
 ```
 
-Then change working directory to that of the repository
+You will now be directed to configure your archivist, please follow these steps **exactly** as written (if for some reason you are running any instances on ports (except the database port 3306) you can change the last digit by one):
+
+`No config found, would you like to create one now? (Y/n) · true`
+
+`What would you like to name your XYO Node? · <your name>`
+
+`Where would you like to store your data? · /Users/<yourUserDirectory>/<yourProjectDirectory>/sdk-core-nodejs/packages/app/node-data`
+
+`What is your public ip address? · 0.0.0.0`
+
+`What port would you like to use for your peer to peer protocol? · 11500` *Note* Make sure that this port is different than the diviner port, or any other port that might be in use. 
+
+`Do you want to add bootstrap nodes? (Y/n) · true`
+
+`These addresses were found on the `peers.xyo.network` DNS record.You can select and deselect each address by pressing spacebar · Hit enter and do not select items`
+
+This will default to false, press `y` or `t`
+`Do you want to add any more individual bootstrap nodes? (y/N) · true`
+
+Go ahead and enter the example address provided
+`What is the address value of the bootstrap node? Should look something like /ip4/127.0.0.1/tcp/11500 · /ip4/127.0.0.1/tcp/11501` This port number should match the one that you entered for your peer to peer protocol answer **(for convention a good range is 11501 - 11510) one of the nodes needs to run 11500**
+
+This will default to false, now we hit enter
+`Do you want to add any more individual bootstrap nodes? (y/N) · false`
+
+Ensure that your archivist can do bound witness
+`Do you want your node to act as a server for doing bound-witnesses? (Y/n) · true`
+
+Select your port for peer to peer protocol 
+`What port would you like to use for your peer to peer protocol? · 11000` This is your bound witness port, it should be different from the diviner port
+
+Ensure that the component features for support are Archivist
+`Which component features do you want your Xyo Node to support? · archivist` If you select diviner, you won't get the correct options to set up an archivist
+
+Set up the database with the values from your bootstrapping earlier
+`Enter the `host` value for your MySQL database · 127.0.0.1`
+`Enter the `user` value for your MySQL database · admin`
+`Enter the `password` value for your MySQL database · password`
+`Enter the `database` value for your MySQL database · Xyo`
+**This is the one port value that you should not have to change!**
+`Enter the `port` value for your MySQL database · 3306`
+
+Set up your archivist with a GraphQL Server
+`Do you want your node to have a GraphQL server (Y/n) · true`
+`What port should your GraphQL server run on? · 11001`
+
+Press enter to set up all of the GraphQL endpoints
+`Which GraphQL api endpoints would you like to support? (use space-bar to toggle selection. Press enter once finished) · about, blockByHash, blockList, intersections, blocksByPublicKey, entities`
+
+Start the node
+`Do you want to start the node after configuration is complete? (Y/n) · true`
+
+You will see some GraphQL data and dialing nodes, notice the Xyo objects and nodes at work! 
+
+You should then see that you have discovered a peer, which will feed your archivist heuristics! Exciting stuff! 
+
+To check out a bound witness, try this command (you are running the database on Docker)
 
 ```sh
-  cd app-archivist-nodejs
+docker exec -i XyoDb mysql -uadmin -ppassword  <<< "SELECT meta FROM Xyo.OriginBlocks WHERE id=6"
 ```
 
-Download dependencies
+When you enter that command, you are going to get some output with a rawSignature, heuristics, rssi, and latitude and longitude!
 
-```sh
-  yarn install
-```
+To make it prettier, let's go into the browser and enter our raw JSON in a string like this:
 
-The source code is written in TypeScript and needs to be transpiled into JavaScript.
+console.log(JSON.parse(`your raw json (make sure you use backtics!)`))
 
-```sh
-  yarn build
-```
-
-Assuming the MySQL service dependency has been satisfied you can now run
-
-```sh
-  yarn start
-```
-
-If you are having trouble connecting to the MySQL instance it is likely because the set of credentials do not match that of the application.
-
-You can optionally override the MySQL connection parameters with environments variables:
-
-- host: SQL__HOST
-- port: SQL__PORT
-- user: SQL__USER
-- password: SQL__PASSWORD
-- database: SQL__DATABASE
-
-For example,
-
-```sh
-  export SQL__HOST=127.0.0.1 && \
-  export SQL__PORT=3306 && \
-  export SQL__USER=pizza-mind && \
-  export SQL__PASSWORD=super-duper-secret-password && \
-  export SQL__DATABASE=db && \
-  yarn start
-```
+## Congratulations! You have now started an XYO Archivist!
 
 ## Developer Guide
 
