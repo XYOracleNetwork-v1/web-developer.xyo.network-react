@@ -18,6 +18,7 @@ layer for doing bound-witness interactions between the Archivist and other Bridg
 - You must have [docker](https://www.docker.com/get-started) installled and running
   - There are instructions on how to install and run docker in the [get started]((https://www.docker.com/get-started)) guide
   - [Download the Docker Desktop for Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac) for easiest entry
+  - Make sure that docker runs throughout this process
 
 - This node app wizard works optimally with MacOS, and at this time this app is not Windows compatible
 
@@ -82,7 +83,7 @@ Starting MySQL service with credentials:
 Successfully started a MySQL service @ 127.0.0.1:3306
 
 ```
-**NOTE** No need to paste the command into your shell for the developmeny environment
+**NOTE** No need to paste the command into your shell for the development environment
 
 ##### Start the Archivist
 

@@ -3,201 +3,124 @@ id: diviner
 title: Getting a Diviner Environment setup
 ---
 
-## System dependencies
+# Getting started with an XYO Diviner
 
-This guided assumes the user has `Docker` already installed.
+An Diviner in the XYO network serves as the querying component who has a conversation with the archivist.
+It asks, measures, and collects data from archivists and makes that data available to end users via a GraphQL API. In essence it is the knowledge seeker node of the XYO network.
 
-If the user is using Ubuntu 18.04, then this guide that Digital Ocean has created can be followed to get Docker installed. [Digital Ocean Docker Guide](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04).
+As long as an Diviner follows the protocols of the XYO network specified in the [yellow paper](https://docs.xyo.network/XYO-Yellow-Paper.pdf)
+they may implement the component however they wish. This application supports using MySQL as the persistence engine that
+backs the Diviner repository, LevelDb to persist origin-chain data specific to this node, and TCP as the transport
+layer for doing bound-witness interactions between the Diviner and other Archivists.
 
-Otherwise, please follow the appropriate installation instructions for your system. The docker setup guide can be found [here](https://docs.docker.com/install/)
+# Prerequisites
 
-## Project setup
+- You must have [docker](https://www.docker.com/get-started) installled and running
+  - There are instructions on how to install and run docker in the [get started]((https://www.docker.com/get-started)) guide
+  - [Download the Docker Desktop for Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac) for easiest entry
+  - Make sure that docker runs throughout this process
+- Ganache cli - you will need to run an instance 
+  - We recommend this command `ganache-cli --port 8545 --deterministic --networkId 5777`
+- A deployed Pay On Deliver smart contract. (Make sure you copy the address for that contract)
 
-Set project home
+- This node app wizard works optimally with MacOS, and at this time this app is not Windows compatible
 
-For example:
+# Getting Started
 
-```sh
-  # Set XYO_HOME to current directory
-  export XYO_HOME=`pwd`/xyo && echo "XYO_HOME set to $XYO_HOME"
+##### Clone the repository 
+
+```bash
+git clone https://github.com/XYOracleNetwork/sdk-core-nodejs.git -b develop
 ```
 
-Create project folder and set XYO_HOME environment variable. Additionally create `archivist` and `diviner` folders
+##### Go into the directory
 
 ```sh
-  mkdir -p $XYO_HOME && \
-  cd $XYO_HOME && \
-  mkdir archivist && \
-  mkdir diviner
+cd sdk-core-nodejs
 ```
 
-### Archivist
-
-First, lets change directory to archivist folder and create some required folders
+##### Install dependencies
 
 ```sh
-  cd $XYO_HOME/archivist && mkdir logs && mkdir archivist-db
+yarn install
 ```
 
-Next, lets pick the credentials for the MySQL service. The ones specified below should not be used and only meant to serve as an example command. Instead pick a set of credentials that only you will know.
+##### Build the SDK
 
 ```sh
-  export MYSQL_USER=admin && export MYSQL_PASSWORD=password
+yarn build
 ```
 
-Start the MySQL service using docker.
+**Note** This will take a moment, so be patient, it will take around 30 seconds.
+
+##### Start the Diviner
 
 ```sh
-  docker run \
-    --name XyoDb \
-    -d \
-    -p 3306:3306 \
-    -e MYSQL_USER=$MYSQL_USER \
-    -e MYSQL_PASSWORD=$MYSQL_PASSWORD \
-    -e MYSQL_DATABASE=Xyo \
-    -e MYSQL_RANDOM_ROOT_PASSWORD=yes \
-    mysql:5.7.24 --sql_mode=NO_ENGINE_SUBSTITUTION
+yarn start:diviner
 ```
 
-After the MySQL service is available lets set up the archivist application.
+**NOTE** Keep this terminal window open and leave it alone after starting the Diviner
 
-Pick a name for your node
+##### Run your package with a simple node command
 
 ```sh
-  export ARCHIVIST_NODE_NAME=my-archivist
+node packages/app
 ```
 
-Because determining the public ip address of a particular can vary drastically machine to machine, it won't be covered here. Suffice it is say, that if you want your archivist to be addressable by other nodes you will have to provided the ip address. For this exercises sake, we will the network address that will probably resolve to the nearest subnet this system belongs to.
+You will now be directed to configure your Diviner, please follow these steps **exactly** as written (if for some reason you are running any instances on ports (except the database port 3306) you can change the last digit by one):
 
-```sh
-export MY_IP=`ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'` && echo "My ip is $MY_IP"
-```
+`No config found, would you like to create one now? (Y/n) · true`
 
-Now, we can start the archivist application using docker.
+`What would you like to name your XYO Node? · <name for your node>`
 
-```sh
-  docker run \
-    --name XyoArchivist \
-    -d \
-    -p 11000:11000 \
-    -p 11001:11001 \
-    -v `pwd`/logs:/workspace/logs \
-    -v `pwd`/archivist-db:/workspace/archivist-db \
-    -e NODE_NAME=$ARCHIVIST_NODE_NAME \
-    -e IP_OVERRIDE=$MY_IP \
-    -e SQL__HOST=`docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' XyoDb` \
-    -e SQL__USER=$MYSQL_USER \
-    -e SQL__PASSWORD=$MYSQL_PASSWORD \
-    -e SQL__DATABASE=Xyo \
-    -e SQL__PORT=3306 \
-    xyonetwork/app-archivist:latest
-```
+`Where would you like to store your data? · /Users/<yourUserDirectory>/<yourProjectDirectory>/sdk-core-nodejs/packages/app/node-data`
 
-To view the archivist application logs
+`What is your public ip address? · 0.0.0.0`
 
-```sh
-  docker logs --tail 500 XyoArchivist
-```
+`What port would you like to use for your peer to peer protocol? · 11500` *Note* Make sure that this port is different than the archivist port, or any other port that might be in use. 
 
-We should see a number of SQL commands logs as well as some log messages about creating a genesis block and a graphql server being available.
+`Do you want to add bootstrap nodes? (Y/n) · true`
 
-If you have a browser available you can pull up the GraphQL dashboard at [http://localhost:11001/](http://localhost:11001/).
+`These addresses were found on the `peers.xyo.network` DNS record.You can select and deselect each address by pressing spacebar · Hit enter and do not select items`
 
-You now have a fully functioning archivist accepting bound witness connections on port 11000 and a public query API available on port 11001.
+This will default to false, press `y` or `t`
+`Do you want to add any more individual bootstrap nodes? (y/N) · true`
 
-### Diviner
+Go ahead and enter the example address provided
+`What is the address value of the bootstrap node? Should look something like /ip4/127.0.0.1/tcp/11500 · /ip4/127.0.0.1/tcp/11501` This port number should match the one that you entered for your peer to peer protocol answer **(for convention a good range is 11501 - 11510) one of the nodes needs to run 11500**
 
-Let's change directory to the diviner folder.
+This will default to false, now we hit enter
+`Do you want to add any more individual bootstrap nodes? (y/N) · false`
 
-```sh
-  cd $XYO_HOME/diviner
-```
+Ensure that your Diviner can do bound witness
+`Do you want your node to act as a server for doing bound-witnesses? (Y/n) · true`
 
-The diviner has a service dependency on [IPFS](https://ipfs.io/). We'll satisfy that dependency using docker.
+Select your port for peer to peer protocol 
+`What port would you like to use for your peer to peer protocol? · 11000` This is your bound witness port, it should be different from the diviner port
 
-Lets create some IPFS directory and system dependencies.
+Ensure that the component features for support are Diviner
+`Which component features do you want your Xyo Node to support? · Diviner` If you select diviner, you won't get the correct options to set up an Diviner
 
-```sh
-  mkdir -p $XYO_HOME/diviner/ipfs/staging && \
-  mkdir -p $XYO_HOME/diviner/ipfs/data && \
-  export ipfs_staging=$XYO_HOME/diviner/ipfs/staging && \
-  export ipfs_data=$XYO_HOME/diviner/ipfs/data
-```
+Supply the diviner with an Ethereum node address - **Note** we recommend that you use a local instance for this exercise at port `8545`
 
-Then lets create the IPFS container
+`What is your Ethereum Node address? › http://127.0.0.1:8545`
 
-```sh
-  docker run \
-  -d \
-  --name ipfs_host \
-  -v $ipfs_staging:/export \
-  -v $ipfs_data:/data/ipfs \
-  -p 4001:4001 \
-  -p 127.0.0.1:8080:8080 \
-  -p 127.0.0.1:5001:5001 \
-  ipfs/go-ipfs:latest
-```
+Supply the diviner with an account address (this would come from Ganache *copy the first address from your accounts list when you started the ganache service*)
 
-The diviner requires  the `XyoStakedConsensus.json` file to be in our IPFS node. Lets seed it.
+`What is your Ethereum Account address? This will start with `0x` ›`
 
-```sh
-  curl 'https://ipfs.io/ipfs/QmeFQ55jVbtuVoFYXJdZWKoWMjjs9DZ9teCQhrhTLofGP2' > $ipfs_staging/XyoStakedConsensus.json && \
-  docker exec ipfs_host ipfs add -r /export/XyoStakedConsensus.json
-```
+Supply the diviner with the Pay On Delivery smart contract address
 
-Further instructions on how to control your ipfs node can be found [here](https://hub.docker.com/r/ipfs/go-ipfs/#docker-usage).
+`What is the PayOnDelivery contract address? This will start with `0x` ›`
 
-For the purpose of this guide, we will use ganache as our Ethereum rpc node provider.
+Set up your Diviner with a GraphQL Server
+`Do you want your node to have a GraphQL server (Y/n) · true`
+`What port should your GraphQL server run on? · 11001`
 
-```sh
-  docker run \
-  -d \
-  --name EthNode \
-  -p 8545:8545 \
-  trufflesuite/ganache-cli:latest
-```
+Press enter to set up all of the GraphQL endpoints
+`Which GraphQL api endpoints would you like to support? (use space-bar to toggle selection. Press enter once finished) · about, blockByHash, blockList, intersections, blocksByPublicKey, entities`
 
-Ganache will create a number test Ethereum accounts for us. We will assume the first one as the identity for the diviner
+Start the node
+`Do you want to start the node after configuration is complete? (Y/n) · true`
 
-```sh
-  export ABOUT__ETH_ADDRESS=`curl -s -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1}' 127.0.0.1:8545 | python -c "import sys, json; print json.load(sys.stdin)['result'][0]"` && echo "Diviner ethereum address is $ABOUT__ETH_ADDRESS"
-```
-
-Next lets deploy the PayOnDelivery smart contract. Because the smart-contract is unreadable byte-code and quite cumbersome to put in this guide we will load it remotely.
-
-```sh
-  export ETHEREUM_TRANSACTION_ID=`curl -s -o- https://gist.githubusercontent.com/ryanxyo/90223a2286c2bb3aa8ee025bd7368cf5/raw/bb50c3f9f792efaf79e7dd2259270462b3a4b28d/deployPayOnDelivery.sh | bash | python -c "import sys, json; print json.load(sys.stdin)['result']"` && echo "PayOnDelivery transaction id is $ETHEREUM_TRANSACTION_ID"
-```
-
-then
-
-```sh
-export ETHEREUM_CONTRACTS__PAY_ON_DELIVERY__ADDRESS=`curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","params":["'"$ETHEREUM_TRANSACTION_ID"'"],"id":2}' http://127.0.0.1:8545 | python -c "import sys, json; print json.load(sys.stdin)['result']['contractAddress']"` && echo "PayOnDelivery contract address is $ETHEREUM_CONTRACTS__PAY_ON_DELIVERY__ADDRESS"
-```
-
-Now, that we have an IPFS service, a Web3 service and an archivist service available we can start the Diviner application.
-
-```sh
-docker run \
--d \
---name XyoDiviner \
--p 12000:12000 \
--e ABOUT__URL=$MY_IP \
--e ABOUT__SEEDS__ARCHIVISTS=`docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' XyoArchivist`:11001 \
--e IPFS__HOST=`docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' ipfs_host` \
--e ETHEREUM_CONTRACTS__PAY_ON_DELIVERY__ADDRESS=$ETHEREUM_CONTRACTS__PAY_ON_DELIVERY__ADDRESS \
--e WEB3__HOST=http://`docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' EthNode`:8545 \
-xyonetwork/app-diviner
-```
-
-After the docker container is up and running lets take a look at the logs
-
-```sh
-  docker logs --tail 100 XyoDiviner
-```
-
-You should see a reoccurring log message saying something to the effect of:
-
-`Web3QuestionService: No questions exist in smart contract`
-
-This is to be expected. While we created the contract itself, no questions have been registered.
+## Congratulations! You have now started an XYO Diviner!
