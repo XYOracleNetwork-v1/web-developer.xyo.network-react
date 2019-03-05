@@ -10,7 +10,7 @@
     "Bridge": ["bridge"],
     "SDKs": [
       "SDK-Package-Node",
-      "SDK-ObjectModel-Swift",
+      "SDK-Core-Swift",
       "SDK-ObjectModel-Kotlin",
       "SDK-Core-Android",
       "SDK-Ble-Android",
