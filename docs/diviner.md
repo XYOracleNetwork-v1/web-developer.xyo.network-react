@@ -6,12 +6,10 @@ title: Diviner App
 # Getting started with an XYO Diviner
 
 An Diviner in the XYO network serves as the querying component who has a conversation with the archivist.
-It asks, measures, and collects data from archivists and makes that data available to end users via a GraphQL API. In essence it is the knowledge seeker node of the XYO network.
+It is the diviner’s job to answer queries proposed on the network by finding relevant data stored in archivists. and makes that data available to end users via a GraphQL API. In essence it is the knowledge seeker and consensus node of the XYO network.
 
 As long as an Diviner follows the protocols of the XYO network specified in the [yellow paper](https://docs.xyo.network/XYO-Yellow-Paper.pdf)
-they may implement the component however they wish. This application supports using MySQL as the persistence engine that
-backs the Diviner repository, LevelDb to persist origin-chain data specific to this node, and TCP as the transport
-layer for doing bound-witness interactions between the Diviner and other Archivists.
+they may implement the component however they wish. The key is that the interactions between a diviner and an archivist must be proved through a bound witness to validate the data.
 
 # Prerequisites
 
@@ -21,7 +19,7 @@ layer for doing bound-witness interactions between the Diviner and other Archivi
   - Make sure that docker runs throughout this process
 - Ganache cli - you will need to run an instance 
   - We recommend this command `ganache-cli --port 8545 --deterministic --networkId 5777`
-- A deployed Pay On Deliver smart contract. (Make sure you copy the address for that contract)
+- A deployed Pay On Delivery smart contract. (Make sure you copy the address for that contract)
 
 - This node app wizard works optimally with MacOS, and at this time this app is not Windows compatible
 
@@ -58,6 +56,8 @@ yarn build
 ```sh
 yarn start:diviner
 ```
+
+##### Deploying the Pay On Delivery Smart Contract
 
 **NOTE** Keep this terminal window open and leave it alone after starting the Diviner
 
