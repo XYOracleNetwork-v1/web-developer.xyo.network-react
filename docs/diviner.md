@@ -11,7 +11,7 @@ It is the diviner’s job to answer queries proposed on the network by finding r
 As long as an Diviner follows the protocols of the XYO network specified in the [yellow paper](https://docs.xyo.network/XYO-Yellow-Paper.pdf)
 they may implement the component however they wish. The key is that the interactions between a diviner and an archivist must be proved through a bound witness to validate the data.
 
-# Prerequisites
+## Prerequisites
 
 - You must have [docker](https://www.docker.com/get-started) installled and running
   - There are instructions on how to install and run docker in the [get started]((https://www.docker.com/get-started)) guide
@@ -23,27 +23,27 @@ they may implement the component however they wish. The key is that the interact
 
 - This node app wizard works optimally with MacOS, and at this time this app is not Windows compatible
 
-# Getting Started
+## Getting Started
 
-##### Clone the repository 
+### Clone the repository 
 
 ```bash
 git clone https://github.com/XYOracleNetwork/sdk-core-nodejs.git -b develop
 ```
 
-##### Go into the directory
+### Go into the directory
 
 ```sh
 cd sdk-core-nodejs
 ```
 
-##### Install dependencies
+### Install dependencies
 
 ```sh
 yarn install
 ```
 
-##### Build the SDK
+### Build the SDK
 
 ```sh
 yarn build
@@ -51,17 +51,17 @@ yarn build
 
 **Note** This will take a moment, so be patient, it will take around 30 seconds.
 
-##### Start the Diviner
+## Start the Diviner
 
 ```sh
 yarn start:diviner
 ```
 
-##### Deploying the Pay On Delivery Smart Contract
+### Deploying the Pay On Delivery Smart Contract
 
 **NOTE** Keep this terminal window open and leave it alone after starting the Diviner
 
-##### Run your package with a simple node command
+### Run your package with a simple node command
 
 ```sh
 node packages/app
