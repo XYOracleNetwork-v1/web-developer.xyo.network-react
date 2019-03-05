@@ -2,12 +2,12 @@
   "docs": {
     "Getting Started": ["getting-started"],
     "XYO Nodes Introduction": ["Introduction"],
-    "Payable on Delivery Demo": ["payable-demo"],
-    "Core Products": ["dapploy", "dapper"],
-    "Sentinel": ["sentinel-sdk"],
     "Archivist": ["archivist"],
     "Diviner": ["diviner"],
+    "Sentinel": ["sentinel"],
     "Bridge": ["bridge"],
+    "Smart Contract Apps": ["dapploy", "dapper"],
+    "Payable on Delivery Demo": ["payable-demo"],
     "SDKs": [
       "SDK-Package-Node",
       "SDK-Core-Swift",

@@ -270,7 +270,7 @@ class Index extends React.Component {
           <h1>Who is Using <img src="/img/type_colored.svg" alt="xyo" height="100px" width="100px"></img>?</h1>
           <h2>Take a look at some of our partners</h2>
           <div className="container">
-            <div id="productCarousel" class="carousel slide" data-ride="carousel">
+            <div id="productCarousel" className="carousel slide" data-ride="carousel">
               <ol className="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>

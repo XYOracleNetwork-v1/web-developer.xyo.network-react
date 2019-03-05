@@ -1,6 +1,6 @@
 ---
 id: diviner
-title: Getting a Diviner Environment setup
+title: Diviner App
 ---
 
 # Getting started with an XYO Diviner
