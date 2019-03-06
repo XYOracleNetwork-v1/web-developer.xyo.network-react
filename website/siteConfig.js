@@ -47,7 +47,7 @@ const users = [
 const siteConfig = {
    // Title for your website.
   title: '', 
-  tagline: 'Connect your decentralized app to the real world with the Geo dApp Platform of tomorrow',
+  tagline: 'The source for developers to interact with XYO and its suite of products.',
   url: 'https://developers.xyo.network', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
