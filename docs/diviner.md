@@ -19,9 +19,51 @@ they may implement the component however they wish. The key is that the interact
   - Make sure that docker runs throughout this process
 - Ganache cli - you will need to run an instance 
   - We recommend this command `ganache-cli --port 8545 --deterministic --networkId 5777`
-- A deployed Pay On Delivery smart contract. (Make sure you copy the address for that contract)
-
+- A good understanding of how to use [Metamask](https://metamask.io/)
 - This node app wizard works optimally with MacOS, and at this time this app is not Windows compatible
+
+- A deployed **Pay On Delivery smart contract**
+  - **Point your browser to `https://ipfs.layerone.co/ipfs/QmaHuJh3u5J4W8WYhJnfH1yZUWWwUaehsVLbUPMEd4ymqN`**
+  - This address includes a `hash` value that represents our SCSC library as deployed on IPFS
+  - You will use this `hash` value to deploy a contract for the diviner to use: `QmaHuJh3u5J4W8WYhJnfH1yZUWWwUaehsVLbUPMEd4ymqN`
+  - Point your browser to `https://dapper.layerone.co/`
+  - Connect your metamask wallet to the Kovan testnet
+<h1 align="left">
+  <img alt="metamask-kovan" src="/docs/assets/metamask_kovan_new.png" height="884" width="756">
+</h1>
+
+  - Once you have connected your wallet to the Kovan testnet, connect your wallet in dApper 
+<h1 align="left">
+  <img alt="dapper-connect-wallet" src="/docs/assets/dapper_connect_wallet.png" height="332" width="730">
+</h1>
+  - Click on `settings` in the lower left hand corner of dApper
+    - The settings should be preconfigured to the XYO network IPFS on port `5002` and protocol `https`
+<h1 align="left">
+  <img alt="ipfs-config" src="/docs/assets/ipfs_config.png">
+</h1>
+  - Copy the ipfs hash `QmaHuJh3u5J4W8WYhJnfH1yZUWWwUaehsVLbUPMEd4ymqN` and paste in the `Add ABI` `IPFS Address` text field
+    - Ensure that the portis network above is set to `Kovan`
+<h1 align="center">
+  <img alt="portis-setting" src="/docs/assets/portis_kovan.png">
+</h1>
+  - After these settings, click `Add ABI`
+  - After a few seconds, the `Add ABI` button will confirm with a green checkmark that the ABI has been added 
+  - Click on `Contract Simulator` and select `XYPayOnDelivery` from the dropdown
+<h1 align="left">
+  <img alt="contract-select" src="/docs/assets/select_contract.png">
+</h1>
+  - Click on `Deploy Contract`, which will take you to the `XYPayOnDelivery` constructor screen.
+<h1 align="left">
+  <img alt="deploy-contract-screen" src="/docs/assets/deploy_contract_pod.png">
+</h1>
+  - Skip `optional notes or Description`, and add a `staking consensus` address and an `_xyoToken` address
+  - Only for this walkthrough will we add some simple account addresses for the consensus and token fields, when you start up a diviner to interact with XYO, you will need to deploy a `governance` contract, then a `XyStakingConsensus` contract, and add the true address for the staking consensus contract along with a staked XYO token
+  - Once you enter the address data in the `stakingConsensus` and `_xyoToken` fields, click `Deploy Contract` this will direct you to a Metamask confirmation for the transaction and then it will take a few seconds for transaction approval and contract deployment
+  - Once you have successfully deployed the `XYPayOnDelivery` contract, you should see a component pop up with an IPFS hash and a contract address. Copy and paste the contract address in a notes app. You will need this contract address during your diviner setup. 
+<h1 align="left">
+  <img alt="contract-info" src="/docs/assets/pod_info.png">
+</h1>
+
 
 ## Getting Started
 
@@ -124,3 +166,6 @@ Start the node
 `Do you want to start the node after configuration is complete? (Y/n) · true`
 
 ## Congratulations! You have now started an XYO Diviner!
+
+**This is just the beginning, now go to our [Archivist App Guide](https://developers.xyo.network/docs/en/archivist/) to start up an Archivist!**
+- When you do, you'll be able to have a conversation between these two XYO nodes and execute queries!
