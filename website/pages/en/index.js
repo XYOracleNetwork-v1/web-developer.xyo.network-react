@@ -269,32 +269,19 @@ class Index extends React.Component {
         <div className="productShowcaseSection paddingBottom">
           <h1>Who is Using <img src="/img/type_colored.svg" alt="xyo" height="100px" width="100px"></img>?</h1>
           <h2>Take a look at some of our partners</h2>
-          <div className="container">
-            <div id="productCarousel" class="carousel slide" data-ride="carousel">
-              <ol className="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              </ol>
+          <div className="container pt-5">
+            <div id="productCarousel" className="carousel slide" data-ride="carousel">
               <div className="carousel-inner">
                 <div className="carousel-item active" data="0">
-                  <img src="/img/coin_horizontal_colored.png" className="d-block w-70" alt="coin" />
+                  <img src="/img/coin_horizontal_colored.png" alt="coin" />
                 </div>
                 <div className="carousel-item" data="1">
-                  <img src="/img/esri.png" className="d-block w-100" alt="ESRI" />
+                  <img src="/img/esri.png" alt="ESRI" />
                 </div>
                 <div className="carousel-item" data="2">
-                  <img src="/img/SMK-Logo.ico" className="d-block w-100" alt="SMK" />
+                  <img src="/img/SMK-Logo.ico" alt="SMK" />
                 </div>
               </div>
-              <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="sr-only">Previous</span>
-              </a>
-              <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="sr-only">Next</span>
-              </a>
             </div>
           </div>
         </div>

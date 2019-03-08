@@ -71,13 +71,13 @@ div.blockImage {
 }
 
 .carousel {
-  max-height: 700px;
+  height: auto;
   overflow: hidden;
 }
 
-.carousel.carousel-item img {
-  width: 100%;
-  height: auto;  
+.carousel-inner > .carousel-item > img {
+  width: 350px;
+  height: 150px;  
 }
 
 .mainContainer {

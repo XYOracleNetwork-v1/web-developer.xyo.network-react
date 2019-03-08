@@ -1,6 +1,6 @@
 ---
 id: Introduction
-title: About XYO 
+title: The 4 Node Types 
 sidebar_label: The 4 Node Types
 ---
 

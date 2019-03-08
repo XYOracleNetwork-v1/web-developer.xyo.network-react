@@ -1,6 +1,6 @@
 ---
-id: sentinel-api
-title: Sentinel 
+id: sentinel
+title: Sentinel App 
 ---
 
-## API Reference for Sentinel
+# Coming soon!
