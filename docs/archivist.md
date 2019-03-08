@@ -15,6 +15,8 @@ layer for doing bound-witness interactions between the Archivist and other Bridg
 
 ## Prerequisites
 
+- You must have node installed. If you don't, the easiest way to get `node` and `npm` is through [`homebrew`](https://brew.sh/) a package manager for Apple and Linux systems
+
 - You must have [docker](https://www.docker.com/get-started) installled and running
   - There are instructions on how to install and run docker in the [get started]((https://www.docker.com/get-started)) guide
   - [Download the Docker Desktop for Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac) for easiest entry

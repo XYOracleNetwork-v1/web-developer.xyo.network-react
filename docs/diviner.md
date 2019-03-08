@@ -12,6 +12,7 @@ As long as an Diviner follows the protocols of the XYO network specified in the 
 they may implement the component however they wish. The key is that the interactions between a diviner and an archivist must be proved through a bound witness to validate the data.
 
 ## Prerequisites
+- You must have node installed. If you don't, the easiest way to get `node` and `npm` is through [`homebrew`](https://brew.sh/) a package manager for Apple and Linux systems
 
 - You must have [docker](https://www.docker.com/get-started) installled and running
   - There are instructions on how to install and run docker in the [get started]((https://www.docker.com/get-started)) guide
