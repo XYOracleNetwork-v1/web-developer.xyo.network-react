@@ -1,4 +1,5 @@
 {
+  "name": "@xyo-network/developers-portal",
   "scripts": {
     "examples": "docusaurus-examples",
     "start": "docusaurus-start",

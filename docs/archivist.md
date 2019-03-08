@@ -13,7 +13,7 @@ they may implement the component however they wish. This application supports us
 backs the archivist repository, LevelDb to persist origin-chain data specific to this node, and TCP as the transport
 layer for doing bound-witness interactions between the Archivist and other Bridges.
 
-# Prerequisites
+## Prerequisites
 
 - You must have [docker](https://www.docker.com/get-started) installled and running
   - There are instructions on how to install and run docker in the [get started]((https://www.docker.com/get-started)) guide
@@ -22,27 +22,27 @@ layer for doing bound-witness interactions between the Archivist and other Bridg
 
 - This node app wizard works optimally with MacOS, and at this time this app is not Windows compatible
 
-# Getting Started
+## Getting Started
 
-##### Clone the repository 
+### Clone the repository 
 
 ```bash
 git clone https://github.com/XYOracleNetwork/sdk-core-nodejs.git -b develop
 ```
 
-##### Go into the directory
+### Go into the directory
 
 ```sh
 cd sdk-core-nodejs
 ```
 
-##### Install dependencies
+### Install dependencies
 
 ```sh
 yarn install
 ```
 
-##### Build the SDK
+### Build the SDK
 
 ```sh
 yarn build
@@ -50,7 +50,7 @@ yarn build
 
 **Note** This will take a moment, so be patient, it will take around 30 seconds.
 
-##### Bootstrap or manage your MySQL service
+### Bootstrap or manage your MySQL service
 
 ```sh
   yarn manage:db
@@ -85,7 +85,7 @@ Successfully started a MySQL service @ 127.0.0.1:3306
 ```
 **NOTE** No need to paste the command into your shell for the development environment
 
-##### Start the Archivist
+### Start the Archivist
 
 ```sh
 yarn start:archivist
@@ -93,14 +93,14 @@ yarn start:archivist
 
 **NOTE** Keep this terminal window open and leave it alone after starting the archivist
 
-##### Pull in some mock data
+### Pull in some mock data
 **You'll have to do this in another terminal window or tab and keep this open as well**
 
 ```sh
 yarn mock-data
 ```
 
-##### Run your package with a simple node command
+### Run your package with a simple node command for configuring your archivist
 
 ```sh
 node packages/app
@@ -161,7 +161,7 @@ What port would you like to use for your peer to peer protocol? · 11000
 ``` 
 This is your bound witness port, it should be different from the diviner port
 
-Ensure that the component features for support are Archivist
+Ensure that the component features for support are *archivist*
 ```sh
 Which component features do you want your Xyo Node to support? · archivist
 ``` 
