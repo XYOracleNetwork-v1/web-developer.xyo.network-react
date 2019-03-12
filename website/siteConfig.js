@@ -3015,6 +3015,10 @@ const siteConfig = {
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} XYO`,
 
+  // gaTrackingId: `GTM-PTCW96N`,
+
+  // gaGTag: true, 
+
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
     theme: 'sunburst',
