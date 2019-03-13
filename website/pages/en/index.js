@@ -152,9 +152,9 @@ class Index extends React.Component {
         <div className="row pb-5">
             {(siteConfig.products || []).map(prod => (
               <div className="col-12 col-md-4 pb-5" key={prod.fields.id}>
-                  <div className="card shadow d-block">
+                  <div className="card shadow">
                   <div className="card-body">
-                    { prod.fields.logo ? <img src={prod.fields.logo} className="img-fluid d-inline mr-2 pr-5 h-auto w-100" alt={prod.fields.marketingName}/>: <p></p>}
+                    { prod.fields.logo ? <img src={prod.fields.logo} className="img-fluid d-inline mr-2 pr-0 h-auto w-100" alt={prod.fields.marketingName}/>: <p></p>}
                     <h3 className="d-inline card-title">{prod.fields.marketingName}</h3>
                     { prod.fields.publicDesc === "No Description" ? <br></br> : <p className="card-text smaller mr-3 truncate">{prod.fields.publicDesc}</p> }
                     <p>{prod.fields.valDivision} Division</p>

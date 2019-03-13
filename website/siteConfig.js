@@ -92,6 +92,7 @@ const products =
         "uiUxStatus": "Planning",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "visibility": "Private",
         "start": [
           "2019-03-28",
           "2019-04-25",
@@ -184,6 +185,8 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "docsLink": "https://github.com/xycorp/web-developer.xyo.network-react",
+        "visibility": "Public",
         "start": [
           "2019-02-08",
           "2019-02-28",
@@ -277,6 +280,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "visibility": "Private",
         "start": [
           "2019-01-25",
           "2019-03-15"
@@ -311,7 +315,8 @@ const products =
         "valReleasesEnd": [
           "2019-01-25",
           "2019-03-15"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-01-16T23:56:20.000Z"
     },
@@ -356,6 +361,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "Planning",
         "packagingStatus": "Planning",
+        "visibility": "Private",
         "start": [
           "2020-01-23"
         ],
@@ -390,7 +396,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2020-01-23"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-02-11T18:50:41.000Z"
     },
@@ -437,6 +444,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "Planning",
         "packagingStatus": "Planning",
+        "visibility": "Private",
         "start": [
           "2019-05-23"
         ],
@@ -473,7 +481,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-05-23"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-02-11T18:55:28.000Z"
     },
@@ -522,6 +531,7 @@ const products =
         "uiUxStatus": "Released",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "visibility": "Private",
         "start": [
           "2019-01-31"
         ],
@@ -599,6 +609,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "Planning",
         "packagingStatus": "Planning",
+        "visibility": "Private",
         "start": [
           "2019-04-01"
         ],
@@ -629,7 +640,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-04-01"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-01-14T22:54:59.000Z"
     },
@@ -674,6 +686,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "visibility": "Private",
         "start": [
           "2019-03-28"
         ],
@@ -705,7 +718,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-28"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-01-14T22:54:52.000Z"
     },
@@ -752,6 +766,8 @@ const products =
         "uiUxStatus": "Released",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "docsLink": "https://developers.xyo.network/docs/en/dapper/",
+        "visibility": "Public",
         "start": [
           "2019-08-29"
         ],
@@ -831,6 +847,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "visibility": "Private",
         "start": [
           "2019-03-28"
         ],
@@ -909,6 +926,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "Released",
         "packagingStatus": "Planning",
+        "visibility": "Public",
         "start": [
           "2019-03-20"
         ],
@@ -985,6 +1003,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "Released",
         "packagingStatus": "Released",
+        "visibility": "Public",
         "start": [
           "2019-01-01"
         ],
@@ -1017,7 +1036,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-01-01"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-02-20T23:16:43.000Z"
     },
@@ -1025,26 +1045,28 @@ const products =
       "id": "recOdAHxzARjJI5au",
       "fields": {
         "productId": "XYO Node Package",
-        "marketingName": "XYO Node.js",
         "Division": [
           "rec64V0S98c0Lul0B"
         ],
-        "valDivision": [
-          "xyOracle"
-        ],
-        "Product Manager": [
-          "recO9zK7wbuJRblDb"
-        ],
-        "valPm": [
-          "Justin Fortier"
-        ],
-        "status": "Developing",
+        "marketingName": "XYO Node.js",
         "categories": [
           "SDKs"
         ],
         "customers": [
           "recmBFpFwK6l4VaQ5",
           "recqy2Ra10ZqLPFFb"
+        ],
+        "Product Manager": [
+          "recO9zK7wbuJRblDb"
+        ],
+        "status": "Developing",
+        "docsLink": "https://developers.xyo.network/docs/en/SDK-Package-Node/",
+        "visibility": "Public",
+        "valDivision": [
+          "xyOracle"
+        ],
+        "valPm": [
+          "Justin Fortier"
         ],
         "valCustomers": [
           "Data Enthusiasts",
@@ -1053,7 +1075,8 @@ const products =
         "valCustomersDesc": [
           "Want to track, collection, visibility/transparency, and control of their own data. They care more about the visualization and want trusted data, but they are not blockchain",
           "Build Cool Dapps easily"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-03-11T22:40:52.000Z"
     },
@@ -1100,6 +1123,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "visibility": "Private",
         "start": [
           "2019-06-27",
           "2019-11-07"
@@ -1136,7 +1160,8 @@ const products =
         "valReleasesEnd": [
           "2019-06-27",
           "2019-11-07"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-01-16T23:57:02.000Z"
     },
@@ -1181,6 +1206,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "Planning",
         "packagingStatus": "Planning",
+        "visibility": "Public",
         "start": [
           "2019-05-23"
         ],
@@ -1215,7 +1241,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-05-23"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-02-11T18:59:19.000Z"
     },
@@ -1262,6 +1289,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "Planning",
         "packagingStatus": "Planning",
+        "visibility": "Private",
         "start": [
           "2019-05-23"
         ],
@@ -1298,7 +1326,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-05-23"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-02-11T18:57:27.000Z"
     },
@@ -1346,6 +1375,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "visibility": "Private",
         "start": [
           "2019-03-28"
         ],
@@ -1424,6 +1454,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "visibility": "Private",
         "start": [
           "2019-09-26"
         ],
@@ -1455,7 +1486,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-09-26"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-01-15T00:56:13.000Z"
     },
@@ -1508,6 +1540,8 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "androidAppLink": "https://play.google.com/store/apps/details?id=network.xyo.appxyoandroid.phone&hl=en_US",
+        "visibility": "Public",
         "start": [
           "2019-03-28",
           "2019-04-25",
@@ -1558,8 +1592,7 @@ const products =
           "2019-04-25",
           "2019-05-23",
           "2019-06-27"
-        ],
-        "androidAppLink": "https://play.google.com/store/apps/details?id=network.xyo.appxyoandroid.phone&hl=en_US"
+        ]
       },
       "createdTime": "2019-01-14T22:54:10.000Z"
     },
@@ -1606,6 +1639,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "visibility": "Private",
         "start": [
           "2019-03-28"
         ],
@@ -1687,6 +1721,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "visibility": "Private",
         "start": [
           "2019-03-28"
         ],
@@ -1765,6 +1800,7 @@ const products =
         "uiUxStatus": "Released",
         "formFactorStatus": "Planning",
         "packagingStatus": "Test",
+        "visibility": "Private",
         "start": [
           "2019-02-28"
         ],
@@ -1799,7 +1835,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-02-28"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-01-14T22:55:07.000Z"
     },
@@ -1845,6 +1882,8 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "docsLink": "https://github.com/XYOracleNetwork/sdk-core-c",
+        "visibility": "Private",
         "start": [
           "2019-02-28"
         ],
@@ -1920,6 +1959,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "visibility": "Private",
         "start": [
           "2019-02-28"
         ],
@@ -1950,7 +1990,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-02-28"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-01-16T23:56:48.000Z"
     },
@@ -1996,6 +2037,8 @@ const products =
         "uiUxStatus": "Released",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "docsLink": "https://developers.xyo.network/docs/en/dapploy/",
+        "visibility": "Public",
         "start": [
           "2019-08-29"
         ],
@@ -2074,6 +2117,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "Planning",
         "packagingStatus": "Test",
+        "visibility": "Public",
         "start": [
           "2019-03-28"
         ],
@@ -2150,6 +2194,8 @@ const products =
         "uiUxStatus": "Planning",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "docsLink": "https://github.com/XYOracleNetwork/sdk-core-android",
+        "visibility": "Private",
         "start": [
           "2019-03-28"
         ],
@@ -2243,6 +2289,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "visibility": "Public",
         "start": [
           "2019-01-24",
           "2019-02-07",
@@ -2360,6 +2407,7 @@ const products =
         "uiUxStatus": "Design",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "visibility": "Public",
         "start": [
           "2019-03-28"
         ],
@@ -2441,6 +2489,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "Planning",
         "packagingStatus": "Planning",
+        "visibility": "Public",
         "start": [
           "2019-05-23"
         ],
@@ -2475,7 +2524,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-05-23"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-02-11T19:02:10.000Z"
     },
@@ -2532,6 +2582,9 @@ const products =
         "uiUxStatus": "Test",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "androidAppLink": "https://play.google.com/store/apps/details?id=network.xyo.coin",
+        "iOSAppLink": "https://itunes.apple.com/app/id1450443351",
+        "visibility": "Public",
         "start": [
           "2019-01-31",
           "2019-03-28",
@@ -2590,9 +2643,7 @@ const products =
           "2019-05-23",
           "2019-06-26",
           "2019-10-24"
-        ],
-        "androidAppLink": "https://play.google.com/store/apps/details?id=network.xyo.coin",
-        "iOSAppLink": "https://itunes.apple.com/app/id1450443351"
+        ]
       },
       "createdTime": "2019-01-11T17:28:08.000Z"
     },
@@ -2639,6 +2690,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "visibility": "Private",
         "start": [
           "2019-03-28"
         ],
@@ -2718,6 +2770,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "visibility": "Private",
         "start": [
           "2019-02-28",
           "2019-03-28"
@@ -2755,7 +2808,8 @@ const products =
         "valReleasesEnd": [
           "2019-02-28",
           "2019-03-28"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-01-14T22:57:14.000Z"
     },
@@ -2800,6 +2854,8 @@ const products =
         "uiUxStatus": "Released",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "docsLink": "https://github.com/XYOracleNetwork/sdk-dache-nodejs",
+        "visibility": "Private",
         "start": [
           "2019-08-29"
         ],
@@ -2883,6 +2939,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "visibility": "Private",
         "start": [
           "2019-01-11",
           "2019-02-14",
@@ -2954,16 +3011,19 @@ const products =
           "recO9zK7wbuJRblDb"
         ],
         "status": "Developing",
+        "visibility": "Public",
         "valDivision": [
           "xyDevices"
         ],
         "valPm": [
           "Justin Fortier"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-02-25T23:02:02.000Z"
     }
   ]
+
 const siteConfig = {
    // Title for your website.
   title: '', 
@@ -3015,17 +3075,13 @@ const siteConfig = {
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} XYO`,
 
-  // gaTrackingId: `GTM-PTCW96N`,
-
-  // gaGTag: true, 
-
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
     theme: 'sunburst',
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://buttons.github.io/buttons.js', 'https://code.jquery.com/jquery-3.3.1.slim.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'],
+  scripts: ['https://buttons.github.io/buttons.js', 'https://code.jquery.com/jquery-3.3.1.slim.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', 'https://cdn.xy.company/js/gtm_developers.xyo.network.js'],
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',

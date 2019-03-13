@@ -21,7 +21,6 @@
     "gulp": "^4.0.0",
     "gulp-awspublish": "^4.0.0",
     "gulp-cloudfront-invalidate": "^0.1.5",
-    "react-helmet": "^5.2.0",
     "util": "^0.11.1"
   }
 }
