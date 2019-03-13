@@ -82,6 +82,11 @@ class Footer extends React.Component {
                 GitHub
               </a>
             </div>
+            <noscript>
+              <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTCW96N"
+              height="0" width="0" style={{display: "none; visibility:hidden"}}>
+              </iframe>
+            </noscript>
           </section>
       </footer>
     );
