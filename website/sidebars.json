@@ -2,6 +2,7 @@
   "docs": {
     "Getting Started": ["getting-started"],
     "XYO Nodes Introduction": ["Introduction"],
+    "Interacting with XYO Nodes": ["new-xyo-suite"],
     "Archivist": ["archivist"],
     "Diviner": ["diviner"],
     "Sentinel": ["sentinel"],
