@@ -152,34 +152,37 @@ class Index extends React.Component {
       <div className=" pl-5 pr-5 pb-5 mt-3">
         <div className="row pb-5">
           {(publicProducts || []).map(prod => (
-              <div className="col-12 col-md-4 pb-5" key={prod.fields.id}>
-                  <div className="card shadow">
-                  <div className="card-body">
+            <div className="col-12 col-md-4 pb-5" key={prod.fields.id}>
+              <div className="card shadow h-100">
+                <div className="card-body">
                     { prod.fields.logo ? <img src={prod.fields.logo} className="img-fluid d-inline mr-2 pr-0 h-auto w-100" alt={prod.fields.marketingName}/>: <p></p>}
                     <h3 className="d-inline card-title">{prod.fields.marketingName}</h3>
-                    { prod.fields.publicDesc === "No Description" ? <br></br> : <p className="card-text smaller mr-3 truncate">{prod.fields.publicDesc}</p> }
+                    { prod.fields.publicDesc === "No Description" ? <br></br> : <p className="card-text smaller mr-3">{prod.fields.publicDesc}</p> }
                     <p>{prod.fields.valDivision} Division</p>
-                    <p> <strong>Status:</strong> {prod.fields.status}</p>
+                    <p><strong>Status:</strong> {prod.fields.status}</p>
                     <br></br>
                       <div className="card-bottom smallest">
-                      { prod.fields.iOSAppLink ? 
-                        <button className="btn-primary btn-light-purple rounded smallest">
-                          <a href={prod.fields.iOSAppLink}>
-                              iOS
-                          </a>
-                        </button> : 
-                        prod.fields.androidAppLink ? 
-                        <button className="btn-primary btn-light-purple rounded smallest">
-                          <a href={prod.fields.androidAppLink}>
-                            ANDROID
-                            </a>
-                        </button> : <p></p>
-                    }
+                    {prod.fields.iOSAppLink || prod.fields.androidAppLink? 
+                    <div>
                       <button className="btn-primary btn-light-purple rounded smallest">
-                        <a href={prod.fields.githubLink}>
-                          DOCS
-                          </a>
+                        <a href={prod.fields.iOSAppLink}>
+                            iOS
+                        </a>
                       </button>
+                      <button className="btn-primary btn-light-purple rounded smallest ml-3">
+                        <a href={prod.fields.androidAppLink}>
+                          ANDROID
+                          </a>
+                      </button> 
+                    </div> : <p></p>
+                    }
+                      <div className="pt-2">
+                        <button className="btn-primary btn-light-purple rounded smallest">
+                          <a href={prod.fields.docsLink}>
+                            DOCS
+                            </a>
+                        </button>
+                      </div>
                       </div>
                     </div>
                   </div>

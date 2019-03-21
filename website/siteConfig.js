@@ -1042,6 +1042,65 @@ const products =
       "createdTime": "2019-02-20T23:16:43.000Z"
     },
     {
+      "id": "recNu9Vn69G3hVUB6",
+      "fields": {
+        "productId": "XYO SCSC",
+        "Division": [
+          "rec64V0S98c0Lul0B"
+        ],
+        "marketingName": "Smart Consensus Smart Contract Library",
+        "Lead": [
+          "recWXhp4QDklhpJpv"
+        ],
+        "Project Manager": [
+          "recO9zK7wbuJRblDb"
+        ],
+        "categories": [
+          "Services"
+        ],
+        "team": [
+          "recWXhp4QDklhpJpv",
+          "rec5sqaRZfdAVI3VP",
+          "recqgRNmfBGOcf9hp"
+        ],
+        "customers": [
+          "recmBFpFwK6l4VaQ5",
+          "recqy2Ra10ZqLPFFb"
+        ],
+        "Product Manager": [
+          "recO9zK7wbuJRblDb"
+        ],
+        "status": "Developing",
+        "description": "The library of all smart contracts that manage XYO governance and on-chain interactions.",
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
+        "publicDesc": "The library of all smart contracts that manage XYO governance and on-chain interactions.",
+        "visibility": "Public",
+        "valDivision": [
+          "xyOracle"
+        ],
+        "valPm": [
+          "Justin Fortier"
+        ],
+        "valTeam": [
+          "Kevin Weiler",
+          "Arie Trouw",
+          "Phillip Lorenzo"
+        ],
+        "valLead": [
+          "Kevin Weiler"
+        ],
+        "valCustomers": [
+          "Data Enthusiasts",
+          "Dapp Enthusiasts"
+        ],
+        "valCustomersDesc": [
+          "Want to track, collection, visibility/transparency, and control of their own data. They care more about the visualization and want trusted data, but they are not blockchain",
+          "Build Cool Dapps easily"
+        ]
+      },
+      "createdTime": "2019-03-21T17:36:04.000Z"
+    },
+    {
       "id": "recOdAHxzARjJI5au",
       "fields": {
         "productId": "XYO Node Package",
@@ -2404,7 +2463,7 @@ const products =
         "status": "Developing",
         "description": "--OVERVIEW--\nA fully functional XYO toolkit and viewer that allows users to view total addresses on the network, total number of Query/Response Blocks, total stake on the network, and view a map showing where bound witnesses have occurred.\n\nUsers will be able to create a watchlist of devices where they can bound witnesses and payments associated with that address. \n\nUsers will be able to see recent XYO token transactions on the Ethereum Blockchain.\n\nUsers will also be able to see all rewards paid out on the network and withdraw their rewards to their ethereum wallet address. \n\nUsers will be able to stake diviners (Archivists, Bridges, and Sentinels coming soon). \n\nUsers will be able to see wallet addresses of all \"Owners\" on the network. \n\nFinally, users will be able to view developer links, docs, github, and the Founding Hodl'r Registry.\n",
         "logo": "http://cdn.xy.company.s3.amazonaws.com/img/logos/XYONetworkViewer_Logo_Colored.png",
-        "publicDesc": "A fully functional XYO toolkit and viewer that allows users to view total addresses on the network, total number of Query/Response Blocks, total stake on the network, and view a map showing where bound witnesses have occurred.\n\nUsers will be able to create a watchlist of devices where they can bound witnesses and payments associated with that address. \n\nUsers will be able to see recent XYO token transactions on the Ethereum Blockchain.\n\nUsers will also be able to see all rewards paid out on the network and withdraw their rewards to their ethereum wallet address. \n\nUsers will be able to stake diviners (Archivists, Bridges, and Sentinels coming soon). \n\nUsers will be able to see wallet addresses of all \"Owners\" on the network. \n\nFinally, users will be able to view developer links, docs, github, and the Founding Hodl'r Registry.",
+        "publicDesc": "A fully functional XYO toolkit and viewer that allows users to view the XYO network.\n",
         "brandingAssetsLink": "https://www.dropbox.com/sh/e4svbouwri1ped9/AAAMY-zs2Rsvk7eb4J4ClX_Na?dl=0",
         "uiUxLink": "https://www.dropbox.com/sh/7mma0hwy70u0wqb/AADhAhCSRUQwuq48h9MxYvsza?dl=0",
         "formFactor": "NA",
@@ -2849,6 +2908,7 @@ const products =
         ],
         "status": "Developing",
         "description": "The Dataism Black Box is the starting point for anyone who wants to participate in the Dataism revolution. Limited to just 5,000 people this box contains everything from the Dataism Mastery course to a geomining kit, from a T-shirt to a guide to using the COIN app.",
+        "visibility": "Private",
         "start": [
           "2019-03-28"
         ],
@@ -2880,8 +2940,7 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-28"
-        ],
-        "visibility": "Private"
+        ]
       },
       "createdTime": "2019-03-20T17:40:45.000Z"
     },
