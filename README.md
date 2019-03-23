@@ -1,6 +1,6 @@
-<h1 align="center">
-  <img alt="XY" src="https://www.xy.company/img/home/logo_xy.png" width="300">
-</h1>
+[logo]: https://cdn.xy.company/img/brand/XY_Logo_GitHub.png
+
+[![logo]](https://xy.company)
 
 <h3 align="center">
   The Developer Portal for XYO 
