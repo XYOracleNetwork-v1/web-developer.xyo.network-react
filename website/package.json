@@ -12,7 +12,9 @@
     "deploy": "docusaurus-build && gulp publish"
   },
   "devDependencies": {
-    "docusaurus": "^1.6.2"
+    "docusaurus": "^1.7.3",
+    "eslint": "^5.15.3",
+    "eslint-plugin-react": "^7.12.4"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",

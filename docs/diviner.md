@@ -3,6 +3,9 @@ id: diviner
 title: Diviner App
 ---
 
+## Upgrade coming soon
+Before you begin, we wanted to let you know that there will be an update to this guide to decrease the setup time before getting your Diviner up and running
+
 # Getting started with an XYO Diviner
 
 An Diviner in the XYO network serves as the querying component who has a conversation with the archivist.
