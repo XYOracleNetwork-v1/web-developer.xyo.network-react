@@ -81,17 +81,12 @@ class Footer extends React.Component {
               >
                 GitHub
               </a>
-              <a
-                className="github-button"
-                href={this.props.config.repoUrl}
-                data-icon="octicon-star"
-                data-count-href="/facebook/docusaurus/stargazers"
-                data-show-count="true"
-                data-count-aria-label="# stargazers on GitHub"
-                aria-label="Star this project on GitHub">
-                Star
-              </a>
             </div>
+            <noscript>
+              <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTCW96N"
+              height="0" width="0" style={{display: "none; visibility:hidden"}}>
+              </iframe>
+            </noscript>
           </section>
       </footer>
     );

@@ -12,6 +12,7 @@ const CompLibrary = require('../../core/CompLibrary.js');
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
+
 class HomeSplash extends React.Component {
   render() {
     const {siteConfig, language = ''} = this.props;
@@ -19,7 +20,7 @@ class HomeSplash extends React.Component {
     const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
     const langPart = `${language ? `${language}/` : ''}`;
     const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
-
+    
     const EthDenverContainer = props => (
       <div className="ethHomeContainer">
         {props.children}
@@ -82,7 +83,7 @@ class HomeSplash extends React.Component {
           <EthDenverDescription />
         </EthDenverContainer>
         <SplashContainer>
-            <h1>Currently in Production</h1>
+            <h1>OUR PRODUCTS</h1>
         </SplashContainer>
       </div>
     );
@@ -92,27 +93,29 @@ class HomeSplash extends React.Component {
 class Index extends React.Component {
   render() {
     const {config: siteConfig, language = ''} = this.props;
-    const {baseUrl} = siteConfig;
+    const {baseUrl, products} = siteConfig;
 
+    const publicProducts = (products || []).filter((prod) => prod.fields.visibility === "Public");
+    
     const Block = props => (
       <Container
-        padding={['bottom', 'top']}
-        id={props.id}
-        background={props.background}
-        >
+      padding={['bottom', 'top']}
+      id={props.id}
+      background={props.background}
+      >
       <GridBlock
           align="center"
           contents={props.children}
           layout={props.layout}
           className="card shadow card-body"
-        />
+          />
       </Container>
     );
-
+    
     const FeatureCallout = () => (
-        <div
-          id="learn" className="productShowcaseSection paddingBottom xyoContainer"
-          style={{ textAlign: 'center' }} background="dark">
+      <div
+      id="learn" className="productShowcaseSection paddingBottom xyoContainer"
+      style={{ textAlign: 'center' }} background="dark">
           <div className="container">
             <div className="row align-self-center">
                 <h1 className="col">LEARN ABOUT XYO</h1> 
@@ -124,19 +127,19 @@ class Index extends React.Component {
                 frameBorder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen
-              >
+                >
               </iframe> 
             </div>
           </div>
         </div>   
     );
-
+    
     const Description = () => (
       <Block background="dark">
         {[
           {
             content:
-              'Location data decentralization use cases',
+            'Location data decentralization use cases',
             image: `${baseUrl}img/type_white.svg`,
             imageAlign: 'right',
             title: 'Why XYO?',
@@ -144,110 +147,51 @@ class Index extends React.Component {
         ]}
       </Block>
     );
-
+    
     const Features = () => (
-    <div className=" pl-5 pr-5 pb-5 mt-3">
-      <div className="row pb-5">
-          <div className="col-12 col-md-4 pb-2">
-            <div className="card shadow">
-              <div className="card-body">
-                <img src={`${baseUrl}img/dapploy_logo_color.png`} className="img-fluid d-inline mr-3" alt="dApploy"/>
-                <h3 className="d-inline card-title">dApploy</h3>
-                <p className="card-text smaller mr-3">Deployment solution</p>
-                <div className="card-bottom smallest">
-                  <button className="btn-primary btn-light-purple rounded smallest">
-                    <a href="https://developers.xyo.network/docs/en/dapploy/">
-                        DOCS
-                    </a>
-                  </button>
-                </div>
-              </div>
-            </div>
-        </div>
-          <div className="col-12 col-md-4 pb-2">
-            <div className="card shadow">
-              <div className="card-body">
-                <img src={`${baseUrl}img/dapper-without-text.svg`} className="img-fluid d-inline mr-3" alt="dApper"/>
-                  <h3 className="d-inline card-title">dApper</h3>
-                <p className="card-text smaller mr-3">Smart contract environment</p>
-                <div className="card-bottom smallest">
-                  <button className="btn-primary btn-light-purple rounded smallest">
-                    <a href="https://developers.xyo.network/docs/en/dapper/">
-                      DOCS
-                    </a>
-                  </button>
-                </div>
-              </div>
-            </div>
-        </div>
-          <div className="col-12 col-md-4 pb-2">
-            <div className="card shadow">
-              <div className="card-body">
-                <img src={`${baseUrl}img/XYO_icon_colored.svg`} className="img-fluid d-inline mr-3" alt="ble-sdk"/>
-                  <h3 className="d-inline card-title">Android BLE SDK</h3>
-                <p className="card-text smaller mr-3">XYO for BLE Devices</p>
-                <div className="card-bottom smallest">
-                  <button className="btn-primary btn-light-purple rounded smallest">
-                    <a href="https://developers.xyo.network/docs/en/SDK-Ble-Android/">
-                        DOCS
-                    </a>
-                  </button>
-                </div>
-              </div>
-            </div>
-        </div>
-      </div>
+      <div className=" pl-5 pr-5 pb-5 mt-3">
         <div className="row pb-5">
-          <div className="col-12 col-md-4 pb-2">
-              <div className="card shadow">
+          {(publicProducts || []).map(prod => (
+            <div className="col-12 col-md-4 pb-5" key={prod.fields.id}>
+              <div className="card shadow h-100">
                 <div className="card-body">
-                  <img src={`${baseUrl}img/coin_horizontal_colored.png`} className="img-fluid d-inline mr-3 coin-img" alt="coin"/>
-                  <h3 className="d-inline card-title">COIN</h3>
-                  <p className="card-text smaller mr-3">The New Economy</p>
-                  <div className="card-bottom smallest">
-                    <a href="https://itunes.apple.com/app/id1450443351" target="_blank" rel="noopener noreferrer">
+                    { prod.fields.logo ? <img src={prod.fields.logo} className="img-fluid d-inline mr-2 pr-0 h-auto w-100" alt={prod.fields.marketingName}/>: <p></p>}
+                    <h3 className="d-inline card-title">{prod.fields.marketingName}</h3>
+                    { prod.fields.publicDesc === "No Description" ? <br></br> : <p className="card-text smaller mr-3">{prod.fields.publicDesc}</p> }
+                    <p>{prod.fields.valDivision} Division</p>
+                    <p><strong>Status:</strong> {prod.fields.status}</p>
+                    <br></br>
+                      <div className="card-bottom smallest">
+                    {prod.fields.iOSAppLink || prod.fields.androidAppLink? 
+                    <div>
                       <button className="btn-primary btn-light-purple rounded smallest">
-                        APP
+                        <a href={prod.fields.iOSAppLink}>
+                            iOS
+                        </a>
                       </button>
-                    </a>
+                      <button className="btn-primary btn-light-purple rounded smallest ml-3">
+                        <a href={prod.fields.androidAppLink}>
+                          ANDROID
+                          </a>
+                      </button> 
+                    </div> : <p></p>
+                    }
+                      <div className="pt-2">
+                        <button className="btn-primary btn-light-purple rounded smallest">
+                          <a href={prod.fields.docsLink}>
+                            DOCS
+                            </a>
+                        </button>
+                      </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
               </div>
-          </div>
-          <div className="col-12 col-md-4 pb-2">
-            <div className="card shadow">
-              <div className="card-body">
-                <img src={`${baseUrl}img/XYO_icon_colored.svg`} className="img-fluid d-inline mr-3" alt="android-app"/>
-                  <h3 className="d-inline card-title"><strong>Android App</strong></h3>
-                <p className="card-text smaller mr-3">XYO on Android</p>
-                <div className="card-bottom smallest">
-                  <a href="https://play.google.com/store/apps/details?id=network.xyo.appxyoandroid.phone&hl=en_US" target="_blank" rel="noopener noreferrer">
-                    <button className="btn-primary btn-light-purple rounded smallest">
-                      APP
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-        </div>
-          <div className="col-12 col-md-4 pb-2">
-        <div className="card shadow">
-            <div className="card-body">
-              <img src={`${baseUrl}img/XYO_icon_colored.svg`} className="img-fluid d-inline mr-3" alt="archivist-node-app"/>
-              <h3 className="d-inline card-title"><strong>Node Archivist</strong></h3>
-              <p className="card-text smaller mr-3">Archivist on Node</p>
-              <div className="card-bottom smallest">
-                <button className="btn-primary btn-light-purple rounded smallest">
-                  <a href="https://developers.xyo.network/docs/en/archivist/">
-                      DOCS
-                  </a>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>    
+            )
+          )
+        }
+        </div>    
+    </div>
     );
     
     const Showcase = () => {

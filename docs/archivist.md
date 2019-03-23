@@ -15,12 +15,26 @@ layer for doing bound-witness interactions between the Archivist and other Bridg
 
 ## Prerequisites
 
+- You must have node installed. If you don't, the easiest way to get `node` and `npm` is through [`homebrew`](https://brew.sh/) a package manager for Apple systems, for Linux systems use the package manager for your distro.
+
+- We also recommend in most cases to use [NVM - Node Version Manager](https://github.com/creationix/nvm) which will allow you to manage multiple active node.js versions. This may also save you some installation headaches.
+
+**Note** We use the stable `10.15.3` node.js release.
+
+- If you are using linux on ubuntu, you should use commands as the root by entering `sudo su` or you could run `sudo` prior to key commands. This guide will also prompt you for entering `sudo` when needed.
+
+- You must also have yarn installed: `homebrew`: `brew install yarn` or your Linux package manager.
+- **Note** if you are using ubuntu, you can install `node` and `yarn` with these helpful articles:
+  - [Installing `node` on ubuntu](https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/)
+  - [Installing `yarn ` on ubuntu](https://linuxize.com/post/how-to-install-yarn-on-ubuntu-18-04/)
+
 - You must have [docker](https://www.docker.com/get-started) installled and running
   - There are instructions on how to install and run docker in the [get started]((https://www.docker.com/get-started)) guide
   - [Download the Docker Desktop for Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac) for easiest entry
+  - If you are using ubuntu, you'll need to use [Docker CE](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
   - Make sure that docker runs throughout this process
 
-- This node app wizard works optimally with MacOS, and at this time this app is not Windows compatible
+- This node app wizard works macOS and Linux, and at this time this app is not Windows compatible
 
 ## Getting Started
 
@@ -100,13 +114,14 @@ yarn start:archivist
 yarn mock-data
 ```
 
-### Run your package with a simple node command for configuring your archivist
+### Run your node package with a configuration
+ - instead of going directly to `yarn start:archivist` you can run it with your own configuration: 
 
 ```sh
 node packages/app
 ```
 
-You will now be directed to configure your archivist, please follow these steps **exactly** as written (if for some reason you are running any instances on ports (except the database port 3306) you can change the last digit by one - within the recommended ranges as seen below) although in your initial setup you should be okay using the default values given:
+If you want to configure your archivist even further, please follow these steps **exactly** as written (if for some reason you are running any instances on ports (except the database port 3306) you can change the last digit by one - within the recommended ranges as seen below) although in your initial setup you should be okay using the default values given:
 
 ```sh
 No config found, would you like to create one now? (Y/n) · true

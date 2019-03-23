@@ -70,6 +70,13 @@ div.blockImage {
   padding-bottom: 100px;
 }
 
+.truncate {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .carousel {
   height: auto;
   overflow: hidden;

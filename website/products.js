@@ -1,50 +1,4 @@
-/**
- * Copyright (c) 2017-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-// See https://docusaurus.io/docs/site-config for all the possible
-// site configuration options.
-
-// List of projects/orgs using your project for the users page.
-const users = [
-  {
-    caption: 'Coin',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/coin_horizontal_colored.png',
-    infoLink: 'https://xyo.network/',
-    pinned: true,
-  },
-  {
-    caption: 'Everipedia',
-    image: '/img/everipedia.png',
-    infoLink: 'https://everipedia.org/',
-    pinned: true
-  },
-  {
-    caption: 'DRVR',
-    image: '/img/drvr.png',
-    infoLink: 'http://www.drvr.co/',
-    pinned: true
-  },
-  {
-    caption: 'ESRI',
-    image: '/img/esri.png',
-    infoLink: 'https://www.esri.com/',
-    pinned: true
-  },
-  {
-    caption: 'SMK',
-    image: '/img/SMK-Logo.ico',
-    infoLink: 'https://www.smkusa.com/',
-    pinned: true
-  }
-];
-
-const products =
+const products = 
   [
     {
       "id": "rec2mthkBljJ6SLOP",
@@ -271,7 +225,6 @@ const products =
         ],
         "status": "Maintaining",
         "description": "--OVERVIEW--\n\nXY Wiki has a variety of resources that can help you learn more about the company, our products, your fellow employees, and our various projects and departments!",
-        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
         "publicDesc": "No Description",
         "brandingAssetsLink": "https://www.dropbox.com/sh/xbw1chm4ofvz9sl/AABdcZynSomlWYYmkdB2ebRta?dl=0",
         "uiUxLink": "NA",
@@ -316,7 +269,8 @@ const products =
         "valReleasesEnd": [
           "2019-01-25",
           "2019-03-15"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-01-16T23:56:20.000Z"
     },
@@ -355,7 +309,6 @@ const products =
         ],
         "status": "Planning",
         "description": "--OVERVIEW--\n\nThis device will showcase several sensors and allow consumers and enterprise customers to capture a variety of data points that can be stored and queried in the XYO Network. \n\nThe device will be battery powered but not necessarily rechargable",
-        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
         "publicDesc": "No Description",
         "uiUxLink": "NA",
         "brandingAssetsStatus": "Design",
@@ -397,7 +350,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2020-01-23"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-02-11T18:50:41.000Z"
     },
@@ -438,7 +392,6 @@ const products =
         ],
         "status": "Planning",
         "description": "No Description",
-        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
         "publicDesc": "No Description",
         "uiUxLink": "NA",
         "brandingAssetsStatus": "Planning",
@@ -482,7 +435,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-05-23"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-02-11T18:55:28.000Z"
     },
@@ -602,7 +556,6 @@ const products =
         ],
         "status": "Maintaining",
         "description": "--OVERVIEW--\nThe Investor Kit serves as an XY Shareholder's first physical product from the company, and is designed to assuage their fears post-investment. Many investors are new to this kind of opportunity, and want to ensure that we are a real company, they understand their investment, and they receive a product and experience well worth their initial investment. \n\nThe Investor Kit balances formal documentation with creative and thoughtfully designed learning materials, and ultimately should be a cost-effective way to reduce chargebacks, excite the customer, and make the investment feel more life-changing.",
-        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
         "publicDesc": "No Description",
         "uiUxLink": "NA",
         "formFactor": "NA",
@@ -641,7 +594,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-04-01"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-01-14T22:54:59.000Z"
     },
@@ -678,7 +632,6 @@ const products =
         ],
         "status": "Planning",
         "description": "No Description",
-        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
         "publicDesc": "No Description",
         "uiUxLink": "NA",
         "formFactor": "NA",
@@ -719,7 +672,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-28"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-01-14T22:54:52.000Z"
     },
@@ -966,6 +920,11 @@ const products =
       "createdTime": "2019-02-19T18:45:12.000Z"
     },
     {
+      "id": "recHpJl0sC9BGimuC",
+      "fields": {},
+      "createdTime": "2019-03-13T18:44:37.000Z"
+    },
+    {
       "id": "recL650VCcq5Ad5wH",
       "fields": {
         "productId": "XY 4+",
@@ -999,7 +958,6 @@ const products =
         ],
         "status": "Sunsetting",
         "description": "No Description",
-        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
         "publicDesc": "No Description",
         "uiUxStatus": "NA",
         "formFactorStatus": "Released",
@@ -1037,69 +995,10 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-01-01"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-02-20T23:16:43.000Z"
-    },
-    {
-      "id": "recNu9Vn69G3hVUB6",
-      "fields": {
-        "productId": "XYO SCSC",
-        "Division": [
-          "rec64V0S98c0Lul0B"
-        ],
-        "marketingName": "Smart Consensus Smart Contract Library",
-        "Lead": [
-          "recWXhp4QDklhpJpv"
-        ],
-        "Project Manager": [
-          "recO9zK7wbuJRblDb"
-        ],
-        "categories": [
-          "Services"
-        ],
-        "team": [
-          "recWXhp4QDklhpJpv",
-          "rec5sqaRZfdAVI3VP",
-          "recqgRNmfBGOcf9hp"
-        ],
-        "customers": [
-          "recmBFpFwK6l4VaQ5",
-          "recqy2Ra10ZqLPFFb"
-        ],
-        "Product Manager": [
-          "recO9zK7wbuJRblDb"
-        ],
-        "status": "Developing",
-        "description": "The library of all smart contracts that manage XYO governance and on-chain interactions.",
-        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
-        "publicDesc": "The library of all smart contracts that manage XYO governance and on-chain interactions.",
-        "visibility": "Public",
-        "valDivision": [
-          "xyOracle"
-        ],
-        "valPm": [
-          "Justin Fortier"
-        ],
-        "valTeam": [
-          "Kevin Weiler",
-          "Arie Trouw",
-          "Phillip Lorenzo"
-        ],
-        "valLead": [
-          "Kevin Weiler"
-        ],
-        "valCustomers": [
-          "Data Enthusiasts",
-          "Dapp Enthusiasts"
-        ],
-        "valCustomersDesc": [
-          "Want to track, collection, visibility/transparency, and control of their own data. They care more about the visualization and want trusted data, but they are not blockchain",
-          "Build Cool Dapps easily"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork/dapp-scsc-solidity"
-      },
-      "createdTime": "2019-03-21T17:36:04.000Z"
     },
     {
       "id": "recOdAHxzARjJI5au",
@@ -1109,9 +1008,6 @@ const products =
           "rec64V0S98c0Lul0B"
         ],
         "marketingName": "XYO Node.js",
-        "Lead": [
-          "recg5kf0qE6Sq6laL"
-        ],
         "categories": [
           "SDKs"
         ],
@@ -1123,7 +1019,6 @@ const products =
           "recO9zK7wbuJRblDb"
         ],
         "status": "Developing",
-        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
         "docsLink": "https://developers.xyo.network/docs/en/SDK-Package-Node/",
         "visibility": "Public",
         "valDivision": [
@@ -1132,9 +1027,6 @@ const products =
         "valPm": [
           "Justin Fortier"
         ],
-        "valLead": [
-          "Carter Harrison"
-        ],
         "valCustomers": [
           "Data Enthusiasts",
           "Dapp Enthusiasts"
@@ -1142,7 +1034,8 @@ const products =
         "valCustomersDesc": [
           "Want to track, collection, visibility/transparency, and control of their own data. They care more about the visualization and want trusted data, but they are not blockchain",
           "Build Cool Dapps easily"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-03-11T22:40:52.000Z"
     },
@@ -1180,7 +1073,6 @@ const products =
         ],
         "status": "Ideating",
         "description": "--OVERVIEW--\nSpatial is a 3 day event held in San Diego to showcase all of the amazing things that XYO has accomplished as well as providing a venue for us to get likeminded community members together to create discourse around the IoT and Blockchain space. \n\n--5 STAR PRODUCT REQUIREMENTS--\nAt XYO Spatial, gives deep insight from founder XYO Founders. \n\nProvides expert appearances and panels.\n\nGuests are able to network, have fun, and interact with other members of the XYO Community\n\nGuests are able to get a close-up look of our tech in action.",
-        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
         "publicDesc": "No Description",
         "brandingAssetsLink": "https://www.dropbox.com/sh/rld3lqrpro39n0b/AAAsHQSmzQAl_FkxoxTdckGva?dl=0",
         "uiUxLink": "NA",
@@ -1227,7 +1119,8 @@ const products =
         "valReleasesEnd": [
           "2019-06-27",
           "2019-11-07"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-01-16T23:57:02.000Z"
     },
@@ -1266,14 +1159,13 @@ const products =
         ],
         "status": "Planning",
         "description": "No Description",
-        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
         "publicDesc": "No Description",
         "uiUxLink": "NA",
         "brandingAssetsStatus": "Planning",
         "uiUxStatus": "NA",
         "formFactorStatus": "Planning",
         "packagingStatus": "Planning",
-        "visibility": "Private",
+        "visibility": "Public",
         "start": [
           "2019-05-23"
         ],
@@ -1308,7 +1200,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-05-23"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-02-11T18:59:19.000Z"
     },
@@ -1349,7 +1242,6 @@ const products =
         ],
         "status": "Planning",
         "description": "No Description",
-        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
         "publicDesc": "No Description",
         "uiUxLink": "NA",
         "brandingAssetsStatus": "Planning",
@@ -1393,7 +1285,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-05-23"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-02-11T18:57:27.000Z"
     },
@@ -1512,7 +1405,6 @@ const products =
         ],
         "status": "Ideating",
         "description": "Tentatively planned sequel to XY Find It app with expanded feature set, including XYO Network integration, popular features such as a personal finding network, and more. For internal purposes only at this time.",
-        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
         "publicDesc": "No Description",
         "uiUxLink": "NA",
         "formFactor": "NA",
@@ -1553,7 +1445,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-09-26"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-01-15T00:56:13.000Z"
     },
@@ -1859,7 +1752,6 @@ const products =
         ],
         "status": "Developing",
         "description": "--OVERVIEW--\nEach Ocho Box XYO Geomining Kit comes with 8 XY Sentinels. Each one uses Bluetooth to confirm locations and save them to their individual ledgers. They can communicate to each other via Bluetooth, or connect to a nearby phone app to extend their communication via your phone’s location services.\n\n--5 STAR REQUIREMENT-- \n- Users must feel like they are getting a deal by purchasing 8 sentinels at once. \n- The unboxing experience needs to be worthy of being posted on social media\n- Instructions on how to claim your 8 sentinels must be included in the box or easily accessible via links\n- Purchasing an Ocho Box should be available on both our website and our affiliates' sites.",
-        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
         "publicDesc": "No Description",
         "brandingAssetsLink": "https://www.dropbox.com/sh/qcqabzyc0qrxafh/AAB_Ytu9CDNaRRNkQWvfvutHa?dl=0",
         "packaging": "https://www.dropbox.com/sh/9brmtf0mscw5xv0/AACXR_O5PuIaSl13DifetzrTa?dl=0",
@@ -1867,7 +1759,7 @@ const products =
         "uiUxStatus": "Released",
         "formFactorStatus": "Planning",
         "packagingStatus": "Test",
-        "visibility": "Public",
+        "visibility": "Private",
         "start": [
           "2019-02-28"
         ],
@@ -1902,7 +1794,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-02-28"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-01-14T22:55:07.000Z"
     },
@@ -2017,7 +1910,6 @@ const products =
         ],
         "status": "Ideating",
         "description": "No Description",
-        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
         "publicDesc": "No Description",
         "uiUxLink": "NA",
         "formFactor": "NA",
@@ -2057,7 +1949,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-02-28"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-01-16T23:56:48.000Z"
     },
@@ -2464,7 +2357,7 @@ const products =
         "status": "Developing",
         "description": "--OVERVIEW--\nA fully functional XYO toolkit and viewer that allows users to view total addresses on the network, total number of Query/Response Blocks, total stake on the network, and view a map showing where bound witnesses have occurred.\n\nUsers will be able to create a watchlist of devices where they can bound witnesses and payments associated with that address. \n\nUsers will be able to see recent XYO token transactions on the Ethereum Blockchain.\n\nUsers will also be able to see all rewards paid out on the network and withdraw their rewards to their ethereum wallet address. \n\nUsers will be able to stake diviners (Archivists, Bridges, and Sentinels coming soon). \n\nUsers will be able to see wallet addresses of all \"Owners\" on the network. \n\nFinally, users will be able to view developer links, docs, github, and the Founding Hodl'r Registry.\n",
         "logo": "http://cdn.xy.company.s3.amazonaws.com/img/logos/XYONetworkViewer_Logo_Colored.png",
-        "publicDesc": "A fully functional XYO toolkit and viewer that allows users to view the XYO network.\n",
+        "publicDesc": "A fully functional XYO toolkit and viewer that allows users to view total addresses on the network, total number of Query/Response Blocks, total stake on the network, and view a map showing where bound witnesses have occurred.\n\nUsers will be able to create a watchlist of devices where they can bound witnesses and payments associated with that address. \n\nUsers will be able to see recent XYO token transactions on the Ethereum Blockchain.\n\nUsers will also be able to see all rewards paid out on the network and withdraw their rewards to their ethereum wallet address. \n\nUsers will be able to stake diviners (Archivists, Bridges, and Sentinels coming soon). \n\nUsers will be able to see wallet addresses of all \"Owners\" on the network. \n\nFinally, users will be able to view developer links, docs, github, and the Founding Hodl'r Registry.",
         "brandingAssetsLink": "https://www.dropbox.com/sh/e4svbouwri1ped9/AAAMY-zs2Rsvk7eb4J4ClX_Na?dl=0",
         "uiUxLink": "https://www.dropbox.com/sh/7mma0hwy70u0wqb/AADhAhCSRUQwuq48h9MxYvsza?dl=0",
         "formFactor": "NA",
@@ -2549,14 +2442,13 @@ const products =
         ],
         "status": "Planning",
         "description": "No Description",
-        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
         "publicDesc": "No Description",
         "uiUxLink": "NA",
         "brandingAssetsStatus": "Planning",
         "uiUxStatus": "NA",
         "formFactorStatus": "Planning",
         "packagingStatus": "Planning",
-        "visibility": "Private",
+        "visibility": "Public",
         "start": [
           "2019-05-23"
         ],
@@ -2591,7 +2483,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-05-23"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-02-11T19:02:10.000Z"
     },
@@ -2828,7 +2721,6 @@ const products =
         ],
         "status": "Planning",
         "description": "--OVERVIEW--\nThe unique XY Company portal that allows investors to keep track of their investments, follow our company more closely, contact our support team, actively participate in the development of the XY Company vision and roadmap, and purchase more shares in an easy way. Most importantly, with audience growth and re-investing in mind, investors will feel like their purchase allowed them to join a very exclusive part of our community, and that they can follow our company's successes and projects in a way that feels curated to what they are interested in.\n\nUsers will be able to:\n- Buy more XY Equity\n- View all investments\n- View investment \"status\"\n- Re-send SignRequest Email for signature\n- View investor exclusive learning content (articles and videos)\n- Receive important updates, notifications, and news\nSelect or join Drip email campaigns + processes (i.e. Mike's daily emails)\n- Reach XY Company Support easily\n- View XY Company Roadmap\n\n--5 STAR PRODUCT REQUIREMENTS--\n- Lower chargebacks and \"scam\" feeling of the XY Equity experience\n- Easy way to view shares purchases and statuses, and well-supported documentation for investment status (i.e. why they are not yet in Broadridge)\n- Feeling of investor exclusivity and active participation in our growth\n- Help investors learn independently",
-        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
         "publicDesc": "No Description",
         "uiUxLink": "NA",
         "formFactor": "NA",
@@ -2875,75 +2767,10 @@ const products =
         "valReleasesEnd": [
           "2019-02-28",
           "2019-03-28"
-        ]
+        ],
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-01-14T22:57:14.000Z"
-    },
-    {
-      "id": "recvYdsYCUzPH7sLe",
-      "fields": {
-        "productId": "Dataist Black Box",
-        "Division": [
-          "recP0BzB0tkeionAJ"
-        ],
-        "releases": [
-          "recvccBk4QATSfKDd"
-        ],
-        "marketingName": "Dataist Black Box",
-        "Lead": [
-          "rec6RjMFKnmSK99Pb"
-        ],
-        "Project Manager": [
-          "rec6RjMFKnmSK99Pb"
-        ],
-        "team": [
-          "rec6RjMFKnmSK99Pb",
-          "recM1cj6vivPfCUDy",
-          "recDIDHKv895ZoU6Y"
-        ],
-        "customers": [
-          "recvocUl6Z9HEeCuz"
-        ],
-        "Product Manager": [
-          "recGgz913scY9j8zm"
-        ],
-        "status": "Developing",
-        "description": "The Dataism Black Box is the starting point for anyone who wants to participate in the Dataism revolution. Limited to just 5,000 people this box contains everything from the Dataism Mastery course to a geomining kit, from a T-shirt to a guide to using the COIN app.",
-        "visibility": "Private",
-        "start": [
-          "2019-03-28"
-        ],
-        "valDivision": [
-          "xyMedia"
-        ],
-        "valPm": [
-          "Scott Scheper"
-        ],
-        "valTeam": [
-          "Kevin Stanley",
-          "Lindsey Joell",
-          "Paola Batiz"
-        ],
-        "valLead": [
-          "Kevin Stanley"
-        ],
-        "valCustomers": [
-          "Investor Unsophisticated"
-        ],
-        "valCustomersDesc": [
-          "Want money without thinking about how - Emotional. 1. Don't get scammed; 2. Website that affirms their investment; 3. Investment in a company that they can explain; 4. Simplified business model; 5. Roadmaps; 6. Association with companies that they already know; 7. Trust and validation; 8. Technology that works; 9. Company reputations; 10. XYO Technology that looks pro and consistent; 11. Technology that's easy to articulate; 12. Transparency and authenticity; 13. Use cases; 14. Accomplishments; 15. A good story, that they can root for; 16. "
-        ],
-        "valReleases": [
-          "Dataist Black Box 1.0"
-        ],
-        "valReleasesStart": [
-          "2019-03-04"
-        ],
-        "valReleasesEnd": [
-          "2019-03-28"
-        ]
-      },
-      "createdTime": "2019-03-20T17:40:45.000Z"
     },
     {
       "id": "recvawoxRdyG8yNPd",
@@ -2987,7 +2814,7 @@ const products =
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
         "docsLink": "https://github.com/XYOracleNetwork/sdk-dache-nodejs",
-        "visibility": "Public",
+        "visibility": "Private",
         "start": [
           "2019-08-29"
         ],
@@ -3139,14 +2966,10 @@ const products =
           "recYI3D6ILJtZx3cU"
         ],
         "marketingName": "Bridge X",
-        "Lead": [
-          "recg5kf0qE6Sq6laL"
-        ],
         "Product Manager": [
           "recO9zK7wbuJRblDb"
         ],
         "status": "Developing",
-        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
         "visibility": "Public",
         "valDivision": [
           "xyDevices"
@@ -3154,95 +2977,10 @@ const products =
         "valPm": [
           "Justin Fortier"
         ],
-        "valLead": [
-          "Carter Harrison"
-        ]
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png"
       },
       "createdTime": "2019-02-25T23:02:02.000Z"
     }
   ]
 
-const siteConfig = {
-   // Title for your website.
-  title: '', 
-  tagline: 'The source for developers to interact with XYO and its suite of products.',
-  url: 'https://developers.xyo.network', // Your website URL
-  baseUrl: '/', // Base URL for your project */
-  // For github.io type URLs, you would set the url and baseUrl like:
-  //   url: 'https://facebook.github.io',
-  //   baseUrl: '/test-site/',
-
-  // Used for publishing and more
-  projectName: 'xyo-devs',
-  organizationName: 'XYO',
-  // For top-level user or org sites, the organization is still the same.
-  // e.g., for the https://JoelMarcey.github.io site, it would be set like...
-  //   organizationName: 'JoelMarcey'
-
-  // For no header links in the top nav bar -> headerLinks: [],
-  headerLinks: [
-    { doc: 'Introduction', label: 'Guides'},
-    { href: 'http://reference.xyo.network/', label: 'Reference'},
-    {page: 'help', label: 'Help'},
-  ],
-
-  // If you have users set above, you add it here:
-  users,
-  products,
-
-  /* path to images for header/footer */
-  headerIcon: 'img/XYODevelopers_XYO_Logo.png',
-  favicon: 'img/XYO_icon_colored.png',
-  /* Colors for website */
-  colors: {
-    primaryColor: '#232756',
-    secondaryColor: '#8d8fc6',
-  },
-
-  fonts: {
-    myFont: [
-      "Titillium Web",
-      "Serif"
-    ],
-    myOtherFont: [
-      "-apple-system",
-      "system-ui"
-    ]
-  },
-
-  // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} XYO`,
-
-  highlight: {
-    // Highlight.js theme to use for syntax highlighting in code blocks.
-    theme: 'sunburst',
-  },
-
-  // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://buttons.github.io/buttons.js', 'https://code.jquery.com/jquery-3.3.1.slim.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', 'https://cdn.xy.company/js/gtm_developers.xyo.network.js'],
-
-  // On page navigation for the current documentation page.
-  onPageNav: 'separate',
-  // No .html extensions for paths.
-  cleanUrl: true,
-
-  // Open Graph and Twitter card images.
-  ogImage: 'img/XYO_full_colored.png',
-  twitterImage: 'img/XYO_full_colored.png',
-
-  // Show documentation's last contributor's name.
-  // enableUpdateBy: true,
-
-  // Show documentation's last update time.
-  enableUpdateTime: true,
-
-  stylesheets: ['https://fonts.googleapis.com/css?family=Titillium+Web', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'],
-
-  useEnglishUrl: true,
-
-  // You may provide arbitrary config keys to be used as needed by your
-  // template. For example, if you need your repo's URL...
-  //   repoUrl: 'https://github.com/facebook/test-site',
-};
-
-module.exports = siteConfig;
+module.exports = products
