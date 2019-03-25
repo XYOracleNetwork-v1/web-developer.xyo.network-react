@@ -155,9 +155,9 @@ class Index extends React.Component {
             <div className="col-12 col-md-4 pb-5" key={prod.fields.id}>
               <div className="card shadow h-100">
                 <div className="card-body">
-                    { prod.fields.logo ? <img src={prod.fields.logo} className="img-fluid d-inline mr-2 pr-0 h-auto w-100" alt={prod.fields.marketingName}/>: <p></p>}
-                    <h3 className="d-inline card-title">{prod.fields.marketingName}</h3>
-                    { prod.fields.publicDesc === "No Description" ? <br></br> : <p className="card-text smaller mr-3">{prod.fields.publicDesc}</p> }
+                    { prod.fields.logo ? <img src={prod.fields.logo} className="img-fluid d-inline h-auto" alt={prod.fields.marketingName}/>: <p></p>}
+                    <h3 className="card-title">{prod.fields.marketingName}</h3>
+                  {prod.fields.publicDesc === "No Description" ? <br></br> : <p className="smaller">{prod.fields.publicDesc}</p> }
                     <p>{prod.fields.valDivision} Division</p>
                     <p><strong>Status:</strong> {prod.fields.status}</p>
                     <br></br>

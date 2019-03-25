@@ -2,6 +2,9 @@
 id: new-xyo-suite
 title: Using our newly released XYO Products
 ---
+<div class="alert alert-warning text-center" role="alert">
+  This software is in beta using a testnet. This means no actual currency is being exchanged using these platforms. Future updates for currency will follow after mainnet deployment.
+</div>
 
 # Welcome to the Next Stage in the Geomining Revolution
 <h1 align="left">

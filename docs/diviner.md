@@ -3,6 +3,10 @@ id: diviner
 title: Diviner App
 ---
 
+<div class="alert alert-danger text-center" role="alert">
+  Difficulty Level: Advanced
+</div>
+
 ## Upgrade coming soon
 Before you begin, we wanted to let you know that there will be an update to this guide to decrease the setup time before getting your Diviner up and running
 
