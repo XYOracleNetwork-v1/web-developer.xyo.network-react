@@ -134,7 +134,8 @@ const products =
           "2019-03-28",
           "2019-04-25",
           "2019-05-23"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-16T19:59:53.000Z"
     },
@@ -316,7 +317,8 @@ const products =
         "valReleasesEnd": [
           "2019-01-25",
           "2019-03-15"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-16T23:56:20.000Z"
     },
@@ -397,7 +399,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2020-01-23"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-02-11T18:50:41.000Z"
     },
@@ -482,7 +485,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-05-23"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-02-11T18:55:28.000Z"
     },
@@ -566,7 +570,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-01-31"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-07T21:32:57.000Z"
     },
@@ -641,7 +646,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-04-01"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-14T22:54:59.000Z"
     },
@@ -719,7 +725,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-28"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-14T22:54:52.000Z"
     },
@@ -880,7 +887,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-04-25"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-14T22:57:24.000Z"
     },
@@ -961,7 +969,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-20"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-02-19T18:45:12.000Z"
     },
@@ -1037,7 +1046,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-01-01"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-02-20T23:16:43.000Z"
     },
@@ -1228,7 +1238,8 @@ const products =
         "valReleasesEnd": [
           "2019-06-27",
           "2019-11-07"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-16T23:57:02.000Z"
     },
@@ -1309,7 +1320,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-05-23"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-02-11T18:59:19.000Z"
     },
@@ -1394,7 +1406,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-05-23"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-02-11T18:57:27.000Z"
     },
@@ -1476,7 +1489,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-28"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-16T21:56:57.000Z"
     },
@@ -1554,7 +1568,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-09-26"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-15T00:56:13.000Z"
     },
@@ -1659,7 +1674,8 @@ const products =
           "2019-04-25",
           "2019-05-23",
           "2019-06-27"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-14T22:54:10.000Z"
     },
@@ -1742,7 +1758,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-28"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-16T23:49:04.000Z"
     },
@@ -1821,7 +1838,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-28"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-11T17:29:08.000Z"
     },
@@ -1903,7 +1921,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-02-28"
-        ]
+        ],
+        "docsLink": "https://geominers.xy.company/geomining-kit-secure-checkout?pid=1662211"
       },
       "createdTime": "2019-01-14T22:55:07.000Z"
     },
@@ -2058,7 +2077,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-02-28"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-16T23:56:48.000Z"
     },
@@ -2217,7 +2237,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-28"
-        ]
+        ],
+        "docsLink": "https://xyo.network/geomining/"
       },
       "createdTime": "2019-01-14T22:54:59.000Z"
     },
@@ -2424,7 +2445,8 @@ const products =
           "2019-04-25",
           "2019-05-23",
           "2019-09-26"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-09T02:05:29.000Z"
     },
@@ -2511,7 +2533,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-28"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-16T20:20:37.000Z"
     },
@@ -2592,7 +2615,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-05-23"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-02-11T19:02:10.000Z"
     },
@@ -2710,7 +2734,8 @@ const products =
           "2019-05-23",
           "2019-06-26",
           "2019-10-24"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-11T17:28:08.000Z"
     },
@@ -2790,7 +2815,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-28"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-16T23:56:27.000Z"
     },
@@ -2876,7 +2902,8 @@ const products =
         "valReleasesEnd": [
           "2019-02-28",
           "2019-03-28"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-14T22:57:14.000Z"
     },
@@ -2922,7 +2949,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-04-25"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-03-25T15:47:51.000Z"
     },
@@ -2988,7 +3016,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-28"
-        ]
+        ],
+        "docsLink": "https://www.stateofthefutureaddress.com/dataist-blackbox-checkout"
       },
       "createdTime": "2019-03-20T17:40:45.000Z"
     },
@@ -3174,7 +3203,8 @@ const products =
           "2019-04-25",
           "2019-05-23",
           "2019-01-01"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-06T19:09:09.000Z"
     },
@@ -3204,7 +3234,8 @@ const products =
         ],
         "valLead": [
           "Carter Harrison"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-02-25T23:02:02.000Z"
     }

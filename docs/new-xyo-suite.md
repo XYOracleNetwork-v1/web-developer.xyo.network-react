@@ -64,8 +64,6 @@ To start using the Bridge X, you will need the device, and as back up, an ethern
 
 ### Using the XYO app to get data for your Bridge X
 
-**Dashboard image here**
-
 ### Additional notes on the Bridge X
 
 - Make sure you check the XYO app ocassionally to confirm that your bridge is still active and gathering heuristics from nearby Sentinel X devices.
@@ -75,8 +73,9 @@ To start using the Bridge X, you will need the device, and as back up, an ethern
 
 - You should also check out the Matrix for more info on the Archivists and Diviners that are using the date that your Bridge X is relaying. 
 
-**place Matrix dashboard view here*
-
+<h1 align="left">
+  <img alt="matrix-dashboard" src="/docs/assets/main_dashboard_matrix.png">
+</h1>
 
 **You have just executed one of the core essentials of the XYO Network and the Matrix, celebrate by going to our [Matrix Guide]() to learn more about the Matrix and setting up your archivist to gather heuristics from your bridge, and if you really want to dive deep, go to our [Developer Portal]()
 
@@ -165,21 +164,60 @@ Above the checklist you should see a **Note** which tells you that in order to c
 
 **The Matrix will allow you to receive Eth and XYO from a Kovan faucet**
 
-Now, you will need Eth, so click on `Request Eth`
+Now, you will need Eth, so click on the **+** button next to **Eth in wallet**
 - This will direct you to a Kovan Faucet, and you will need a GitHub account
 - Copy the first address from your MetaMask wallet and paste that into the account field in the Kovan Wallet
 - Click on `Send me KETH!`
 - The transaction will take you a few moments
 - **Note** you can only get Eth from this faucet once every 24 hours
 
+Now, you will need XYO, so click on the **+** button next to **XYO in wallet**
 - If you have not received XYO Tokens in the last **2 hours** you will receive **2000** XYO Tokens
   - **Note** if you have received XYO tokens within 2 hours of your request, you will not receive any more tokens until **2 hours** from your last request. 
 - **2000** XYO should be more than sufficient to get you going on using the Matrix, as each request will cost **500** XYO
-- When you click the **Get XYO** button you will receive confirmation of a successful transaction
-- You will notice that the available XYO and ETH have been updated
-- You now have the funds needed to make a request.
+- After clicking on the checkbox, you will see a pop-up modal with your metamask transaction confirmation. 
+    - MetaMask is asking you to confirm that you want to complete this transaction
+    - Click on **CONFIRM**
+- After a few moments, you should see a notification from Google Chrome that the MetaMask transaction is complete. It should be a number such as `1`
+- You will notice that the available XYO has been updated to `2000 XYO`
+- You now have the XYO needed to make a request.
 
-- When you click on **+Create Request** again, you will now see a modal pop up:
+For our final step you will need to authorize the Matrix to use our SCSC in order to execute request/response cycles
+- Click on the **+** button next to **XYO Contract Authorization**
+- When you click on this button, MetaMask will pop up with a notice that some of your test XYO and some kovan eth will be needed to approve this transaction. This is to cover gas. 
+- Click on **CONFIRM** 
+- Once you confirm, wait a few moments for the transaction to confirm, you should see a notification that the transaction is complete
+- You will see all of the items with a green checkmark next to them
+- Click the **Next** button to go make a request!
+
+### Submitting a request
+
+- Your modal will shift from **+Create Request** to **Make a Request**
+<h1 align="left">
+  <img alt="matrix-request-modal" src="/docs/assets/request_modal.png">
+</h1>
+- This new modal has **Request Type** 
+- At this time you can only select **Intersection**
+- Once you select **Intersection** you will see two fields **Party 1** and **Party 2**
+<h1 align="left">
+  <img alt="matrix-request-entry" src="/docs/assets/intersection_entry.png">
+</h1>
+- Enter some data
+- Once you enter data you will see another MetaMask pop up to ask your confirm this contract interaction. Again this rate is small and covers gas fees
+<h1 align="left">
+  <img alt="matrix-request-dashboard" src="/docs/assets/request_confirmation.png">
+</h1>
+- Click **CONFIRM** to confirm your request transaction
+- Similar to the other confirmations from MetaMask, you will see a notification that the transaction is confirmed
+- After confirmation you will see your request updated on the **requests view**
+<h1 align="left">
+  <img alt="matrix-request-dashboard" src="/docs/assets/matrix_dashboard.png">
+</h1>
+    - The information on featured in this view is your block with:
+        - Address of requester (that's you and your wallet address)
+        - Answer - which will be unfulfilled until a response
+        - Type of transaction (which will be an intersection as mentioned earlier in the guide)
+        - XYO Bounty - the reward to the responder - this comes from your XYO balance
 
 ### Submitting a Response
 

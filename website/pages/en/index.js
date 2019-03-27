@@ -165,22 +165,22 @@ class Index extends React.Component {
                     {prod.fields.iOSAppLink || prod.fields.androidAppLink? 
                     <div>
                       <button className="btn-primary btn-light-purple rounded smallest">
-                        <a href={prod.fields.iOSAppLink}>
+                        <a href={prod.fields.iOSAppLink} target="_blank" rel="noopener noreferrer">
                             iOS
                         </a>
                       </button>
                       <button className="btn-primary btn-light-purple rounded smallest ml-3">
-                        <a href={prod.fields.androidAppLink}>
+                        <a href={prod.fields.androidAppLink} target="_blank" rel="noopener noreferrer">
                           ANDROID
-                          </a>
+                        </a>
                       </button> 
                     </div> : <p></p>
                     }
                       <div className="pt-2">
                         <button className="btn-primary btn-light-purple rounded smallest">
-                          <a href={prod.fields.docsLink}>
+                          <a href={prod.fields.docsLink} target="_blank" rel="noopener noreferrer">
                             DOCS
-                            </a>
+                          </a>
                         </button>
                       </div>
                       </div>
