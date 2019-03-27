@@ -31,7 +31,7 @@ We are also thrilled to introduce you to The **Matrix**, a new member of the XYO
 
 - Bridge X device
 - [Google Chrome Browser](https://www.google.com/chrome/) or [Firefox Browser](https://www.mozilla.org/en-US/firefox/)
-- Access to router information 
+- Access to router and router information 
 - Ethernet cable
 - HDMI Cable 
 
@@ -48,26 +48,39 @@ We recommend that you review these items prior to starting, but if you are too e
 
 To start using the Bridge X, you will need the device, and as back up, an ethernet cable and/or an HDMI cable.
 
-- Set up the Bridge X near your internet router if possible for maximum effectiveness
-- Connect the Bridge X to a power outlet
-- Visit **app.xyo.network**
-- Click **Sign In**
-- You will now see the new XYO App Dashboard
-- Click **Devices** which is in the main navigation bar next to **Bound Witnesses**
-- With the XYO App you can connect to a sentinel or a bridge. Scroll down the dashboard
-- Click **Connect More Bridges** 
-- A modal interface with the Bridge will appear with your IP information and a request to pair like so: 
-**INSERT MODAL IMAGE HERE**
-- You may notice possible bluetooth devices appear in the modal that are **unknown or unsupported devices** these devices are not bridges, and most likely your smart phone, smart watch, or other bluetooth enabled device
-- When you do have a bridge connected, you will notice it immediately as a supported device
-- Through the Bridge interface you confirm your bridge and then update your archivist and wifi
+**Three Options to Connect Your Bridge X**
 
-### Using the XYO app to get data for your Bridge X
+### First option
 
-### Additional notes on the Bridge X
+- Connect your Bridge X to a power source
+- Connect your Bridge to your Router using an Ethernet Cable
+- Check to see if indicator lights are green near the ethernet and power ports
+- Using your computer, point your browser to **xyo.local**
+- You should see your Bridge and its IP address information on the **xyo.local** site
+- Once you see this and confirm, then go ahead and click on the **Connect** button to connect the Bridge to the XYO Network!
 
-- Make sure you check the XYO app ocassionally to confirm that your bridge is still active and gathering heuristics from nearby Sentinel X devices.
-- 
+### Second Option (Using Google Chrome or Firefox)
+- Connect your Bridge X to a power source
+- Connect your Bridge to your Router using an Ethernet Cable
+- Check to see if indicator lights are green near the ethernet and power ports
+- Using your computer, point your browser to **app.xyo.network**
+- In the main app dashboard, you will see a **Scan for Devices** button
+- Click **Scan For Devices**
+- The app will take a few moments in scanning for your Bridge X, you will see an indicator for progress
+- Once the app discovers the Bridge, you can verify the name and IP address of your Bridge X
+- Click **Connect**
+- You are now connected to your Bridge X!
+
+### Third Option
+- Connect your Bridge X to a power source
+- Connect your Bridge to your Router using an Ethernet Cable
+- Check to see if indicator lights are green near the ethernet and power ports
+- Connect your Bridge X to a display of your choice using an HDMI cable
+- You should now see a UI on your display
+- If you do see this, go ahead and enter the values that it prompts for
+- These values are your wifi username and password
+
+**If you need reminders on using the Bridge X, you can also [click here](https://developers.xyo.network/docs/en/bridge-x/) to check out our Bridge X guide**
 
 ### Using the Matrix
 
@@ -119,15 +132,27 @@ We recommend that you review these items prior to starting, but if you are too e
 
 To start using the Matrix, you will need to set up your MetaMask for the accounts that you have that contain XYO.
 
-If you do not currently have a wallet, click on the **create wallet** in the **New to MetaMask?** screen
+If you do not currently have a wallet, click on the **CREATE A WALLET** in the **New to MetaMask?** screen
+
+<h1 align="left">
+  <img alt="metamask-intro" src="/docs/assets/new_to_metamask.png">
+</h1>
 
 If you clicked on one of the above MetaMask links, that should've started you on the installation and setup of your MetaMask, including your seed phrase (see below).
 
-Once you have setup your MetaMask, you will be directed to the main dashboard
+<h1 align="left">
+  <img alt="backup-seed-phrase" src="/docs/assets/backup_phrase.png">
+</h1>
+
+You should now see your MetaMask info: 
+
+<h1 align="left">
+  <img alt="metamask-dashboard" src="/docs/assets/metamask_dashboard.png">
+</h1>
 
 **This Dashboard includes:** 
 - Your primary account number 
-- How much **eth** and **XYO** you have in the account 
+- How much **eth** you have in the account 
   - This will vary depending on which network you are in - to use the Matrix in this Beta State, you will use the ***Kovan Test Network***
 - Transaction History
 - Deposit/Send buttons
@@ -137,9 +162,29 @@ Once you have setup your MetaMask, you will be directed to the main dashboard
 ### Connecting Your Wallet
 
 - It's time to go into the Matrix
-- Click on **Connect Wallet** on the main Matrix Dashboard
-  - After clicking you will see that MetaMask will pop-up again to prompt you to confirm that *XYO Matrix* can connect to your account
-- After MetaMask confirmation the Matrix will be updated with your XYO token balance and address
+
+Once you have setup your MetaMask, point your browser to **matrix.xyo.network**
+
+You should see a dashboard that looks like this: 
+
+<h1 align="left">
+  <img alt="matrix-before-sign-in" src="/docs/assets/pre_connect_wallet.png">
+</h1>
+
+Click on **Connect Wallet** which is in the upper right hand corner of the Matrix
+
+Your MetaMask will ask for confirmation before connecting your wallet to the Matrix
+
+<h1 align="left">
+  <img alt="metamask-connect-matrix" src="/docs/assets/metamask_connect_matrix.png">
+</h1>
+
+Click **CONNECT**
+
+Once you click connect, you will be directed back into the Matrix Dashboard, now the **Connect Wallet** button should be replaced by your account address from MetaMask, along with a `0` balance for both **ETH** and **XYO**. The exmaple screenshot does have a balance, which we will get together 
+<h1 align="left">
+  <img alt="matrix-dashboard" src="/docs/assets/main_dashboard_matrix.png">
+</h1>
 
 **Once you have MetaMask setup and have connected your wallet you will be able to go to `Network Requests`, then `create request`, which will prompt the Matrix to direct you to our Kovan faucet so you can receive XYO Tokens**
 
