@@ -103,17 +103,7 @@ yarn build
 
 **Note** This will take a moment, so be patient, it will take around 30 seconds.
 
-## Start the Diviner
-
-```sh
-yarn start:diviner
-```
-
-### Deploying the Pay On Delivery Smart Contract
-
-**NOTE** Keep this terminal window open and leave it alone after starting the Diviner
-
-### Run your package with a simple node command
+## Configure your Diviner
 
 ```sh
 node packages/app
@@ -140,7 +130,7 @@ What is your public ip address? · 0.0.0.0
 ```sh 
 What port would you like to use for your peer to peer protocol? · 11500
 ``` 
-*Note* Make sure that this port is different than the archivist port, or any other port that might be in use. 
+*Note* Make sure that you use this port: `11500` specifically for your diviner. 
 
 ```sh 
 Do you want to add bootstrap nodes? (Y/n) · true
@@ -178,16 +168,29 @@ What port would you like to use for your peer to peer protocol? · 11000
 ``` 
 This is your bound witness port, it should be different from the diviner port
 
+Enter our IPFS host value - this will make it easier for you to interact with our smart contracts to use the diviner
+```sh
+What is the IPFS host value › ipfs.layerone.co
+```
+Enter the IPFS Port 
+```sh
+What is the IPFS port value › 5002
+```
+Enter the IPFS protocol - we will use `https`
+```sh
+What is the IPFS protocol? …
+❯ https
+```
 Ensure that the component features for support are Diviner
 ```sh 
 Which component features do you want your Xyo Node to support? · Diviner
 ``` 
 If you select diviner, you won't get the correct options to set up an Diviner
 
-Supply the diviner with an Ethereum node address - **Note** we recommend that you use a local instance for this exercise at port `8545`
+Supply the diviner with an Ethereum node address - here we will supply you with one
 
 ```sh 
-What is your Ethereum Node address? › http://127.0.0.1:8545
+What is your Ethereum Node address? › wss://kovan.infura.io/ws/v3/8f1e6c44394f4366a49095d9cac828e2
 ```
 
 Supply the diviner with an account address (this would come from Ganache *copy the first address from your accounts list when you started the ganache service*)
@@ -196,10 +199,63 @@ Supply the diviner with an account address (this would come from Ganache *copy t
 What is your Ethereum Account address? This will start with `0x` ›
 ```
 
-Supply the diviner with the Pay On Delivery smart contract address
+Now, keep this in mind, for this question it will ask you for your Ethereum Private Key. You can get this from the Ganache service. Since this configuration is creating a yaml file (if you need to learn more about yaml, [click here](https://yaml.org/)) your diviner is relatively safe as long as you don't share or commit this file to a code repository. Also, we are starting up a diviner in a test environment so **do not use any ethereum accounts that have any real currency on the mainnet**. This is key! Make sure that the Ganache Wallet you are using has accounts and mnemonic phrase only on testnets! Make sure that you copy the first private key from the array of private keys (since you are using the first address from your accounts list) the private key is slightly longer, but also starts with `0x`.
+
+```sh
+What is your Ethereum Private key? ›
+```
+
+Since we are all running on a testnet, we want you to utilize our Simple Consensus Smart Contract Library (SCSC)
+
+Here is the complete list of smart contract addresses in the library and their IPFS hashes:
+
+SCSC addresses
+```sh
+XyStakingConsensus: 0xE5A849ae2fB5dDd174678897f22AFf9C213380a3
+XyGovernance: 0xC22747981aC1181D898832df92c43Ccf005C098B
+XyPayOnDelivery: 0xE85d3091d7FDA10B2BEA82460E675C9fCCB06Cf9 
+```
+SCSC IPFS Hashes 
+```sh
+XyStakingConsensus: QmQ22mRgJZ22sZBwVAUjXKiFnMQ7VgTXgWQzC1sdeYXXso 
+XyGovernance: QmYAMuDs83cC7uWq3u28GqcNzdt3CcQG5HWzuHkdGWE1Q4
+XyPayOnDelivery: QmVfa5itDNxqPo7NR7qa8Ce3a1MCAaVQAPVLUQyLVf8bSP 
+```
+
+Supply the diviner with the XyStakingConsensus smart contract address
 
 ```sh 
-What is the PayOnDelivery contract address? This will start with `0x` ›
+What is the XyStakingConsensus contract address? This will start with `0x` ›
+```
+
+Supply the diviner with the XyStakingConsensus IPFS Hash
+
+```sh 
+What is the XyStakingConsensus IPFS address? This will start with `Qm` ·
+```
+
+Supply the diviner with the XyGovernance smart contract address
+
+```sh 
+What is the XyGovernance contract address? This will start with `0x` ›
+```
+
+Supply the diviner with the XyGovernance IPFS Hash
+
+```sh 
+What is the XyGovernance IPFS address? This will start with `Qm` ›
+```
+
+Supply the diviner with the XyPayOnDelivery smart contract address
+
+```sh 
+What is the XyPayOnDelivery contract address? This will start with `0x` ›
+```
+
+Supply the diviner with the XyPayOnDelivery IPFS Hash
+
+```sh 
+What is the XyPayOnDelivery IPFS address? This will start with `Qm` ›
 ```
 
 Set up your Diviner with a GraphQL Server
@@ -215,9 +271,29 @@ Press enter to set up all of the GraphQL endpoints
 Which GraphQL api endpoints would you like to support? (use space-bar to toggle selection. Press enter once finished) · about, blockByHash, blockList, intersections, blocksByPublicKey, entities
 ```
 
-Start the node
+We will not start the node yet, there is one more thing we need to do
 ```sh 
-Do you want to start the node after configuration is complete? (Y/n) · true
+Do you want to start the node after configuration is complete? (Y/n) · false
+```
+
+Open `packages/app` from the current directory in another terminal tab or window
+
+- Find your `<Diviner Name>.yaml` file
+- Look for the `ethereum` configuration under `diviner`
+- Add this to the configuration under `account`: 
+  ```yaml
+  salt: cf82e4a9b4187f4e
+  ```
+- Replace the `privateKey` with this:
+  ```yaml
+  encryptedKey: >-
+        a6a444bab66e1a29a4f3249f2db54543f38dcea3c799a547a8533b13b5da6d4476b41b43ac55bfbc1aaa8fe5363763f791cc90c950794fe9227a5e5dda218c1cd740f119e380ce4ed3ee01389cb77e5b
+  ```
+
+Once you do that start the diviner: 
+
+```sh
+yarn start <Your Diviner Name>
 ```
 
 ## Congratulations! You have now started an XYO Diviner!
