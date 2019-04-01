@@ -1,5 +1,9 @@
 #### 2.2.1 (2019-04-01)
 
+##### Chores
+
+*  update dependencies and add changelog generator ([dcb1faea](https://github.com/xycorp/web-developer.xyo.network-react.git/commit/dcb1faea38aaacd346786fbcbdd378cf8dcb3e35))
+
 ##### Documentation Changes
 
 *  update to payable demo, inidicate that this is sunsetting ([c275fbab](https://github.com/xycorp/web-developer.xyo.network-react.git/commit/c275fbabe30b7ea2d0504f38c382067be07d9884))
