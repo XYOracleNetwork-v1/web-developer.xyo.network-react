@@ -1,6 +1,6 @@
 ---
 id: new-xyo-suite
-title: Using our newly released XYO Products
+title: Aristotle Release
 ---
 <div class="alert alert-warning text-center" role="alert">
   This software is in beta using a testnet. This means no actual currency is being exchanged using these platforms. Future updates for currency will follow after mainnet deployment.
@@ -263,10 +263,6 @@ For our final step you will need to authorize the Matrix to use our SCSC in orde
         - Answer - which will be unfulfilled until a response
         - Type of transaction (which will be an intersection as mentioned earlier in the guide)
         - XYO Bounty - the reward to the responder - this comes from your XYO balance
-
-### Submitting a Response
-
-
 
 **You have just executed one of the core essentials of the XYO Network and the Matrix, celebrate by going to our [Bridge X Guide]() and set up your bridge to gather and transmit key heuristics, and if you really want to dive deep, go to our [Developer Portal]()
 
