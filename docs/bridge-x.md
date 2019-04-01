@@ -71,5 +71,3 @@ Go into a terminal window
 ```sh 
   sudo dd if=./xyobridge.img of=/dev/<your parent disks name> bs=1m
 ```
-
-
