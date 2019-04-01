@@ -45,3 +45,31 @@ title: Bridge X
 - Check out app.xyo.network for your Bridge's activity
 - Check out our Matrix
 - Try starting up your first Archivist!
+
+## Downloading an image to your Bridge X to update it
+
+### MacOS
+
+- First plug your SDCard into your chosen dongle USB to SDCard reader
+- Open your Mac's disk utility and navigate to 16gb disk NORELSYS 1081
+- Click Erase
+- Select ExFAT as your format for the new partition
+- Check for successful erase
+- Click on the info button in the disk utility
+- Scroll down to the parent disks
+- Take note of the parent disks name
+
+Go into a terminal window
+- Navigate to the image 
+  - In downloads (or wherever you keep your downloads) .img file
+- Enter this command 
+```sh 
+  sudo diskutil unmountDisk /dev/<your parent disks name>
+```
+
+- Then install image to the Bridge
+```sh 
+  sudo dd if=./xyobridge.img of=/dev/<your parent disks name> bs=1m
+```
+
+
