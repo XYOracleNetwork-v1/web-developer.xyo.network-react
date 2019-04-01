@@ -2,13 +2,13 @@
   "docs": {
     "Getting Started": ["getting-started"],
     "XYO Nodes Introduction": ["Introduction"],
-    "Interacting with XYO Nodes": ["new-xyo-suite"],
+    "XYO Node Guides": ["new-xyo-suite"],
     "Diviner": ["diviner"],
     "Archivist": ["archivist"],
     "Bridge": ["bridge-x"],
     "Sentinel": ["sentinel"],
     "Smart Contract Apps": ["dapploy", "dapper"],
-    "Payable on Delivery Demo": ["payable-demo"],
+    "Demos": ["payable-demo"],
     "SDKs": [
       "SDK-Package-Node",
       "SDK-Core-Swift",
