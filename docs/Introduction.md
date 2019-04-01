@@ -3,6 +3,9 @@ id: Introduction
 title: The 4 Node Types 
 sidebar_label: The 4 Node Types
 ---
+<div class="alert alert-primary text-center" role="alert">
+  Difficulty Level: Easy
+</div>
 
 ![sentinel](assets/sentinal_beacons.png)
 

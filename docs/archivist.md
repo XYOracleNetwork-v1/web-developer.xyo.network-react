@@ -2,6 +2,9 @@
 id: archivist
 title: Archivist App
 ---
+<div class="alert alert-info text-center" role="alert">
+  Difficulty Level: Intermediate
+</div>
 
 # Getting started with an XYO Archivist
 

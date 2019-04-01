@@ -20,6 +20,10 @@ Here's how we did it:
 
 We've gone through the hoops of deploying dApps on the Ethereum Network and have nuked out all of the annoying parts to make dapployment a breeze.
 
+<div class="alert alert-info text-center" role="alert">
+  Difficulty Level: Intermediate
+</div>
+
 # Let's Get Started
 
 1. Install from source to get access to the sample projects. Remember, 'YARN ALL THE THINGS' from the main project dir by running this:

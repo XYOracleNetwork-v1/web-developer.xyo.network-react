@@ -1,39 +1,73 @@
 ---
 id: bridge-x
-title: Bridge X on Chrome 
+title: Bridge X
 ---
 
-## Connecting to the Bridge X using Google Chrome (version 72.0.3626.121 or later)
+<div class="alert alert-info text-center" role="alert">
+  Difficulty Level: Intermediate
+</div>
 
-### First download [Google Chrome](https://www.google.com/chrome/)
+## Three Options to Connect Your Bridge X
 
-### Now connect and ensure the Bridge X is on
+### First option
 
-### In Chrome, point your browser to our [XYO App](app.xyo.network)
+- Connect your Bridge X to a power source
+- Connect your Bridge to your Router using an Ethernet Cable
+- Check to see if indicator lights are green near the ethernet and power ports
+- Using your computer, point your browser to **xyo.local**
+- You should see your Bridge and its IP address information on the **xyo.local** site
+- Once you see this and confirm, then go ahead and click on the **Connect** button to connect the Bridge to the XYO Network!
 
-### Click on `connect more bridges` you should see all nearby bridges, with it's current ip address, this is how you would connect
+### Second Option (Using Google Chrome or Firefox)
+- Connect your Bridge X to a power source
+- Connect your Bridge to your Router using an Ethernet Cable
+- Check to see if indicator lights are green near the ethernet and power ports
+- Using your computer, point your browser to **app.xyo.network**
+- In the main app dashboard, you will see a **Scan for Devices** button
+- Click **Scan For Devices**
+- The app will take a few moments in scanning for your Bridge X, you will see an indicator for progress
+- Once the app discovers the Bridge, you can verify the name and IP address of your Bridge X
+- Click **Connect**
+- You are now connected to your Bridge X!
 
-### Local connection instructions
+### Third Option
+- Connect your Bridge X to a power source
+- Connect your Bridge to your Router using an Ethernet Cable
+- Check to see if indicator lights are green near the ethernet and power ports
+- Connect your Bridge X to a display of your choice using an HDMI cable
+- You should now see a UI on your display
+- If you do see this, go ahead and enter the values that it prompts for
+- These values are your wifi username and password
 
-- In the case that you don't have an external internet connection, you can use XYO's app locally to interact with the Bridge UI. 
+### After you connect your Bridge X
 
-- Your Bridge X and Browser would beed to be in the same WiFi network. 
+- Go ahead and disconnect the Ethernet from the Bridge X
+- Check out app.xyo.network for your Bridge's activity
+- Check out our Matrix
+- Try starting up your first Archivist!
 
-- The bridge will respond once connected (should take around 2 minutes)
+## Downloading an image to your Bridge X to update it
 
-- Keep in mind that if you disconnect from the network, you may need to reconnect to the bridge (you will be prompted with a reconnect button)
+### MacOS
 
-- This control will be through bluetooth control 
+- First plug your SDCard into your chosen dongle USB to SDCard reader
+- Open your Mac's disk utility and navigate to 16gb disk NORELSYS 1081
+- Click Erase
+- Select ExFAT as your format for the new partition
+- Check for successful erase
+- Click on the info button in the disk utility
+- Scroll down to the parent disks
+- Take note of the parent disks name
 
-- This will send a control request to your Bridge X
+Go into a terminal window
+- Navigate to the image 
+  - In downloads (or wherever you keep your downloads) .img file
+- Enter this command 
+```sh 
+  sudo diskutil unmountDisk /dev/<your parent disks name>
+```
 
-### Connect using the IP address 
-
-### You should be able to use the interactive components to *remote* control your Bridge X
-
-### Key control points for the Bridge X
-
-- 
-- 
-- 
-- 
+- Then install image to the Bridge
+```sh 
+  sudo dd if=./xyobridge.img of=/dev/<your parent disks name> bs=1m
+```

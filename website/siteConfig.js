@@ -134,7 +134,8 @@ const products =
           "2019-03-28",
           "2019-04-25",
           "2019-05-23"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-16T19:59:53.000Z"
     },
@@ -177,7 +178,7 @@ const products =
         "status": "Developing",
         "description": "--OVERVIEW--\nThe source for developers to interact with XYO and its suite of products, including node apps, SDKs, getting started guides, community chat, and API reference.\n\nUsers will be able to:\n- Learn about XYO, the network, and the suite of products \n- Start up an Archivist and/or Diviner through our easy to follow setup guides from our node SDK\n- Become familiar with our suite of SDKs for both software and hardware applications\n- Learn with thorough SDK guides across XYO node and hardware/software platform\n- Refer to API methods across platform and language to support their product development and its integration with XYO\n- Access bug bounty information, information specific to XYO sponsored hackathons, and other recurring dev community events\n- View release changelog \n- Access XYO dev news, resources, and interact directly to XYO developers through live chat\n\n--5 STAR PRODUCT REQUIREMENTS--\n- Facilitate delivery of effective and developer friendly guides, documentation,…",
         "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
-        "publicDesc": "No Description",
+        "publicDesc": "Hub for all guides and documentation to help devs interact with XYO.",
         "uiUxLink": "NA",
         "formFactor": "NA",
         "packaging": "NA",
@@ -316,7 +317,8 @@ const products =
         "valReleasesEnd": [
           "2019-01-25",
           "2019-03-15"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-16T23:56:20.000Z"
     },
@@ -356,7 +358,7 @@ const products =
         "status": "Planning",
         "description": "--OVERVIEW--\n\nThis device will showcase several sensors and allow consumers and enterprise customers to capture a variety of data points that can be stored and queried in the XYO Network. \n\nThe device will be battery powered but not necessarily rechargable",
         "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
-        "publicDesc": "No Description",
+        "publicDesc": "IoT device featuring several sensors to capture data for the XYO Network.",
         "uiUxLink": "NA",
         "brandingAssetsStatus": "Design",
         "uiUxStatus": "NA",
@@ -397,7 +399,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2020-01-23"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-02-11T18:50:41.000Z"
     },
@@ -482,7 +485,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-05-23"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-02-11T18:55:28.000Z"
     },
@@ -566,7 +570,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-01-31"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-07T21:32:57.000Z"
     },
@@ -603,7 +608,7 @@ const products =
         "status": "Maintaining",
         "description": "--OVERVIEW--\nThe Investor Kit serves as an XY Shareholder's first physical product from the company, and is designed to assuage their fears post-investment. Many investors are new to this kind of opportunity, and want to ensure that we are a real company, they understand their investment, and they receive a product and experience well worth their initial investment. \n\nThe Investor Kit balances formal documentation with creative and thoughtfully designed learning materials, and ultimately should be a cost-effective way to reduce chargebacks, excite the customer, and make the investment feel more life-changing.",
         "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
-        "publicDesc": "No Description",
+        "publicDesc": "Your physical introduction to the XYO family.\n",
         "uiUxLink": "NA",
         "formFactor": "NA",
         "brandingAssetsStatus": "Planning",
@@ -641,7 +646,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-04-01"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-14T22:54:59.000Z"
     },
@@ -719,7 +725,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-28"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-14T22:54:52.000Z"
     },
@@ -757,7 +764,7 @@ const products =
         "status": "Maintaining",
         "description": "--OVERVIEW--\ndApper creates the smart contract and gives you all the functions you need with a clean, easy to use interface. You can test your smart contract functions, and see how these smart contracts would act in their true state, without any surprises!\n\ndApper is actually a dApp that has a generic user interface. So it can interface with any smart contract!",
         "logo": "http://cdn.xy.company/img/logos/Dapper_Logo_Colored.png",
-        "publicDesc": "No Description",
+        "publicDesc": "Interactive smart contract playground.",
         "brandingAssetsLink": "https://www.dropbox.com/sh/lmt3uhzzvefg1zr/AAAli531WZJMReXPdZxCg-KGa?dl=0",
         "uiUxLink": "https://www.dropbox.com/sh/w38g9ug30rozg97/AAB9pyfiocu5DKkCS3bSvddUa?dl=0",
         "formFactor": "NA",
@@ -839,7 +846,7 @@ const products =
         "status": "Planning",
         "description": "--OVERVIEW--\nThe XYO Account portal is where users can monitor and configure their XYO account services. This is where users can manage their billing account, profile, etc...\n\n--5 STAR PRODUCT REQUIREMENTS--\nUsers are able to view all of their XYO Services\n\nAn amazing, professional, and intuitive UI.\n",
         "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
-        "publicDesc": "No Description",
+        "publicDesc": "Online portal to manage all your XYO account services. ",
         "uiUxLink": "NA",
         "formFactor": "NA",
         "packaging": "NA",
@@ -849,7 +856,7 @@ const products =
         "packagingStatus": "NA",
         "visibility": "Private",
         "start": [
-          "2019-03-28"
+          "2019-04-25"
         ],
         "valDivision": [
           "xyCompany"
@@ -876,11 +883,12 @@ const products =
           "XY Account Portal 2.0"
         ],
         "valReleasesStart": [
-          "2019-03-04"
+          "2019-04-01"
         ],
         "valReleasesEnd": [
-          "2019-03-28"
-        ]
+          "2019-04-25"
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork
       },
       "createdTime": "2019-01-14T22:57:24.000Z"
     },
@@ -920,7 +928,7 @@ const products =
         "status": "Developing",
         "description": "--Overview--\nThe next evolution of the XY4+ BLE beacon, Sentinel X will be complete with new and more advanced XYO-integrated firmware, allowing XY Finders to become XYO sentinel nodes.\n\nThe Sentinel X will allow users to execute bound witness interactions on the current XY4+ Dialog infrastructure.\n\n--Users--\nGeoMiners will use the Sentinel X to capture relative location data and provide useful verification data for potential queries on the network\n\nCOIN users will use the Sentinel X to verify proximity to their devices so that they may receive bonuses on their COIN Mining. \n\nEnterprise customers will be able to use the Sentinel X in pay on delivery and verification of arrival of packages and goods.\n\n--5 Star Product Requirements--\n1. The Sentinel X is used in confirming location and users are actually getting paid for their data\n2. When combined with visual interfaces users are able to see their relative location on a 2 dimensional plane. This brings a \"realness\" to the Bound Witnesses\n3. COIN users are able to trustlessly confirm proximity to their Sentinel X and are able to do bound witnesses with the device. Users must receive a bonus of some sort to make this a 5 Star Product\n4. Sentinel X must be configured in such a way that batteries must last at least 6 months\n5. Return rates for Sentinel X must be below 5%\n6. Sentinel X Packaging must be 5 Star Quality and convey opportunity to contribute important \"World Problem Solving Data\" as well as an opportunity to make XYO\n7. Marketing the Sentinel X needs to convey the same message of contribute important \"World Problem Solving Data\" as well as an opportunity to make XYO",
         "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
-        "publicDesc": "No Description",
+        "publicDesc": "The XY4+ evolved: new firmware to convert to XYO nodes. ",
         "uiUxLink": "NA",
         "brandingAssetsStatus": "Design",
         "uiUxStatus": "NA",
@@ -961,7 +969,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-20"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-02-19T18:45:12.000Z"
     },
@@ -1000,7 +1009,7 @@ const products =
         "status": "Sunsetting",
         "description": "No Description",
         "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
-        "publicDesc": "No Description",
+        "publicDesc": "XY Find It Device.",
         "uiUxStatus": "NA",
         "formFactorStatus": "Released",
         "packagingStatus": "Released",
@@ -1037,7 +1046,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-01-01"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-02-20T23:16:43.000Z"
     },
@@ -1048,7 +1058,7 @@ const products =
         "Division": [
           "rec64V0S98c0Lul0B"
         ],
-        "marketingName": "Smart Consensus Smart Contract Library",
+        "marketingName": "Simple Consensus Smart Contract Library",
         "Lead": [
           "recWXhp4QDklhpJpv"
         ],
@@ -1073,7 +1083,8 @@ const products =
         "status": "Developing",
         "description": "The library of all smart contracts that manage XYO governance and on-chain interactions.",
         "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
-        "publicDesc": "The library of all smart contracts that manage XYO governance and on-chain interactions.",
+        "publicDesc": "Library of all XYO smart contracts.",
+        "docsLink": "https://github.com/XYOracleNetwork/dapp-scsc-solidity",
         "visibility": "Public",
         "valDivision": [
           "xyOracle"
@@ -1124,6 +1135,7 @@ const products =
         ],
         "status": "Developing",
         "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
+        "publicDesc": "SDK for all node.js based packages on XYO.",
         "docsLink": "https://developers.xyo.network/docs/en/SDK-Package-Node/",
         "visibility": "Public",
         "valDivision": [
@@ -1227,7 +1239,8 @@ const products =
         "valReleasesEnd": [
           "2019-06-27",
           "2019-11-07"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-16T23:57:02.000Z"
     },
@@ -1308,7 +1321,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-05-23"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-02-11T18:59:19.000Z"
     },
@@ -1393,7 +1407,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-05-23"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-02-11T18:57:27.000Z"
     },
@@ -1475,7 +1490,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-28"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-16T21:56:57.000Z"
     },
@@ -1553,7 +1569,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-09-26"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-15T00:56:13.000Z"
     },
@@ -1599,7 +1616,7 @@ const products =
         "status": "Developing",
         "description": "--OVERVIEW--\nThe flagship XYO utility which allows the user’s smartphone or tablet to become a Bridge or Sentinel, produce Bound Witness Data, provide heuristics for XYO Network, display Origin Chains, and attract users to conveniently and effectively interface with XYO.\n\nUsers will be able to:\n- Create an XYO account from email, Google, or Facebook account\n- Visualize the scope of XYO Network and their participation in it\n- Claim, organize, update, and alter their XYO-enabled mining hardware\n- Create and track bound witness and origin chain data\n- Connect with preferred Archivists\n- Receive important updates, notifications, and news\n- Access XYO news and resources\n-Track XYO Tokens collected by providing queried heuristic data\n-Switch accessible, eligible devices between Bridge and Sentinel modes\n\n--5 STAR PRODUCT REQUIREMENTS--\n- Facilitate easy, effective onboarding of XYO Mining Kit and other hardware products\n- Encourage user engagement with XYO app, network, hardware, and stores\n- Consistently and continually develop software to improve user experience and provide proof of shipment and user satisfaction to company stakeholders\n\n",
         "logo": "http://cdn.xy.company/img/logos/XYONetworkApp_Logo_Colored.png",
-        "publicDesc": "No Description",
+        "publicDesc": "Smart device app for Bridge X and/or Sentinel X.",
         "formFactor": "NA",
         "packaging": "NA",
         "brandingAssetsStatus": "Design",
@@ -1658,7 +1675,8 @@ const products =
           "2019-04-25",
           "2019-05-23",
           "2019-06-27"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-14T22:54:10.000Z"
     },
@@ -1741,7 +1759,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-28"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-16T23:49:04.000Z"
     },
@@ -1820,7 +1839,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-28"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-11T17:29:08.000Z"
     },
@@ -1860,7 +1880,7 @@ const products =
         "status": "Developing",
         "description": "--OVERVIEW--\nEach Ocho Box XYO Geomining Kit comes with 8 XY Sentinels. Each one uses Bluetooth to confirm locations and save them to their individual ledgers. They can communicate to each other via Bluetooth, or connect to a nearby phone app to extend their communication via your phone’s location services.\n\n--5 STAR REQUIREMENT-- \n- Users must feel like they are getting a deal by purchasing 8 sentinels at once. \n- The unboxing experience needs to be worthy of being posted on social media\n- Instructions on how to claim your 8 sentinels must be included in the box or easily accessible via links\n- Purchasing an Ocho Box should be available on both our website and our affiliates' sites.",
         "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
-        "publicDesc": "No Description",
+        "publicDesc": "A small box filled with 8 colorful sentinels.",
         "brandingAssetsLink": "https://www.dropbox.com/sh/qcqabzyc0qrxafh/AAB_Ytu9CDNaRRNkQWvfvutHa?dl=0",
         "packaging": "https://www.dropbox.com/sh/9brmtf0mscw5xv0/AACXR_O5PuIaSl13DifetzrTa?dl=0",
         "brandingAssetsStatus": "Released",
@@ -1902,7 +1922,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-02-28"
-        ]
+        ],
+        "docsLink": "https://geominers.xy.company/geomining-kit-secure-checkout?pid=1662211"
       },
       "createdTime": "2019-01-14T22:55:07.000Z"
     },
@@ -1940,7 +1961,7 @@ const products =
         "status": "Developing",
         "description": "--OVERVIEW-- \n\nSoftware development kit for an XYO sentinel for IoT devices client and peripheral. \n\nThe SDK provides developers the ability to turn their device into a working sentinel. Product will come complete with TCP module for testing Bound Witnesses over TCP/IP protocol as well as Bluetooth\n\n--5 STAR PRODUCT REQUIREMENT--\nThe Sentinel SDK should be intuitive to interact with and be as compact as possible so that it can be used on devices with very little disk space\n\nThe Sentinel SDK should be able to integrate with any Firmware running C.\n\nFirmware should be very light on battery use\n\n",
         "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
-        "publicDesc": "No Description",
+        "publicDesc": "Software development kit allows developers to IoT devices into \nworking XYO sentinels. ",
         "uiUxLink": "NA",
         "formFactor": "NA",
         "packaging": "NA",
@@ -2057,7 +2078,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-02-28"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-16T23:56:48.000Z"
     },
@@ -2095,7 +2117,7 @@ const products =
         "status": "Maintaining",
         "description": "--OVERVIEW--\nFinally, you can deploy dApps in seconds!\n\nWe've gone through the hoops of deploying dApps on the Ethereum Network and have nuked out all of the annoying parts to make dapployment a breeze.\n\nWith dapploy, in one simple click, you will be able to deploy your decentralized App.",
         "logo": "http://cdn.xy.company/img/logos/Dapploy_Logo_Colored.png",
-        "publicDesc": "No Description",
+        "publicDesc": "Swiss Army Knife for dApp Deployment",
         "brandingAssetsLink": "https://www.dropbox.com/sh/gwh3r0yoxz34xh7/AADpHB3SLJ0nGp_F632p4O84a?dl=0",
         "formFactor": "NA",
         "packaging": "NA",
@@ -2175,7 +2197,7 @@ const products =
         "status": "Developing",
         "description": "--OVERVIEW--\nBlockchain mining will never be the same. Before the XYO Geomining Kit, the only way to earn cryptocurrency was through expensive computers and heavy hardware. Now, you can earn XYO Tokens easily with your everyday lifestyle! The Kit combines 8 classic XYO Sentinels and a custom XYO Bridge.\n\nNo matter how much you know about blockchain, you can easily mine XYO Tokens!\n\nUse your 8 XYO Sentinels to collect verified location data, and save that data to the XYO Network with your XYO Bridge component. If that data is used when a Diviner makes a query to the Network (such as, \"Did my shipment make it to Kansas City?\") YOU get paid in XYO Tokens.\n\nThen, you can sell those XYO Tokens on an exchange, hold on to them and sell them later, or use them for your own queries on the XYO Network.",
         "logo": "http://cdn.xy.company/img/logos/Geohacker_Logo_Colored.svg",
-        "publicDesc": "No Description",
+        "publicDesc": "Complete kit to start your geomining journey.",
         "brandingAssetsLink": "https://www.dropbox.com/sh/qcqabzyc0qrxafh/AAB_Ytu9CDNaRRNkQWvfvutHa?dl=0",
         "uiUxLink": "NA",
         "packaging": "https://www.dropbox.com/sh/6efzp3ul6i3wfjo/AABMjL2X4fxNgBhbBu6BgzsBa?dl=0",
@@ -2216,7 +2238,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-28"
-        ]
+        ],
+        "docsLink": "https://xyo.network/geomining/"
       },
       "createdTime": "2019-01-14T22:54:59.000Z"
     },
@@ -2346,7 +2369,7 @@ const products =
         "status": "Developing",
         "description": "--OVERVIEW--\nThe XYO Network is blockchain's first oracle enabling the virtual world to request cryptographically-secured data from the physical world. This includes location data, audio data, temperature, video and more.\n\nThe XYO Network has four primary components, Sentinels, Bridges, Archivists, and Diviners. These four components enable  trustless verification of data. The XY Oracle Network allows users to write a smart contract that can be triggered by the interaction between two devices, allowing certainty that the devices were in fact in the same location at the same time. This is all done without risk of spoofing the location signaling device(s) verified by thousands of Sentinels in the XY Oracle Network.",
         "logo": "http://cdn.xy.company/img/logos/XYO_full_colored.png",
-        "publicDesc": "No Description",
+        "publicDesc": "Dataistic, cryptographic network using IoT.\n",
         "brandingAssetsLink": "https://www.dropbox.com/sh/ol24p9kcx6o8k80/AADA6ijZzEJWn23_KvcOrxeya?dl=0",
         "uiUxLink": "NA",
         "formFactor": "NA",
@@ -2423,7 +2446,8 @@ const products =
           "2019-04-25",
           "2019-05-23",
           "2019-09-26"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-09T02:05:29.000Z"
     },
@@ -2464,7 +2488,7 @@ const products =
         "status": "Developing",
         "description": "--OVERVIEW--\nA fully functional XYO toolkit and viewer that allows users to view total addresses on the network, total number of Query/Response Blocks, total stake on the network, and view a map showing where bound witnesses have occurred.\n\nUsers will be able to create a watchlist of devices where they can bound witnesses and payments associated with that address. \n\nUsers will be able to see recent XYO token transactions on the Ethereum Blockchain.\n\nUsers will also be able to see all rewards paid out on the network and withdraw their rewards to their ethereum wallet address. \n\nUsers will be able to stake diviners (Archivists, Bridges, and Sentinels coming soon). \n\nUsers will be able to see wallet addresses of all \"Owners\" on the network. \n\nFinally, users will be able to view developer links, docs, github, and the Founding Hodl'r Registry.\n",
         "logo": "http://cdn.xy.company.s3.amazonaws.com/img/logos/XYONetworkViewer_Logo_Colored.png",
-        "publicDesc": "A fully functional XYO toolkit and viewer that allows users to view the XYO network.\n",
+        "publicDesc": "Toolkit to interact with the XYO network.\n",
         "brandingAssetsLink": "https://www.dropbox.com/sh/e4svbouwri1ped9/AAAMY-zs2Rsvk7eb4J4ClX_Na?dl=0",
         "uiUxLink": "https://www.dropbox.com/sh/7mma0hwy70u0wqb/AADhAhCSRUQwuq48h9MxYvsza?dl=0",
         "formFactor": "NA",
@@ -2510,7 +2534,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-28"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-16T20:20:37.000Z"
     },
@@ -2591,7 +2616,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-05-23"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-02-11T19:02:10.000Z"
     },
@@ -2639,7 +2665,7 @@ const products =
         "status": "Developing",
         "description": "--OVERVIEW--\nAn app that allows users to collect cryptocurrencies by location. It will initially be focused on XYO and work only for those in range of Geomining Kit components, but eventually will work for any cryptocurrency or token and be available to any users.\n\nPurpose:\nThe initial purpose of Coin is to allow Geomining Kit owners to mine XYO with their edge nodes in the simplest way possible. All the end user will need to do is turn on their devices, install and open the app, and press “MINE” to start earning XYO. In the first version only users with edge nodes in range will be able to mine available Deposits. Also, to keep it simple, the XYO will be represented in the app but not actually owned by the user until it is withdrawn. The withdrawal process will simply be the users requesting a withdrawal, which meets a predefined threshold, and our support team manually transferring the XYO to their wallet (subtracting the amount of XYO equal to the ETH required to do the transaction).",
         "logo": "http://cdn.xy.company/img/logos/COIN_Logo_Colored.png",
-        "publicDesc": "No Description",
+        "publicDesc": "Mobile app that allows you to easily geomine XYO.\n ",
         "brandingAssetsLink": "https://www.dropbox.com/sh/aj4x77ehjmrl3ek/AAAlpPq4o2jrwJMJeenHxYu-a?dl=0",
         "uiUxLink": "https://www.dropbox.com/sh/sc3wri0sldj8hmr/AAB03Q6yFrJ-cIJ-WHuj7N58a?dl=0",
         "formFactor": "NA",
@@ -2709,7 +2735,8 @@ const products =
           "2019-05-23",
           "2019-06-26",
           "2019-10-24"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-11T17:28:08.000Z"
     },
@@ -2789,7 +2816,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-28"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-16T23:56:27.000Z"
     },
@@ -2875,9 +2903,57 @@ const products =
         "valReleasesEnd": [
           "2019-02-28",
           "2019-03-28"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-14T22:57:14.000Z"
+    },
+    {
+      "id": "recvMSnkhXeSuyQ5H",
+      "fields": {
+        "productId": "XYO Developer Kit",
+        "Division": [
+          "recYI3D6ILJtZx3cU"
+        ],
+        "releases": [
+          "recwhFCMdzVeAGqE5"
+        ],
+        "marketingName": "XYO Developer Kit",
+        "Lead": [
+          "recwejHFuTkTM9HTt"
+        ],
+        "Project Manager": [
+          "recO9zK7wbuJRblDb"
+        ],
+        "Product Manager": [
+          "recO9zK7wbuJRblDb"
+        ],
+        "description": "Initial Concept... Disassembled Raspberry Pi and a few sensors. SD card with ",
+        "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
+        "start": [
+          "2019-04-25"
+        ],
+        "valDivision": [
+          "xyDevices"
+        ],
+        "valPm": [
+          "Justin Fortier"
+        ],
+        "valLead": [
+          "Aaron Malone"
+        ],
+        "valReleases": [
+          "XYO Developer Kit 1.0"
+        ],
+        "valReleasesStart": [
+          "2019-04-01"
+        ],
+        "valReleasesEnd": [
+          "2019-04-25"
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
+      },
+      "createdTime": "2019-03-25T15:47:51.000Z"
     },
     {
       "id": "recvYdsYCUzPH7sLe",
@@ -2941,7 +3017,8 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-28"
-        ]
+        ],
+        "docsLink": "https://www.stateofthefutureaddress.com/dataist-blackbox-checkout"
       },
       "createdTime": "2019-03-20T17:40:45.000Z"
     },
@@ -2978,7 +3055,7 @@ const products =
         "status": "Maintaining",
         "description": "--OVERVIEW-- \nAn ethereum smart contract event cache. Query your smart contract events in ways that you can't do directly on the blockchain. A helpful development tool or a helpful addition to your production Dapp.\n\nThere are three components that dAche uses to track events:\n\nREBASE starts from the block the contract was created and imports events from then until the block that the dAche was started at. This is disabled by default since the included contract has a lot of events!\n\nWATCH listens live for events on the contracts and immediately pulls them in.\n\nSCAN runs at a defined offset from the newest block on chain, and re-imports events from this range. This is to compensate for any missed live events, which can happen.",
         "logo": "http://cdn.xy.company/img/logos/Dache_Logo_Colored.png",
-        "publicDesc": "No Description",
+        "publicDesc": "Decentralized caching done right.",
         "brandingAssetsLink": "https://www.dropbox.com/sh/vyzvd1iy10hm0w6/AACcTr1u2zqS-koewBr1OmTYa?dl=0",
         "formFactor": "NA",
         "packaging": "NA",
@@ -3127,7 +3204,8 @@ const products =
           "2019-04-25",
           "2019-05-23",
           "2019-01-01"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-01-06T19:09:09.000Z"
     },
@@ -3147,6 +3225,7 @@ const products =
         ],
         "status": "Developing",
         "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
+        "publicDesc": "IoT device relaying data in XYO Network.\n",
         "visibility": "Public",
         "valDivision": [
           "xyDevices"
@@ -3156,7 +3235,8 @@ const products =
         ],
         "valLead": [
           "Carter Harrison"
-        ]
+        ],
+        "docsLink": "https://github.com/XYOracleNetwork"
       },
       "createdTime": "2019-02-25T23:02:02.000Z"
     }

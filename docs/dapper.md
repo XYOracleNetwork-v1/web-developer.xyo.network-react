@@ -12,6 +12,10 @@ title: dApper
   <br/>by [XYO](https://xyo.network)
 </p>
 
+<div class="alert alert-info text-center" role="alert">
+  Difficulty Level: Intermediate
+</div>
+
 # Let's Get Dapper
 
 `yarn` it out in the project directory:

@@ -1,7 +1,10 @@
 ---
 id: payable-demo
-title: Archivist and Diviner Payable on Delivery Demo
+title: Payable on Delivery Demo
 ---
+<div class="alert alert-danger text-center" role="alert">
+  Difficulty Level: Advanced
+</div>
 
 # Getting Started with an XYO Diviner
 

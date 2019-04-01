@@ -30,7 +30,7 @@ class HomeSplash extends React.Component {
     const EthDenverDescription = () => (
       <div className="heroDescription">
         <div className="heroButtonContainer">
-          <a className="button rp" href="https://developers.xyo.network/docs/en/getting-started/">
+          <a className="button rp" href="https://developers.xyo.network/docs/en/new-xyo-suite/">
             GET STARTED
           </a>
         </div>
@@ -78,7 +78,7 @@ class HomeSplash extends React.Component {
       <div>
         <EthDenverContainer>
           <div className="heroTitle text-center pb-5">
-            <h1>THE PORTAL FOR THE GEOMINING REVOLUTION</h1>
+            <h1>THE ARISTOTLE RELEASE IS HERE</h1>
           </div>
           <EthDenverDescription />
         </EthDenverContainer>
@@ -118,12 +118,12 @@ class Index extends React.Component {
       style={{ textAlign: 'center' }} background="dark">
           <div className="container">
             <div className="row align-self-center">
-                <h1 className="col">LEARN ABOUT XYO</h1> 
+                <h1 className="col">LEARN ABOUT THE MATRIX</h1> 
             </div>
           <div className="embed-responsive embed-responsive-16by9">
               <iframe
                 className="embed-responsive-item"
-                src="https://www.youtube.com/embed/KhVLjX-k5ic?rel=0" 
+                src="https://www.youtube.com/embed/WL0TRTj_wOM?rel-0" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen
@@ -155,9 +155,9 @@ class Index extends React.Component {
             <div className="col-12 col-md-4 pb-5" key={prod.fields.id}>
               <div className="card shadow h-100">
                 <div className="card-body">
-                    { prod.fields.logo ? <img src={prod.fields.logo} className="img-fluid d-inline mr-2 pr-0 h-auto w-100" alt={prod.fields.marketingName}/>: <p></p>}
-                    <h3 className="d-inline card-title">{prod.fields.marketingName}</h3>
-                    { prod.fields.publicDesc === "No Description" ? <br></br> : <p className="card-text smaller mr-3">{prod.fields.publicDesc}</p> }
+                    { prod.fields.logo ? <img src={prod.fields.logo} className="img-fluid d-inline h-auto" alt={prod.fields.marketingName}/>: <p></p>}
+                    <h3 className="card-title">{prod.fields.marketingName}</h3>
+                  {prod.fields.publicDesc === "No Description" ? <br></br> : <p className="smaller">{prod.fields.publicDesc}</p> }
                     <p>{prod.fields.valDivision} Division</p>
                     <p><strong>Status:</strong> {prod.fields.status}</p>
                     <br></br>
@@ -165,22 +165,22 @@ class Index extends React.Component {
                     {prod.fields.iOSAppLink || prod.fields.androidAppLink? 
                     <div>
                       <button className="btn-primary btn-light-purple rounded smallest">
-                        <a href={prod.fields.iOSAppLink}>
+                        <a href={prod.fields.iOSAppLink} target="_blank" rel="noopener noreferrer">
                             iOS
                         </a>
                       </button>
                       <button className="btn-primary btn-light-purple rounded smallest ml-3">
-                        <a href={prod.fields.androidAppLink}>
+                        <a href={prod.fields.androidAppLink} target="_blank" rel="noopener noreferrer">
                           ANDROID
-                          </a>
+                        </a>
                       </button> 
                     </div> : <p></p>
                     }
                       <div className="pt-2">
                         <button className="btn-primary btn-light-purple rounded smallest">
-                          <a href={prod.fields.docsLink}>
+                          <a href={prod.fields.docsLink} target="_blank" rel="noopener noreferrer">
                             DOCS
-                            </a>
+                          </a>
                         </button>
                       </div>
                       </div>

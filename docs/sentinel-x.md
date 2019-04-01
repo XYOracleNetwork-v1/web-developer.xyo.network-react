@@ -1,6 +1,6 @@
 ---
 id: sentinel
-title: Sentinel App 
+title: Sentinel X 
 ---
 
 # Coming soon!

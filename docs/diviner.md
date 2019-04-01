@@ -3,6 +3,10 @@ id: diviner
 title: Diviner App
 ---
 
+<div class="alert alert-danger text-center" role="alert">
+  Difficulty Level: Advanced
+</div>
+
 ## Upgrade coming soon
 Before you begin, we wanted to let you know that there will be an update to this guide to decrease the setup time before getting your Diviner up and running
 
@@ -19,7 +23,7 @@ they may implement the component however they wish. The key is that the interact
 
 - You must also have yarn installed: `homebrew`: `brew install yarn` or your Linux package manager.
 
-- You must have [docker](https://www.docker.com/get-started) installled and running
+- You must have [docker](https://www.docker.com/get-started) installed and running
   - There are instructions on how to install and run docker in the [get started]((https://www.docker.com/get-started)) guide
   - [Download the Docker Desktop for Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac) for easiest entry
   - Make sure that docker runs throughout this process
@@ -28,55 +32,12 @@ they may implement the component however they wish. The key is that the interact
 - A good understanding of how to use [Metamask](https://metamask.io/)
 - This node app wizard works optimally with MacOS, and at this time this app is not Windows compatible
 
-- A deployed **Pay On Delivery smart contract**
-  - **Point your browser to `https://ipfs.layerone.co/ipfs/QmaHuJh3u5J4W8WYhJnfH1yZUWWwUaehsVLbUPMEd4ymqN`**
-  - This address includes a `hash` value that represents our SCSC library as deployed on IPFS
-  - You will use this `hash` value to deploy a contract for the diviner to use: `QmaHuJh3u5J4W8WYhJnfH1yZUWWwUaehsVLbUPMEd4ymqN`
-  - Point your browser to `https://dapper.layerone.co/`
-  - Connect your metamask wallet to the Kovan testnet
-<h1 align="left">
-  <img alt="metamask-kovan" src="/docs/assets/metamask_kovan_new.png" height="884" width="756">
-</h1>
-
-  - Once you have connected your wallet to the Kovan testnet, connect your wallet in dApper 
-<h1 align="left">
-  <img alt="dapper-connect-wallet" src="/docs/assets/dapper_connect_wallet.png" height="332" width="730">
-</h1>
-  - Click on `settings` in the lower left hand corner of dApper
-    - The settings should be preconfigured to the XYO network IPFS on port `5002` and protocol `https`
-<h1 align="left">
-  <img alt="ipfs-config" src="/docs/assets/ipfs_config.png">
-</h1>
-  - Copy the ipfs hash `QmaHuJh3u5J4W8WYhJnfH1yZUWWwUaehsVLbUPMEd4ymqN` and paste in the `Add ABI` `IPFS Address` text field
-    - Ensure that the portis network above is set to `Kovan`
-<h1 align="center">
-  <img alt="portis-setting" src="/docs/assets/portis_kovan.png">
-</h1>
-  - After these settings, click `Add ABI`
-  - After a few seconds, the `Add ABI` button will confirm with a green checkmark that the ABI has been added 
-  - Click on `Contract Simulator` and select `XYPayOnDelivery` from the dropdown
-<h1 align="left">
-  <img alt="contract-select" src="/docs/assets/select_contract.png">
-</h1>
-  - Click on `Deploy Contract`, which will take you to the `XYPayOnDelivery` constructor screen.
-<h1 align="left">
-  <img alt="deploy-contract-screen" src="/docs/assets/deploy_contract_pod.png">
-</h1>
-  - Skip `optional notes or Description`, and add a `staking consensus` address and an `_xyoToken` address
-  - Only for this walkthrough will we add some simple account addresses for the consensus and token fields, when you start up a diviner to interact with XYO, you will need to deploy a `governance` contract, then a `XyStakingConsensus` contract, and add the true address for the staking consensus contract along with a staked XYO token
-  - Once you enter the address data in the `stakingConsensus` and `_xyoToken` fields, click `Deploy Contract` this will direct you to a Metamask confirmation for the transaction and then it will take a few seconds for transaction approval and contract deployment
-  - Once you have successfully deployed the `XYPayOnDelivery` contract, you should see a component pop up with an IPFS hash and a contract address. Copy and paste the contract address in a notes app. You will need this contract address during your diviner setup. 
-<h1 align="left">
-  <img alt="contract-info" src="/docs/assets/pod_info.png">
-</h1>
-
-
 ## Getting Started
 
 ### Clone the repository 
 
 ```bash
-git clone https://github.com/XYOracleNetwork/sdk-core-nodejs.git -b develop
+git clone https://github.com/XYOracleNetwork/sdk-core-nodejs.git 
 ```
 
 ### Go into the directory
@@ -97,22 +58,12 @@ yarn install
 yarn build
 ```
 
-**Note** This will take a moment, so be patient, it will take around 30 seconds.
+**Note** This will take a moment, so be patient, it will take around a minute.
 
-## Start the Diviner
+## Start and Configure your Diviner
 
 ```sh
 yarn start:diviner
-```
-
-### Deploying the Pay On Delivery Smart Contract
-
-**NOTE** Keep this terminal window open and leave it alone after starting the Diviner
-
-### Run your package with a simple node command
-
-```sh
-node packages/app
 ```
 
 You will now be directed to configure your Diviner, please follow these steps **exactly** as written (if for some reason you are running any instances on ports (except the database port 3306) you can change the last digit by one):
@@ -136,7 +87,7 @@ What is your public ip address? · 0.0.0.0
 ```sh 
 What port would you like to use for your peer to peer protocol? · 11500
 ``` 
-*Note* Make sure that this port is different than the archivist port, or any other port that might be in use. 
+*Note* Make sure that you use this port: `11500` specifically for your diviner. 
 
 ```sh 
 Do you want to add bootstrap nodes? (Y/n) · true
@@ -174,16 +125,29 @@ What port would you like to use for your peer to peer protocol? · 11000
 ``` 
 This is your bound witness port, it should be different from the diviner port
 
+Enter our IPFS host value - this will make it easier for you to interact with our smart contracts to use the diviner
+```sh
+What is the IPFS host value › ipfs.layerone.co
+```
+Enter the IPFS Port 
+```sh
+What is the IPFS port value › 5002
+```
+Enter the IPFS protocol - we will use `https`
+```sh
+What is the IPFS protocol? …
+❯ https
+```
 Ensure that the component features for support are Diviner
 ```sh 
 Which component features do you want your Xyo Node to support? · Diviner
 ``` 
 If you select diviner, you won't get the correct options to set up an Diviner
 
-Supply the diviner with an Ethereum node address - **Note** we recommend that you use a local instance for this exercise at port `8545`
+Supply the diviner with an Ethereum node address - here we will supply you with one
 
 ```sh 
-What is your Ethereum Node address? › http://127.0.0.1:8545
+What is your Ethereum Node address? › wss://kovan.infura.io/ws/v3/8f1e6c44394f4366a49095d9cac828e2
 ```
 
 Supply the diviner with an account address (this would come from Ganache *copy the first address from your accounts list when you started the ganache service*)
@@ -192,10 +156,69 @@ Supply the diviner with an account address (this would come from Ganache *copy t
 What is your Ethereum Account address? This will start with `0x` ›
 ```
 
-Supply the diviner with the Pay On Delivery smart contract address
+Now, keep this in mind, for this question it will ask you for your Ethereum Private Key. You can get this from the Ganache service. Since this configuration is creating a yaml file (if you need to learn more about yaml, [click here](https://yaml.org/)) your diviner is relatively safe as long as you don't share or commit this file to a code repository. Also, we are starting up a diviner in a test environment that also encrypts and stores locally. With that said, make sure that the Ganache Wallet you are using has accounts and mnemonic phrase only on testnets! Make sure that you copy the first private key from the array of private keys (since you are using the first address from your accounts list) the private key is slightly longer, but also starts with `0x`.
+
+```sh
+What is your Ethereum Private key? Diviners encrypt private keys and store encrypted copy locally.› <your Private Key>
+```
+
+Next you will have to create a password for your Diviner
+
+```sh
+Please add a Diviner password. ›
+```
+
+Since we are all running on a testnet, we want you to utilize our Simple Consensus Smart Contract Library (SCSC)
+
+Here is the complete list of smart contract addresses in the library and their IPFS hashes:
+
+SCSC addresses
+```sh
+  XyStakingConsensus:
+    address: '0x234872fB24514b32185A125313a53177DDA97c12'
+    ipfsHash: QmZks1kgJACSBC958T3vUiRDNNXNe9mcocrnFvdB2HqgKo
+  XyGovernance:
+    address: '0x5d757557C3bd5945cefBBc17dcABBCEC94D7D73E'
+    ipfsHash: QmSAVruwKEcEEVTtWwKsSeebq1fwejzK7wRCDEbJzojryT
+  XyBlockProducer:
+    address: '0x84037e3109e1d199a58e592b7BBa370b19B0b898'
+    ipfsHash: QmSYRyw5KdHTz7ZNtqJybjvE2Jf1RnzeprBPWbk2SDypN9
+```
+
+Supply the diviner with the XyStakingConsensus smart contract address
 
 ```sh 
-What is the PayOnDelivery contract address? This will start with `0x` ›
+What is the XyStakingConsensus contract address? This will start with `0x` ›
+```
+
+Supply the diviner with the XyStakingConsensus IPFS Hash
+
+```sh 
+What is the XyStakingConsensus IPFS address? This will start with `Qm` ·
+```
+
+Supply the diviner with the XyGovernance smart contract address
+
+```sh 
+What is the XyGovernance contract address? This will start with `0x` ›
+```
+
+Supply the diviner with the XyGovernance IPFS Hash
+
+```sh 
+What is the XyGovernance IPFS address? This will start with `Qm` ›
+```
+
+Supply the diviner with the XyPayOnDelivery smart contract address
+
+```sh 
+What is the XyPayOnDelivery contract address? This will start with `0x` ›
+```
+
+Supply the diviner with the XyPayOnDelivery IPFS Hash
+
+```sh 
+What is the XyPayOnDelivery IPFS address? This will start with `Qm` ›
 ```
 
 Set up your Diviner with a GraphQL Server
@@ -211,9 +234,29 @@ Press enter to set up all of the GraphQL endpoints
 Which GraphQL api endpoints would you like to support? (use space-bar to toggle selection. Press enter once finished) · about, blockByHash, blockList, intersections, blocksByPublicKey, entities
 ```
 
-Start the node
+We will not start the node yet, there is one more thing we need to do
 ```sh 
-Do you want to start the node after configuration is complete? (Y/n) · true
+Do you want to start the node after configuration is complete? (Y/n) · false
+```
+
+Open `packages/app/config/` from the current directory in another terminal tab or window
+
+- Find your `<Diviner Name>.yaml` file
+- Look for the `ethereum` configuration under `diviner`
+- Add this to the configuration under `account`: 
+  ```yaml
+  salt: cf82e4a9b4187f4e
+  ```
+- Replace the `privateKey` with this:
+  ```yaml
+  encryptedKey: >-
+        a6a444bab66e1a29a4f3249f2db54543f38dcea3c799a547a8533b13b5da6d4476b41b43ac55bfbc1aaa8fe5363763f791cc90c950794fe9227a5e5dda218c1cd740f119e380ce4ed3ee01389cb77e5b
+  ```
+
+Once you do that start the diviner: 
+
+```sh
+yarn start <Your Diviner Name>.yaml
 ```
 
 ## Congratulations! You have now started an XYO Diviner!
