@@ -30,7 +30,7 @@ class HomeSplash extends React.Component {
     const EthDenverDescription = () => (
       <div className="heroDescription">
         <div className="heroButtonContainer">
-          <a className="button rp" href="https://developers.xyo.network/docs/en/getting-started/">
+          <a className="button rp" href="https://developers.xyo.network/docs/en/new-xyo-suite/">
             GET STARTED
           </a>
         </div>
@@ -78,7 +78,7 @@ class HomeSplash extends React.Component {
       <div>
         <EthDenverContainer>
           <div className="heroTitle text-center pb-5">
-            <h1>THE PORTAL FOR THE GEOMINING REVOLUTION</h1>
+            <h1>THE ARISTOTLE RELEASE IS HERE</h1>
           </div>
           <EthDenverDescription />
         </EthDenverContainer>
@@ -118,12 +118,12 @@ class Index extends React.Component {
       style={{ textAlign: 'center' }} background="dark">
           <div className="container">
             <div className="row align-self-center">
-                <h1 className="col">LEARN ABOUT XYO</h1> 
+                <h1 className="col">LEARN ABOUT THE MATRIX</h1> 
             </div>
           <div className="embed-responsive embed-responsive-16by9">
               <iframe
                 className="embed-responsive-item"
-                src="https://www.youtube.com/embed/KhVLjX-k5ic?rel=0" 
+                src="https://www.youtube.com/embed/WL0TRTj_wOM?rel-0" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen
