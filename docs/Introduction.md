@@ -22,8 +22,8 @@ Sentinels are the first heuristic witness on the XYO origin chain. They observe 
 Bridges are heuristic transcribers. They relay heuristic ledgers from Sentinels to Diviners and add **Proof of Origin** to that relay. The bridge needs to add a **Proof of Origin** so that the diviner can confirm that the bridge has not been altered in any way. The relay ends up collected by the Archivist.
 
 #### Devices
-- XY Bridge
-- Smartphone
+- Bridge X
+- Android or iOS Smartphone
 
 
 ![archivist](assets/archivist_xyo.svg)

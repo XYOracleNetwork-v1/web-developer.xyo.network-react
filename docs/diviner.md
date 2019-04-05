@@ -4,11 +4,18 @@ title: Diviner App
 ---
 
 <div class="alert alert-danger text-center" role="alert">
+  This guide is not for production ready Diviners, this is a product currently in development and will be updated often prior to mainnet release. 
+  For production-ready Diviners you will be able to download an npm package for use in your application.
+</div>
+
+<div class="alert alert-danger text-center" role="alert">
   Difficulty Level: Advanced
 </div>
 
-## Upgrade coming soon
-Before you begin, we wanted to let you know that there will be an update to this guide to decrease the setup time before getting your Diviner up and running
+<div class="alert alert-info text-center" role="alert">
+  <h1>Upgrade coming soon</h1>
+  <p>Before you begin, we wanted to let you know that there will be an update to this guide to decrease the setup time before getting your Diviner up and running</p>
+</div>
 
 # Getting started with an XYO Diviner
 
@@ -46,7 +53,13 @@ git clone https://github.com/XYOracleNetwork/sdk-core-nodejs.git
 cd sdk-core-nodejs
 ```
 
-### Install dependencies
+Since this is part of an SDK with multiple packages, we will use Lerna to link the dependencies
+
+```sh
+lerna bootstrap
+```
+
+### Install additional dependencies
 
 ```sh
 yarn install
@@ -259,6 +272,50 @@ Once you do that start the diviner:
 yarn start <Your Diviner Name>.yaml
 ```
 
+To run the diviner in a persistent terminal we will use `screen` which is available on Mac OS
+
+Before 
+```sh
+yarn start <Your Diviner Name>.yaml
+```
+Enter this command in your terminal 
+```sh
+screen
+```
+After you press return, you will notice that the header of your terminal session will display `screen (screen)`
+
+Optionally, you may enter this command to name your `screen` session with a archivist or diviner name 
+
+```sh
+screen -S <session name>
+```
+To verify the name 
+```sh
+screen -list
+```
+This will display a message 
+```sh
+There is a screen on:
+        <PID>.<session name> (attached)
+1 Socket in <path to>.screen.
+```
+Verify your session name, note that you can also see session (if the teminal is not tabbed) at the top of your terminal window.
+
+You can also run multiple screens (on multiple terminal windows or tabs) and when you do, you can check for screen sessions with `-list`
+```sh
+There are screens on:
+        <PID>.<session name (first session)> (Attached)
+        <PID>.<session name (second session)> (Attached)
+2 Sockets in <path to>.screen.
+``` 
+
+To avoid having to keep your terminal window open, you can detach the screen with `control-A and D` (at the same time).
+
+This will detach your screen session while running your Archivist, which would prevent it from shutting down, even when your machine is in sleep mode
+Your terminal should display this under the command
+```sh
+[detached]
+```
 ## Congratulations! You have now started an XYO Diviner!
 
 You can also confirm you have peers by pointing to your browser with `localhost:<your graphql port>` and entering this query:
