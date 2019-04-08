@@ -23,15 +23,18 @@ layer for doing bound-witness interactions between the Archivist and other Bridg
 
 ## Prerequisites
 
-- You must have node installed. If you don't, the easiest way to get `node` and `npm` is through [`homebrew`](https://brew.sh/) a package manager for Apple systems, for Linux systems use the package manager for your distro.
+- You must have node installed
+- If you don't, the easiest way to get `node` and `npm` is through [`homebrew`](https://brew.sh/) a package manager for Apple systems, for Linux systems use the package manager for your distro
 
-- We also recommend in most cases to use [NVM - Node Version Manager](https://github.com/creationix/nvm) which will allow you to manage multiple active node.js versions. This may also save you some installation headaches.
+- We also recommend in most cases to use [NVM - Node Version Manager](https://github.com/creationix/nvm) which will allow you to manage multiple active node.js versions. This may also save you some installation headaches
 
 **Note** We use the stable `10.15.3` node.js release.
 
 - If you are using linux on ubuntu, you should use commands as the root by entering `sudo su` or you could run `sudo` prior to key commands. This guide will also prompt you for entering `sudo` when needed.
 
-- You must also have yarn installed: `homebrew`: `brew install yarn` or your Linux package manager.
+- You must have yarn installed: `homebrew`: `brew install yarn` or your Linux package manager
+- You must have Lerna installed globally to use its CLI tool: `npm install --global lerna`
+
 - **Note** if you are using ubuntu, you can install `node` and `yarn` with these helpful articles:
   - [Installing `node` on ubuntu](https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/)
   - [Installing `yarn ` on ubuntu](https://linuxize.com/post/how-to-install-yarn-on-ubuntu-18-04/)
@@ -49,7 +52,7 @@ layer for doing bound-witness interactions between the Archivist and other Bridg
 ### Clone the repository 
 
 ```bash
-git clone https://github.com/XYOracleNetwork/sdk-core-nodejs.git -b develop
+git clone https://github.com/XYOracleNetwork/sdk-core-nodejs.git
 ```
 
 ### Go into the directory
@@ -246,26 +249,78 @@ To make it prettier, let's go into the browser and enter our raw JSON in a strin
 
 console.log(JSON.parse(`your raw json (make sure you use backtics!)`))
 
-## Congratulations! You have now started an XYO Archivist!
+To run the archivist in a persistent terminal we will use GNU `screen` which is natively available on Mac OS and can also be installed
+[Click on this guide](https://www.linode.com/docs/networking/ssh/using-gnu-screen-to-manage-persistent-terminal-sessions/)
 
-## Developer Guide
-
-Developers should conform to git flow workflow. Additionally, we should try to make sure
-every commit builds. Commit messages should be meaningful serve as a meta history for the
-repository. Please squash meaningless commits before submitting a pull-request.
-
-There is git hook on commits to validate the project builds. If you'd like to commit your changes
-while developing locally and want to skip this step you can use the `--no-verify` commit option.
-
-i.e.
-
+Before you run this:
 ```sh
-  git commit --no-verify -m "COMMIT MSG"
+yarn start <Your Archivist Name>
 ```
 
-## License
+Enter this command in your terminal 
+```sh
+screen
+```
+After you press return, you will notice that the header of your terminal session will display `screen (screen)`
 
-Only for internal XY Company use at this time
+Optionally, you may enter this command to name your `screen` session with a archivist name 
+
+```sh
+screen -S <session name>
+```
+To verify the name 
+```sh
+screen -list
+```
+This will display a message 
+```sh
+There is a screen on:
+        <PID>.<session name> (attached)
+1 Socket in <path to>.screen.
+```
+Verify your session name, note that you can also see session (if the teminal is not tabbed) at the top of your terminal window.
+
+You can also run multiple screens (on multiple terminal windows or tabs) and when you do, you can check for screen sessions with `-list`
+```sh
+There are screens on:
+        <PID>.<session name (first session)> (Attached)
+        <PID>.<session name (second session)> (Attached)
+2 Sockets in <path to>.screen.
+``` 
+
+Now go ahead and run your archivist 
+
+```sh
+yarn start <Your Diviner Name>
+```
+### Run Your Archivist in a Persistent Session
+
+To avoid having to keep your terminal window open, you can detach the screen with `control+a d`. This will detach your `screen` instance
+
+This will detach your screen session while running your Archivist, which would prevent it from shutting down, even when your machine is in sleep mode
+Your terminal should display this under the command
+```sh
+[detached]
+```
+
+Now your process is running in the background.
+
+To re-attach the session use this command `screen -r`
+
+For more commands including stopping the process: 
+
+```sh
+Ctrl+a c - Creates a new Screen window. The default Screen number is zero.
+Ctrl+a 0-9 - Switches between windows 0 through 9.
+Ctrl+a x - Locks your terminal window. You will have to enter your password to unlock your terminal session.
+Ctrl+a n - Switches to the next window.
+Ctrl+a k - Kills the current window. When the command is issued, you will be asked to confirm by entering a y or n.
+Ctrl+a A - Will allow you to enter a title for the window.
+Ctrl+a d - Detaches from a Screen.
+Ctrl+a ? - Will display a list of all the command options available for Screen.
+```
+
+## Congratulations! You have now started an XYO Archivist!
 
 ## Credits
 

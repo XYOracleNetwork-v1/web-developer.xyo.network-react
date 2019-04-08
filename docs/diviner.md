@@ -26,9 +26,18 @@ As long as an Diviner follows the protocols of the XYO network specified in the 
 they may implement the component however they wish. The key is that the interactions between a diviner and an archivist must be proved through a bound witness to validate the data.
 
 ## Prerequisites
-- You must have node installed. If you don't, the easiest way to get `node` and `npm` is through [`homebrew`](https://brew.sh/) a package manager for Apple systems, for Linux systems use the package manager for your distro.
+- You must have node installed. If you don't, the easiest way to get `node` and `npm` is through [`homebrew`](https://brew.sh/) a package manager for Apple systems, for Linux systems use the package manager for your distro
 
-- You must also have yarn installed: `homebrew`: `brew install yarn` or your Linux package manager.
+- We also recommend in most cases to use [NVM - Node Version Manager](https://github.com/creationix/nvm) which will allow you to manage multiple active node.js versions. This may also save you some installation headaches
+
+**Note** We use the stable `10.15.3` node.js release
+
+- You must have yarn installed: `homebrew`: `brew install yarn` or your Linux package manager
+- You must have Lerna installed globally to use its CLI tool: `npm install --global lerna`
+
+- **Note** if you are using ubuntu, you can install `node` and `yarn` with these helpful articles:
+  - [Installing `node` on ubuntu](https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/)
+  - [Installing `yarn ` on ubuntu](https://linuxize.com/post/how-to-install-yarn-on-ubuntu-18-04/)
 
 - You must have [docker](https://www.docker.com/get-started) installed and running
   - There are instructions on how to install and run docker in the [get started]((https://www.docker.com/get-started)) guide
@@ -269,15 +278,19 @@ Open `packages/app/config/` from the current directory in another terminal tab o
 Once you do that start the diviner: 
 
 ```sh
-yarn start <Your Diviner Name>.yaml
+yarn start <Your Diviner Name>
 ```
 
-To run the diviner in a persistent terminal we will use `screen` which is available on Mac OS
+### Run Your Diviner in a Persistent Session
 
-Before 
+To run the diviner in a persistent terminal we will use GNU `screen` which is natively available on Mac OS and can also be installed
+[Click on this guide](https://www.linode.com/docs/networking/ssh/using-gnu-screen-to-manage-persistent-terminal-sessions/)
+
+Before you run this:
 ```sh
-yarn start <Your Diviner Name>.yaml
+yarn start <Your Diviner Name>
 ```
+
 Enter this command in your terminal 
 ```sh
 screen
@@ -309,13 +322,37 @@ There are screens on:
 2 Sockets in <path to>.screen.
 ``` 
 
-To avoid having to keep your terminal window open, you can detach the screen with `control-A and D` (at the same time).
+Now go ahead and run your diviner 
+
+```sh
+yarn start <Your Diviner Name>
+```
+
+To avoid having to keep your terminal window open, you can detach the screen with `control+a d`. This will detach your `screen` instance
 
 This will detach your screen session while running your Archivist, which would prevent it from shutting down, even when your machine is in sleep mode
 Your terminal should display this under the command
 ```sh
 [detached]
 ```
+
+Now your process is running in the background.
+
+To re-attach the session use this command `screen -r`
+
+For more commands including stopping the process: 
+
+```sh
+Ctrl+a c - Creates a new Screen window. The default Screen number is zero.
+Ctrl+a 0-9 - Switches between windows 0 through 9.
+Ctrl+a x - Locks your terminal window. You will have to enter your password to unlock your terminal session.
+Ctrl+a n - Switches to the next window.
+Ctrl+a k - Kills the current window. When the command is issued, you will be asked to confirm by entering a y or n.
+Ctrl+a A - Will allow you to enter a title for the window.
+Ctrl+a d - Detaches from a Screen.
+Ctrl+a ? - Will display a list of all the command options available for Screen.
+```
+
 ## Congratulations! You have now started an XYO Diviner!
 
 You can also confirm you have peers by pointing to your browser with `localhost:<your graphql port>` and entering this query:

@@ -46,6 +46,10 @@ title: Bridge X
 - Check out our Matrix
 - Try starting up your first Archivist!
 
+<div class="alert alert-danger text-center" role="alert">
+  We have included these instructions as a back up. We strongly recommend that you order a new SDCard with the updated Bridge X firmware image before
+  approaching this workflow. This process will take up to an hour to complete. 
+</div>
 ## Downloading an image to your Bridge X to update it
 
 ### MacOS
