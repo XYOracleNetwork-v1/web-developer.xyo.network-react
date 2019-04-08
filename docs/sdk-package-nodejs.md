@@ -24,6 +24,20 @@ Practically, this library uses TypeScript, which transpiles to JavaScript. Addit
 
 ## Getting started
 
+### Prerequisites
+- You must have node installed. If you don't, the easiest way to get `node` and `npm` is through [`homebrew`](https://brew.sh/) a package manager for Apple systems, for Linux systems use the package manager for your distro
+
+- We also recommend in most cases to use [NVM - Node Version Manager](https://github.com/creationix/nvm) which will allow you to manage multiple active node.js versions. This may also save you some installation headaches
+
+**Note** We use the stable `10.15.3` node.js release
+
+- You must have yarn installed: `homebrew`: `brew install yarn` or your Linux package manager
+- You must have Lerna installed globally to use its CLI tool: `npm install --global lerna`
+
+- **Note** if you are using ubuntu, you can install `node` and `yarn` with these helpful articles:
+  - [Installing `node` on ubuntu](https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/)
+  - [Installing `yarn ` on ubuntu](https://linuxize.com/post/how-to-install-yarn-on-ubuntu-18-04/)
+
 ### Clone repository
 
 ```sh
@@ -36,6 +50,12 @@ After cloning the repository, change directory to the folder that houses the rep
 
 ```sh
   cd sdk-core-nodejs
+```
+
+Since this is part of an SDK with multiple packages, we will use Lerna to link the dependencies
+
+```sh
+lerna bootstrap
 ```
 
 Once you've switched to the repository directory, install the dependencies. We prefer `yarn` but `npm` works just as well.
