@@ -80,8 +80,6 @@ To start using the Bridge X, you will need the device, and as back up, an ethern
 - If you do see this, go ahead and enter the values that it prompts for
 - These values are your wifi username and password
 
-**If you need reminders on using the Bridge X, you can also [click here](https://developers.xyo.network/docs/en/bridge-x/) to check out our Bridge X guide**
-
 ### Using the Matrix
 
 - You should also check out the Matrix for more info on the Archivists and Diviners that are using the date that your Bridge X is relaying. 
