@@ -21,22 +21,22 @@ class HomeSplash extends React.Component {
     const langPart = `${language ? `${language}/` : ''}`;
     const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
     
-    const EthDenverContainer = props => (
+    const DevzillaContainer = props => (
       <div className="ethHomeContainer">
         {props.children}
       </div>
     )
 
-    const EthDenverDescription = () => (
+    const DevzillaDescription = () => (
       <div className="heroDescription">
         <div className="heroButtonContainer">
-          <a className="button rp" href="https://developers.xyo.network/docs/en/new-xyo-suite/">
-            GET STARTED
+          <a className="button rp" href="https://devzilla.xyo.network/">
+            MORE INFO
           </a>
         </div>
       </div>
     )
-
+    
     const SplashContainer = props => (
       <div className="homeContainer">
         <div className="homeSplashFade">
@@ -44,20 +44,20 @@ class HomeSplash extends React.Component {
         </div>
       </div>
     );
-
+    
     const Logo = props => (
       <div className="projectLogo">
         <img src={props.img_src} alt="Project Logo" />
       </div>
     );
-
+    
     const ProjectTitle = () => (
       <h2 className="projectTitle">
         XYO Devs
         <small>{siteConfig.tagline}</small>
       </h2>
     );
-
+    
     const PromoSection = props => (
       <div className="section promoSection">
         <div className="promoRow">
@@ -65,7 +65,7 @@ class HomeSplash extends React.Component {
         </div>
       </div>
     );
-
+    
     const Button = props => (
       <div className="pluginWrapper buttonWrapper">
         <a className="button" href={props.href} target={props.target}>
@@ -73,15 +73,15 @@ class HomeSplash extends React.Component {
         </a>
       </div>
     );
-
+    
     return (
       <div>
-        <EthDenverContainer>
+        <DevzillaContainer>
           <div className="heroTitle text-center pb-5">
-            <h1>THE ARISTOTLE RELEASE IS HERE</h1>
+            <img src="/img/Devzilla_Type_Colored.png" className="mx-auto d-block" alt="devzilla" />
           </div>
-          <EthDenverDescription />
-        </EthDenverContainer>
+          <DevzillaDescription />
+        </DevzillaContainer>
         <SplashContainer>
             <h1>OUR PRODUCTS</h1>
         </SplashContainer>
