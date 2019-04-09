@@ -18,34 +18,72 @@ Be sure to have an updated SDCard that should have been sent to you. This is the
 - Connect your Bridge X to a power source
 - Connect your Bridge to your Router using an Ethernet Cable
 - Check to see if indicator lights are green near the ethernet and power ports
-- Using your computer, point your browser to **xyo.local**
-- You should see your Bridge and its IP address information on the **xyo.local** site
-- Once you see this and confirm, then go ahead and click on the **Connect** button to connect the Bridge to the XYO Network!
+- Using your computer, point your browser to **xyo-bridge.local**
+- You should see a text input field for your password and a login button
+
+<h1 align="left">
+  <img alt="bridge-ui" src="/docs/assets/bridge_ui.png">
+</h1>
+
+- Enter the provided password and click **login** to connect the Bridge X
+
+- Once you connect, you should see a screen similar to this 
+
+<h1 align="left">
+  <img alt="bridge-dashboard" src="/docs/assets/bridge_dashboard.png">
+</h1>
+
+**Use Your Bridge X to interact on the XYO network!**
+- You can now click the **Wifi** icon to connect the Bridge X to your Local Wifi Network
 
 ### Second Option (Using Google Chrome or Firefox)
 - Connect your Bridge X to a power source
 - Connect your Bridge to your Router using an Ethernet Cable
 - Check to see if indicator lights are green near the ethernet and power ports
 - Using your computer, point your browser to **app.xyo.network**
-- In the main app dashboard, you will see a **Scan for Devices** button
-- Click **Scan For Devices**
+- Create a username and password, or if you have already started using the app on either Web or Mobile, log in with your email and password
+- You should now see the main XYO App Dashboard
+
+<h1 align="left">
+  <img alt="xyo-app-dashboard" src="/docs/assets/xyo_app_dashboard.png">
+</h1>
+- Click on the menu icon to the left of **Dashboard**
+
+<h1 align="left">
+  <img alt="xyo-app-menu-icon" src="/docs/assets/menu_icon.png">
+</h1>
+- You should now see a side menu appear
+
+<h1 align="left">
+  <img alt="app-side-menu" src="/docs/assets/app_side_menu.png">
+</h1>
+
+- Click on **Local Bridges**
+- You should directed to a new dashboard so that you can scan for bridges
+<h1 align="left">
+  <img alt="scan-bridges-dashboard" src="/docs/assets/scan_bridges_dashboard.png">
+</h1>
+- Click **Start Scan**
 - The app will take a few moments in scanning for your Bridge X, you will see an indicator for progress
 - Once the app discovers the Bridge, you can verify the name and IP address of your Bridge X
 - Click **Connect**
 - You are now connected to your Bridge X!
 
 ### Third Option
+**NOTE** You will need a keyboard and mouse for this option
+**NOTE** While the SDCard is loading your screen may appear black for about 30 seconds
 - Connect your Bridge X to a power source
-- Connect your Bridge to your Router using an Ethernet Cable
-- Check to see if indicator lights are green near the ethernet and power ports
+- Connect your Bridge X to your Router using an Ethernet Cable
+- Check to see if indicator lights are flashing green and static amber near the ethernet and power ports
 - Connect your Bridge X to a display of your choice using an HDMI cable
-- You should now see a UI on your display
-- If you do see this, go ahead and enter the values that it prompts for
-- These values are your wifi username and password
+- Connect a mouse and keyboard to your bridge using the available USB ports
+- You should now see a UI on your display similar to the first option
+- Enter the password provided and click **login** to connect the Bridge X
+- You can now click the **Wifi** icon to connect the Bridge X to your Local Wifi Network
 
 ### After you connect your Bridge X
 
-- Go ahead and disconnect the Ethernet from the Bridge X
+- Go ahead and disconnect the Ethernet from the Bridge X (only after connecting it via Wifi)
 - Check out app.xyo.network for your Bridge's activity
 - Check out our Matrix
 - Try starting up your first Archivist!

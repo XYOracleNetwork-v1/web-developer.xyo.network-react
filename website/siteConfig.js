@@ -92,6 +92,7 @@ const products =
         "uiUxStatus": "Planning",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "docsLink": "https://github.com/XYOracleNetwork",
         "visibility": "Private",
         "start": [
           "2019-03-28",
@@ -134,8 +135,7 @@ const products =
           "2019-03-28",
           "2019-04-25",
           "2019-05-23"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork"
+        ]
       },
       "createdTime": "2019-01-16T19:59:53.000Z"
     },
@@ -282,6 +282,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "docsLink": "https://github.com/XYOracleNetwork",
         "visibility": "Private",
         "start": [
           "2019-01-25",
@@ -317,8 +318,7 @@ const products =
         "valReleasesEnd": [
           "2019-01-25",
           "2019-03-15"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork"
+        ]
       },
       "createdTime": "2019-01-16T23:56:20.000Z"
     },
@@ -364,6 +364,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "Planning",
         "packagingStatus": "Planning",
+        "docsLink": "https://github.com/XYOracleNetwork",
         "visibility": "Private",
         "start": [
           "2020-01-23"
@@ -399,8 +400,7 @@ const products =
         ],
         "valReleasesEnd": [
           "2020-01-23"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork"
+        ]
       },
       "createdTime": "2019-02-11T18:50:41.000Z"
     },
@@ -448,6 +448,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "Planning",
         "packagingStatus": "Planning",
+        "docsLink": "https://github.com/XYOracleNetwork",
         "visibility": "Private",
         "start": [
           "2019-05-23"
@@ -485,8 +486,7 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-05-23"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork"
+        ]
       },
       "createdTime": "2019-02-11T18:55:28.000Z"
     },
@@ -535,6 +535,7 @@ const products =
         "uiUxStatus": "Released",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "docsLink": "https://github.com/XYOracleNetwork",
         "visibility": "Private",
         "start": [
           "2019-01-31"
@@ -570,8 +571,7 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-01-31"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork"
+        ]
       },
       "createdTime": "2019-01-07T21:32:57.000Z"
     },
@@ -615,6 +615,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "Planning",
         "packagingStatus": "Planning",
+        "docsLink": "https://github.com/XYOracleNetwork",
         "visibility": "Private",
         "start": [
           "2019-04-01"
@@ -646,8 +647,7 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-04-01"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork"
+        ]
       },
       "createdTime": "2019-01-14T22:54:59.000Z"
     },
@@ -693,6 +693,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "docsLink": "https://github.com/XYOracleNetwork",
         "visibility": "Private",
         "start": [
           "2019-03-28"
@@ -725,8 +726,7 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-28"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork"
+        ]
       },
       "createdTime": "2019-01-14T22:54:52.000Z"
     },
@@ -854,6 +854,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "docsLink": "https://github.com/XYOracleNetwork",
         "visibility": "Private",
         "start": [
           "2019-04-25"
@@ -887,8 +888,7 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-04-25"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork",
+        ]
       },
       "createdTime": "2019-01-14T22:57:24.000Z"
     },
@@ -934,6 +934,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "Released",
         "packagingStatus": "Planning",
+        "docsLink": "https://github.com/XYOracleNetwork",
         "visibility": "Public",
         "start": [
           "2019-03-20"
@@ -969,8 +970,7 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-20"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork"
+        ]
       },
       "createdTime": "2019-02-19T18:45:12.000Z"
     },
@@ -1013,6 +1013,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "Released",
         "packagingStatus": "Released",
+        "docsLink": "https://github.com/XYOracleNetwork",
         "visibility": "Public",
         "start": [
           "2019-01-01"
@@ -1046,8 +1047,7 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-01-01"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork"
+        ]
       },
       "createdTime": "2019-02-20T23:16:43.000Z"
     },
@@ -1107,7 +1107,7 @@ const products =
         "valCustomersDesc": [
           "Want to track, collection, visibility/transparency, and control of their own data. They care more about the visualization and want trusted data, but they are not blockchain",
           "Build Cool Dapps easily"
-        ],
+        ]
       },
       "createdTime": "2019-03-21T17:36:04.000Z"
     },
@@ -1201,6 +1201,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "docsLink": "https://github.com/XYOracleNetwork",
         "visibility": "Private",
         "start": [
           "2019-06-27",
@@ -1238,8 +1239,7 @@ const products =
         "valReleasesEnd": [
           "2019-06-27",
           "2019-11-07"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork"
+        ]
       },
       "createdTime": "2019-01-16T23:57:02.000Z"
     },
@@ -1285,6 +1285,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "Planning",
         "packagingStatus": "Planning",
+        "docsLink": "https://github.com/XYOracleNetwork",
         "visibility": "Private",
         "start": [
           "2019-05-23"
@@ -1320,8 +1321,7 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-05-23"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork"
+        ]
       },
       "createdTime": "2019-02-11T18:59:19.000Z"
     },
@@ -1369,6 +1369,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "Planning",
         "packagingStatus": "Planning",
+        "docsLink": "https://github.com/XYOracleNetwork",
         "visibility": "Private",
         "start": [
           "2019-05-23"
@@ -1406,8 +1407,7 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-05-23"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork"
+        ]
       },
       "createdTime": "2019-02-11T18:57:27.000Z"
     },
@@ -1455,6 +1455,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "docsLink": "https://github.com/XYOracleNetwork",
         "visibility": "Private",
         "start": [
           "2019-03-28"
@@ -1489,8 +1490,7 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-28"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork"
+        ]
       },
       "createdTime": "2019-01-16T21:56:57.000Z"
     },
@@ -1536,6 +1536,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "docsLink": "https://github.com/XYOracleNetwork",
         "visibility": "Private",
         "start": [
           "2019-09-26"
@@ -1568,8 +1569,7 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-09-26"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork"
+        ]
       },
       "createdTime": "2019-01-15T00:56:13.000Z"
     },
@@ -1584,7 +1584,8 @@ const products =
           "recYaPB847g1yZIgz",
           "recplWd86Nx1lH7wl",
           "recmotYCI37xmd6QL",
-          "reca770BHOmYX4vOu"
+          "reca770BHOmYX4vOu",
+          "recXshry6rgQ4nBUL"
         ],
         "marketingName": "XYO Network App",
         "Lead": [
@@ -1622,6 +1623,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "docsLink": "https://github.com/XYOracleNetwork",
         "androidAppLink": "https://play.google.com/store/apps/details?id=network.xyo.appxyoandroid.phone&hl=en_US",
         "visibility": "Public",
         "start": [
@@ -1661,7 +1663,8 @@ const products =
           "XYO Network App 2.0",
           "XYO Network App 2.1",
           "XYO Network App 2.2",
-          "XYO Network App 2.3"
+          "XYO Network App 2.3",
+          "XYO Network App "
         ],
         "valReleasesStart": [
           "2019-01-14",
@@ -1674,8 +1677,7 @@ const products =
           "2019-04-25",
           "2019-05-23",
           "2019-06-27"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork"
+        ]
       },
       "createdTime": "2019-01-14T22:54:10.000Z"
     },
@@ -1722,6 +1724,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "docsLink": "https://github.com/XYOracleNetwork",
         "visibility": "Private",
         "start": [
           "2019-03-28"
@@ -1758,8 +1761,7 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-28"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork"
+        ]
       },
       "createdTime": "2019-01-16T23:49:04.000Z"
     },
@@ -1805,6 +1807,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "docsLink": "https://github.com/XYOracleNetwork",
         "visibility": "Private",
         "start": [
           "2019-03-28"
@@ -1838,8 +1841,7 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-28"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork"
+        ]
       },
       "createdTime": "2019-01-11T17:29:08.000Z"
     },
@@ -1886,6 +1888,7 @@ const products =
         "uiUxStatus": "Released",
         "formFactorStatus": "Planning",
         "packagingStatus": "Test",
+        "docsLink": "https://geominers.xy.company/geomining-kit-secure-checkout?pid=1662211",
         "visibility": "Public",
         "start": [
           "2019-02-28"
@@ -1921,8 +1924,7 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-02-28"
-        ],
-        "docsLink": "https://geominers.xy.company/geomining-kit-secure-checkout?pid=1662211"
+        ]
       },
       "createdTime": "2019-01-14T22:55:07.000Z"
     },
@@ -2046,6 +2048,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "docsLink": "https://github.com/XYOracleNetwork",
         "visibility": "Private",
         "start": [
           "2019-02-28"
@@ -2077,8 +2080,7 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-02-28"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork"
+        ]
       },
       "createdTime": "2019-01-16T23:56:48.000Z"
     },
@@ -2204,6 +2206,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "Planning",
         "packagingStatus": "Test",
+        "docsLink": "https://xyo.network/geomining/",
         "visibility": "Public",
         "start": [
           "2019-03-28"
@@ -2237,8 +2240,7 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-28"
-        ],
-        "docsLink": "https://xyo.network/geomining/"
+        ]
       },
       "createdTime": "2019-01-14T22:54:59.000Z"
     },
@@ -2377,6 +2379,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "docsLink": "https://github.com/XYOracleNetwork",
         "visibility": "Public",
         "start": [
           "2019-01-24",
@@ -2445,8 +2448,7 @@ const products =
           "2019-04-25",
           "2019-05-23",
           "2019-09-26"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork"
+        ]
       },
       "createdTime": "2019-01-09T02:05:29.000Z"
     },
@@ -2496,6 +2498,7 @@ const products =
         "uiUxStatus": "Design",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "docsLink": "https://github.com/XYOracleNetwork",
         "visibility": "Public",
         "start": [
           "2019-03-28"
@@ -2533,8 +2536,7 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-28"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork"
+        ]
       },
       "createdTime": "2019-01-16T20:20:37.000Z"
     },
@@ -2580,6 +2582,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "Planning",
         "packagingStatus": "Planning",
+        "docsLink": "https://github.com/XYOracleNetwork",
         "visibility": "Private",
         "start": [
           "2019-05-23"
@@ -2615,8 +2618,7 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-05-23"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork"
+        ]
       },
       "createdTime": "2019-02-11T19:02:10.000Z"
     },
@@ -2673,6 +2675,7 @@ const products =
         "uiUxStatus": "Test",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "docsLink": "https://github.com/XYOracleNetwork",
         "androidAppLink": "https://play.google.com/store/apps/details?id=network.xyo.coin",
         "iOSAppLink": "https://itunes.apple.com/app/id1450443351",
         "visibility": "Public",
@@ -2734,8 +2737,7 @@ const products =
           "2019-05-23",
           "2019-06-26",
           "2019-10-24"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork"
+        ]
       },
       "createdTime": "2019-01-11T17:28:08.000Z"
     },
@@ -2782,6 +2784,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "docsLink": "https://github.com/XYOracleNetwork",
         "visibility": "Private",
         "start": [
           "2019-03-28"
@@ -2815,8 +2818,7 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-28"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork"
+        ]
       },
       "createdTime": "2019-01-16T23:56:27.000Z"
     },
@@ -2864,6 +2866,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "docsLink": "https://github.com/XYOracleNetwork",
         "visibility": "Private",
         "start": [
           "2019-02-28",
@@ -2902,8 +2905,7 @@ const products =
         "valReleasesEnd": [
           "2019-02-28",
           "2019-03-28"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork"
+        ]
       },
       "createdTime": "2019-01-14T22:57:14.000Z"
     },
@@ -2929,6 +2931,7 @@ const products =
         ],
         "description": "Initial Concept... Disassembled Raspberry Pi and a few sensors. SD card with ",
         "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
+        "docsLink": "https://github.com/XYOracleNetwork",
         "start": [
           "2019-04-25"
         ],
@@ -2949,8 +2952,7 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-04-25"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork"
+        ]
       },
       "createdTime": "2019-03-25T15:47:51.000Z"
     },
@@ -2984,6 +2986,7 @@ const products =
         ],
         "status": "Developing",
         "description": "The Dataism Black Box is the starting point for anyone who wants to participate in the Dataism revolution. Limited to just 5,000 people this box contains everything from the Dataism Mastery course to a geomining kit, from a T-shirt to a guide to using the COIN app.",
+        "docsLink": "https://www.stateofthefutureaddress.com/dataist-blackbox-checkout",
         "visibility": "Private",
         "start": [
           "2019-03-28"
@@ -3016,8 +3019,7 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-03-28"
-        ],
-        "docsLink": "https://www.stateofthefutureaddress.com/dataist-blackbox-checkout"
+        ]
       },
       "createdTime": "2019-03-20T17:40:45.000Z"
     },
@@ -3147,6 +3149,7 @@ const products =
         "uiUxStatus": "NA",
         "formFactorStatus": "NA",
         "packagingStatus": "NA",
+        "docsLink": "https://github.com/XYOracleNetwork",
         "visibility": "Private",
         "start": [
           "2019-01-11",
@@ -3203,8 +3206,7 @@ const products =
           "2019-04-25",
           "2019-05-23",
           "2019-01-01"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork"
+        ]
       },
       "createdTime": "2019-01-06T19:09:09.000Z"
     },
@@ -3225,6 +3227,7 @@ const products =
         "status": "Developing",
         "logo": "http://cdn.xy.company/img/logos/Developers_Logo_Colored.png",
         "publicDesc": "IoT device relaying data in XYO Network.\n",
+        "docsLink": "https://developers.xyo.network/docs/en/bridge-x/",
         "visibility": "Public",
         "valDivision": [
           "xyDevices"
@@ -3234,8 +3237,7 @@ const products =
         ],
         "valLead": [
           "Carter Harrison"
-        ],
-        "docsLink": "https://github.com/XYOracleNetwork"
+        ]
       },
       "createdTime": "2019-02-25T23:02:02.000Z"
     }
