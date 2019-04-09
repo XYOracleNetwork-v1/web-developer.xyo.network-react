@@ -15,7 +15,7 @@
     "docusaurus": "^1.7.3",
     "eslint": "^5.15.3",
     "eslint-plugin-react": "^7.12.4",
-    "generate-changelog": "^1.7.1"
+    "generate-changelog": "^1.7.1",
     "eslint-plugin-react": "^7.12.4"
   },
   "dependencies": {

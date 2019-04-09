@@ -8,7 +8,7 @@
 
 Table of Contents
 -[Sections](#sections)
-- [Title](#Dev Portal)
+- [Title](#dev-portal)
 - [Short Description](#short-description)
 - [Long Description](#long-description)
 - [Security](#security)
