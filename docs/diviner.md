@@ -75,12 +75,11 @@ yarn install
 ```
 
 ### Build the SDK
+**Note** This will take a moment, so be patient, it will take around a minute.
 
 ```sh
 yarn build
 ```
-
-**Note** This will take a moment, so be patient, it will take around a minute.
 
 ## Start and Configure your Diviner
 

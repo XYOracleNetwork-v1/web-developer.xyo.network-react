@@ -2,6 +2,7 @@
 id: archivist
 title: Archivist App
 ---
+
 <div class="alert alert-danger text-center" role="alert">
   This guide is not for production ready Archivists, this is a product currently in development and will be updated often prior to mainnet release. 
   For production-ready Archivists you will be able to download an npm package for use in your application.
