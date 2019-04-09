@@ -9,6 +9,10 @@ title: Bridge X
 
 ## Three Options to Connect Your Bridge X
 
+## Important - Before you begin 
+
+Be sure to have an updated SDCard that should have been sent to you. This is the best way to have the latest hardware. If you want to flash the latest image to your SDCard, please refer to the directions by **[clicking here](#update-your-bridge)**
+
 ### First option
 
 - Connect your Bridge X to a power source
@@ -50,11 +54,14 @@ title: Bridge X
   We have included these instructions as a back up. We strongly recommend that you order a new SDCard with the updated Bridge X firmware image before
   approaching this workflow. This process will take up to an hour to complete. 
 </div>
-## Downloading an image to your Bridge X to update it
+
+## Update your Bridge
+## Downloading and flashing a Bridge X image 
 
 ### MacOS
 
-- First plug your SDCard into your chosen dongle USB to SDCard reader
+- First insert your SDCard into your chosen dongle USB to SDCard reader
+- Download the Bridge X image here  --> 
 - Open your Mac's disk utility and navigate to 16gb disk NORELSYS 1081
 - Click Erase
 - Select ExFAT as your format for the new partition
@@ -75,3 +82,23 @@ Go into a terminal window
 ```sh 
   sudo dd if=./xyobridge.img of=/dev/<your parent disks name> bs=1m
 ```
+
+### Windows 10
+
+- First insert your SDCard into your chosen dongle USB to SDCard reader
+- Download the Bridge X image here  --> 
+- Right click on ThisPC in sidebar below OneDrive
+- Click **manage**
+- Under **storage**
+  - Click **Disk Management**
+- Find the 14.84GB disk (or approx 14GB, that is not already accounted for from any work that you have done)
+  - This will most likely be named `NORELSYS`
+- Select Boot and the Partition - delete both
+  - wipe disk
+  - all that should be left is unallocated 
+- Move the downloaded Bridge img to Documents
+- Right click on your Command Prompt to open as `administrator`
+- Enter `d:` to navigate to the D drive 
+- Then enter this `dd if=./xyobridge.img of=.E bs=4096`
+  - This command will start flashing the image to your SDCard
+  - **NOTE** This process will take at least 20 minutes, keep this in mind when planning time to flash the image. 
