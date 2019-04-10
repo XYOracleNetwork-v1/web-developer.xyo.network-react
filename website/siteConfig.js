@@ -888,7 +888,7 @@ const products =
         ],
         "valReleasesEnd": [
           "2019-04-25"
-        ]
+        ],
       },
       "createdTime": "2019-01-14T22:57:24.000Z"
     },
@@ -1107,7 +1107,7 @@ const products =
         "valCustomersDesc": [
           "Want to track, collection, visibility/transparency, and control of their own data. They care more about the visualization and want trusted data, but they are not blockchain",
           "Build Cool Dapps easily"
-        ]
+        ],
       },
       "createdTime": "2019-03-21T17:36:04.000Z"
     },
