@@ -79,6 +79,8 @@ class HomeSplash extends React.Component {
         <DevzillaContainer>
           <div className="heroTitle text-center pb-5">
             <img src="/img/Devzilla_Type_Colored.png" className="mx-auto d-block" alt="devzilla" />
+            <h1>JUNE 5 - 7 2019</h1>
+            <h1>WORKSHOPS &#xb7; LEARNING &#xb7; DECENTRALIZED</h1>
           </div>
           <DevzillaDescription />
         </DevzillaContainer>
@@ -113,9 +115,12 @@ class Index extends React.Component {
     );
 
     const ConnectionMatrix = () => (
-      <div>
-        <h1 className="text-center">Current Connection State</h1>
-        <div className="row justify-content-center">
+      <div className="bg-light p-5">
+        <div className="text-center p-3">
+          <h1><a name="connection-matrix">Current Connection State</a></h1>
+          <h3><strong>You can view the current state of connectivity between nodes and apps here</strong></h3>
+        </div>
+        <div className="row justify-content-center p-3">
           <div className="col-auto">
             <table className="table table-responsive">
                 <thead>
