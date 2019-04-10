@@ -111,6 +111,57 @@ class Index extends React.Component {
           />
       </Container>
     );
+
+    const ConnectionMatrix = () => (
+      <div>
+        <h1 className="text-center">Current Connection State</h1>
+        <div className="row justify-content-center">
+          <div className="col-auto">
+            <table className="table table-responsive">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">iOS App</th>
+                    <th scope="col">Android App</th>
+                    <th scope="col">Node Bridge X</th>
+                    <th scope="col">Sentinel X</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">iOS App</th>
+                    <td className="table-success"><i className="fas fa-check"></i></td>
+                    <td className="table-danger"><i className="fas fa-times"></i></td>
+                    <td className="table-success"><i className="fas fa-check"></i></td>
+                    <td className="table-success"><i className="fas fa-check"></i></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Android App</th>
+                    <td className="table-danger"><i className="fas fa-times"></i></td>
+                    <td className="table-success"><i className="fas fa-check"></i></td>
+                    <td className="table-success"><i className="fas fa-check"></i></td>
+                    <td className="table-success"><i className="fas fa-check"></i></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Node Bridge X</th>
+                    <td className="table-success"><i className="fas fa-check"></i></td>
+                    <td className="table-success"><i className="fas fa-check"></i></td>
+                    <td className="table-success"><i className="fas fa-check"></i></td>
+                    <td className="table-success"><i className="fas fa-check"></i></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Sentinel X</th>
+                    <td className="table-success"><i className="fas fa-check"></i></td>
+                    <td className="table-success"><i className="fas fa-check"></i></td>
+                    <td className="table-success"><i className="fas fa-check"></i></td>
+                    <td className="table-danger"><i className="fas fa-times"></i></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+      </div>
+    );
     
     const FeatureCallout = () => (
       <div
@@ -237,6 +288,7 @@ class Index extends React.Component {
         <HomeSplash siteConfig={siteConfig} language={language} />
           <Features />
           <FeatureCallout />
+          <ConnectionMatrix />
           <Showcase />
       </div>
     );
