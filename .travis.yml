@@ -1,8 +1,8 @@
-before_install: cd website  
 language: node_js
 node_js:
-  - "stable"
-install: 
-  - yarn 
-  - docusaurus-build
-cache: yarn
+  - '8'
+branches:
+  only:
+    - master
+cache:
+  yarn: true
