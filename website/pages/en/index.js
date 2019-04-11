@@ -1,10 +1,3 @@
-/**
- * Copyright (c) 2017-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
 const React = require('react');
 
 const CompLibrary = require('../../core/CompLibrary.js');
@@ -42,35 +35,6 @@ class HomeSplash extends React.Component {
         <div className="homeSplashFade">
           <div className="wrapper homeWrapper">{props.children}</div>
         </div>
-      </div>
-    );
-    
-    const Logo = props => (
-      <div className="projectLogo">
-        <img src={props.img_src} alt="Project Logo" />
-      </div>
-    );
-    
-    const ProjectTitle = () => (
-      <h2 className="projectTitle">
-        XYO Devs
-        <small>{siteConfig.tagline}</small>
-      </h2>
-    );
-    
-    const PromoSection = props => (
-      <div className="section promoSection">
-        <div className="promoRow">
-          <div className="pluginRowBlock">{props.children}</div>
-        </div>
-      </div>
-    );
-    
-    const Button = props => (
-      <div className="pluginWrapper buttonWrapper">
-        <a className="button" href={props.href} target={props.target}>
-          {props.children}
-        </a>
       </div>
     );
     
@@ -188,20 +152,6 @@ class Index extends React.Component {
             </div>
           </div>
         </div>   
-    );
-    
-    const Description = () => (
-      <Block background="dark">
-        {[
-          {
-            content:
-            'Location data decentralization use cases',
-            image: `${baseUrl}img/type_white.svg`,
-            imageAlign: 'right',
-            title: 'Why XYO?',
-          },
-        ]}
-      </Block>
     );
     
     const Features = () => (
