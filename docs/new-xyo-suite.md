@@ -14,7 +14,12 @@ title: Aristotle Release
 
 Our **new XYO App** allows you to easily connect to both the new Sentinel X and the Bridge X to accelerate your geomining workflow. The interface is easy to use and it is a great tool to monitor number of Bound Witnesses, connect devices to the Xyo network and access tutorials on your devices.
 
-We are also thrilled to introduce you to The **Matrix**, a new member of the XYO family which allows you to easily connect to a diviner. The **Matrix** is also a visual tool of the XYO network, where you can see activity in real time. The geomining revolution continues!
+We are also thrilled to introduce you to The **Matrix**, a new member of the XYO family which allows our users to explore the XYO Network. 
+The Matrix includes visual tools to explore the network and its health with visualizations of 
+- Active Bound Witnesses
+- Nodes in the network
+- Total stake in the network (in XYO)
+- Requests of the network 
 
 ## Tools for Sentinels, Bridges, and Archivists
 
@@ -25,74 +30,7 @@ We are also thrilled to introduce you to The **Matrix**, a new member of the XYO
 
 **The XYO Bridge is the primary data relayer of the XYO Network. It signs off on collected data from nearby Sentinel X devices to add to the proof of origin chain.**
 
-### Getting Started
-
-### What will you need? Some of these items you may not need but you should have just in case. 
-
-- Bridge X device
-- [Google Chrome Browser](https://www.google.com/chrome/) or [Firefox Browser](https://www.mozilla.org/en-US/firefox/)
-- Access to router and router information 
-- Ethernet cable
-- HDMI Cable 
-
-## Key Concepts you should review before diving into set up with the App
-
-We recommend that you review these items prior to starting, but if you are too excited to get right in, go ahead and continue and these resources will be here when and if you need to dig deeper into a key word or concept. 
-
-- [Read this guide on the 4 Node Types of XYO](https://developers.xyo.network/docs/en/Introduction/)
-- [Read on the concept of a smart contract](https://en.wikipedia.org/wiki/Ethereum#Smart_contracts)
-
-### Getting connected 
-
-### Set up  
-
-To start using the Bridge X, you will need the device, and as back up, an ethernet cable and/or an HDMI cable.
-
-**Three Options to Connect Your Bridge X**
-
-### First option
-
-- Connect your Bridge X to a power source
-- Connect your Bridge to your Router using an Ethernet Cable
-- Check to see if indicator lights are green near the ethernet and power ports
-- Using your computer, point your browser to **xyo.local**
-- You should see your Bridge and its IP address information on the **xyo.local** site
-- Once you see this and confirm, then go ahead and click on the **Connect** button to connect the Bridge to the XYO Network!
-
-### Second Option (Using Google Chrome or Firefox)
-- Connect your Bridge X to a power source
-- Connect your Bridge to your Router using an Ethernet Cable
-- Check to see if indicator lights are green near the ethernet and power ports
-- Using your computer, point your browser to **app.xyo.network**
-- In the main app dashboard, you will see a **Scan for Devices** button
-- Click **Scan For Devices**
-- The app will take a few moments in scanning for your Bridge X, you will see an indicator for progress
-- Once the app discovers the Bridge, you can verify the name and IP address of your Bridge X
-- Click **Connect**
-- You are now connected to your Bridge X!
-
-### Third Option
-- Connect your Bridge X to a power source
-- Connect your Bridge to your Router using an Ethernet Cable
-- Check to see if indicator lights are green near the ethernet and power ports
-- Connect your Bridge X to a display of your choice using an HDMI cable
-- You should now see a UI on your display
-- If you do see this, go ahead and enter the values that it prompts for
-- These values are your wifi username and password
-
-### Using the Matrix
-
-- You should also check out the Matrix for more info on the Archivists and Diviners that are using the date that your Bridge X is relaying. 
-
-<h1 align="left">
-  <img alt="matrix-dashboard" src="/docs/assets/main_dashboard_matrix.png">
-</h1>
-
-**You have just executed one of the core essentials of the XYO Network and the Matrix, celebrate by going to our [Matrix Guide]() to learn more about the Matrix and setting up your archivist to gather heuristics from your bridge, and if you really want to dive deep, go to our [Developer Portal]()
-
-### Congratulations you have continued your journey into XYO and Bridge X!
-
-## Tools for Diviners
+[Click here](https://developers.xyo.network/docs/en/bridge-x/) to learn how to connect a Bridge X using the new Bridge Interface or new XYO App
 
 ## Using the Matrix
 
