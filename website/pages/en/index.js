@@ -79,6 +79,8 @@ class HomeSplash extends React.Component {
         <DevzillaContainer>
           <div className="heroTitle text-center pb-5">
             <img src="/img/Devzilla_Type_Colored.png" className="mx-auto d-block" alt="devzilla" />
+            <h1>JUNE 5 - 7 2019</h1>
+            <h1>WORKSHOPS &#xb7; LEARNING &#xb7; DECENTRALIZED</h1>
           </div>
           <DevzillaDescription />
         </DevzillaContainer>
@@ -110,6 +112,60 @@ class Index extends React.Component {
           className="card shadow card-body"
           />
       </Container>
+    );
+
+    const ConnectionMatrix = () => (
+      <div className="bg-light p-5">
+        <div className="text-center p-3">
+          <h1><a name="connection-matrix">Current Connection State</a></h1>
+          <h3><strong>You can view the current state of connectivity between nodes and apps here</strong></h3>
+        </div>
+        <div className="row justify-content-center p-3">
+          <div className="col-auto">
+            <table className="table table-responsive">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">iOS App</th>
+                    <th scope="col">Android App</th>
+                    <th scope="col">Node Bridge X</th>
+                    <th scope="col">Sentinel X</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">iOS App</th>
+                    <td className="table-success"><i className="fas fa-check"></i></td>
+                    <td className="table-danger"><i className="fas fa-times"></i></td>
+                    <td className="table-success"><i className="fas fa-check"></i></td>
+                    <td className="table-success"><i className="fas fa-check"></i></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Android App</th>
+                    <td className="table-danger"><i className="fas fa-times"></i></td>
+                    <td className="table-success"><i className="fas fa-check"></i></td>
+                    <td className="table-success"><i className="fas fa-check"></i></td>
+                    <td className="table-success"><i className="fas fa-check"></i></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Node Bridge X</th>
+                    <td className="table-success"><i className="fas fa-check"></i></td>
+                    <td className="table-success"><i className="fas fa-check"></i></td>
+                    <td className="table-success"><i className="fas fa-check"></i></td>
+                    <td className="table-success"><i className="fas fa-check"></i></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Sentinel X</th>
+                    <td className="table-success"><i className="fas fa-check"></i></td>
+                    <td className="table-success"><i className="fas fa-check"></i></td>
+                    <td className="table-success"><i className="fas fa-check"></i></td>
+                    <td className="table-danger"><i className="fas fa-times"></i></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+      </div>
     );
     
     const FeatureCallout = () => (
@@ -237,6 +293,7 @@ class Index extends React.Component {
         <HomeSplash siteConfig={siteConfig} language={language} />
           <Features />
           <FeatureCallout />
+          <ConnectionMatrix />
           <Showcase />
       </div>
     );

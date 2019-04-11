@@ -3262,7 +3262,7 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    { doc: 'Introduction', label: 'Guides'},
+    { doc: 'getting-started', label: 'Guides'},
     { href: 'http://reference.xyo.network/', label: 'Reference'},
     {page: 'help', label: 'Help'},
   ],
@@ -3317,7 +3317,7 @@ const siteConfig = {
   // Show documentation's last update time.
   enableUpdateTime: true,
 
-  stylesheets: ['https://fonts.googleapis.com/css?family=Titillium+Web', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'],
+  stylesheets: ['https://fonts.googleapis.com/css?family=Titillium+Web', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', 'https://use.fontawesome.com/releases/v5.8.1/css/all.css'],
 
   useEnglishUrl: true,
 
