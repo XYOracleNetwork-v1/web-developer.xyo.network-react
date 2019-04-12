@@ -366,3 +366,6 @@ You can also confirm you have peers by pointing to your browser with `localhost:
 
 **This is just the beginning, now go to our [Archivist App Guide](https://developers.xyo.network/docs/en/archivist/) to start up an Archivist!**
 - When you do, you'll be able to have a conversation between these two XYO nodes and execute queries!
+
+
+<p align="center">Made with  ❤️  by [<b>XY - The Persistent Company</b>] (https://xy.company)</p>

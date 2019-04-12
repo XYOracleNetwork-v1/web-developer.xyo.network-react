@@ -3,11 +3,12 @@
     "Getting Started": ["getting-started"],
     "XYO Nodes Introduction": ["Introduction"],
     "XYO Node Guides": ["new-xyo-suite"],
+    "Core Nodejs Package": ["archivist-diviner"],
     "Diviner": ["diviner"],
     "Archivist": ["archivist"],
     "Bridge": ["bridge-x"],
     "Sentinel": ["sentinel"],
-    "Smart Contract Apps": ["dapploy", "dapper"],
+    "Smart Contract Apps": ["dapploy", "dapper", "scsc"],
     "Demos": ["payable-demo"],
     "SDKs": [
       "SDK-Package-Node",

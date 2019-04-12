@@ -1,20 +1,16 @@
-#### 2.2.1 (2019-04-01)
+#### 2.2.1 (2019-04-11)
 
 ##### Chores
 
-*  update dependencies and add changelog generator ([dcb1faea](https://github.com/xycorp/web-developer.xyo.network-react.git/commit/dcb1faea38aaacd346786fbcbdd378cf8dcb3e35))
+*  clean code in index file ([531e9c79](https://github.com/xycorp/web-developer.xyo.network-react.git/commit/531e9c79f88e54d43543fa4f710de5d51d39d9e5))
 
 ##### Documentation Changes
 
-*  update to payable demo, inidicate that this is sunsetting ([c275fbab](https://github.com/xycorp/web-developer.xyo.network-react.git/commit/c275fbabe30b7ea2d0504f38c382067be07d9884))
-*  introduction to app and matrix guides ([1d34ab95](https://github.com/xycorp/web-developer.xyo.network-react.git/commit/1d34ab959c0ca508089d38b46c1a2555c9fc130b))
-*  update for bridge and diviner ([682bb20f](https://github.com/xycorp/web-developer.xyo.network-react.git/commit/682bb20f09772f38de981e2eb857fa25400bbae4))
+*  update intro aristotle guide, clean up and remove redundant info ([23ccd747](https://github.com/xycorp/web-developer.xyo.network-react.git/commit/23ccd7471cfc6f881342ba55561a09133d23eec3))
+*  create new doc for archivist-diviner setup ([#8](https://github.com/xycorp/web-developer.xyo.network-react.git/pull/8)) ([643538f7](https://github.com/xycorp/web-developer.xyo.network-react.git/commit/643538f79cea9a43ae0b6d788aa28f207adf9300))
+*  create new doc for archivist-diviner setup ([50f082f9](https://github.com/xycorp/web-developer.xyo.network-react.git/commit/50f082f9cb553104d5fdae39cb8b7e4d02bb0847))
 
-##### New Features
+##### Refactors
 
-*  add dynamic product component replace static product table ([dc6d5440](https://github.com/xycorp/web-developer.xyo.network-react.git/commit/dc6d5440f1e9664e65058fde5aa6a811f79f4bcb))
-
-##### Code Style Changes
-
-*  update to guide sidebar ([c53ec1cf](https://github.com/xycorp/web-developer.xyo.network-react.git/commit/c53ec1cf862f49240488bf7477785dfb7841d724))
+*  update gulpfile with correct flow and travis ([2ea907cb](https://github.com/xycorp/web-developer.xyo.network-react.git/commit/2ea907cb1043c552c1ea2a1cf51af322bab6aa5f))
 
