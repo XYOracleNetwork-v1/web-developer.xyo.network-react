@@ -373,18 +373,6 @@ Ganache will work again executing transactions while executing the unit tests.
 
 We recommend testing after any revisions you make to contracts. 
 
-## Developer Guide
-
-Developers should conform to git flow workflow. Additionally, we should try to make sure
-every commit builds. Commit messages should be meaningful serve as a meta history for the
-repository. Please squash meaningless commits before submitting a pull-request.
-
-### License
-
-MIT
-
-### Credits
-
 Package developed using [ZeppelinOS](https://zeppelinos.org/)
 
 <p align="center">Made with  ❤️  by [<b>XY - The Persistent Company</b>] (https://xy.company)</p>
