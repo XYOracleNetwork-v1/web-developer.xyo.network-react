@@ -26,3 +26,21 @@ title: Sentinel X
 - After clicking on the `XY` button twice, you will most likely be directed to a firmware update screen
    - If you are: **NOTE** Doing this update will convert your XY4 Find It into a Sentinel X - this change is permanent
    - The screen should look like this:
+<h1 align="left">
+  <img alt="sentinel-download-screen" src="/docs/assets/sentinel_download.png">
+</h1>
+- Once you click `DOWNLOAD NOW` the XY4 will begin the firmware update process
+- After the process completes, you will be directed to configure the Sentinel
+<h1 align="left">
+  <img alt="device_data_app-screen" src="/docs/assets/device_data_app.png">
+</h1>
+- After giving the Sentinel the name and confirming location, click `SAVE`
+- When you see your Sentinel X in detail, your screen should look like this
+<h1 align="left">
+  <img alt="sentinel-page" src="/docs/assets/sentinel_page.png">
+</h1>
+
+<p align="center">Congratulations! You just added a Sentinel X to your XYO Account using the new XYO App!</p>
+
+
+<p align="center">Made with  ❤️  by [<b>XY - The Persistent Company</b>] (https://xy.company)</p>

@@ -141,3 +141,55 @@ Go into a terminal window
 - Then enter this `dd if=./xyobridge.img of=.E bs=4096`
   - This command will start flashing the image to your SDCard
   - **NOTE** This process will take at least 20 minutes, keep this in mind when planning time to flash the image. 
+
+  ### Using Etcher (MacOS, Linux, or Windows)
+  
+  The easiest way to flash our new Bridge image to your current SDCard is by using `etcher`
+  
+  - First we [download etcher here](https://www.balena.io/etcher/)
+  - You will notice the download button searching for your OS
+  - When it discovers it you should see the Download button display your OS, below an example on MacOS
+
+<h1 align="left">
+  <img alt="etcher-download-button" src="/docs/assets/etcher_download_button.png">
+</h1>
+
+- Once download is complete move the Etcher into your `Applications` 
+
+- Now, open the application (through your respective search OS function)
+- Here is a MacOS example of the GUI you should see when you open up the application 
+<h1 align="left">
+  <img alt="etcher-gui" src="/docs/assets/etcher_gui.png">
+</h1>
+- Now we can click `select image` - this will direct you to your respective file explorer where you can find your Bridge X image
+- Once you find it click on it and then click `open`
+- You can now click on the drive that you just formatted
+<h1 align="left">
+  <img alt="select-drive-gui" src="/docs/assets/select_drive_gui.png">
+</h1>
+- Now we can click `Select drive` - this will direct you to your respective file explorer where you can find the drive that you formatted
+- Once you find it click on it and then click `open`
+**NOTE** If you did successfully format that SDCard, the GUI may automatically set the drive without you having to find it
+Your GUI should look something like this before you flash the SDCard (MacOS example)
+<h1 align="left">
+  <img alt="flash-gui" src="/docs/assets/flash_gui.png">
+</h1>
+- Now we can click `Flash!`
+- You will be prompted to enter your device password 
+- Once you do, the GUI will change to indciate that the SDCard is currently flashing 
+<h1 align="left">
+  <img alt="flashing-gui" src="/docs/assets/flashing_gui.png">
+</h1>
+- Depending on the current image, this may take from 10 - 18 minutes, go ahead and check out the [Matrix](https://matrix.xyo.network/) while you wait!
+
+- After Etcher completes the flashing process, it will go into validating the flash
+
+<h1 align="left">
+  <img alt="flashing-gui" src="/docs/assets/flashing_gui.png">
+</h1>
+
+- Once that is completed, you can eject the SDCard and install it in your Bridge X
+
+- Refer back to the beginning of this guide for how to set up your Bridge X
+
+<p align="center">Made with  ❤️  by [<b>XY - The Persistent Company</b>] (https://xy.company)</p>
