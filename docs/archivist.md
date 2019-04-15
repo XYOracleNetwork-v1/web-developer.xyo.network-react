@@ -76,10 +76,11 @@ yarn build
 
 **Note** This will take a moment, so be patient, it will take around 30 seconds.
 
-### Bootstrap or manage your MySQL service
+### Bootstrap your SQL Database
+**NOTE** We will have other storage options available in future updates
 
 ```sh
-  yarn manage:db
+yarn manage:db
 ```
 
 ```sh
