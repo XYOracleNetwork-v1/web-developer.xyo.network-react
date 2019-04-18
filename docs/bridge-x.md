@@ -377,5 +377,33 @@ After the password is confirmed you will see this message and you may continue o
 passwd: password updated successfully
 ```
 
+## Adding an archivist
+
+### Use the Bridge X UI
+
+- Scroll down on the dashboard to your connected archivists - you will see that we have one connected which is XYO's Archivist
+
+<h1 align="left">
+  <img alt="archivist-gui" src="/docs/assets/archivists_ui.png">
+</h1>
+
+- Click `+Connect More Archivists`
+
+You should see a `Add Archivist` modal pop up on your screen
+- Enter the IP Address or DNS Name
+- Enter the Port number
+- Click `Save`
+
+<h1 align="left">
+  <img alt="add-archivist" src="/docs/assets/add_archivist.png">
+</h1>
+
+- Once we save the information, we should now see another Archivist under `Connected Archivists`
+
+<h1 align="left">
+  <img alt="connected-archivists" src="/docs/assets/connected_archivists.png">
+</h1>
+
+We have now connected an Archivist to the Bridge X using the Bridge's native UI!
 
 <h3 align="left">Made with  ❤️  by [<b>XY - The Persistent Company</b>] (https://xy.company)</h3>
