@@ -16,8 +16,21 @@ Be sure to have an updated SDCard that should have been sent to you. This is the
 ### First option
 
 - Connect your Bridge X to a power source
+<h1 align="left">
+  <img alt="plug-bridge" src="/docs/assets/plug_bridge.jpg" height="300px">
+</h1>
 - Connect your Bridge to your Router using an Ethernet Cable
-- Check to see if indicator lights are green near the ethernet and power ports
+<h1 align="left">
+  <img alt="plug-ethernet" src="/docs/assets/plug_ethernet.jpg" height="300px">
+</h1>
+- Check to see if indicator lights are red and green near the power port
+<h1 align="left">
+  <img alt="power-light" src="/docs/assets/power_light.jpg" height="300px">
+</h1>
+- Check to see if indicator lights are static amber and flashing green at the ethernet port
+<h1 align="left">
+  <img alt="ethernet-light" src="/docs/assets/ethernet_light.jpg" height="300px">
+</h1>
 - Using your computer, point your browser to **xyo-bridge.local**
 - You should see a text input field to enter and confirm a password with a **Continue** button
 
@@ -53,8 +66,21 @@ Be sure to have an updated SDCard that should have been sent to you. This is the
 
 ### Second Option (Using Google Chrome or Firefox)
 - Connect your Bridge X to a power source
+<h1 align="left">
+  <img alt="plug-bridge" src="/docs/assets/plug_bridge.jpg" height="300px">
+</h1>
 - Connect your Bridge to your Router using an Ethernet Cable
-- Check to see if indicator lights are green near the ethernet and power ports
+<h1 align="left">
+  <img alt="plug-ethernet" src="/docs/assets/plug_ethernet.jpg" height="300px">
+</h1>
+- Check to see if indicator lights are red and green near the power port
+<h1 align="left">
+  <img alt="power-light" src="/docs/assets/power_light.jpg" height="300px">
+</h1>
+- Check to see if indicator lights are static amber and flashing green at the ethernet port
+<h1 align="left">
+  <img alt="ethernet-light" src="/docs/assets/ethernet_light.jpg" height="300px">
+</h1>
 - Using your computer, point your browser to **app.xyo.network**
 - Create a username and password, or if you have already started using the app on either Web or Mobile, log in with your email and password
 - You should now see the main XYO App Dashboard
@@ -88,13 +114,33 @@ Be sure to have an updated SDCard that should have been sent to you. This is the
 **NOTE** You will need a keyboard and mouse for this option
 **NOTE** While the SDCard is loading your screen may appear black for about 30 seconds
 - Connect your Bridge X to a power source
-- Connect your Bridge X to your Router using an Ethernet Cable
-- Check to see if indicator lights are flashing green and static amber near the ethernet and power ports
+<h1 align="left">
+  <img alt="plug-bridge" src="/docs/assets/plug_bridge.jpg" height="300px">
+</h1>
+- Connect your Bridge to your Router using an Ethernet Cable
+<h1 align="left">
+  <img alt="plug-ethernet" src="/docs/assets/plug_ethernet.jpg" height="300px">
+</h1>
+- Check to see if indicator lights are red and green near the power port
+<h1 align="left">
+  <img alt="power-light" src="/docs/assets/power_light.jpg" height="300px">
+</h1>
+- Check to see if indicator lights are static amber and flashing green at the ethernet port
+<h1 align="left">
+  <img alt="ethernet-light" src="/docs/assets/ethernet_light.jpg" height="300px">
+</h1>
 - Connect your Bridge X to a display of your choice using an HDMI cable
+<h1 align="left">
+  <img alt="hdmi-plug" src="/docs/assets/hdmi_plug.jpg" height="300px">
+</h1>
 - Connect a mouse and keyboard to your bridge using the available USB ports
 - You should now see a UI on your display similar to the first option
-- Enter the password provided and click **login** to connect the Bridge X
-- You can now click the **Wifi** icon to connect the Bridge X to your Local Wifi Network
+- You should see a text input field to enter and confirm a password with a **Continue** button
+<h1 align="left">
+  <img alt="bridge-ui" src="/docs/assets/bridge_ui_new.png">
+</h1>
+- Create a password that you will remember, and the confirm that password. Click **Continue** to connect the Bridge X
+- To set up Wifi for your Bridge X - click the **Wifi** icon to connect the Bridge X to your Local Wifi Network
 
 ### After you connect your Bridge X
 
