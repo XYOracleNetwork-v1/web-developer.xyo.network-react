@@ -16,16 +16,29 @@ Be sure to have an updated SDCard that should have been sent to you. This is the
 ### First option
 
 - Connect your Bridge X to a power source
+<h1 align="left">
+  <img alt="plug-bridge" src="/docs/assets/plug_bridge.jpg" height="300px">
+</h1>
 - Connect your Bridge to your Router using an Ethernet Cable
-- Check to see if indicator lights are green near the ethernet and power ports
+<h1 align="left">
+  <img alt="plug-ethernet" src="/docs/assets/plug_ethernet.jpg" height="300px">
+</h1>
+- Check to see if indicator lights are red and green near the power port
+<h1 align="left">
+  <img alt="power-light" src="/docs/assets/power_light.jpg" height="300px">
+</h1>
+- Check to see if indicator lights are static amber and flashing green at the ethernet port
+<h1 align="left">
+  <img alt="ethernet-light" src="/docs/assets/ethernet_light.jpg" height="300px">
+</h1>
 - Using your computer, point your browser to **xyo-bridge.local**
-- You should see a text input field for your password and a login button
+- You should see a text input field to enter and confirm a password with a **Continue** button
 
 <h1 align="left">
-  <img alt="bridge-ui" src="/docs/assets/bridge_ui.png">
+  <img alt="bridge-ui" src="/docs/assets/bridge_ui_new.png">
 </h1>
 
-- Enter the provided password and click **login** to connect the Bridge X
+- Create a password that you will remember, and the confirm that password. Click **Continue** to connect the Bridge X
 
 - Once you connect, you should see a screen similar to this 
 
@@ -35,11 +48,39 @@ Be sure to have an updated SDCard that should have been sent to you. This is the
 
 **Use Your Bridge X to interact on the XYO network!**
 - You can now click the **Wifi** icon to connect the Bridge X to your Local Wifi Network
+- You should have your Wifi connection details handy to complete this step.
+
+<h1 align="left">
+  <img alt="wifi-icon" src="/docs/assets/wifi.png">
+</h1>
+
+- Next, claim your Bridge X by logging in with your **XYO Account** - enter your email and password and then click **Login**
+
+**You should now see this screen**
+
+<h1 align="left">
+  <img alt="claim-bridge" src="/docs/assets/claim_bridge.png">
+</h1>
+
+- Now click **Claim** to claim your Bridge X!
 
 ### Second Option (Using Google Chrome or Firefox)
 - Connect your Bridge X to a power source
+<h1 align="left">
+  <img alt="plug-bridge" src="/docs/assets/plug_bridge.jpg" height="300px">
+</h1>
 - Connect your Bridge to your Router using an Ethernet Cable
-- Check to see if indicator lights are green near the ethernet and power ports
+<h1 align="left">
+  <img alt="plug-ethernet" src="/docs/assets/plug_ethernet.jpg" height="300px">
+</h1>
+- Check to see if indicator lights are red and green near the power port
+<h1 align="left">
+  <img alt="power-light" src="/docs/assets/power_light.jpg" height="300px">
+</h1>
+- Check to see if indicator lights are static amber and flashing green at the ethernet port
+<h1 align="left">
+  <img alt="ethernet-light" src="/docs/assets/ethernet_light.jpg" height="300px">
+</h1>
 - Using your computer, point your browser to **app.xyo.network**
 - Create a username and password, or if you have already started using the app on either Web or Mobile, log in with your email and password
 - You should now see the main XYO App Dashboard
@@ -73,13 +114,33 @@ Be sure to have an updated SDCard that should have been sent to you. This is the
 **NOTE** You will need a keyboard and mouse for this option
 **NOTE** While the SDCard is loading your screen may appear black for about 30 seconds
 - Connect your Bridge X to a power source
-- Connect your Bridge X to your Router using an Ethernet Cable
-- Check to see if indicator lights are flashing green and static amber near the ethernet and power ports
+<h1 align="left">
+  <img alt="plug-bridge" src="/docs/assets/plug_bridge.jpg" height="300px">
+</h1>
+- Connect your Bridge to your Router using an Ethernet Cable
+<h1 align="left">
+  <img alt="plug-ethernet" src="/docs/assets/plug_ethernet.jpg" height="300px">
+</h1>
+- Check to see if indicator lights are red and green near the power port
+<h1 align="left">
+  <img alt="power-light" src="/docs/assets/power_light.jpg" height="300px">
+</h1>
+- Check to see if indicator lights are static amber and flashing green at the ethernet port
+<h1 align="left">
+  <img alt="ethernet-light" src="/docs/assets/ethernet_light.jpg" height="300px">
+</h1>
 - Connect your Bridge X to a display of your choice using an HDMI cable
+<h1 align="left">
+  <img alt="hdmi-plug" src="/docs/assets/hdmi_plug.jpg" height="300px">
+</h1>
 - Connect a mouse and keyboard to your bridge using the available USB ports
 - You should now see a UI on your display similar to the first option
-- Enter the password provided and click **login** to connect the Bridge X
-- You can now click the **Wifi** icon to connect the Bridge X to your Local Wifi Network
+- You should see a text input field to enter and confirm a password with a **Continue** button
+<h1 align="left">
+  <img alt="bridge-ui" src="/docs/assets/bridge_ui_new.png">
+</h1>
+- Create a password that you will remember, and the confirm that password. Click **Continue** to connect the Bridge X
+- To set up Wifi for your Bridge X - click the **Wifi** icon to connect the Bridge X to your Local Wifi Network
 
 ### After you connect your Bridge X
 
@@ -190,6 +251,91 @@ Your GUI should look something like this before you flash the SDCard (MacOS exam
 
 - Once that is completed, you can eject the SDCard and install it in your Bridge X
 
-- Refer back to the beginning of this guide for how to set up your Bridge X
+### Updating the Bridge through unattended upgrades
 
-<p align="center">Made with  ❤️  by [<b>XY - The Persistent Company</b>] (https://xy.company)</p>
+Once we have set up our Bridge X it would be a good idea to check on and complete upgrades
+
+There are two ways that we can do this
+
+- First, enter this command to execute commands on your Bridge
+```sh
+  ssh bridge@<ip address of your bridge>
+```
+
+- You will be prompted to enter a password, you will enter the default password for the Bridge filestore - `geohacker`
+```sh
+bridge@<ip address of your bridge>'s password: 
+```
+
+- Then enter this command
+
+```sh
+sudo apt update
+```
+
+- Enter the device password again for the Bridge - `geohacker`
+
+```sh
+[sudo] password for bridge:
+```
+
+- You should see the Bridge pulling the latest from the repo
+
+```sh
+Hit:1 http://repo.xyo.network/repos/apt/raspbian stretch InRelease
+Hit:2 http://raspbian.raspberrypi.org/raspbian stretch InRelease
+Get:3 http://archive.raspberrypi.org/debian stretch InRelease [25.4 kB]
+Fetched 25.4 kB in 1s (15.0 kB/s)
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+31 packages can be upgraded. Run 'apt list --upgradable' to see them.
+```
+
+- Now run this command to upgrade
+
+```sh
+sudo apt upgrade
+```
+
+- You will be prompted on whether you would like to continue with the upgrade 
+
+```sh
+The following packages will be upgraded:
+<packages to be upgraded will be listed here>
+31 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 106 MB of archives.
+After this operation, 303 kB disk space will be freed.
+Do you want to continue? [Y/n] y
+```
+
+**This upgrade includes a lot of downloading and unpacking of new packages, so please be patient with the process**
+
+You should see a progress bar
+
+```sh
+Progress: [ <percent complete>%] [#################################################################################################################################..........................................................]
+```
+
+**Once it completes, you are all set with your upgrade. Be sure to visit the Bridge X App to verify that it is still functioning**
+
+You can also use this command after `sudo apt update` to execute an unattended upgrade
+
+```sh
+sudo unattended-upgrades -d
+```
+
+The confirmation output after this upgrade process should look like this
+
+```sh
++ @xyo-network/bridge.pi@0.123.0
+updated 1 package in 71.157s
+xyo-bridge-pi is ready
+All upgrades installed
+InstCount=0 DelCount=0 BrokenCount=0
+Extracting content from '/var/log/unattended-upgrades/unattended-upgrades-dpkg.log' since '2019-04-18 22:08:09'
+```
+
+Congrats you have upgraded your Bridge X! **Refer back to the beginning of this guide for how to set up your Bridge X**
+
+<h3 align="left">Made with  ❤️  by [<b>XY - The Persistent Company</b>] (https://xy.company)</h3>
