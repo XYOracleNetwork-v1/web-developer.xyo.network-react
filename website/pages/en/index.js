@@ -44,7 +44,7 @@ class HomeSplash extends React.Component {
           <div className="heroTitle text-center pb-5">
             <img src="/img/Devzilla_Type_Colored.png" className="mx-auto d-block" alt="devzilla" />
             <h1>JUNE 5 - 7 2019</h1>
-            <h1>WORKSHOPS &#xb7; LEARNING &#xb7; DECENTRALIZED</h1>
+            <h2>WORKSHOPS &#xb7; LEARNING &#xb7; DECENTRALIZED</h2>
           </div>
           <DevzillaDescription />
         </DevzillaContainer>
