@@ -263,6 +263,7 @@ There are two ways that we can do this
 ```
 
 - You will be prompted to enter a password, you will enter the default password for the Bridge filestore - `geohacker`
+
 ```sh
 bridge@<ip address of your bridge>'s password: 
 ```
@@ -337,5 +338,72 @@ Extracting content from '/var/log/unattended-upgrades/unattended-upgrades-dpkg.l
 ```
 
 Congrats you have upgraded your Bridge X! **Refer back to the beginning of this guide for how to set up your Bridge X**
+
+### A note on changing the Bridge's linux default password
+
+If you don't want our default password to run your bridge, you are more than welcome to change it
+
+- First, enter this command to execute commands on your Bridge
+
+```sh
+  ssh bridge@<ip address of your bridge>
+```
+
+**NOTE** you can change the password to your Bridge filestore by entering this command 
+```sh
+sudo passwd bridge
+```
+You will then get a prompt to enter the current password (`geohacker`)
+
+```sh
+[sudo] password for bridge:
+```
+
+Enter a new password 
+
+```sh
+Enter new UNIX password:
+```
+
+Then confirm this new password
+
+```sh
+Retype new UNIX password:
+```
+
+After the password is confirmed you will see this message and you may continue operating on the Bridge with your own password
+
+```sh
+passwd: password updated successfully
+```
+
+## Adding an archivist
+
+### Use the Bridge X UI
+
+- Scroll down on the dashboard to your connected archivists - you will see that we have one connected which is XYO's Archivist
+
+<h1 align="left">
+  <img alt="archivist-gui" src="/docs/assets/archivists_ui.png">
+</h1>
+
+- Click `+Connect More Archivists`
+
+You should see a `Add Archivist` modal pop up on your screen
+- Enter the IP Address or DNS Name
+- Enter the Port number
+- Click `Save`
+
+<h1 align="left">
+  <img alt="add-archivist" src="/docs/assets/add_archivist.png">
+</h1>
+
+- Once we save the information, we should now see another Archivist under `Connected Archivists`
+
+<h1 align="left">
+  <img alt="connected-archivists" src="/docs/assets/connected_archivists.png">
+</h1>
+
+We have now connected an Archivist to the Bridge X using the Bridge's native UI!
 
 <h3 align="left">Made with  ❤️  by [<b>XY - The Persistent Company</b>] (https://xy.company)</h3>
