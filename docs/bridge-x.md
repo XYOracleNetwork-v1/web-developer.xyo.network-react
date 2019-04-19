@@ -206,7 +206,7 @@ Be sure to have an updated SDCard that should have been sent to you. This is the
 ## Downloading and flashing a Bridge X image 
 
 First we want to download the latest Bridge X Image
-- [Click here to download](https://s3.amazonaws.com/xyo-bridge-images/xyo-bridge-beta.img.tar.gz)
+- [Click here to download](https://s3.amazonaws.com/xyo-bridge-images/xyo-bridge-latest.img.tar.gz)
 - Double click on the zipped file to expand it
 - You should now see the `img` file appear in the same folder where the `img.tar.gz` file appeared
  - Use this `img` file below using `Etcher`
@@ -303,7 +303,7 @@ Your Bridge will reboot and now you should be able to connect via Wifi!
 
 **Next we want to download the latest Bridge X Image**
 
-- [Click here to download](https://s3.amazonaws.com/xyo-bridge-images/xyo-bridge-beta.img.tar.gz)
+- [Click here to download](https://s3.amazonaws.com/xyo-bridge-images/xyo-bridge-latest.img.tar.gz)
 - Double click on the zipped file to expand it
 - You should now see the `img` file appear in the same folder where the `img.tar.gz` file appeared
 
