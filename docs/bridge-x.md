@@ -7,6 +7,44 @@ title: Bridge X
   Difficulty Level: Intermediate
 </div>
 
+<div class="alert alert-danger text-center" role="alert">
+  Temporary Solution to Bridge Image bug - current download
+</div>
+
+**While we are working on a fix please see the following instructions on starting up Wifi connection for the current Bridge Image**
+
+**Force Update**
+
+In the bridge UI: 
+
+- Scroll down to the bottom of the UI, which is the footer
+<h1 align="left">
+  <img alt="force-update" src="/docs/assets/force_update_view.jpg" height="300px">
+</h1>
+- Click on `Force Update`
+
+<h1 align="left">
+  <img alt="force-update-confirm" src="/docs/assets/force_update_confirm.jpg" height="300px">
+</h1>
+
+- Click on `Confirm`
+
+**You will see this load screen for a moment
+
+<h1 align="left">
+  <img alt="force-update-loading" src="/docs/assets/force_update_loading.jpg" height="300px">
+</h1>
+
+Once it confirms you should see this screen
+
+<h1 align="left">
+  <img alt="force-update-complete" src="/docs/assets/force_update_complete.jpg" height="300px">
+</h1>
+
+Your Bridge will reboot and now you should be able to connect via Wifi!
+
+**You may also be able to refresh the page for the UI and the Wifi connection options to appear, if this doesn't work, please refer to the `Force Update` instructions above**
+
 ## Video Walkthrough
 
 For a video walkthrough of the setup you can view the video below (it is part of an official Geomining Kit Video):
@@ -220,6 +258,44 @@ Your GUI should look something like this before you flash the SDCard (MacOS exam
 </h1>
 
 - Once that is completed, you can eject the SDCard and install it in your Bridge X
+
+<div class="alert alert-danger text-center" role="alert">
+  Temporary Solution to Bridge Image bug - current download
+</div>
+
+**While we are working on a fix please see the following instructions on starting up Wifi connection for the current Bridge Image**
+
+**Force Update**
+
+In the bridge UI: 
+
+- Scroll down to the bottom of the UI, which is the footer
+<h1 align="left">
+  <img alt="force-update" src="/docs/assets/force_update_view.jpg" height="300px">
+</h1>
+- Click on `Force Update`
+
+<h1 align="left">
+  <img alt="force-update-confirm" src="/docs/assets/force_update_confirm.jpg" height="300px">
+</h1>
+
+- Click on `Confirm`
+
+**You will see this load screen for a moment
+
+<h1 align="left">
+  <img alt="force-update-loading" src="/docs/assets/force_update_loading.jpg" height="300px">
+</h1>
+
+Once it confirms you should see this screen
+
+<h1 align="left">
+  <img alt="force-update-complete" src="/docs/assets/force_update_complete.jpg" height="300px">
+</h1>
+
+Your Bridge will reboot and now you should be able to connect via Wifi!
+
+**You may also be able to refresh the page for the UI and the Wifi connection options to appear, if this doesn't work, please refer to the `Force Update` instructions above**
 
 ### Advanced Option for MacOS or Linux
 
