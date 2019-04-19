@@ -19,12 +19,12 @@ In the bridge UI:
 
 - Scroll down to the bottom of the UI, which is the footer
 <h1 align="left">
-  <img alt="force-update" src="/docs/assets/force_update_view.jpg" height="300px">
+  <img alt="force-update" src="/docs/assets/force_update_view.png" height="300px">
 </h1>
 - Click on `Force Update`
 
 <h1 align="left">
-  <img alt="force-update-confirm" src="/docs/assets/force_update_confirm.jpg" height="300px">
+  <img alt="force-update-confirm" src="/docs/assets/force_update_confirm.png" height="300px">
 </h1>
 
 - Click on `Confirm`
@@ -32,13 +32,13 @@ In the bridge UI:
 **You will see this load screen for a moment
 
 <h1 align="left">
-  <img alt="force-update-loading" src="/docs/assets/force_update_loading.jpg" height="300px">
+  <img alt="force-update-loading" src="/docs/assets/force_update_loading.png" height="300px">
 </h1>
 
 Once it confirms you should see this screen
 
 <h1 align="left">
-  <img alt="force-update-complete" src="/docs/assets/force_update_complete.jpg" height="300px">
+  <img alt="force-update-complete" src="/docs/assets/force_update_complete.png" height="300px">
 </h1>
 
 Your Bridge will reboot and now you should be able to connect via Wifi!
@@ -271,12 +271,12 @@ In the bridge UI:
 
 - Scroll down to the bottom of the UI, which is the footer
 <h1 align="left">
-  <img alt="force-update" src="/docs/assets/force_update_view.jpg" height="300px">
+  <img alt="force-update" src="/docs/assets/force_update_view.png" height="300px">
 </h1>
 - Click on `Force Update`
 
 <h1 align="left">
-  <img alt="force-update-confirm" src="/docs/assets/force_update_confirm.jpg" height="300px">
+  <img alt="force-update-confirm" src="/docs/assets/force_update_confirm.png" height="300px">
 </h1>
 
 - Click on `Confirm`
@@ -284,13 +284,13 @@ In the bridge UI:
 **You will see this load screen for a moment
 
 <h1 align="left">
-  <img alt="force-update-loading" src="/docs/assets/force_update_loading.jpg" height="300px">
+  <img alt="force-update-loading" src="/docs/assets/force_update_loading.png" height="300px">
 </h1>
 
 Once it confirms you should see this screen
 
 <h1 align="left">
-  <img alt="force-update-complete" src="/docs/assets/force_update_complete.jpg" height="300px">
+  <img alt="force-update-complete" src="/docs/assets/force_update_complete.png" height="300px">
 </h1>
 
 Your Bridge will reboot and now you should be able to connect via Wifi!
