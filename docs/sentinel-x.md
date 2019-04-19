@@ -3,10 +3,13 @@ id: sentinel
 title: Sentinel X 
 ---
 
-<div class="alert alert-info text-center" role="alert">
-  <h1>Firmware Upgrade coming soon</h1>
-  <p>Before you begin, we wanted to let you know that there will be an update for the Sentinel X</p>
-</div>
+## Video Walkthrough
+
+For a video walkthrough of the setup you can view the video below (it is part of an official Geomining Kit Video):
+
+<figure class="video_container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/rRRX80EX7fU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
 
 ## Add a Sentinel X
 
