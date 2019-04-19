@@ -138,6 +138,19 @@ class Index extends React.Component {
       style={{ textAlign: 'center' }} background="dark">
           <div className="container">
             <div className="row align-self-center">
+                <h1 className="col">SETUP A GEOMINING KIT</h1> 
+            </div>
+          <div className="embed-responsive embed-responsive-16by9">
+              <iframe
+                className="embed-responsive-item"
+                src="https://www.youtube.com/embed/rRRX80EX7fU" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen
+                >
+              </iframe> 
+            </div>
+            <div className="row align-self-center">
                 <h1 className="col">LEARN ABOUT THE MATRIX</h1> 
             </div>
           <div className="embed-responsive embed-responsive-16by9">
