@@ -37,6 +37,79 @@ class HomeSplash extends React.Component {
         </div>
       </div>
     );
+
+    const LatestProducts = () => (
+      <div className="pt-5">
+        <div className="pt-5">
+          <h1 className="text-center">OUR LATEST CONSUMER OFFERINGS</h1>
+        </div>
+        <div className="p-5">
+          <div className="row justify-content-center">
+            <div className="p-5">
+                <div className="card shadow">
+                <div className="card-header">
+                    Bridge X
+                  </div>
+                  <div className="card-body">
+                    <h3 className="card-title">New Bridge Software</h3>
+                    <p className="card-text">New software to update your Bridge to a Bridge X!</p>
+                    <a 
+                    href="https://s3.amazonaws.com/xyo-bridge-images/xyo-bridge-latest.img.tar.gz"
+                      rel="noopener noreferrer" 
+                      target="_blank"
+                      className="btn-primary btn-light-purple rounded"
+                    >
+                      Get Image
+                      <i class="fab fa-apple pl-2"></i>
+                      <i class="fab fa-linux pl-2"></i>
+                      <i class="fab fa-windows pl-2"></i>
+                    </a>
+                  </div>
+                </div>
+            </div>
+            <div className="p-5">
+              <div className="card shadow">
+                <div className="card-header">
+                  XYO iOS App
+                </div>
+                <div className="card-body">
+                  <h3 className="card-title">The New XYO App for iOS</h3>
+                  <p className="card-text">The Power of the XYO Network now on iOS!</p>
+                  <a 
+                    href="https://itunes.apple.com/us/app/xyo-network/id1453770624?mt=8" 
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="btn-primary btn-light-purple rounded"
+                  >
+                    Get App
+                    <i class="fab fa-app-store-ios pl-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="p-5">
+              <div className="card shadow">
+                <div className="card-header">
+                  XYO Android App
+                </div>
+                <div className="card-body">
+                  <h3 className="card-title">The New XYO App for Android</h3>
+                  <p className="card-text">The Power of the XYO Network updated for Android!</p>
+                  <a 
+                    href="https://play.google.com/store/apps/details?id=network.xyo.app"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="btn-primary btn-light-purple rounded"
+                  >
+                    Get App
+                    <i className="fab fa-android pl-2"></i></a> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
     
     return (
       <div>
@@ -48,6 +121,7 @@ class HomeSplash extends React.Component {
           </div>
           <DevzillaDescription />
         </DevzillaContainer>
+        <LatestProducts />
         <SplashContainer>
             <h1>OUR PRODUCTS</h1>
         </SplashContainer>
@@ -168,7 +242,7 @@ class Index extends React.Component {
     );
     
     const Features = () => (
-      <div className=" pl-5 pr-5 pb-5 mt-3">
+      <div className="pl-5 pr-5 pb-5 mt-3">
         <div className="row pb-5">
           {(publicProducts || []).map(prod => (
             <div className="col-12 col-md-4 pb-5" key={prod.fields.id}>

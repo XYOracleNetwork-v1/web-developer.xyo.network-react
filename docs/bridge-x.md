@@ -7,6 +7,16 @@ title: Bridge X
   Difficulty Level: Intermediate
 </div>
 
+<div class="alert alert-info text-center" role="alert">
+  <a href="https://s3.amazonaws.com/xyo-bridge-images/xyo-bridge-latest.img.tar.gz" rel="noopener noreferrer"><h2>Click Here to Download The Latest Bridge Image</h2></a> 
+  <p>Download link is also in the guide</p>
+</div>
+
+<div class="alert alert-danger text-center" role="alert">
+  <h2>IMPORTANT: To Extract the Image on Windows, <a href="https://www.7-zip.org/" rel="noopener noreferrer">download 7zip here</a></h2>
+  <p>We will update the image zip file to accommodate all platforms</p>
+</div>
+
 <div class="alert alert-danger text-center" role="alert">
   Temporary Solution to Bridge Image bug - current download
 </div>
@@ -271,20 +281,12 @@ In the bridge UI:
 
 - Scroll down to the bottom of the UI, which is the footer
 <h1 align="left">
-<<<<<<< HEAD
-  <img alt="force-update" src="/docs/assets/force_update_view.jpg" height="300px">
-=======
   <img alt="force-update" src="/docs/assets/force_update_view.png" height="300px">
->>>>>>> e41e221553719e237ddc65f79cc9275ca47ced94
 </h1>
 - Click on `Force Update`
 
 <h1 align="left">
-<<<<<<< HEAD
-  <img alt="force-update-confirm" src="/docs/assets/force_update_confirm.jpg" height="300px">
-=======
   <img alt="force-update-confirm" src="/docs/assets/force_update_confirm.png" height="300px">
->>>>>>> e41e221553719e237ddc65f79cc9275ca47ced94
 </h1>
 
 - Click on `Confirm`
@@ -292,21 +294,13 @@ In the bridge UI:
 **You will see this load screen for a moment
 
 <h1 align="left">
-<<<<<<< HEAD
-  <img alt="force-update-loading" src="/docs/assets/force_update_loading.jpg" height="300px">
-=======
   <img alt="force-update-loading" src="/docs/assets/force_update_loading.png" height="300px">
->>>>>>> e41e221553719e237ddc65f79cc9275ca47ced94
 </h1>
 
 Once it confirms you should see this screen
 
 <h1 align="left">
-<<<<<<< HEAD
-  <img alt="force-update-complete" src="/docs/assets/force_update_complete.jpg" height="300px">
-=======
   <img alt="force-update-complete" src="/docs/assets/force_update_complete.png" height="300px">
->>>>>>> e41e221553719e237ddc65f79cc9275ca47ced94
 </h1>
 
 Your Bridge will reboot and now you should be able to connect via Wifi!
