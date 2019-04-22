@@ -19,12 +19,12 @@ In the bridge UI:
 
 - Scroll down to the bottom of the UI, which is the footer
 <h1 align="left">
-  <img alt="force-update" src="/docs/assets/force_update_view.jpg" height="300px">
+  <img alt="force-update" src="/docs/assets/force_update_view.png" height="300px">
 </h1>
 - Click on `Force Update`
 
 <h1 align="left">
-  <img alt="force-update-confirm" src="/docs/assets/force_update_confirm.jpg" height="300px">
+  <img alt="force-update-confirm" src="/docs/assets/force_update_confirm.png" height="300px">
 </h1>
 
 - Click on `Confirm`
@@ -32,13 +32,13 @@ In the bridge UI:
 **You will see this load screen for a moment
 
 <h1 align="left">
-  <img alt="force-update-loading" src="/docs/assets/force_update_loading.jpg" height="300px">
+  <img alt="force-update-loading" src="/docs/assets/force_update_loading.png" height="300px">
 </h1>
 
 Once it confirms you should see this screen
 
 <h1 align="left">
-  <img alt="force-update-complete" src="/docs/assets/force_update_complete.jpg" height="300px">
+  <img alt="force-update-complete" src="/docs/assets/force_update_complete.png" height="300px">
 </h1>
 
 Your Bridge will reboot and now you should be able to connect via Wifi!
@@ -206,7 +206,7 @@ Be sure to have an updated SDCard that should have been sent to you. This is the
 ## Downloading and flashing a Bridge X image 
 
 First we want to download the latest Bridge X Image
-- [Click here to download](https://s3.amazonaws.com/xyo-bridge-images/xyo-bridge-04-18-19-final.img.tar.gz)
+- [Click here to download](https://s3.amazonaws.com/xyo-bridge-images/xyo-bridge-latest.img.tar.gz)
 - Double click on the zipped file to expand it
 - You should now see the `img` file appear in the same folder where the `img.tar.gz` file appeared
  - Use this `img` file below using `Etcher`
@@ -271,12 +271,20 @@ In the bridge UI:
 
 - Scroll down to the bottom of the UI, which is the footer
 <h1 align="left">
+<<<<<<< HEAD
   <img alt="force-update" src="/docs/assets/force_update_view.jpg" height="300px">
+=======
+  <img alt="force-update" src="/docs/assets/force_update_view.png" height="300px">
+>>>>>>> e41e221553719e237ddc65f79cc9275ca47ced94
 </h1>
 - Click on `Force Update`
 
 <h1 align="left">
+<<<<<<< HEAD
   <img alt="force-update-confirm" src="/docs/assets/force_update_confirm.jpg" height="300px">
+=======
+  <img alt="force-update-confirm" src="/docs/assets/force_update_confirm.png" height="300px">
+>>>>>>> e41e221553719e237ddc65f79cc9275ca47ced94
 </h1>
 
 - Click on `Confirm`
@@ -284,13 +292,21 @@ In the bridge UI:
 **You will see this load screen for a moment
 
 <h1 align="left">
+<<<<<<< HEAD
   <img alt="force-update-loading" src="/docs/assets/force_update_loading.jpg" height="300px">
+=======
+  <img alt="force-update-loading" src="/docs/assets/force_update_loading.png" height="300px">
+>>>>>>> e41e221553719e237ddc65f79cc9275ca47ced94
 </h1>
 
 Once it confirms you should see this screen
 
 <h1 align="left">
+<<<<<<< HEAD
   <img alt="force-update-complete" src="/docs/assets/force_update_complete.jpg" height="300px">
+=======
+  <img alt="force-update-complete" src="/docs/assets/force_update_complete.png" height="300px">
+>>>>>>> e41e221553719e237ddc65f79cc9275ca47ced94
 </h1>
 
 Your Bridge will reboot and now you should be able to connect via Wifi!
@@ -303,7 +319,7 @@ Your Bridge will reboot and now you should be able to connect via Wifi!
 
 **Next we want to download the latest Bridge X Image**
 
-- [Click here to download](https://s3.amazonaws.com/xyo-bridge-images/xyo-bridge-04-18-19-final.img.tar.gz)
+- [Click here to download](https://s3.amazonaws.com/xyo-bridge-images/xyo-bridge-latest.img.tar.gz)
 - Double click on the zipped file to expand it
 - You should now see the `img` file appear in the same folder where the `img.tar.gz` file appeared
 
