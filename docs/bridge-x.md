@@ -17,10 +17,6 @@ title: Bridge X
   <p>We will update the image zip file to accommodate all platforms</p>
 </div>
 
-<div class="alert alert-danger text-center" role="alert">
-  Temporary Solution to Bridge Image bug - current download
-</div>
-
 **While we are working on a fix please see the following instructions on starting up Wifi connection for the current Bridge Image**
 
 **Force Update**

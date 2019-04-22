@@ -53,17 +53,31 @@ class HomeSplash extends React.Component {
                   <div className="card-body">
                     <h3 className="card-title">New Bridge Software</h3>
                     <p className="card-text">New software to update your Bridge to a Bridge X!</p>
-                    <a 
-                    href="https://s3.amazonaws.com/xyo-bridge-images/xyo-bridge-latest.img.tar.gz"
-                      rel="noopener noreferrer" 
-                      target="_blank"
-                      className="btn-primary btn-light-purple rounded"
-                    >
-                      Get Image
-                      <i class="fab fa-apple pl-2"></i>
-                      <i class="fab fa-linux pl-2"></i>
-                      <i class="fab fa-windows pl-2"></i>
-                    </a>
+                    <div>
+                      <div className="pb-2">
+                        <a 
+                        href="https://s3.amazonaws.com/xyo-bridge-images/xyo-bridge-latest.img.tar.gz"
+                          rel="noopener noreferrer" 
+                          target="_blank"
+                          className="btn-primary btn-light-purple rounded"
+                        >
+                          Get Image
+                          <i class="fab fa-apple pl-1"></i>
+                          <i class="fab fa-linux pl-1"></i>
+                          <i class="fab fa-windows pl-1"></i>
+                        </a>
+                      </div>
+                      <div>
+                        <a 
+                          href="https://developers.xyo.network/docs/en/bridge-x/"
+                          rel="noopener noreferrer" 
+                          target="_blank"
+                          className="btn-primary btn-light-purple rounded"
+                        >
+                          Bridge X Guide
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
             </div>
@@ -75,15 +89,26 @@ class HomeSplash extends React.Component {
                 <div className="card-body">
                   <h3 className="card-title">The New XYO App for iOS</h3>
                   <p className="card-text">The Power of the XYO Network now on iOS!</p>
-                  <a 
-                    href="https://itunes.apple.com/us/app/xyo-network/id1453770624?mt=8" 
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    className="btn-primary btn-light-purple rounded"
-                  >
-                    Get App
-                    <i class="fab fa-app-store-ios pl-2"></i>
-                  </a>
+                  <div className="pb-2">
+                    <a 
+                      href="https://itunes.apple.com/us/app/xyo-network/id1453770624?mt=8" 
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className="btn-primary btn-light-purple rounded"
+                    >
+                      Get App <i class="fab fa-app-store-ios pl-2"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <a 
+                      href="https://www.youtube.com/embed/rRRX80EX7fU" 
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className="btn-primary btn-light-purple rounded"
+                    >
+                      Video Guide
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -95,14 +120,26 @@ class HomeSplash extends React.Component {
                 <div className="card-body">
                   <h3 className="card-title">The New XYO App for Android</h3>
                   <p className="card-text">The Power of the XYO Network updated for Android!</p>
-                  <a 
-                    href="https://play.google.com/store/apps/details?id=network.xyo.app"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    className="btn-primary btn-light-purple rounded"
-                  >
-                    Get App
-                    <i className="fab fa-android pl-2"></i></a> 
+                  <div className="pb-2">
+                    <a 
+                      href="https://play.google.com/store/apps/details?id=network.xyo.app"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className="btn-primary btn-light-purple rounded"
+                    >
+                      Get App <i className="fab fa-android pl-2"></i>
+                    </a> 
+                  </div>
+                  <div>
+                    <a 
+                      href="https://www.youtube.com/embed/rRRX80EX7fU" 
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className="btn-primary btn-light-purple rounded"
+                    >
+                      Video Guide
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
