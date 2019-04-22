@@ -7,6 +7,16 @@ title: Bridge X
   Difficulty Level: Intermediate
 </div>
 
+<div class="alert alert-info text-center" role="alert">
+  <a href="https://s3.amazonaws.com/xyo-bridge-images/xyo-bridge-latest.img.tar.gz" rel="noopener noreferrer"><h2>Click Here to Download The Latest Bridge Image</h2></a> 
+  <p>Download link is also in the guide</p>
+</div>
+
+<div class="alert alert-danger text-center" role="alert">
+  <h2>IMPORTANT: To Extract the Image on Windows, <a href="https://www.7-zip.org/" rel="noopener noreferrer">download 7zip here</a></h2>
+  <p>We will update the image zip file to accommodate all platforms</p>
+</div>
+
 <div class="alert alert-danger text-center" role="alert">
   Temporary Solution to Bridge Image bug - current download
 </div>
