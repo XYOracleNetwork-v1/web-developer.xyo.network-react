@@ -56,7 +56,7 @@ class HomeSplash extends React.Component {
                     <div>
                       <div className="pb-2">
                         <a 
-                        href="https://s3.amazonaws.com/xyo-bridge-images/xyo-bridge-latest.img.tar.gz"
+                          href="https://bridgex.xyo.network/"
                           rel="noopener noreferrer" 
                           target="_blank"
                           className="btn-primary btn-light-purple rounded"
