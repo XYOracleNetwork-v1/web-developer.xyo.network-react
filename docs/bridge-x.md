@@ -7,12 +7,40 @@ title: Bridge X
   Difficulty Level: Intermediate
 </div>
 
+# Current Version - 1.0.1
+
 <div class="alert alert-info text-center" role="alert">
   <a href="https://bridgex.xyo.network/" rel="noopener noreferrer"><h2>Click Here to Download The Latest Bridge Image</h2></a> 
   <p>Download link is also in the guide</p>
 </div>
 
-<div class="alert alert-danger text-center" role="alert">
+**1.0.1 (2019-04-23)**
+
+**New Features**
+
+*  add ui component for last resort update (for large scale bridge issues)
+*  add ui to display current `npm` and `apt` versions
+
+**Changes**
+
+*  about tag in footer is new location for `force update` and `last resort` 
+*  general bug fixes
+
+
+# Previous Version - 1.0.0
+
+<div class="alert alert-warning text-center" role="alert">
+  <a href="https://s3.amazonaws.com/xyo-bridge-images/xyo-bridge-04-18-19.img.tar.gz" rel="noopener noreferrer"><h4>Click Here to Download The Previous Bridge Image</h4></a> 
+</div>
+
+**1.0.0 (2019-04-18)**
+
+**Changes**
+
+*  more consistent `force update` of bridges
+*  general bug fixes
+
+<div class="alert alert-info text-center" role="alert">
   <h2>IMPORTANT: To Extract the Image on Windows, <a href="https://www.7-zip.org/" rel="noopener noreferrer">download 7zip here</a></h2>
   <p>We will update the image zip file to accommodate all platforms</p>
 </div>
@@ -27,6 +55,11 @@ In the bridge UI:
 <h1 align="left">
   <img alt="force-update" src="/docs/assets/force_update_view.png" height="300px">
 </h1>
+
+<div class="alert alert-warning text-center" role="alert">
+  <h3> With Bridge X v1.0.1 you will click on `about` and then click on `force update`</h3> 
+</div>
+
 - Click on `Force Update`
 
 <h1 align="left">
