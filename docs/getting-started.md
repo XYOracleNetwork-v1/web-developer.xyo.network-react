@@ -4,25 +4,44 @@ title: Getting Started with XYO
 sidebar_label: Getting Started
 ---
 
-# First thing to do - Steps to learning about XYO
+<div class="alert alert-info text-center" role="alert">
+  <h1>Steps to learning about XYO</h1>
+</div>
 
 - [Read our Papers](https://xyo.network/research/)
 - [Watch the video about XYO and proof of location](https://youtu.be/KhVLjX-k5ic)
 - [Read our Roadmap](https://xyo.network/roadmap/)
-- [Look at our network explorer - the Matrix](https://matrix.xyo.network/)
-- [Download our Android app](https://play.google.com/store/apps/details?id=network.xyo.app&hl=en_US) or
-- Coming Soon [Download our iOS app]()
+- [Explore the Matrix](https://matrix.xyo.network/)
+- [Explore the XYO App on the web](https://app.xyo.network/)
+- [Download and use our Android app](https://play.google.com/store/apps/details?id=network.xyo.app&hl=en_US) or
+- [Download and use our iOS app](https://itunes.apple.com/us/app/xyo-network/id1453770624?mt=8)
 - [Download and play with our COIN app on Android](https://play.google.com/store/apps/details?id=network.xyo.coin&hl=en_US)  
-- [Download and play with our COIN app on iOS](https://itunes.apple.com/us/app/coin-the-new-economy/id1450443351?mt=8)  
+- [Download and play with our COIN app on iOS](https://itunes.apple.com/us/app/coin-the-new-economy/id1450443351?mt=8) 
 
-Going through these steps will introduce you to our software suite and help you understand how the nodes in the XYO Network work. Using COIN is a great introduction to the concept of Geomining
+### If you have ordered a Geomining Kit and need a walkthrough of how to set it up
 
-## Next, check out our [Introduction](http://dev-developers.xyo.network.s3-website-us-east-1.amazonaws.com/docs/Introduction.html) 
+<figure class="video_container">
+  <iframe width="960" height="450" src="https://www.youtube.com/embed/rRRX80EX7fU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
+
+### For a refresher on the mainnet (ethereum) and staking
+
+<figure class="video_container">
+  <iframe width="960" height="450" src="https://www.youtube.com/embed/CYfC2swVVNA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
+
+### How to stake an XYO node using the Matrix 
+
+<figure class="video_container">
+  <iframe width="960" height="450" src="https://www.youtube.com/embed/LfBP_Dlmtuk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
+
+## Next, check out our [Introduction](http://developers.xyo.network/docs/en/Introduction) 
 
 This will help you understand the parts of XYO that you will be developing for.
 
 ### For a great dive-in introduction to the Diviners and Archivists of the XYO network, go to 
-- [SDK Core Nodejs package](http://dev-developers.xyo.network.s3-website-us-east-1.amazonaws.com/docs/SDK-Package-Node/)
+- [SDK Core Nodejs package](http://developers.xyo.network/docs/en/SDK-Package-Node/)
 - [Start up a diviner-archivist using our SDK Core Nodejs]()
 
 ### Once you know what part of XYO and device you want to work with:
