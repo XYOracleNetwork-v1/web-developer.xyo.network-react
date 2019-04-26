@@ -45,7 +45,7 @@ For a video walkthrough of the setup you can view the video below (it is part of
 
 <p align="center">Congratulations! You just added a Sentinel X to your XYO Account using the new XYO App!</p>
 
-## Updating you Sentinel using NRF Connect
+## Updating your Sentinel using NRF Connect
 
 <div class="alert alert-danger text-center" role="alert">
   Difficulty Level: Advanced
