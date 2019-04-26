@@ -7,38 +7,19 @@ title: Bridge X
   Difficulty Level: Intermediate
 </div>
 
-# Current Version - 1.0.1
+# Current Version - 1.0.2
 
 <div class="alert alert-info text-center" role="alert">
   <a href="https://bridgex.xyo.network/" rel="noopener noreferrer"><h2>Click Here to Download The Latest Bridge Image</h2></a> 
   <p>Download link is also in the guide</p>
 </div>
 
-**1.0.1 (2019-04-23)**
-
-**New Features**
-
-*  add ui component for last resort update (for large scale bridge issues)
-*  add ui to display current `npm` and `apt` versions
+**1.0.2 (2019-04-26)**
 
 **Changes**
 
-*  about tag in footer is new location for `force update` and `last resort` 
 *  general bug fixes
-
-
-# Previous Version - 1.0.0
-
-<div class="alert alert-warning text-center" role="alert">
-  <a href="https://s3.amazonaws.com/xyo-bridge-images/xyo-bridge-04-18-19.img.tar.gz" rel="noopener noreferrer"><h4>Click Here to Download The Previous Bridge Image</h4></a> 
-</div>
-
-**1.0.0 (2019-04-18)**
-
-**Changes**
-
-*  more consistent `force update` of bridges
-*  general bug fixes
+*  ui fix for display connect issues
 
 <div class="alert alert-info text-center" role="alert">
   <h2>IMPORTANT: To Extract the Image on Windows, <a href="https://www.7-zip.org/" rel="noopener noreferrer">download 7zip here</a></h2>
@@ -525,5 +506,40 @@ You should see a `Add Archivist` modal pop up on your screen
 </h1>
 
 We have now connected an Archivist to the Bridge X using the Bridge's native UI!
+
+## Previous Versions
+
+### Version - 1.0.1
+
+<div class="alert alert-info text-center" role="alert">
+  <a href="https://s3.amazonaws.com/xyo-bridge-images/xyo-bridge-04-23-19.img.tar.gz" rel="noopener noreferrer"><h2>Click Here to Download The Latest Bridge Image</h2></a> 
+  <p>Download link is also in the guide</p>
+</div>
+
+**1.0.1 (2019-04-23)**
+
+**New Features**
+
+*  add ui component for last resort update (for large scale bridge issues)
+*  add ui to display current `npm` and `apt` versions
+
+**Changes**
+
+*  about tag in footer is new location for `force update` and `last resort` 
+*  general bug fixes
+
+
+### Version - 1.0.0
+
+<div class="alert alert-warning text-center" role="alert">
+  <a href="https://s3.amazonaws.com/xyo-bridge-images/xyo-bridge-04-18-19.img.tar.gz" rel="noopener noreferrer"><h4>Click Here to Download The Previous Bridge Image</h4></a> 
+</div>
+
+**1.0.0 (2019-04-18)**
+
+**Changes**
+
+*  more consistent `force update` of bridges
+*  general bug fixes
 
 <h3 align="left">Made with  ❤️  by [<b>XY - The Persistent Company</b>] (https://xy.company)</h3>
