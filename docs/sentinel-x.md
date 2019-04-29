@@ -99,6 +99,8 @@ Updating key values in your Sentinel X using the NRF Connect App (Available on i
   <img alt="senx-characteristics-desc-view" src="/docs/assets/characteristic_desc.png" height="700px">
 </h1>
 
+### Stay Awake
+
 - This description and value is from the first characteristic which you will notice has properties `read` and `write`
 - You will also notice that the the name of the value is `Stay Awake`, we are going to edit this
 - In order for us to make any changes to our device, we would need to be able to write a change to the device
@@ -122,5 +124,57 @@ Updating key values in your Sentinel X using the NRF Connect App (Available on i
 - With the `Stay Awake` setting (`01`) you will hear a cheery sound
 - With the `Stay Awake` setting (`00`) you will hear a wind down sound 
 
-**Coming Soon: Factory Reset and Sound Instructions**
+### Factory Reset
+
+We want to go back to our list of unknown characteristics and find the one with the `Characteristic User Description` containing the `Factory Reset` value
+<h1 align="left">
+  <img alt="factory-reset-view" src="/docs/assets/factory_reset_view.png" height="700px">
+</h1>
+
+- In order for us to do the reset, we would need to be able to write a change to the device
+- This description value screen can access read and write on `Android`, but on `iOS`, we would have to go back to the characteristic list screen
+- To write a value to the device, we will press the up arrow 
+- After pressing the up arrow, you should see this interface
+
+<h1 align="left">
+  <img alt="factory-reset-interface" src="/docs/assets/factory_reset_interface.png" height="700px">
+</h1>
+
+- Now we have to input the correctly formatted value based on the password we used to set up the sentinel X in the XYO App. 
+- To do a factory reset - we need to go by these values in the Byte Array 
+   - 1st byte - total length of your password plus two 
+   - 2nd byte - total length of your password plus one 
+   - remaining bytes - the byte representation of the password
+
+Since the password we used in this example is `aaaaaa`, then the byte representation (you can consult an ascii chart) would be `97 97 97 97 97 97`
+- The value to factory reset would then be this: 
+
+<h1 align="left">
+  <img alt="factory-reset-values" src="/docs/assets/factory_reset_values.png" height="700px">
+</h1>
+
+- Since the password length is 6:
+  - 1st byte is `08`
+  - 2nd byte is `07`
+  - we then input the byte representation of the password 
+- Press `request` to initiate the reset
+
+<div class="alert alert-danger text-center" role="alert">
+  <p>Remember that factory resetting your Sentinel X like this will thoroughly reset your sentinel with a new public key and would no longer be claimed. You would have to reclaim it. In addition, any bytes after the password would go into the bound witness data, so BE CAREFUL</p>
+</div>
+
+### Sound Toggle 
+
+- Look for the `Characteristic User Description` with the `Sound Toggle`
+- In order for us to make any changes to our device, we would need to be able to write a change to the device
+- This description value screen can access read and write on `Android`, but on `iOS`, we would have to go back to the characteristic list screen
+- To write a value to the device, we will press the up arrow like the previous two characteristics
+- For `Sound Toggle` the values are: 
+    - `01` - Sound On
+    - `02` - Sound Off
+
+Feel free to explore the rest of the NRF Connect interface, but these are the primary values that we want to write to
+
+
+
 <p align="center">Made with  ❤️  by [<b>XY - The Persistent Company</b>] (https://xy.company)</p>
