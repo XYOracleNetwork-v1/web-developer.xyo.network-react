@@ -507,11 +507,7 @@ You should see a `Add Archivist` modal pop up on your screen
 
 We have now connected an Archivist to the Bridge X using the Bridge's native UI!
 
-<<<<<<< HEAD
-## Previous Versions
-=======
 ## Changelog
->>>>>>> 5e1cab4d4a0a7cd74fa3d538fc0c48d634c9a0c5
 
 ### Version - 1.0.1
 
