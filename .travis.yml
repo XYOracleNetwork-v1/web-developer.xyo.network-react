@@ -1,4 +1,4 @@
-before_script: cd project
+before_script: cd website
 language: node_js
 node_js:
   - '11'
