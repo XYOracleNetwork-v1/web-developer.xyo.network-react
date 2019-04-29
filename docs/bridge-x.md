@@ -11,9 +11,9 @@ title: Bridge X
 
 <div class="alert alert-info text-center" role="alert">
   <h3>Click Here to Download The Latest Bridge Image in Mac, Linux, or Windows</h3> 
-  <a href="https://bridgex.xyo.network/" rel="noopener noreferrer" download><i class="fab fa-apple fa-2x p-3"></i></a>
-  <a href="https://bridgex.xyo.network/" rel="noopener noreferrer" download><i class="fab fa-linux fa-3x p-3"></i></a>
-  <a href="https://bridgex.xyo.network/" rel="noopener noreferrer" download><i class="fab fa-windows fa-3x p-3"></i></a>
+  <a href="https://bridgex.xyo.network" download><i class="fab fa-apple fa-2x p-3"></i></a>
+  <a href="https://s3.amazonaws.com/xyo-bridge-images/xyo-bridge-latest.img.tar.gz" download><i class="fab fa-linux fa-3x p-3"></i></a>
+  <a href="https://s3.amazonaws.com/xyo-bridge-images/xyo-bridge-latest.img.tar.gz" download><i class="fab fa-windows fa-3x p-3"></i></a>
 </div>
 
 **1.0.2 (2019-04-26)**
