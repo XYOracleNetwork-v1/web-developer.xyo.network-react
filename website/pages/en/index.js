@@ -23,8 +23,8 @@ class HomeSplash extends React.Component {
     const DevzillaDescription = () => (
       <div className="heroDescription">
         <div className="heroButtonContainer">
-          <a className="button rp" href="https://devzilla.xyo.network/">
-            MORE INFO
+          <a className="button rp" href="https://developers.xyo.network/docs/en/getting-started/">
+            GET STARTED
           </a>
         </div>
       </div>
@@ -152,9 +152,6 @@ class HomeSplash extends React.Component {
       <div>
         <DevzillaContainer>
           <div className="heroTitle text-center pb-5">
-            <img src="/img/Devzilla_Type_Colored.png" className="mx-auto d-block" alt="devzilla" />
-            <h1>JUNE 5 - 7 2019</h1>
-            <h2>WORKSHOPS &#xb7; LEARNING &#xb7; DECENTRALIZED</h2>
           </div>
           <DevzillaDescription />
         </DevzillaContainer>
