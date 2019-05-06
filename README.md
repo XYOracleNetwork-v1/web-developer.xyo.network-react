@@ -2,7 +2,7 @@
 
 [![logo]](https://xy.company)
 
-[![Build Status](https://travis-ci.com/XYOracleNetwork/web-developer.xyo.network-react.svg?token=DwLaRUVjarU2ZypyaHXe&branch=master)][![DepShield Badge](https://depshield.sonatype.org/badges/XYOracleNetwork/web-developer.xyo.network-react/depshield.svg)](https://depshield.github.io)
+![Build Status](https://travis-ci.com/XYOracleNetwork/web-developer.xyo.network-react.svg?token=DwLaRUVjarU2ZypyaHXe&branch=master)[![DepShield Badge](https://depshield.sonatype.org/badges/XYOracleNetwork/web-developer.xyo.network-react/depshield.svg)](https://depshield.github.io)
 
 [![David Badge](https://david-dm.org/xyoraclenetwork/web-developer.xyo.network-react/status.svg)](https://david-dm.org/xyoraclenetwork/web-developer.xyo.network-react) [![David Badge](https://david-dm.org/xyoraclenetwork/web-developer.xyo.network-react/dev-status.svg)](https://david-dm.org/xyoraclenetwork/web-developer.xyo.network-react)
 
