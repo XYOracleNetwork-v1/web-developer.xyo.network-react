@@ -13,7 +13,7 @@
     "SDKs": [
       "SDK-Package-Node",
       "SDK-Core-Swift",
-      "SDK-ObjectModel-Kotlin",
+      "kotlin-getting-started",
       "SDK-Core-Android",
       "SDK-Ble-Android",
       "sentinel-sdk"
