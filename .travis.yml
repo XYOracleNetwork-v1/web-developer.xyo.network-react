@@ -7,4 +7,11 @@ branches:
     - master
 cache:
   yarn: true
-
+addons:
+  sonarcloud:
+    organization: xyo-network
+install:
+- yarn install
+script:
+- yarn build
+- sonar-scanner
