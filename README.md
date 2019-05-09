@@ -3,7 +3,6 @@
 [![logo]](https://xy.company)
 
 ![Build Status](https://travis-ci.com/XYOracleNetwork/web-developer.xyo.network-react.svg?token=DwLaRUVjarU2ZypyaHXe&branch=master)
-[![Known Vulnerabilities](https://snyk.io/test/github/XYOracleNetwork/web-developer.xyo.network-react/badge.svg)](https://snyk.io/test/github/XYOracleNetwork/web-developer.xyo.network-react)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/f3dd4f4d35e1bd9eeabc/maintainability)](https://codeclimate.com/github/XYOracleNetwork/sdk-core-nodejs/maintainability)
 
