@@ -11,16 +11,16 @@
     "deploy": "docusaurus-build && gulp publish"
   },
   "devDependencies": {
+    "bootstrap": "^4.3.1",
     "docusaurus": "^1.7.3",
     "eslint": "^5.15.3",
     "eslint-plugin-react": "^7.12.4",
     "generate-changelog": "^1.7.1"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1",
     "child_process": "^1.0.2",
     "concurrent-transform": "^1.0.0",
-    "gulp": "^4.0.0",
+    "gulp": "^4.0.2",
     "gulp-awspublish": "^4.0.0",
     "gulp-cloudfront-invalidate": "^0.1.5",
     "util": "^0.11.1"
