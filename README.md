@@ -3,7 +3,7 @@
 [![logo]](https://xy.company)
 
 ![Build Status](https://travis-ci.com/XYOracleNetwork/web-developer.xyo.network-react.svg?token=DwLaRUVjarU2ZypyaHXe&branch=master)
-[![Maintainability](https://api.codeclimate.com/v1/badges/f3dd4f4d35e1bd9eeabc/maintainability)](https://codeclimate.com/github/XYOracleNetwork/sdk-core-nodejs/maintainability) [![DepShield Badge](https://depshield.sonatype.org/badges/XYOracleNetwork/web-developer.xyo.network-react/depshield.svg)](https://depshield.github.io) [![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=XYOracleNetwork_web-developer.xyo.network-react&metric=alert_status)](https://sonarcloud.io/dashboard?id=XYOracleNetwork_web-developer.xyo.network-react)
+[![Maintainability](https://api.codeclimate.com/v1/badges/f3dd4f4d35e1bd9eeabc/maintainability)](https://codeclimate.com/github/XYOracleNetwork/sdk-core-nodejs/maintainability) [![DepShield Badge](https://depshield.sonatype.org/badges/XYOracleNetwork/web-developer.xyo.network-react/depshield.svg)](https://depshield.github.io) 
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7da23984ca0c4a6f8148d0962374d878)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=XYOracleNetwork/web-developer.xyo.network-react&amp;utm_campaign=Badge_Grade)[![BCH compliance](https://bettercodehub.com/edge/badge/XYOracleNetwork/web-developer.xyo.network-react?branch=master&token=bacd296f4c007dc034b24e1066a3ab38a2659421)](https://bettercodehub.com/)
 
