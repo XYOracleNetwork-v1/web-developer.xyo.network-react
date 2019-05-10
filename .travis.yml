@@ -14,5 +14,4 @@ branches:
 cache:
   yarn: true
 script:
-- yarn run build
 - sonar-scanner
