@@ -3,6 +3,16 @@ id: sentinel
 title: Sentinel X 
 ---
 
+## Current Version - 4.0.03
+
+**4.0.03 (2019-05-13)**
+
+**Changes**
+
+*  Uses SentinelX Major/Minor if the device has already been converted
+*  Uses XY Findit / OTP Major/Minor if the device has never been converted
+
+
 ## Video Walkthrough
 
 For a video walkthrough of the setup you can view the video below (it is part of an official Geomining Kit Video):
