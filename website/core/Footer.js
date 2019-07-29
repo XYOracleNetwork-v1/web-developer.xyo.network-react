@@ -40,17 +40,18 @@ class Footer extends React.Component {
           <section className="sitemap">
             <div>
               <h5>Docs</h5>
-              <a href={this.docUrl('getting-started.html', this.props.language)}>
-                Getting Started 
+              <a href="http://web-xyo.network-bootstrap.s3-website-us-east-1.amazonaws.com/protocol/">
+                Protocol
               </a>
               <a href={this.docUrl('payable-demo.html', this.props.language)}>
                 Guides 
               </a>
               <a 
-                href="http://reference.xyo.network.s3-website-us-east-1.amazonaws.com/"
-                rel="noreferrer noopener"
-                >
-                Reference 
+                href="https://github.com/XYOracleNetwork/"
+                target="_blank"
+                rel="noreferrer noopener" 
+              >
+                Source Code
               </a>
             </div>
             <div>
@@ -61,16 +62,6 @@ class Footer extends React.Component {
                 rel="noreferrer noopener"
               >
                 Twitter
-              </a>
-            </div>
-            <div>
-              <h5>More</h5>
-              <a 
-                href="https://github.com/XYOracleNetwork/"
-                target="_blank"
-                rel="noreferrer noopener" 
-              >
-                GitHub
               </a>
             </div>
             <noscript>

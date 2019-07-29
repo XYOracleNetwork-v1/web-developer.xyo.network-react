@@ -3263,8 +3263,7 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     { doc: 'getting-started', label: 'Guides'},
-    { href: 'http://reference.xyo.network/', label: 'Reference'},
-    {page: 'help', label: 'Help'},
+    { href: 'https://explore.xyo.network/', label: 'Explore'},
   ],
 
   // If you have users set above, you add it here:
