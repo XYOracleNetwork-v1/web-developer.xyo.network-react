@@ -1,24 +1,33 @@
 /* your custom css */
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web:700);
+@import url('https://fonts.googleapis.com/css?family=Lato:900&display=swap');
 
 @-ms-viewport{
   width: device-width;
 }
 
 body {
-  font-family: 'Titillium Web', sans-serif;
-  color: #43318b;
+  font-family: 'Lato', sans-serif;
+  color: black;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
 }
 
 .fixedHeaderContainer {
-  background-color: #141631;
+  background-color: #ecf0f1;
+  color: #2C3E50;
 }
 
 .fixedHeaderContainer header img {
-  height: 50px;
+  height: 30px;
   margin-right: 10px;
 }
+
+.navigationSlider .slidingNav ul li a {
+  color: black;
+}
+
 
 .container.paddingBottom.paddingTop {
   padding: 30px;
@@ -32,7 +41,7 @@ div.blockImage {
 }
 
 .nav-footer {
-  background-color: #232756;
+  background-color: #ecf0f1;
   display: grid;
   grid-template-columns: [copyright] 1fr [sitemap] 1fr;
 }
@@ -45,18 +54,26 @@ div.blockImage {
   margin: 0px;
 }
 
+.nav-footer .sitemap a{
+   color: black;
+}
+.nav-footer .sitemap h5{
+   color: black;
+}
+
 .docsNavContainer {
   box-shadow: 2px 2px 6px -2px #3f3b3b;
   padding: 10px;
 }
 
 .xyoContainer {
+  font-family: 'Lato', sans-serif;
   background-color: #232756;
-  color: white;
+  color: black;
 }
 
 .xyoContainer a {
-  color: white;
+  color: black;
 }
 
 .productShowcaseSection.paddingBottom.xyoContainer {
@@ -106,7 +123,7 @@ div.blockImage {
   background-size: cover;
   background-position: center;
   padding: 4rem;
-  color: white;
+  color: black;
   box-shadow: 2px 2px 6px -2px #3f3b3b;
 }
 
@@ -117,7 +134,7 @@ div.blockImage {
 .ethHomeContainer a.button {
   border-radius: 25px;
   background: linear-gradient(to right,#f04510 0,#f2c110 100%);
-  color: #fff;
+  color: black;
   border: none;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -225,14 +242,17 @@ p {
 
 div {
   display: block;
+  color: rgb(0, 3, 5);
 }
 
 a {
   text-decoration: none;
+  color: rgb(0, 3, 5);
 }
 
 .logos a{
   padding: 2rem;
+  color: rgb(0, 3, 5);
 }
 
 .productShowcaseSection .logos img {

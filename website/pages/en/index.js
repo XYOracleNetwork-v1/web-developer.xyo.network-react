@@ -30,13 +30,13 @@ class HomeSplash extends React.Component {
       </div>
     )
     
-    const SplashContainer = props => (
-      <div className="homeContainer">
-        <div className="homeSplashFade">
-          <div className="wrapper homeWrapper">{props.children}</div>
-        </div>
-      </div>
-    );
+    // const SplashContainer = props => (
+    //   <div className="homeContainer">
+    //     <div className="homeSplashFade">
+    //       <div className="wrapper homeWrapper">{props.children}</div>
+    //     </div>
+    //   </div>
+    // );
 
     const LatestProducts = () => (
       <div className="pt-5">
@@ -59,7 +59,7 @@ class HomeSplash extends React.Component {
                           href="https://bridgex.xyo.network/"
                           rel="noopener noreferrer" 
                           target="_blank"
-                          className="btn-primary btn-light-purple rounded"
+                          className="btn btn-secondary rounded"
                         >
                           Get Image
                           <i class="fab fa-apple pl-1"></i>
@@ -72,7 +72,7 @@ class HomeSplash extends React.Component {
                           href="https://developers.xyo.network/docs/en/bridge-x/"
                           rel="noopener noreferrer" 
                           target="_blank"
-                          className="btn-primary btn-light-purple rounded"
+                          className="btn btn-secondary rounded"
                         >
                           Bridge X Guide
                         </a>
@@ -94,7 +94,7 @@ class HomeSplash extends React.Component {
                       href="https://itunes.apple.com/us/app/xyo-network/id1453770624?mt=8" 
                       rel="noopener noreferrer"
                       target="_blank"
-                      className="btn-primary btn-light-purple rounded"
+                      className="btn btn-secondary rounded"
                     >
                       Get App <i class="fab fa-app-store-ios pl-2"></i>
                     </a>
@@ -104,7 +104,7 @@ class HomeSplash extends React.Component {
                       href="https://www.youtube.com/embed/rRRX80EX7fU" 
                       rel="noopener noreferrer"
                       target="_blank"
-                      className="btn-primary btn-light-purple rounded"
+                      className="btn btn-secondary rounded"
                     >
                       Video Guide
                     </a>
@@ -125,7 +125,7 @@ class HomeSplash extends React.Component {
                       href="https://play.google.com/store/apps/details?id=network.xyo.app"
                       rel="noopener noreferrer"
                       target="_blank"
-                      className="btn-primary btn-light-purple rounded"
+                      className="btn btn-secondary rounded"
                     >
                       Get App <i className="fab fa-android pl-2"></i>
                     </a> 
@@ -135,7 +135,7 @@ class HomeSplash extends React.Component {
                       href="https://www.youtube.com/embed/rRRX80EX7fU" 
                       rel="noopener noreferrer"
                       target="_blank"
-                      className="btn-primary btn-light-purple rounded"
+                      className="btn btn-secondary rounded"
                     >
                       Video Guide
                     </a>
@@ -150,15 +150,7 @@ class HomeSplash extends React.Component {
     
     return (
       <div>
-        <DevzillaContainer>
-          <div className="heroTitle text-center pb-5">
-          </div>
-          <DevzillaDescription />
-        </DevzillaContainer>
         <LatestProducts />
-        <SplashContainer>
-            <h1>OUR PRODUCTS</h1>
-        </SplashContainer>
       </div>
     );
   }
@@ -291,12 +283,12 @@ class Index extends React.Component {
                       <div className="card-bottom smallest">
                     {prod.fields.iOSAppLink || prod.fields.androidAppLink? 
                     <div>
-                      <button className="btn-primary btn-light-purple rounded smallest">
+                      <button className="btn-primary rounded smallest">
                         <a href={prod.fields.iOSAppLink} target="_blank" rel="noopener noreferrer">
                             iOS
                         </a>
                       </button>
-                      <button className="btn-primary btn-light-purple rounded smallest ml-3">
+                      <button className="btn-primary rounded smallest ml-3">
                         <a href={prod.fields.androidAppLink} target="_blank" rel="noopener noreferrer">
                           ANDROID
                         </a>
@@ -304,7 +296,7 @@ class Index extends React.Component {
                     </div> : <p></p>
                     }
                       <div className="pt-2">
-                        <button className="btn-primary btn-light-purple rounded smallest">
+                        <button className="btn-primary rounded smallest">
                           <a href={prod.fields.docsLink} target="_blank" rel="noopener noreferrer">
                             DOCS
                           </a>
@@ -362,10 +354,6 @@ class Index extends React.Component {
     return (
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
-          <Features />
-          <FeatureCallout />
-          <ConnectionMatrix />
-          <Showcase />
       </div>
     );
   }

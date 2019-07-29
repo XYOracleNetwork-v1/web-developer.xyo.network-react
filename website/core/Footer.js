@@ -27,7 +27,7 @@ class Footer extends React.Component {
         <div className="col-12 col-md-4">
         <section className="copyright">
             <img
-              src={`${this.props.config.baseUrl}img/XYO_full_white.png`}
+              src={`${this.props.config.baseUrl}img/XYO_full_colored.png`}
               alt="XYO"
               width="150"
               height="50"
