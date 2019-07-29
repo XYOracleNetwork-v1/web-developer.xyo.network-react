@@ -3317,7 +3317,7 @@ const siteConfig = {
   // Show documentation's last update time.
   enableUpdateTime: true,
 
-  stylesheets: ['https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css', 'https://use.fontawesome.com/releases/v5.8.1/css/all.css'],
+  stylesheets: ['https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css', 'https://use.fontawesome.com/releases/v5.8.1/css/all.css', 'https://fonts.googleapis.com/css?family=Lato&display=swap'],
 
   useEnglishUrl: true,
 

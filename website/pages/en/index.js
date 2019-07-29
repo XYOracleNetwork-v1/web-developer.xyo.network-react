@@ -35,7 +35,7 @@ class HomeSplash extends React.Component {
     const LatestProducts = () => (
       <div className="pt-5">
         <div className="pt-5">
-          <h1 className="text-center">OUR LATEST CONSUMER OFFERINGS</h1>
+          <h1 className="text-center">THE PORTAL FOR DEVELOPMENT ON XYO</h1>
         </div>
         <div className="p-5">
           <div className="row justify-content-center">

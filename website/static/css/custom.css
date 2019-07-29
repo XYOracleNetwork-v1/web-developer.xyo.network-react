@@ -26,7 +26,11 @@ h1 {
 }
 
 .navigationSlider .slidingNav ul li a {
-  color: black;
+  color: #95a5a6;
+}
+
+.navigationSlider .slidingNav ul li a:hover {
+  color: #2C3E50;
 }
 
 
@@ -56,10 +60,14 @@ div.blockImage {
 }
 
 .nav-footer .sitemap a{
-   color: black;
+   color: #95a5a6;
+}
+
+.nav-footer .sitemap a:hover{
+   color: #2C3E50;
 }
 .nav-footer .sitemap h5{
-   color: black;
+   color: #95a5a6;
 }
 
 .docsNavContainer {
@@ -75,6 +83,10 @@ div.blockImage {
 
 .xyoContainer a {
   color: black;
+}
+
+.xyoContainer a:hover {
+  color: #95a5a6;
 }
 
 .productShowcaseSection.paddingBottom.xyoContainer {
