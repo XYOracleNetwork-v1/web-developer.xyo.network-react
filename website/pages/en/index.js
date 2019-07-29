@@ -39,14 +39,14 @@ class HomeSplash extends React.Component {
         </div>
         <div className="p-5">
           <div className="row justify-content-center">
-            <div className="p-5 ">
+            <div className="p-5">
                 <div className="card shadow">
                 <div className="card-header">
                     The XYO Client
                   </div>
                   <div className="card-body">
                     <h3 className="card-title">Install the official Client to use XYO</h3>
-                    <p className="card-text">Available in Android, iOS, and NodeJS</p>
+                    <p className="card-text">Turn your devices into Sentinel, Bridge, Archivist or Diviner to explore </p>
                     <div>
                       <div>
                         <a 
@@ -86,7 +86,7 @@ class HomeSplash extends React.Component {
                 </div>
                 <div className="card-body">
                   <h3 className="card-title">SDKs for XYO Components</h3>
-                  <p className="card-text">The software that powers your queries and interactions</p>
+                  <p className="card-text">Add XYO Proof of Origin and Bound Witness functions to your project</p>
                   <div>
                     <a 
                       href="http://web-xyo.network-bootstrap.s3-website-us-east-1.amazonaws.com/sdks/" 
