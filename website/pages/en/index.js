@@ -39,7 +39,7 @@ class HomeSplash extends React.Component {
         </div>
         <div className="p-5">
           <div className="row justify-content-center">
-            <div className="p-5">
+            <div className="p-5 ">
                 <div className="card shadow">
                 <div className="card-header">
                     The XYO Client
