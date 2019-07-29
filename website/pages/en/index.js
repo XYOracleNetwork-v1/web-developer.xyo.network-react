@@ -1,11 +1,5 @@
 const React = require('react');
 
-const CompLibrary = require('../../core/CompLibrary.js');
-
-const Container = CompLibrary.Container;
-const GridBlock = CompLibrary.GridBlock;
-
-
 class HomeSplash extends React.Component {
   render() {
     const {siteConfig, language = ''} = this.props;
@@ -84,11 +78,11 @@ class HomeSplash extends React.Component {
             <div className="p-5">
               <div className="card shadow">
                 <div className="card-header">
-                  XYO iOS App
+                  Explore App
                 </div>
                 <div className="card-body">
-                  <h3 className="card-title">The New XYO App for iOS</h3>
-                  <p className="card-text">The Power of the XYO Network now on iOS!</p>
+                  <h3 className="card-title">Explore the XYO Network</h3>
+                  <p className="card-text">The software that powers your queries and interactions</p>
                   <div className="pb-2">
                     <a 
                       href="https://itunes.apple.com/us/app/xyo-network/id1453770624?mt=8" 
@@ -106,7 +100,7 @@ class HomeSplash extends React.Component {
                       target="_blank"
                       className="btn btn-secondary rounded"
                     >
-                      Video Guide
+                      Guide Coming Soon
                     </a>
                   </div>
                 </div>
@@ -118,8 +112,8 @@ class HomeSplash extends React.Component {
                   XYO Android App
                 </div>
                 <div className="card-body">
-                  <h3 className="card-title">The New XYO App for Android</h3>
-                  <p className="card-text">The Power of the XYO Network updated for Android!</p>
+                  <h3 className="card-title">The New XYO Mobile App</h3>
+                  <p className="card-text">Built on with an updated framework with explore.</p>
                   <div className="pb-2">
                     <a 
                       href="https://play.google.com/store/apps/details?id=network.xyo.app"
