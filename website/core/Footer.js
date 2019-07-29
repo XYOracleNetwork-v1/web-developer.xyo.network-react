@@ -27,7 +27,7 @@ class Footer extends React.Component {
         <div className="col-12 col-md-4">
         <section className="copyright">
             <img
-              src={`${this.props.config.baseUrl}img/XYO_full_white.png`}
+              src={`${this.props.config.baseUrl}img/XYO_full_colored.png`}
               alt="XYO"
               width="150"
               height="50"
@@ -40,46 +40,28 @@ class Footer extends React.Component {
           <section className="sitemap">
             <div>
               <h5>Docs</h5>
-              <a href={this.docUrl('getting-started.html', this.props.language)}>
-                Getting Started 
+              <a href="http://web-xyo.network-bootstrap.s3-website-us-east-1.amazonaws.com/protocol/">
+                Protocol
               </a>
               <a href={this.docUrl('payable-demo.html', this.props.language)}>
                 Guides 
               </a>
               <a 
-                href="http://reference.xyo.network.s3-website-us-east-1.amazonaws.com/"
-                rel="noreferrer noopener"
-                >
-                Reference 
+                href="https://github.com/XYOracleNetwork/"
+                target="_blank"
+                rel="noreferrer noopener" 
+              >
+                Source Code
               </a>
             </div>
             <div>
               <h5>Community</h5>
-              <a href={this.pageUrl('users.html', this.props.language)}>
-                User Showcase
-              </a>
-              <a href="https://gitter.im/XYOracleNetwork/Dev"
-                target="blank"
-                rel="noreferrer noopener"
-              >
-                Project Chat
-              </a>
               <a
                 href="https://twitter.com/xyodevs"
                 target="_blank"
                 rel="noreferrer noopener"
               >
                 Twitter
-              </a>
-            </div>
-            <div>
-              <h5>More</h5>
-              <a 
-                href="https://github.com/XYOracleNetwork/"
-                target="_blank"
-                rel="noreferrer noopener" 
-              >
-                GitHub
               </a>
             </div>
             <noscript>

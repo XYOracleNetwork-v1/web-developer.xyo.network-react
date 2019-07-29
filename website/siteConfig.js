@@ -10,38 +10,38 @@
 
 // List of projects/orgs using your project for the users page.
 const users = [
-  {
-    caption: 'Coin',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/coin_horizontal_colored.png',
-    infoLink: 'https://xyo.network/',
-    pinned: true,
-  },
-  {
-    caption: 'Everipedia',
-    image: '/img/everipedia.png',
-    infoLink: 'https://everipedia.org/',
-    pinned: true
-  },
-  {
-    caption: 'DRVR',
-    image: '/img/drvr.png',
-    infoLink: 'http://www.drvr.co/',
-    pinned: true
-  },
-  {
-    caption: 'ESRI',
-    image: '/img/esri.png',
-    infoLink: 'https://www.esri.com/',
-    pinned: true
-  },
-  {
-    caption: 'SMK',
-    image: '/img/SMK-Logo.ico',
-    infoLink: 'https://www.smkusa.com/',
-    pinned: true
-  }
+  // {
+  //   caption: 'Coin',
+  //   // You will need to prepend the image path with your baseUrl
+  //   // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+  //   image: '/img/coin_horizontal_colored.png',
+  //   infoLink: 'https://xyo.network/',
+  //   pinned: true,
+  // },
+  // {
+  //   caption: 'Everipedia',
+  //   image: '/img/everipedia.png',
+  //   infoLink: 'https://everipedia.org/',
+  //   pinned: true
+  // },
+  // {
+  //   caption: 'DRVR',
+  //   image: '/img/drvr.png',
+  //   infoLink: 'http://www.drvr.co/',
+  //   pinned: true
+  // },
+  // {
+  //   caption: 'ESRI',
+  //   image: '/img/esri.png',
+  //   infoLink: 'https://www.esri.com/',
+  //   pinned: true
+  // },
+  // {
+  //   caption: 'SMK',
+  //   image: '/img/SMK-Logo.ico',
+  //   infoLink: 'https://www.smkusa.com/',
+  //   pinned: true
+  // }
 ];
 
 const products =
@@ -3246,7 +3246,7 @@ const products =
 const siteConfig = {
    // Title for your website.
   title: '', 
-  tagline: 'The source for developers to interact with XYO and its suite of products.',
+  tagline: 'XYO Source for developers.',
   url: 'https://developers.xyo.network', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -3263,8 +3263,7 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     { doc: 'getting-started', label: 'Guides'},
-    { href: 'http://reference.xyo.network/', label: 'Reference'},
-    {page: 'help', label: 'Help'},
+    { href: 'https://explore.xyo.network/', label: 'Explore'},
   ],
 
   // If you have users set above, you add it here:
@@ -3272,18 +3271,18 @@ const siteConfig = {
   products,
 
   /* path to images for header/footer */
-  headerIcon: 'img/XYODevelopers_XYO_Logo.png',
+  headerIcon: 'img/XYO_full_colored.png',
   favicon: 'img/XYO_icon_colored.png',
   /* Colors for website */
   colors: {
-    primaryColor: '#232756',
-    secondaryColor: '#8d8fc6',
+    primaryColor: '##2C3E50',
+    secondaryColor: '##2C3E50',
   },
 
   fonts: {
     myFont: [
-      "Titillium Web",
-      "Serif"
+      "Lato",
+      "Helvetica Neue"
     ],
     myOtherFont: [
       "-apple-system",
@@ -3317,7 +3316,7 @@ const siteConfig = {
   // Show documentation's last update time.
   enableUpdateTime: true,
 
-  stylesheets: ['https://fonts.googleapis.com/css?family=Titillium+Web', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', 'https://use.fontawesome.com/releases/v5.8.1/css/all.css'],
+  stylesheets: ['https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css', 'https://use.fontawesome.com/releases/v5.8.1/css/all.css', 'https://fonts.googleapis.com/css?family=Lato&display=swap'],
 
   useEnglishUrl: true,
 
