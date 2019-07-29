@@ -55,15 +55,6 @@ class Footer extends React.Component {
             </div>
             <div>
               <h5>Community</h5>
-              <a href={this.pageUrl('users.html', this.props.language)}>
-                User Showcase
-              </a>
-              <a href="https://gitter.im/XYOracleNetwork/Dev"
-                target="blank"
-                rel="noreferrer noopener"
-              >
-                Project Chat
-              </a>
               <a
                 href="https://twitter.com/xyodevs"
                 target="_blank"

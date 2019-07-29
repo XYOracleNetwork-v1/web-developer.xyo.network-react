@@ -39,36 +39,40 @@ class HomeSplash extends React.Component {
         </div>
         <div className="p-5">
           <div className="row justify-content-center">
-            <div className="p-5">
+            <div className="p-5 ">
                 <div className="card shadow">
                 <div className="card-header">
-                    Bridge X
+                    The XYO Client
                   </div>
                   <div className="card-body">
-                    <h3 className="card-title">New Bridge Software</h3>
-                    <p className="card-text">New software to update your Bridge to a Bridge X!</p>
+                    <h3 className="card-title">Install the official Client to use XYO</h3>
+                    <p className="card-text">Available in Android, iOS, and NodeJS</p>
                     <div>
-                      <div className="pb-2">
+                      <div>
                         <a 
-                          href="https://bridgex.xyo.network/"
+                          href="http://web-xyo.network-bootstrap.s3-website-us-east-1.amazonaws.com/install"
                           rel="noopener noreferrer" 
                           target="_blank"
-                          className="btn btn-secondary rounded"
+                          className="btn btn-square mr-1"
+                          style={{ backgroundColor: '#2c3e50', color: '#fff'}}
                         >
-                          Get Image
-                          <i class="fab fa-apple pl-1"></i>
-                          <i class="fab fa-linux pl-1"></i>
-                          <i class="fab fa-windows pl-1"></i>
+                          Get
                         </a>
-                      </div>
-                      <div>
+                        <a 
+                          href="https://github.com/XYOracleNetwork"
+                          rel="noopener noreferrer" 
+                          target="_blank"
+                          className="btn btn-secondary btn-square mr-1"
+                        >
+                          GitHub
+                        </a>
                         <a 
                           href="https://developers.xyo.network/docs/en/bridge-x/"
                           rel="noopener noreferrer" 
                           target="_blank"
-                          className="btn btn-secondary rounded"
+                          className="btn btn-secondary btn-square disabled mr-1"
                         >
-                          Bridge X Guide
+                          Docs - Coming Soon
                         </a>
                       </div>
                     </div>
@@ -78,61 +82,37 @@ class HomeSplash extends React.Component {
             <div className="p-5">
               <div className="card shadow">
                 <div className="card-header">
-                  Explore App
+                  SDKs
                 </div>
                 <div className="card-body">
-                  <h3 className="card-title">Explore the XYO Network</h3>
+                  <h3 className="card-title">SDKs for XYO Components</h3>
                   <p className="card-text">The software that powers your queries and interactions</p>
-                  <div className="pb-2">
-                    <a 
-                      href="https://itunes.apple.com/us/app/xyo-network/id1453770624?mt=8" 
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      className="btn btn-secondary rounded"
-                    >
-                      Get App <i class="fab fa-app-store-ios pl-2"></i>
-                    </a>
-                  </div>
                   <div>
                     <a 
-                      href="https://www.youtube.com/embed/rRRX80EX7fU" 
+                      href="http://web-xyo.network-bootstrap.s3-website-us-east-1.amazonaws.com/sdks/" 
                       rel="noopener noreferrer"
                       target="_blank"
-                      className="btn btn-secondary rounded"
+                      className="btn btn-square mr-1"
+                      style={{ backgroundColor: '#2c3e50', color: '#fff'}}
                     >
-                      Guide Coming Soon
+                      Get
                     </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="p-5">
-              <div className="card shadow">
-                <div className="card-header">
-                  XYO Android App
-                </div>
-                <div className="card-body">
-                  <h3 className="card-title">The New XYO Mobile App</h3>
-                  <p className="card-text">Built on with an updated framework with explore.</p>
-                  <div className="pb-2">
                     <a 
-                      href="https://play.google.com/store/apps/details?id=network.xyo.app"
+                      href="https://github.com/XYOracleNetwork" 
                       rel="noopener noreferrer"
                       target="_blank"
-                      className="btn btn-secondary rounded"
+                      className="btn btn-secondary btn-square mr-1"
                     >
-                      Get App <i className="fab fa-android pl-2"></i>
-                    </a> 
-                  </div>
-                  <div>
-                    <a 
-                      href="https://www.youtube.com/embed/rRRX80EX7fU" 
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      className="btn btn-secondary rounded"
-                    >
-                      Video Guide
+                      GitHub
                     </a>
+                    <a
+                      href="https://developers.xyo.network/docs/en/bridge-x/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className="btn btn-secondary btn-square disabled mr-1"
+                    >
+                      Docs - Coming Soon
+                        </a>
                   </div>
                 </div>
               </div>
