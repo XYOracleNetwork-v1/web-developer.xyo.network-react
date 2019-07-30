@@ -26,12 +26,18 @@ class Footer extends React.Component {
       <footer className="nav-footer" id="footer">
         <div className="col-12 col-md-4">
         <section className="copyright">
+          <a
+            href="https://xyo.network/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <img
               src={`${this.props.config.baseUrl}img/XYO_full_colored.png`}
               alt="XYO"
               width="150"
               height="50"
             />
+          </a>
             <div>
               {this.props.config.copyright}
             </div>
