@@ -50,7 +50,7 @@ class HomeSplash extends React.Component {
                     <div>
                       <div>
                         <a 
-                          href="http://web-xyo.network-bootstrap.s3-website-us-east-1.amazonaws.com/install"
+                          href="https://xyo.network/install/"
                           rel="noopener noreferrer" 
                           target="_blank"
                           className="btn btn-square mr-1"
@@ -89,7 +89,7 @@ class HomeSplash extends React.Component {
                   <p className="card-text">Add XYO Proof of Origin and Bound Witness functions to your project</p>
                   <div>
                     <a 
-                      href="http://web-xyo.network-bootstrap.s3-website-us-east-1.amazonaws.com/sdks/" 
+                      href="https://xyo.network/sdks/" 
                       rel="noopener noreferrer"
                       target="_blank"
                       className="btn btn-square mr-1"

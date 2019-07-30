@@ -1,9 +1,7 @@
 {
   "docs": {
     "Getting Started": ["getting-started"],
-    "XYO Nodes Introduction": ["Introduction"],
-    "XYO Node Guides": ["new-xyo-suite"],
-    "Core Nodejs Package": ["archivist-diviner"],
+    "Explore App": ["explore-getting-started"],
     "Diviner": ["diviner"],
     "Archivist": ["archivist"],
     "Bridge": ["bridge-x"],

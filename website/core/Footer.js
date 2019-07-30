@@ -26,7 +26,8 @@ class Footer extends React.Component {
       <footer className="nav-footer" id="footer">
         <div className="col-12 col-md-4">
         <section className="copyright">
-          <a
+         <p className="text-dark">           
+         <a
             href="https://xyo.network/"
             target="_blank"
             rel="noreferrer noopener"
@@ -34,10 +35,10 @@ class Footer extends React.Component {
             <img
               src={`${this.props.config.baseUrl}img/XYO_full_colored.png`}
               alt="XYO"
-              width="150"
-              height="50"
+              width="82"
+              height="30"
             />
-          </a>
+          </a> | Developers</p>
             <div>
               {this.props.config.copyright}
             </div>
@@ -46,7 +47,10 @@ class Footer extends React.Component {
           <section className="sitemap">
             <div>
               <h5>Docs</h5>
-              <a href="http://web-xyo.network-bootstrap.s3-website-us-east-1.amazonaws.com/protocol/">
+              <a href="https://explore.xyo.network/" target="_blank">
+                Explore
+              </a>
+              <a href="https://xyo.network/protocol/" target="_blank">
                 Protocol
               </a>
               <a href={this.docUrl('payable-demo.html', this.props.language)}>
