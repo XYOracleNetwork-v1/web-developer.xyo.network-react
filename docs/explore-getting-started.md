@@ -198,6 +198,28 @@ The map on XYO Explore has pins that you can interact with
 
 You can get hash information and see the bound witness trail along with the number of blocks
 
+### Available queries
+
+The other key feature of map view is access to available queries
+
+<h1 align="left">
+  <img alt="available queries gif" src="/docs/assets/map_available_queries.gif">
+</h1>
+
+Available queries offered
+- Chain Segment
+- Intersection
+- Geohash
+- Time
+- Page
+- Last Known Location
+
+Each available query comes with an option to execute a **Sample Query**. This prefills the query fields for you, all you would have to do is click **Run Query** after the fields have been filled
+
+<h1 align="left">
+  <img alt="sample query gif" src="/docs/assets/sample_query.gif">
+</h1>
+
 The map also contains a list view, social sharing, and an advanced button giving you access to cURL requests and JSON
 
 Queries that take you immediately to map view:
@@ -215,6 +237,10 @@ coming soon - available on explore.xyo.network under **Show Advanced**
 ## JSON Response
 
 coming soon - available on explore.xyo.network under **Show Advanced**
+
+## Plugins
+
+## Watchlist
 
 ## What you should look for
 
