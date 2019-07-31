@@ -2,6 +2,7 @@
 id: explore-getting-started
 title: XYO EXPLORE
 sidebar_label: Getting Started with Explore
+---
 
 <div class="alert alert-danger text-center" role="alert">
   Difficulty Level: Intermediate to Advanced
