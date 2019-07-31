@@ -1,11 +1,21 @@
 ---
 id: explore-getting-started
-title: XYO Explore 
+title: XYO EXPLORE
 sidebar_label: Getting Started with Explore
----
+
+<div class="alert alert-danger text-center" role="alert">
+  Difficulty Level: Intermediate to Advanced
+</div>
 
 <div class="alert alert-info text-center" role="alert">
   <h2>Getting Started with Explore App</h2>
+</div>
+
+<div class="alert alert-info text-center" role="alert">
+  <h2>XYO Explore Query Responses</h2>
+  <p>The first 100 blocks from a query are free.</p>
+  <p>XYO Explore queries are available at 1 XYO per additional query (from 101 - 2000 blocks).</p>
+  <p>Additional details can be viewed under Available Plugins -> Payment</p>
 </div>
 
 ## Queries in the Explore App
@@ -232,16 +242,492 @@ Queries that take you immediately to map view:
 
 ## cURL Requests
 
-coming soon - available on explore.xyo.network under **Show Advanced**
+Available on explore.xyo.network with map view queries under **Show Advanced**
 
-## JSON Response
+### Near and Geohash cURL Requests
 
-coming soon - available on explore.xyo.network under **Show Advanced**
+`geohash:GEOHASH`, `near:LAT,LNG`
+
+For the response, look at [the JSON response](#near-and-geohash-query-json-response)
+
+cURL Request
+```curl
+curl '<https://ac0.xyo.network/>' \\
+  \-H 'Accept-Encoding: gzip, deflate, br' \\
+  \-H 'Content-Type: application/json' \\
+  \-H 'Accept: application/json' \\
+  \-H 'Connection: keep-alive' \\
+  \-H 'DNT: 1' \\
+  \-H 'Origin: <https://ac0.xyo.network>' \\
+  \--data-binary '{"query":" query { queryFor(query: \\"{\\\\"select\\\\":{\\\\"name\\\\":\\\\"SELECTOR_GEOHASH\\\\",\\\\"config\\\\":{\\\\"geohash\\\\":\\\\"xn7\\\\",\\\\"limit\\\\":\\\\"100\\\\"}},\\\\"mutate\\\\":{\\\\"name\\\\":\\\\"MUTATOR_HUMAN\\\\",\\\\"config\\\\":{}},\\\\"payment\\\\":{\\\\"apiKey\\\\":\\\\"key\\\\"}}\\") }"}' --compressed
+```
+
+### Where and Chain cURL Requests
+
+`where:PUBLIC_KEY`, `chain:PUBLIC_KEY`
+For the response, look at [the JSON response](#where-and-chain-query-json-response)
+
+cURL Request
+```curl
+curl '<https://ac0.xyo.network/>' \\
+  \-H 'Accept-Encoding: gzip, deflate, br' \\
+  \-H 'Content-Type: application/json' \\
+  \-H 'Accept: application/json' \\
+  \-H 'Connection: keep-alive' \\
+  \-H 'DNT: 1' \\
+  \-H 'Origin: <https://ac0.xyo.network>' \\
+  \--data-binary '{"query":" query { queryFor(query: \\"{\\\\"select\\\\":{\\\\"name\\\\":\\\\"SELECTOR_INDEX\\\\",\\\\"config\\\\":{\\\\"publicKey\\\\":\\\\"15mr23ZtkaQsQGV1GTpbpJJwnqGWtkZsxfjE3VDxqtMbrCA7RGQnodb6ycCiWeds5pDKAgU4svmwMs4qFaJyXddj9jB\\\\",\\\\"index\\\\":-1,\\\\"amount\\\\":\\\\"100\\\\",\\\\"up\\\\":false}},\\\\"mutate\\\\":{\\\\"name\\\\":\\\\"MUTATOR_HUMAN\\\\",\\\\"config\\\\":{}},\\\\"payment\\\\":{\\\\"apiKey\\\\":\\\\"key\\\\"}}\\") }"}' --compressed
+```
+
+### Recent cURL Requests
+
+`recent:LIMIT`
+For the response, look at [the JSON response](#recent-query-json-response)
+
+cURL Request
+```curl
+curl '<https://ac0.xyo.network/>' \\
+  \-H 'Accept-Encoding: gzip, deflate, br' \\
+  \-H 'Content-Type: application/json' \\
+  \-H 'Accept: application/json' \\
+  \-H 'Connection: keep-alive' \\
+  \-H 'DNT: 1' \\
+  \-H 'Origin: <https://ac0.xyo.network>' \\
+  \--data-binary '{"query":" query { queryFor(query: \\"{\\\\"select\\\\":{\\\\"name\\\\":\\\\"SELECTOR_TIME\\\\",\\\\"config\\\\":{\\\\"fromTime\\\\":1564604355416,\\\\"limit\\\\":\\\\"40\\\\"}},\\\\"mutate\\\\":{\\\\"name\\\\":\\\\"MUTATOR_HUMAN\\\\",\\\\"config\\\\":{}},\\\\"payment\\\\":{\\\\"apiKey\\\\":\\\\"key\\\\"}}\\") }"}' --compressed
+```
+
+### Blocks cURL Requests
+
+`blocks:LIMIT`
+For the response, look at [the JSON response](#blocks-query-json-response)
+
+cURL Request
+```curl
+curl '<https://ac0.xyo.network/>' \\
+  \-H 'Accept-Encoding: gzip, deflate, br' \\
+  \-H 'Content-Type: application/json' \\
+  \-H 'Accept: application/json' \\
+  \-H 'Connection: keep-alive' \\
+  \-H 'DNT: 1' \\
+  \-H 'Origin: <https://ac0.xyo.network>' \\
+  \--data-binary '{"query":" query { queryFor(query: \\"{\\\\"select\\\\":{\\\\"name\\\\":\\\\"SELECTOR_PAGE\\\\",\\\\"config\\\\":{\\\\"limit\\\\":\\\\"40\\\\"}},\\\\"mutate\\\\":{\\\\"name\\\\":\\\\"MUTATOR_HUMAN\\\\",\\\\"config\\\\":{}},\\\\"payment\\\\":{\\\\"apiKey\\\\":\\\\"key\\\\"}}\\") }"}' --compressed
+```
+
+## JSON Requests and Responses
+
+Available on explore.xyo.network with map view queries under **Show Advanced**
+
+### Near and Geohash Query JSON Requests
+
+`near:LAT,LNG`, `geohash:GEOHASH`
+
+JSON Query
+
+```json
+{
+  "select": {
+    "name": "SELECTOR_GEOHASH",
+    "config": {
+      "geohash": "xn7",
+      "limit": "100"
+    }
+  },
+  "mutate": {
+    "name": "MUTATOR_HUMAN",
+    "config": {}
+  },
+  "payment": {
+    "apiKey": "key"
+  }
+}
+
+```
+
+### Near and Geohash Query JSON Response 
+
+( 1 of 100 example) ***This query output can also be fetched by a cURL request***
+
+```json
+[
+  {
+    "signedHash": "1N9ogr8TAsq4DFJ397Zs6VxocG9PzX7EzJZkw2WXd9Rpsch",
+    "bytes": "YAICESAVdCAZRAAMQR1m+fyx4+H1L+2EMpeO6lRLjhfTOuoduHdrQZWQvy163fJiGojiS+CMC6ageMCDeVT02A+c/7olUFAY5LGqB7sAAwUAAA1OIAgkABAhOjnJhqtz+rBx7LO2/r3VDn0wr4+qJS3vj+JyTH2fJRJgFQEBIBlEAAxBhH7FrUiETI2xKr3B7Knk0wWy6TApaMtYnIstBf78zognsk5xm6gSgTdUsLZZn0V+DKv6/yc+iko1u/+3s2P+VwAUCQAAAWpeEIGCIBIXABwJQEG7Gja39/4AHQlAYW4qIpNS2TAIJAAQIaCVTPTeCDx6T8GMKHk16DBIr3Lmu7aYL7B0GQs+DUJ6AAMFAAAACjAGZgAQIaCVTPTeCDx6T8GMKHk16DBIr3Lmu7aYL7B0GQs+DUJ6IX5teevlTLenbIqqVMSW4I9Y/tfUQj6MqrnhRuEz//3RIaXdd2iehpYE+ZDO8zyR1dHl6FGXXscNQpzHtxfNLFTfIBdJIBpGAAlDIB7IF/cdLWrhff+HPUruNkQW37jBDSNO+fukazbs+qCOIAf2gm1Law0mBbPJPF6v6k5Z7vVIb/sbQOBPaLcp/XDMIBdJIBpGAAlDILgzeknihSu0+23a73dlHxryxSNdM93Qp7sR6wvYaVOjIGT4gUyaT9mWtubLeLKZv/wpnvHgBlEgMnWXmqoV/xHl",
+    "humanReadable": \[
+      {
+        "keySet": [
+          {
+            "name": "secp566k1PublicKey",
+            "value": "15mqa2EDVuzGP2zXoX2hjvSZ7fxBWjHHBeMKnpnTarJyo44dUQxpr4dHQBGrCS1hoPPaKdL8o3fFEAq2gipXV8uEUrn"
+          }
+        ],
+        "index": 3406,
+        "previousHash": "1N9dw65BjwzRDsxJkRFSTZi5P8w8m4etedA9wTczf7J7HEZ"
+      },
+      {
+        "keySet": [
+          {
+            "name": "secp566k1PublicKey",
+            "value": "15msdZxwFwjPdZ4dStQAasmdMxNdvLwn8vCLfa8PRQXEP5RjzsDysr27ufDWcDQS56S3oreLSayEigTEtx7zRPoe3rE"
+          }
+        ],
+        "date": 1556356301186,
+        "gps": {
+          "lat": 35.46173748,
+          "lng": 139.44264344
+        },
+        "previousHash": "1N9kpebMK7NUik78Gd8uruYHjYTSos4mhCferyrzR6PcDwP",
+        "index": 10,
+        "bridgeHashSet": [
+          "1N9kpebMK7NUik78Gd8uruYHjYTSos4mhCferyrzR6PcDwP",
+          "1N9iXKWZVcMkmx55gLWCEUP5rGtZVHw2YH9DCcGsHhCtdK6",
+          "1N9mBGTN8qVSpPmJkbexJMQ1wRXTbuPQiNqY7SaNgmV4k4n"
+        ]
+      },
+      {
+        "signatureSet": [
+          {
+            "name": "secp566k1Signature",
+            "value": "AAlDIB7IF/cdLWrhff+HPUruNkQW37jBDSNO+fukazbs+qCOIAf2gm1Law0mBbPJPF6v6k5Z7vVIb/sbQOBPaLcp/XDM"
+          }
+        ]
+      },
+      {
+        "signatureSet": [
+          {
+            "name": "secp566k1Signature",
+            "value": "AAlDILgzeknihSu0+23a73dlHxryxSNdM93Qp7sR6wvYaVOjIGT4gUyaT9mWtubLeLKZv/wpnvHgBlEgMnWXmqoV/xHl"
+          }
+        ]
+      }
+    ]
+  },
+]
+```
+
+### Where and Chain Query JSON Requests
+
+`where:PUBLIC_KEY`, `chain:PUBLIC_KEY`
+
+JSON Query
+
+```json
+{
+  "select": {
+    "name": "SELECTOR_INDEX",
+    "config": {
+      "publicKey": "15mr23ZtkaQsQGV1GTpbpJJwnqGWtkZsxfjE3VDxqtMbrCA7RGQnodb6ycCiWeds5pDKAgU4svmwMs4qFaJyXddj9jB",
+      "index": -1,
+      "amount": "100",
+      "up": false
+    }
+  },
+  "mutate": {
+    "name": "MUTATOR_HUMAN",
+    "config": {}
+  },
+  "payment": {
+    "apiKey": "key"
+  }
+}
+
+```
+
+### Where and Chain Query JSON Response
+ 
+( 1 of 100 example) ***This query output can also be fetched by a cURL request***
+
+```json
+[
+  {
+    "signedHash": "1N9pNpEb29fdzcWer39WNfqgXFjxm9mgMjgrnPvS7RGaxed",
+    "bytes": "YAIBzmAVAKswGUQADEEz1/SyVjpi1PJPUtk0HQA/+ZNJUz32yP8Y5zuR+sgMleSbK9IOosOEZ8699DTfY3/qiKgrVUBytPTGjSPS6nh+AB8FAAAAAAAgAgAwCCQADyEbUZsCSwv486eohDlnr2EYJ/v2kaZZi5PzApdB8VAAUAATAuMAAwUAAADYcAYAJQAQIRtRmwJLC/jzp6iEOWevYRgn+/aRplmLk/MCl0HxUABQIBWHIBlEAAxB/OBxHo2BWt/NbSHlmzJa8NDLGyeCfsJOTobu8gZMfUwNoOHG/tiC2hjwHujxqLKj4MelEfMy32MCuNtqg48fmAAUCQAAAWq3aok7MAgkABAhwlVIsswWiegPV5mc/H+Wm9T+r/Ngx9YpEyMeZ0vu7nUAAwUAAAEnABMCuQAeAtQgF0kgGkYACUMgQGuMT9oiNqrRKJlln8nOEL6kzQaiur6ITh5uZ01ZQ3kgS1k/TiW3OmQdJQnoqiWbsTrI9+Fbq23mqvTrvWmpi6UgF0kwGkYACUMgLe0WAx/a8DrKB+XoUoV46WtfF+ppVzdVK3idbiNiV5ogf193TQax7dAjBp9K6w9HtABO0bOUuqmX4RS29w1Ar3w=",
+    "humanReadable": \[
+      {
+        "31": "AB8FAAAAAA==",
+        "32": "ACACAA==",
+        "keySet": [
+          {
+            "name": "secp566k1PublicKey",
+            "value": "15mr23ZtkaQsQGV1GTpbpJJwnqGWtkZsxfjE3VDxqtMbrCA7RGQnodb6ycCiWeds5pDKAgU4svmwMs4qFaJyXddj9jB"
+          }
+        ],
+        "previousHash": "1LqZ5McrAwpH5b7XyLf87k8ATeKjyF5GwuHehP3fXAxX4WK",
+        "rssi": -29,
+        "index": 216,
+        "bridgeHashSet": [
+          "1N9brSVv7PPXAMqZ5obH3C1gxyqiPyozDyVTjaJ1LVSiuWw"
+        ]
+      },
+      {
+        "keySet": [
+          {
+            "name": "secp566k1PublicKey",
+            "value": "15mv3AUsy9EENcMmgxD9kGoZjdiA1ZNE85gQn9bKAdJN97kmCKdud2c6pAaW8SyMBEGe17zmAXYUjy8wXWuhiaGdWPR"
+          }
+        ],
+        "date": 1557855373627,
+        "previousHash": "1N9o6PqZnv4a4bf5ormnsPMd4HNoADHWRdBNZwKkqAU5Cx4",
+        "index": 295,
+        "rssi": -71,
+        "rssiAt1m": -44
+      },
+      {
+        "signatureSet": [
+          {
+            "name": "secp566k1Signature",
+            "value": "AAlDIEBrjE/aIjaq0SiZZZ/JzhC+pM0Gorq+iE4ebmdNWUN5IEtZP04ltzpkHSUJ6Kolm7E6yPfhW6tt5qr0671pqYul"
+          }
+        ]
+      },
+      {
+        "signatureSet": [
+          {
+            "name": "secp566k1Signature",
+            "value": "AAlDIC3tFgMf2vA6ygfl6FKFeOlrXxfqaVc3VSt4nW4jYleaIH9fd00Gse3QIwafSusPR7QATtGzlLqpl+EUtvcNQK98"
+          }
+        ]
+      }
+    ]
+  },
+]
+```
+
+### Recent Query JSON Request
+
+`recent:LIMIT`
+
+JSON Query
+
+```json
+{
+  "select": {
+    "name": "SELECTOR_TIME",
+    "config": {
+      "fromTime": 1564604355416,
+      "limit": "40"
+    }
+  },
+  "mutate": {
+    "name": "MUTATOR_HUMAN",
+    "config": {}
+  },
+  "payment": {
+    "apiKey": "key"
+  }
+}
+```
+
+
+### Recent Query JSON Response
+
+( 1 of 40 example) **_This query output can also be fetched by a cURL request_**
+
+```json
+[
+  {
+    "signedHash": "1N9jvpjoMVTGV585bG2iJ1hUZAjb7MtUYKzNosVt7ckQNx3",
+    "bytes": "YAIB7GAVALAwGUQADEGuV8BmKCLVAth5ZlgpjrZPizAnd5Ib73yUt9EBrEtLOw97jL7kvJ+kjoj31BEa0gzSkbDMA9IrjC6aTZgfZurAAB8FAAAAAAAgAgAAIQMTkzAIJAAQIShiSFPFmTWPin1DvCzEO89Pv77W8FquZxciv4kD/csWABMCuQADBQAAJANwBgAlABAhKGJIU8WZNY+KfUO8LMQ7z0+/vtbwWq5nFyK/iQP9yxYgFaAgGUQADEEn/4XiGbMu4YsUXiXdmaJ0QumJQvxkz0j2DKyEMPoEJ77qWlPnxPD6rQN4cdCuKIE60DfDJV+cWeQIX87w2F6FIBIXABwJQEID5b/MEnIAHQnAVbJh9yoWNwAUCQAAAWxJrEynAB4CAQATArwwCCQAECEoYkhTxZk1j4p9Q7wsxDvPT7++1vBarmcXIr+JA/3LFgADBQAAJ7UgF0kgGkYACUMgO5VFpX3Yq/DZly2DxldNywI4a7fkQE6CbBVAju1RFOAgJVFtyyZu0lvmaOgH7xQQFg/ZQ6ZJ3rhKsz3DMgkPyHcgF0kwGkYACUMgETDa5G35P62YRfcmsE1yMSWH/4LLhbvcTNG0xmcVzb4gVvWLgTX1lJXg9LO3jfttUHLdySftlTdZZsmt0lgcUF8=",
+    "humanReadable": \[
+      {
+        "31": "AB8FAAAAAA==",
+        "32": "ACACAA==",
+        "33": "ACEDE5M=",
+        "keySet": [
+          {
+            "name": "secp566k1PublicKey",
+            "value": "15mtU6WiruKmZczythtdNDrowLH7tP567mxLY8rsAdigmavAFotBHaFg6FmeKKp6BoxPw7QrJ5hn6Ruq6Nrbk6xFoyR"
+          }
+        ],
+        "previousHash": "1N9cjSYn1WowWTWNR3pRDf2Dg8NwYCE5LcE1HqEbz5jEKhP",
+        "rssi": -71,
+        "index": 9219,
+        "bridgeHashSet": [
+          "1N9cjSYn1WowWTWNR3pRDf2Dg8NwYCE5LcE1HqEbz5jEKhP"
+        ]
+      },
+      {
+        "keySet": [
+          {
+            "name": "secp566k1PublicKey",
+            "value": "15mqnJsrCejQYB55bjiSpxgwhwQJB9eeD3mgAe1ZJE2z944SgNc5eh2JHLQSMc8zTccP9PgSmS94hozbnT2igPqXdpY"
+          }
+        ],
+        "gps": {
+          "lat": 36.030448889393384,
+          "lng": -86.78722933874165
+        },
+        "date": 1564604124327,
+        "rssiAt1m": 1,
+        "rssi": -68,
+        "previousHash": "1N9cjSYn1WowWTWNR3pRDf2Dg8NwYCE5LcE1HqEbz5jEKhP",
+        "index": 10165
+      },
+      {
+        "signatureSet": [
+          {
+            "name": "secp566k1Signature",
+            "value": "AAlDIDuVRaV92Kvw2Zctg8ZXTcsCOGu35EBOgmwVQI7tURTgICVRbcsmbtJb5mjoB+8UEBYP2UOmSd64SrM9wzIJD8h3"
+          }
+        ]
+      },
+      {
+        "signatureSet": [
+          {
+            "name": "secp566k1Signature",
+            "value": "AAlDIBEw2uRt+T+tmEX3JrBNcjElh/+Cy4W73EzRtMZnFc2+IFb1i4E19ZSV4PSzt437bVBy3ckn7ZU3WWbJrdJYHFBf"
+          }
+        ]
+      }
+    ]
+  },
+]
+```
+
+### Blocks Query JSON Request
+
+`blocks:LIMIT`
+
+JSON Query
+
+```json
+{
+  "select": {
+    "name": "SELECTOR_PAGE",
+    "config": {
+      "limit": "40"
+    }
+  },
+  "mutate": {
+    "name": "MUTATOR_HUMAN",
+    "config": {}
+  },
+  "payment": {
+    "apiKey": "key"
+  }
+}
+```
+
+
+### Blocks Query JSON Response
+
+( 1 of 40 example) **_This query output can also be fetched by a cURL request_**
+
+```json
+[
+  {
+    "signedHash": "1N9rfLHd36Djthbch281QccQ7xz7cf85ssK27ZvZrdcbooG",
+    "bytes": "YAIB7GAVALAwGUQADEFe5hguCgDlvZeuFv9HtNNJuiGZEO6l/ktf2TCqVBmilhuP5x9G5I2zM+nvuaTAKo29Zptm4lAwE/H+De524SG6AB8FAAAAAAAgAgAAIQMTkzAIJAAQIY9d/vEHjPkZSnTiC3T2+/f15F6LRjMYfl2Kwa4kz97OABMC0QADBQAAC0JwBgAlABAhj13+8QeM+RlKdOILdPb79/XkXotGMxh+XYrBriTP3s4gFaAgGUQADEFVrdOGuPYbz+xRcxmSbBTiEVpQYDZyt/TeE+HKH/BP5u43UQR2galkkxz9eF9Lf5q0MSGj3lk9D9eYOHqrLmlHIBIXABwJQEHrrmy6Zu4AHQlAYXY5NV1wUwAUCQAAAWq4naYlAB4CAQATAtgwCCQAECG4dfPC9W9UFkRywolMeAYuVaSkLueA9GGRuukwSrAcQQADBQAABVsgF0kgGkYACUMgfgnvcYvRy3/s2S1oqufIubh9yTEqj5qqDAzb5qDuC40gPs/1ID6+7iUutd86tna6ppjNWJFYEEFw5Q8282wU5y4gF0kwGkYACUMgm9OOInwdEtsku4aFDUVYWtMrcIL4ddznwHjqBc2n/kQgbfXW807SgNfJLhqs++zZE9phZFaYPSI2/bHAYCt+w6Q=",
+    "humanReadable": \[
+      {
+        "31": "AB8FAAAAAA==",
+        "32": "ACACAA==",
+        "33": "ACEDE5M=",
+        "keySet": [
+          {
+            "name": "secp566k1PublicKey",
+            "value": "15mrsyLdX4Y1SkCUX9jHrijVizBUgTSqM5syPkGztTd7reHCgwdPdbr298rXSHN1kkcUe6LEn9GXaouxnMM5Uz7yKCu"
+          }
+        ],
+        "previousHash": "1N9jfSkUc63YNJYTcUUMV6TGaTxFx7S95EXuurzqR5XoCtd",
+        "rssi": -47,
+        "index": 2882,
+        "bridgeHashSet": [
+          "1N9jfSkUc63YNJYTcUUMV6TGaTxFx7S95EXuurzqR5XoCtd"
+        ]
+      },
+      {
+        "keySet": [
+          {
+            "name": "secp566k1PublicKey",
+            "value": "15mrhHEzeWKotrH6Ae2SGqu8vXmCaxNBzePQzGDB6wU71kTQNFqohDmpRkKNeqc3PRbaWHrakcwK3Jr48qqzvEWxkuk"
+          }
+        ],
+        "gps": {
+          "lat": 35.84126051999725,
+          "lng": 139.69448345422515
+        },
+        "date": 1557875500581,
+        "rssiAt1m": 1,
+        "rssi": -40,
+        "previousHash": "1N9nRreqJw7AQ77PRoVnCctH6usnxTdmuqRMT8t4FDGVn5v",
+        "index": 1371
+      },
+      {
+        "signatureSet": [
+          {
+            "name": "secp566k1Signature",
+            "value": "AAlDIH4J73GL0ct/7NktaKrnyLm4fckxKo+aqgwM2+ag7guNID7P9SA+vu4lLrXfOrZ2uqaYzViRWBBBcOUPNvNsFOcu"
+          }
+        ]
+      },
+      {
+        "signatureSet": [
+          {
+            "name": "secp566k1Signature",
+            "value": "AAlDIJvTjiJ8HRLbJLuGhQ1FWFrTK3CC+HXc58B46gXNp/5EIG311vNO0oDXyS4arPvs2RPaYWRWmD0iNv2xwGArfsOk"
+          }
+        ]
+      }
+    ]
+  },
+]
+```
 
 ## Plugins
 
+Plugins from our node app present additional views that allow the user to see reports, make payments for queries, and view current rewards (rewards in Beta)
+
+<h1 align="left">
+  <img alt="plugins page view" src="/docs/assets/plugins_view.png">
+</h1>
+
+### Available plugins
+
+- Summary
+    - Shows the collection summary of a node
+- Payment 
+    - Allows you to buy credits with XYO 
+- Daily Reports
+    - View network status and rankings
+- Rewards
+    - View node network rewards
+
 ## Watchlist
 
-## What you should look for
+The watchlist is a view of all devices linked to an account that is logged into XYO Explore 
 
-coming soon
+<h1 align="left">
+  <img alt="watchlist page view" src="/docs/assets/watchlist_view.png">
+</h1>
+
+Public keys per device are available and when clicked in this view execute a `chain` query
+
+Clicking on **Add Alias** will allow the user to update a device with an alias instead of public key for the purpose of queries and watchlist view
+
+
+## Other UI Elements to look for
+
+<h1 align="left">
+  <img alt="additional ui page view" src="/docs/assets/additional_ui_view.png">
+</h1>
+
+Under the Query field are six additional clickable elements that link directly to plugin views, map views, recent block query, and watchlist
+
+- Total Bound Witness and Witnessess/Min
+    - Takes the user to the `summary` plugin view 
+
+- World Map
+    - Takes the user to a heat map of node activity in the network
+
+<h1 align="left">
+  <img alt="world map view" src="/docs/assets/world_map_view.png">
+</h1>
+
+- Recent Blocks 
+    - Takes the user to the `recent` blocks map view
+
+- Plugins 
+    - Takes the user to the available plugins page
+
+- Watchlist 
+    - Takes the user to the node/device watchlist page
