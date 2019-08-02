@@ -8,9 +8,6 @@ cache:
 addons:
   sonarcloud:
     organization: xyo-network
-branches:
-  only:
-    - master
 cache:
   yarn: true
 script:
