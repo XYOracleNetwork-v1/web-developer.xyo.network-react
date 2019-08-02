@@ -226,3 +226,8 @@ All tests can be found in /src/test/*
 ```
 gradle test
 ```
+
+### Sample Project 
+
+> A sample project demonstrating integration can be found [here](<https://github.com/XYOracleNetwork/sdk-ble-android/tree/master/ble-android-sample>
+).
