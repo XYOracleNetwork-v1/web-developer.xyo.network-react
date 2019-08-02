@@ -216,7 +216,7 @@ dependencies {
 ## Building and Testing with Gradle
 
 **Building**
-Source ius located in /src/main/*
+Source is located in /src/main/*
 ```
 gradle build
 ```
@@ -227,7 +227,7 @@ All tests can be found in /src/test/*
 gradle test
 ```
 
-## License
-This project is licensed under the LGPLv3 License
+### Sample Project 
 
-Made with  ❤️  by [**XY - The Persistent Company**](https://xy.company)
+> A sample project demonstrating integration can be found [here](<https://github.com/XYOracleNetwork/sdk-ble-android/tree/master/ble-android-sample>
+).

@@ -47,10 +47,10 @@ class Footer extends React.Component {
           <section className="sitemap">
             <div>
               <h5>Docs</h5>
-              <a href="https://explore.xyo.network/" target="_blank">
+              <a href="https://explore.xyo.network/" target="_blank" rel="noopener noreferrer">
                 Explore
               </a>
-              <a href="https://xyo.network/protocol/" target="_blank">
+              <a href="https://xyo.network/protocol/" target="_blank" rel="noopener noreferrer">
                 Protocol
               </a>
               <a href={this.docUrl('payable-demo.html', this.props.language)}>

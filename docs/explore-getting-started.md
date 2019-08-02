@@ -266,6 +266,7 @@ curl '<https://ac0.xyo.network/>' \\
 ### Where and Chain cURL Requests
 
 `where:PUBLIC_KEY`, `chain:PUBLIC_KEY`
+
 For the response, look at [the JSON response](#json-response-schema)
 
 cURL Request
@@ -283,6 +284,7 @@ curl '<https://ac0.xyo.network/>' \\
 ### Recent cURL Requests
 
 `recent:LIMIT`
+
 For the response, look at [the JSON response](#json-response-schema)
 
 cURL Request
@@ -300,6 +302,7 @@ curl '<https://ac0.xyo.network/>' \\
 ### Blocks cURL Requests
 
 `blocks:LIMIT`
+
 For the response, look at [the JSON response](#json-response-schema)
 
 cURL Request
@@ -420,7 +423,6 @@ JSON Query
   }
 }
 ```
-
 
 ### JSON Response Schema
 

@@ -4,9 +4,7 @@
 
 ![Build Status](https://travis-ci.com/XYOracleNetwork/web-developer.xyo.network-react.svg?token=DwLaRUVjarU2ZypyaHXe&branch=master)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/f3dd4f4d35e1bd9eeabc/maintainability)](https://codeclimate.com/github/XYOracleNetwork/sdk-core-nodejs/maintainability) [![DepShield Badge](https://depshield.sonatype.org/badges/XYOracleNetwork/web-developer.xyo.network-react/depshield.svg)](https://depshield.github.io) [![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=XYOracleNetwork_web-developer.xyo.network-react&metric=alert_status)](https://sonarcloud.io/dashboard?id=XYOracleNetwork_web-developer.xyo.network-react)
-
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7da23984ca0c4a6f8148d0962374d878)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=XYOracleNetwork/web-developer.xyo.network-react&amp;utm_campaign=Badge_Grade)[![BCH compliance](https://bettercodehub.com/edge/badge/XYOracleNetwork/web-developer.xyo.network-react?branch=master&token=bacd296f4c007dc034b24e1066a3ab38a2659421)](https://bettercodehub.com/)
+[![Maintainability](https://api.codeclimate.com/v1/badges/f3dd4f4d35e1bd9eeabc/maintainability)](https://codeclimate.com/github/XYOracleNetwork/sdk-core-nodejs/maintainability) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7da23984ca0c4a6f8148d0962374d878)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=XYOracleNetwork/web-developer.xyo.network-react&amp;utm_campaign=Badge_Grade)[![BCH compliance](https://bettercodehub.com/edge/badge/XYOracleNetwork/web-developer.xyo.network-react?branch=master&token=bacd296f4c007dc034b24e1066a3ab38a2659421)](https://bettercodehub.com/)
 
 
 <h3 align="center">
@@ -39,11 +37,23 @@ This portal is a one stop shop for all developers interested in working with XYO
 ### Install
 
 **Requirements:**
-- In the command line go ahead and install using `npm`
-  ```bash
-  yarn install 
-  ```
-- Run
+```sh
+# Install dependencies
+$ yarn
+```
+
+```sh
+# run from website
+$ cd website 
+```
+
+2.  Run your dev server:
+
+```sh
+# Start the site
+$ yarn start
+```
+
 
 **Suggestions:**
 - Familiarity with
@@ -71,10 +81,12 @@ repository. Please squash meaningless commits before submitting a pull-request.
 
 ### License
 
-MIT
+See the [LICENSE.md](LICENSE) file for license details.
 
-### Credits
+## Credits
+
+Made with 🔥and ❄️ by [XY - The Persistent Company](https://www.xy.company)
 
 This portal is developed with [Docusaurus](https://docusaurus.io/).
 
-<p align="center">Made with  ❤️  by [<b>XY - The Persistent Company</b>] (https://xy.company)</p>
+
