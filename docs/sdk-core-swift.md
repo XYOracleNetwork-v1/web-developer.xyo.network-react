@@ -27,7 +27,7 @@ let storage = XyoInMemoryStorage()
 let chainRepo = XyoStorageOriginBlockRepository(storage: storage, hasher: hasher)
 
 // this is used to save the state of the node (keys, index, previous hash)
-let stateRepo = XyoStorageOriginChainStateRepository(storage: storage)
+let stateRepo = XyoStorageOriginStateRepository(storage: storage)
 
 // this holds the state and the chain repository together
 let configuration = XyoRepositoryConfiguration(originState: stateRepo, originBlock: chainRepo)
@@ -203,9 +203,3 @@ for i in 0..9 {
     }
 }
 ```
-
-
-## License
-This project is licensed under the LGPLv3 License
-
-<br><hr><br><p align="center">Made with  ❤️  by [**XY - The Persistent Company**](https://xy.company)</p>
