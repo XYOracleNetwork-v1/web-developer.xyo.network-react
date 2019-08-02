@@ -216,7 +216,7 @@ dependencies {
 ## Building and Testing with Gradle
 
 **Building**
-Source ius located in /src/main/*
+Source is located in /src/main/*
 ```
 gradle build
 ```
