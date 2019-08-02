@@ -226,8 +226,3 @@ All tests can be found in /src/test/*
 ```
 gradle test
 ```
-
-## License
-This project is licensed under the LGPLv3 License
-
-Made with  ❤️  by [**XY - The Persistent Company**](https://xy.company)

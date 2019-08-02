@@ -7,7 +7,6 @@
     "Bridge": ["bridge-x"],
     "Sentinel": ["sentinel"],
     "Smart Contract Apps": ["dapploy", "dapper", "scsc"],
-    "Demos": ["payable-demo"],
     "SDKs": [
       "SDK-Package-Node",
       "SDK-Core-Swift",
