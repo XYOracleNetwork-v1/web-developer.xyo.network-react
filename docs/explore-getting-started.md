@@ -249,7 +249,7 @@ Available on explore.xyo.network with map view queries under **Show Advanced**
 
 `geohash:GEOHASH`, `near:LAT,LNG`
 
-For the response, look at [the JSON response](#near-and-geohash-query-json-response)
+For the response, look at [the JSON response](#json-response-schema)
 
 cURL Request
 ```curl
@@ -266,7 +266,8 @@ curl '<https://ac0.xyo.network/>' \\
 ### Where and Chain cURL Requests
 
 `where:PUBLIC_KEY`, `chain:PUBLIC_KEY`
-For the response, look at [the JSON response](#where-and-chain-query-json-response)
+
+For the response, look at [the JSON response](#json-response-schema)
 
 cURL Request
 ```curl
@@ -283,7 +284,8 @@ curl '<https://ac0.xyo.network/>' \\
 ### Recent cURL Requests
 
 `recent:LIMIT`
-For the response, look at [the JSON response](#recent-query-json-response)
+
+For the response, look at [the JSON response](#json-response-schema)
 
 cURL Request
 ```curl
@@ -300,7 +302,8 @@ curl '<https://ac0.xyo.network/>' \\
 ### Blocks cURL Requests
 
 `blocks:LIMIT`
-For the response, look at [the JSON response](#blocks-query-json-response)
+
+For the response, look at [the JSON response](#json-response-schema)
 
 cURL Request
 ```curl
@@ -344,67 +347,6 @@ JSON Query
 
 ```
 
-### Near and Geohash Query JSON Response 
-
-( 1 of 100 example) ***This query output can also be fetched by a cURL request***
-
-```json
-[
-  {
-    "signedHash": "1N9ogr8TAsq4DFJ397Zs6VxocG9PzX7EzJZkw2WXd9Rpsch",
-    "bytes": "YAICESAVdCAZRAAMQR1m+fyx4+H1L+2EMpeO6lRLjhfTOuoduHdrQZWQvy163fJiGojiS+CMC6ageMCDeVT02A+c/7olUFAY5LGqB7sAAwUAAA1OIAgkABAhOjnJhqtz+rBx7LO2/r3VDn0wr4+qJS3vj+JyTH2fJRJgFQEBIBlEAAxBhH7FrUiETI2xKr3B7Knk0wWy6TApaMtYnIstBf78zognsk5xm6gSgTdUsLZZn0V+DKv6/yc+iko1u/+3s2P+VwAUCQAAAWpeEIGCIBIXABwJQEG7Gja39/4AHQlAYW4qIpNS2TAIJAAQIaCVTPTeCDx6T8GMKHk16DBIr3Lmu7aYL7B0GQs+DUJ6AAMFAAAACjAGZgAQIaCVTPTeCDx6T8GMKHk16DBIr3Lmu7aYL7B0GQs+DUJ6IX5teevlTLenbIqqVMSW4I9Y/tfUQj6MqrnhRuEz//3RIaXdd2iehpYE+ZDO8zyR1dHl6FGXXscNQpzHtxfNLFTfIBdJIBpGAAlDIB7IF/cdLWrhff+HPUruNkQW37jBDSNO+fukazbs+qCOIAf2gm1Law0mBbPJPF6v6k5Z7vVIb/sbQOBPaLcp/XDMIBdJIBpGAAlDILgzeknihSu0+23a73dlHxryxSNdM93Qp7sR6wvYaVOjIGT4gUyaT9mWtubLeLKZv/wpnvHgBlEgMnWXmqoV/xHl",
-    "humanReadable": \[
-      {
-        "keySet": [
-          {
-            "name": "secp566k1PublicKey",
-            "value": "15mqa2EDVuzGP2zXoX2hjvSZ7fxBWjHHBeMKnpnTarJyo44dUQxpr4dHQBGrCS1hoPPaKdL8o3fFEAq2gipXV8uEUrn"
-          }
-        ],
-        "index": 3406,
-        "previousHash": "1N9dw65BjwzRDsxJkRFSTZi5P8w8m4etedA9wTczf7J7HEZ"
-      },
-      {
-        "keySet": [
-          {
-            "name": "secp566k1PublicKey",
-            "value": "15msdZxwFwjPdZ4dStQAasmdMxNdvLwn8vCLfa8PRQXEP5RjzsDysr27ufDWcDQS56S3oreLSayEigTEtx7zRPoe3rE"
-          }
-        ],
-        "date": 1556356301186,
-        "gps": {
-          "lat": 35.46173748,
-          "lng": 139.44264344
-        },
-        "previousHash": "1N9kpebMK7NUik78Gd8uruYHjYTSos4mhCferyrzR6PcDwP",
-        "index": 10,
-        "bridgeHashSet": [
-          "1N9kpebMK7NUik78Gd8uruYHjYTSos4mhCferyrzR6PcDwP",
-          "1N9iXKWZVcMkmx55gLWCEUP5rGtZVHw2YH9DCcGsHhCtdK6",
-          "1N9mBGTN8qVSpPmJkbexJMQ1wRXTbuPQiNqY7SaNgmV4k4n"
-        ]
-      },
-      {
-        "signatureSet": [
-          {
-            "name": "secp566k1Signature",
-            "value": "AAlDIB7IF/cdLWrhff+HPUruNkQW37jBDSNO+fukazbs+qCOIAf2gm1Law0mBbPJPF6v6k5Z7vVIb/sbQOBPaLcp/XDM"
-          }
-        ]
-      },
-      {
-        "signatureSet": [
-          {
-            "name": "secp566k1Signature",
-            "value": "AAlDILgzeknihSu0+23a73dlHxryxSNdM93Qp7sR6wvYaVOjIGT4gUyaT9mWtubLeLKZv/wpnvHgBlEgMnWXmqoV/xHl"
-          }
-        ]
-      }
-    ]
-  },
-]
-```
-
 ### Where and Chain Query JSON Requests
 
 `where:PUBLIC_KEY`, `chain:PUBLIC_KEY`
@@ -433,66 +375,6 @@ JSON Query
 
 ```
 
-### Where and Chain Query JSON Response
- 
-( 1 of 100 example) ***This query output can also be fetched by a cURL request***
-
-```json
-[
-  {
-    "signedHash": "1N9pNpEb29fdzcWer39WNfqgXFjxm9mgMjgrnPvS7RGaxed",
-    "bytes": "YAIBzmAVAKswGUQADEEz1/SyVjpi1PJPUtk0HQA/+ZNJUz32yP8Y5zuR+sgMleSbK9IOosOEZ8699DTfY3/qiKgrVUBytPTGjSPS6nh+AB8FAAAAAAAgAgAwCCQADyEbUZsCSwv486eohDlnr2EYJ/v2kaZZi5PzApdB8VAAUAATAuMAAwUAAADYcAYAJQAQIRtRmwJLC/jzp6iEOWevYRgn+/aRplmLk/MCl0HxUABQIBWHIBlEAAxB/OBxHo2BWt/NbSHlmzJa8NDLGyeCfsJOTobu8gZMfUwNoOHG/tiC2hjwHujxqLKj4MelEfMy32MCuNtqg48fmAAUCQAAAWq3aok7MAgkABAhwlVIsswWiegPV5mc/H+Wm9T+r/Ngx9YpEyMeZ0vu7nUAAwUAAAEnABMCuQAeAtQgF0kgGkYACUMgQGuMT9oiNqrRKJlln8nOEL6kzQaiur6ITh5uZ01ZQ3kgS1k/TiW3OmQdJQnoqiWbsTrI9+Fbq23mqvTrvWmpi6UgF0kwGkYACUMgLe0WAx/a8DrKB+XoUoV46WtfF+ppVzdVK3idbiNiV5ogf193TQax7dAjBp9K6w9HtABO0bOUuqmX4RS29w1Ar3w=",
-    "humanReadable": \[
-      {
-        "31": "AB8FAAAAAA==",
-        "32": "ACACAA==",
-        "keySet": [
-          {
-            "name": "secp566k1PublicKey",
-            "value": "15mr23ZtkaQsQGV1GTpbpJJwnqGWtkZsxfjE3VDxqtMbrCA7RGQnodb6ycCiWeds5pDKAgU4svmwMs4qFaJyXddj9jB"
-          }
-        ],
-        "previousHash": "1LqZ5McrAwpH5b7XyLf87k8ATeKjyF5GwuHehP3fXAxX4WK",
-        "rssi": -29,
-        "index": 216,
-        "bridgeHashSet": [
-          "1N9brSVv7PPXAMqZ5obH3C1gxyqiPyozDyVTjaJ1LVSiuWw"
-        ]
-      },
-      {
-        "keySet": [
-          {
-            "name": "secp566k1PublicKey",
-            "value": "15mv3AUsy9EENcMmgxD9kGoZjdiA1ZNE85gQn9bKAdJN97kmCKdud2c6pAaW8SyMBEGe17zmAXYUjy8wXWuhiaGdWPR"
-          }
-        ],
-        "date": 1557855373627,
-        "previousHash": "1N9o6PqZnv4a4bf5ormnsPMd4HNoADHWRdBNZwKkqAU5Cx4",
-        "index": 295,
-        "rssi": -71,
-        "rssiAt1m": -44
-      },
-      {
-        "signatureSet": [
-          {
-            "name": "secp566k1Signature",
-            "value": "AAlDIEBrjE/aIjaq0SiZZZ/JzhC+pM0Gorq+iE4ebmdNWUN5IEtZP04ltzpkHSUJ6Kolm7E6yPfhW6tt5qr0671pqYul"
-          }
-        ]
-      },
-      {
-        "signatureSet": [
-          {
-            "name": "secp566k1Signature",
-            "value": "AAlDIC3tFgMf2vA6ygfl6FKFeOlrXxfqaVc3VSt4nW4jYleaIH9fd00Gse3QIwafSusPR7QATtGzlLqpl+EUtvcNQK98"
-          }
-        ]
-      }
-    ]
-  },
-]
-```
-
 ### Recent Query JSON Request
 
 `recent:LIMIT`
@@ -516,72 +398,6 @@ JSON Query
     "apiKey": "key"
   }
 }
-```
-
-
-### Recent Query JSON Response
-
-( 1 of 40 example) **_This query output can also be fetched by a cURL request_**
-
-```json
-[
-  {
-    "signedHash": "1N9jvpjoMVTGV585bG2iJ1hUZAjb7MtUYKzNosVt7ckQNx3",
-    "bytes": "YAIB7GAVALAwGUQADEGuV8BmKCLVAth5ZlgpjrZPizAnd5Ib73yUt9EBrEtLOw97jL7kvJ+kjoj31BEa0gzSkbDMA9IrjC6aTZgfZurAAB8FAAAAAAAgAgAAIQMTkzAIJAAQIShiSFPFmTWPin1DvCzEO89Pv77W8FquZxciv4kD/csWABMCuQADBQAAJANwBgAlABAhKGJIU8WZNY+KfUO8LMQ7z0+/vtbwWq5nFyK/iQP9yxYgFaAgGUQADEEn/4XiGbMu4YsUXiXdmaJ0QumJQvxkz0j2DKyEMPoEJ77qWlPnxPD6rQN4cdCuKIE60DfDJV+cWeQIX87w2F6FIBIXABwJQEID5b/MEnIAHQnAVbJh9yoWNwAUCQAAAWxJrEynAB4CAQATArwwCCQAECEoYkhTxZk1j4p9Q7wsxDvPT7++1vBarmcXIr+JA/3LFgADBQAAJ7UgF0kgGkYACUMgO5VFpX3Yq/DZly2DxldNywI4a7fkQE6CbBVAju1RFOAgJVFtyyZu0lvmaOgH7xQQFg/ZQ6ZJ3rhKsz3DMgkPyHcgF0kwGkYACUMgETDa5G35P62YRfcmsE1yMSWH/4LLhbvcTNG0xmcVzb4gVvWLgTX1lJXg9LO3jfttUHLdySftlTdZZsmt0lgcUF8=",
-    "humanReadable": \[
-      {
-        "31": "AB8FAAAAAA==",
-        "32": "ACACAA==",
-        "33": "ACEDE5M=",
-        "keySet": [
-          {
-            "name": "secp566k1PublicKey",
-            "value": "15mtU6WiruKmZczythtdNDrowLH7tP567mxLY8rsAdigmavAFotBHaFg6FmeKKp6BoxPw7QrJ5hn6Ruq6Nrbk6xFoyR"
-          }
-        ],
-        "previousHash": "1N9cjSYn1WowWTWNR3pRDf2Dg8NwYCE5LcE1HqEbz5jEKhP",
-        "rssi": -71,
-        "index": 9219,
-        "bridgeHashSet": [
-          "1N9cjSYn1WowWTWNR3pRDf2Dg8NwYCE5LcE1HqEbz5jEKhP"
-        ]
-      },
-      {
-        "keySet": [
-          {
-            "name": "secp566k1PublicKey",
-            "value": "15mqnJsrCejQYB55bjiSpxgwhwQJB9eeD3mgAe1ZJE2z944SgNc5eh2JHLQSMc8zTccP9PgSmS94hozbnT2igPqXdpY"
-          }
-        ],
-        "gps": {
-          "lat": 36.030448889393384,
-          "lng": -86.78722933874165
-        },
-        "date": 1564604124327,
-        "rssiAt1m": 1,
-        "rssi": -68,
-        "previousHash": "1N9cjSYn1WowWTWNR3pRDf2Dg8NwYCE5LcE1HqEbz5jEKhP",
-        "index": 10165
-      },
-      {
-        "signatureSet": [
-          {
-            "name": "secp566k1Signature",
-            "value": "AAlDIDuVRaV92Kvw2Zctg8ZXTcsCOGu35EBOgmwVQI7tURTgICVRbcsmbtJb5mjoB+8UEBYP2UOmSd64SrM9wzIJD8h3"
-          }
-        ]
-      },
-      {
-        "signatureSet": [
-          {
-            "name": "secp566k1Signature",
-            "value": "AAlDIBEw2uRt+T+tmEX3JrBNcjElh/+Cy4W73EzRtMZnFc2+IFb1i4E19ZSV4PSzt437bVBy3ckn7ZU3WWbJrdJYHFBf"
-          }
-        ]
-      }
-    ]
-  },
-]
 ```
 
 ### Blocks Query JSON Request
@@ -608,10 +424,11 @@ JSON Query
 }
 ```
 
+### JSON Response Schema
 
-### Blocks Query JSON Response
+( 1 of multiple example) **_This query output can also be fetched by a cURL request_**
 
-( 1 of 40 example) **_This query output can also be fetched by a cURL request_**
+This is a general schema, for more specfic responses please refer to the UI from **show advanced** in map view
 
 ```json
 [
