@@ -1,6 +1,6 @@
 ---
 id: kotlin-getting-started
-title: Kotlin Core SDK
+title: KOTLIN CORE SDK
 ---
 
 <div class="alert alert-info text-center" role="alert">

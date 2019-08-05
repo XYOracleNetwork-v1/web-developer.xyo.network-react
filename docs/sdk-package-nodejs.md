@@ -1,6 +1,6 @@
 ---
 id: SDK-Package-Node
-title: SDK Package NodeJS
+title: NODE.JS CORE SDK
 ---
 
 ## Project Overview
@@ -171,11 +171,6 @@ In particular you can manage your ganache, ipfs, and MySQL docker services using
   yarn manage:ipfs:add {/path/to/file}
 ```
 
-## License
+## Sample Projects
 
-Only for internal XY Company use at this time
-
-## Credits
-
-Made with ❤️
-by [XYO](https://xyo.network)
+> A sample project demonstrating integration will be coming soon

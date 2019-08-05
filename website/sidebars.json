@@ -10,10 +10,7 @@
     "SDKs": [
       "SDK-Package-Node",
       "SDK-Core-Swift",
-      "kotlin-getting-started",
-      "SDK-Core-Android",
-      "SDK-Ble-Android",
-      "sentinel-sdk"
+      "kotlin-getting-started"
     ]
   },
   "docs-other": {
