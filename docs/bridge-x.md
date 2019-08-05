@@ -1,6 +1,6 @@
 ---
 id: bridge-x
-title: Bridge X
+title: BRIDGE X
 ---
 
 <div class="alert alert-info text-center" role="alert">
@@ -543,5 +543,3 @@ We have now connected an Archivist to the Bridge X using the Bridge's native UI!
 
 *  more consistent `force update` of bridges
 *  general bug fixes
-
-<h3 align="left">Made with  ❤️  by [<b>XY - The Persistent Company</b>] (https://xy.company)</h3>

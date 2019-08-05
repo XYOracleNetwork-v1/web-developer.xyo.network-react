@@ -1,6 +1,6 @@
 ---
 id: scsc
-title: Simple Consensus Smart Contract Library
+title: SCSC LIBRARY
 ---
 
 ## What is the Simple Consensus Smart Contract Library?
@@ -375,4 +375,3 @@ We recommend testing after any revisions you make to contracts.
 
 Package developed using [ZeppelinOS](https://zeppelinos.org/)
 
-<p align="center">Made with  ❤️  by [<b>XY - The Persistent Company</b>] (https://xy.company)</p>
