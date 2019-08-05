@@ -1,6 +1,6 @@
 ---
 id: diviner
-title: Diviner App
+title: DIVINER APP
 ---
 
 <div class="alert alert-danger text-center" role="alert">

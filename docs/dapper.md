@@ -1,29 +1,20 @@
 ---
 id: dapper
-title: dApper
+title: DAPPER
 ---
-
-
-<h3 align="center">
-  "View your Smart Contracts"
-</h3>
-<p align="center">
-  Made with ❤️
-  <br/>by [XYO](https://xyo.network)
-</p>
 
 <div class="alert alert-info text-center" role="alert">
   Difficulty Level: Intermediate
 </div>
 
-# Let's Get Dapper
+# Getting Started
 
 `yarn` it out in the project directory:
 ```
 yarn
 ```
 
-### Run dapper
+## Run dapper
 ```
 yarn start
 ```
@@ -122,4 +113,4 @@ Contracts stored to IPFS <your IPFS hash>
   <img alt="dapper-contract-simulator" src="/docs/assets/dapper_contract_simulator.png">
 </h1>
 
-# Congrats! You can interact with your contracts in an easy to use UI!
+# Congratulations! You can interact with your contracts in an easy to use UI.
