@@ -1,22 +1,7 @@
 ---
 id: dapploy
-title: dApploy
+title: DAPPLOY
 ---
-
-<h3 align="center">
-  "The Swiss Army Knife for dApp Deployment!"
-</h3>
-
-<p align="center">
-  Made with ❤️
-  <br/>by [XYO](https://xyo.network)
-</p>
-
----
-
-Finally, you can deploy dApps in seconds!
-
-Here's how we did it: 
 
 We've gone through the hoops of deploying dApps on the Ethereum Network and have nuked out all of the annoying parts to make dapployment a breeze.
 
