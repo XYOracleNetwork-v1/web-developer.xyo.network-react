@@ -1,6 +1,6 @@
 ---
 id: SDK-Core-Swift
-title: Swift Core SDK
+title: SWIFT CORE SDK
 ---
 <div class="alert alert-info text-center" role="alert">
 A library to preform all core XYO Network functions.
@@ -203,3 +203,10 @@ for i in 0..9 {
     }
 }
 ```
+
+## Sample Projects
+
+> A sample project demonstrating integration with iOS can be found [here](<https://github.com/XYOracleNetwork/sdk-ble-swift/tree/master/SampleiOS>)
+
+> A sample project demonstrating integration with MacOS can be found [here](<https://github.com/XYOracleNetwork/sdk-ble-swift/tree/master/SampleMacOS>)
+
