@@ -50,7 +50,7 @@ For a test run
 pod try sdk-core-swift
 ```
 
-### Origin Chain
+## Origin Chain
 
 The most common interface to this library through creating an origin chain creator object. Through an origin chain creator object one can create and maintain an origin chain. 
 
@@ -149,6 +149,8 @@ nodeTwo.boundWitness(handler: handlerTwo, procedureCatalogue: TestInteractionCat
  **Other**
  
  Other network pipes can be implemented as long as they follow the interface defined [here](https://github.com/XYOracleNetwork/sdk-core-swift/blob/docs/sdk-core-swift/network/XyoNetworkPipe.swift).
+
+ ## Bound Witness
  
  ### Adding custom data to bound witnesses.
  
@@ -175,7 +177,8 @@ nodeTwo.boundWitness(handler: handlerTwo, procedureCatalogue: TestInteractionCat
  
  ```
  
- 
+ ## Node Listener
+
  ### Adding a listener to a node
 
 ```swift
@@ -214,6 +217,8 @@ nodeTwo.boundWitness(handler: handlerTwo, procedureCatalogue: TestInteractionCat
   ```
 
 ## TCP Node
+
+### TCP Node Example
 
 The following code is an example of a node that bound witnesses with a server 10 times.
 
