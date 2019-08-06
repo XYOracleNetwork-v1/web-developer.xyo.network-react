@@ -1,6 +1,6 @@
 ---
 id: archivist
-title: Archivist App
+title: ARCHIVIST APP
 ---
 
 <div class="alert alert-danger text-center" role="alert">
@@ -321,9 +321,3 @@ Ctrl+a A - Will allow you to enter a title for the window.
 Ctrl+a d - Detaches from a Screen.
 Ctrl+a ? - Will display a list of all the command options available for Screen.
 ```
-
-## Congratulations! You have now started an XYO Archivist!
-
-## Credits
-
-<p align="center">Made with  ❤️  by [<b>XY - The Persistent Company</b>] (https://xy.company)</p>
