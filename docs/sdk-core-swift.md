@@ -10,9 +10,47 @@ The library has heavily abstracted modules so that all operations will work with
 The XYO protocol for creating origin-blocks is specified in the [XYO Yellow Paper](https://docs.xyo.network/XYO-Yellow-Paper.pdf). In it, it describes the behavior of how a node on the XYO network should create Bound Witnesses. Note, the behavior is not coupled with any particular technology constraints around transport layers, cryptographic algorithms, or hashing algorithms.
 </div>
 
-[Here](https://github.com/XYOracleNetwork/spec-coreobjectmodel-tex) is a link to the core object model that contains an index of major/minor values and their respective objects.
-
 ## Getting Started
+
+## Install
+
+### CocoaPods
+
+> Note that current CocoaPods support is for iOS only
+
+[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+
+```bash
+$ gem install cocoapods
+```
+
+> CocoaPods 1.6.0.beta.2+ is required.
+
+To integrate into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '11.0'
+use_frameworks!
+
+target '<Your Target Name>' do
+    pod 'sdk-core-swift', '0.1.6-beta.8'
+end
+```
+
+Then, run the following command:
+
+```bash
+$ pod install
+```
+
+For a test run
+
+```bash
+pod try sdk-core-swift
+```
+
+### Origin Chain
 
 The most common interface to this library through creating an origin chain creator object. Through an origin chain creator object one can create and maintain an origin chain. 
 
@@ -156,7 +194,7 @@ nodeTwo.boundWitness(handler: handlerTwo, procedureCatalogue: TestInteractionCat
     /// that it is creating, but will be called when a bridge discovers new blocks.
     /// - Parameter boundWitness: The boundwitness just discovered
     func onBoundWitnessDiscovered(boundWitness : XyoBoundWitness) {
-     // update UI
+        // update UI
     }
     
     /// This function is called every time a bound witness starts and complets successfully.
