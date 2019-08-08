@@ -1,4 +1,6 @@
-// eslint-disable-next-line no-undef
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
+
 const React = require('react');
 
 class HomeSplash extends React.Component {
@@ -130,5 +132,4 @@ class Index extends React.Component {
   }
 }
 
-// eslint-disable-next-line no-undef
 module.exports = Index;
