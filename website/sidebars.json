@@ -11,5 +11,8 @@
       "SDK-Core-Swift",
       "kotlin-getting-started"
     ]
+  },
+  "docs-other": {
+    "API-Reference": []
   }
 }
