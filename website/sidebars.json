@@ -11,8 +11,5 @@
       "SDK-Core-Swift",
       "kotlin-getting-started"
     ]
-  },
-  "docs-other": {
-    "API-Reference": ["kotlin-api", "node-api", "swift-api", "c-api", "sentinel-api", "bridge-api", "archivist-api", "diviner-api", "core-api"]
   }
 }
