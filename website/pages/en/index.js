@@ -81,13 +81,21 @@ class HomeSplash extends React.Component {
                       GitHub
                     </a>
                     <a
-                      href="https://developers.xyo.network/docs/en/bridge-x/"
+                      href="https://developers.xyo.network/docs/en/SDK-Core-Swift/"
                       rel="noopener noreferrer"
                       target="_blank"
-                      className="btn btn-secondary btn-square disabled mr-1"
+                      className="btn btn-secondary btn-square mr-1"
                     >
-                      Docs - Coming Soon
-                        </a>
+                      Swift Core Guide 
+                    </a>
+                    <a
+                      href="https://developers.xyo.network/docs/en/kotlin-getting-started/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className="btn btn-secondary btn-square mr-1"
+                    >
+                      Kotlin Core Guide
+                    </a>
                   </div>
                 </div>
               </div>

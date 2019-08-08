@@ -5,9 +5,9 @@ title: SWIFT CORE SDK
 <div class="alert alert-info text-center" role="alert">
 A library to preform all core XYO Network functions.
 This includes creating an origin chain, maintaining an origin chain, negotiations for talking to other nodes, and other basic functionality.
-The library has heavily abstracted modules so that all operations will work with any crypto, storage, networking, ect.
+The library has heavily abstracted modules so that all operations will work with any crypto, storage, networking, etc.
 
-The XYO protocol for creating origin-blocks is specified in the [XYO Yellow Paper](https://docs.xyo.network/XYO-Yellow-Paper.pdf). In it, it describes the behavior of how a node on the XYO network should create Bound Witnesses. Note, the behavior is not coupled with any particular technology constraints around transport layers, cryptographic algorithms, or hashing algorithms.
+The XYO protocol for creating origin-blocks is specified in the [XYO Yellow Paper](https://docs.xyo.network/XYO-Yellow-Paper.pdf). It describes the behavior of how a node on the XYO network should create Bound Witnesses. Note, the behavior is not coupled with any particular technology constraints around transport layers, cryptographic algorithms, or hashing algorithms.
 </div>
 
 ## Getting Started
@@ -34,7 +34,7 @@ platform :ios, '11.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'sdk-core-swift', '0.1.6-beta.8'
+    pod 'sdk-core-swift', '3.0.0'
 end
 ```
 
@@ -137,27 +137,28 @@ nodeOne.boundWitness(handler: handlerOne, procedureCatalogue: TestInteractionCat
 nodeTwo.boundWitness(handler: handlerTwo, procedureCatalogue: TestInteractionCatalogueCaseOne()) { (result, error) in
     // this should complete second
 }
-  ```
-  More example and bridge interactions can be found [here](https://github.com/XYOracleNetwork/sdk-core-swift/tree/docs/sdk-core-swiftTests/node/interaction)
- 
- 
- **Bluetooth**
- 
- Bluetooth swift pipes for client and server can be found [here](https://github.com/XYOracleNetwork/sdk-xyobleinterface-swift).
- 
- 
- **Other**
- 
- Other network pipes can be implemented as long as they follow the interface defined [here](https://github.com/XYOracleNetwork/sdk-core-swift/blob/docs/sdk-core-swift/network/XyoNetworkPipe.swift).
+```
 
- ## Bound Witness
+More example and bridge interactions can be found [here](https://github.com/XYOracleNetwork/sdk-core-swift/tree/docs/sdk-core-swiftTests/node/interaction)
  
- ### Adding custom data to bound witnesses.
  
- To add custom data to a bound witnesses, a XyoHeuristicGetter can be created:
+**Bluetooth**
  
- ```swift
- public struct MyCustomData: XyoHeuristicGetter {
+Bluetooth swift pipes for client and server can be found [here](https://github.com/XYOracleNetwork/sdk-xyobleinterface-swift).
+ 
+ 
+**Other**
+ 
+Other network pipes can be implemented as long as they follow the interface defined [here](https://github.com/XYOracleNetwork/sdk-core-swift/blob/docs/sdk-core-swift/network/XyoNetworkPipe.swift).
+
+## Bound Witness
+ 
+### Adding custom data to bound witnesses.
+ 
+To add custom data to a bound witnesses, a XyoHeuristicGetter can be created:
+ 
+```swift
+public struct MyCustomData: XyoHeuristicGetter {
     public func getHeuristic() -> XyoObjectStructure? {
         if (conditionIsMet) {
             let myData = getDataSomehow()
@@ -167,19 +168,18 @@ nodeTwo.boundWitness(handler: handlerTwo, procedureCatalogue: TestInteractionCat
         return nil
     }
 }
- ```
+```
  
- After the getter has been created, it can be added to a node by calling:
+After the getter has been created, it can be added to a node by calling:
  
- ```swift
+```swift
  let myDataForBoundWitness = MyCustomData()
  node.addHeuristic (key: "MyData", getter : myDataForBoundWitness)
+```
  
- ```
- 
- ## Node Listener
+## Node Listener
 
- ### Adding a listener to a node
+### Adding a listener to a node
 
 ```swift
  struct MyListener : XyoNodeListener {
@@ -206,15 +206,15 @@ nodeTwo.boundWitness(handler: handlerTwo, procedureCatalogue: TestInteractionCat
         // update UI
     }
 }
- ```
+```
  
-  You may add a listener to a node by adding the following:
+You may add a listener to a node by adding the following:
   
-  ```swift
+```swift
   let listener = MyListener()
   myNode.addListener(key: "MyListener", listener : listener)
   
-  ```
+```
 
 ## TCP Node
 
