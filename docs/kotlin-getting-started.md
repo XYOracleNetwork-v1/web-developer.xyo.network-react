@@ -14,7 +14,9 @@ The XYO protocol for creating origin-blocks is specified in the [XYO Yellow Pape
 **Note** the behavior is not coupled with any particular technology constraints around transport layers, cryptographic algorithms, or hashing algorithms.
 </div>
 
-[Click here for our sdk package on JitPack](https://jitpack.io/#XYOracleNetwork/sdk-core-kotlin)
+Click here for our bintray download 
+
+[![Download](https://api.bintray.com/packages/xyoraclenetwork/xyo/sdk-core-kotlin/images/download.svg?version=3.0.3)](https://bintray.com/xyoraclenetwork/xyo/sdk-core-kotlin/3.0.3/link)
 
 ## Getting Started
 
@@ -26,16 +28,19 @@ You can add sdk-core-kotlin to your existing app by cloning the project and manu
 
 1) Clone from github
 
-    git clone git@github.com:XYOracleNetwork/sdk-core-kotlin.git
+    `git clone git@github.com:XYOracleNetwork/sdk-core-kotlin.git`
 
 2) Add project to settings.gradle
 
+``` gradle
     include ':sdk-core-kotlin'
     project(':sdk-core-kotlin').projectDir = new File('../sdk-core-kotlin')
+```
 
 3) Include in project
-
+``` gradle
     implementation project (':sdk-core-kotlin')
+```
 
 ### Using JitPack
 
@@ -56,7 +61,7 @@ allprojects {
 
 ```gradle
 dependencies {
-	implementation 'com.github.XYOracleNetwork:sdk-core-kotlin:v0.1.1-beta.0'
+	implementation 'com.github.XYOracleNetwork:sdk-core-kotlin:v3.0.3'
 }
 ```
 
@@ -91,6 +96,8 @@ Source is located in /src/main/\*
     gradle build
 
 **You should start by setting up an interface to this library through creating an origin chain creator object.**
+
+## Origin Chain
 
 - Through an origin chain creator object one can create and maintain an origin chain. 
 
@@ -179,6 +186,7 @@ server.listen { pipe ->
 
 > Further examples of interacting through a socket can be found [here](https://github.com/XYOracleNetwork/sdk-core-kotlin/blob/feature/getting-started/src/test/kotlin/network/xyo/sdkcorekotlin/node/interaction/XyoStandardInteractionTest.kt).
 
+## Bound Witness
 
 ### Adding Custom Data to a Bound Witness
 ```kotlin
@@ -195,6 +203,8 @@ node.addHeuristic("MyHeuristic", object : XyoHeuristicGetter {
 	}
 })
 ```
+
+## Node Listener
 
 ### Adding a Listener to a Node
 
@@ -226,5 +236,4 @@ gradle test
 
 ## Sample Project 
 
-> A sample project demonstrating integration can be found [here](<https://github.com/XYOracleNetwork/sdk-ble-android/tree/master/ble-android-sample>
-).
+> A sample project demonstrating integration can be found [here](<https://github.com/XYOracleNetwork/sdk-ble-android/tree/master/ble-android-sample>)
