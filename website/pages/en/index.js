@@ -1,8 +1,10 @@
+// eslint-disable-next-line no-undef
 const React = require('react');
 
 class HomeSplash extends React.Component {
   render() {
-    
+
+    // eslint-disable-next-line no-unused-vars
     const Products = () => (
       <div className="pt-5">
         <div className="pt-5">
@@ -128,4 +130,5 @@ class Index extends React.Component {
   }
 }
 
+// eslint-disable-next-line no-undef
 module.exports = Index;
