@@ -14,8 +14,6 @@ The XYO protocol for creating origin-blocks is specified in the [XYO Yellow Pape
 **Note** the behavior is not coupled with any particular technology constraints around transport layers, cryptographic algorithms, or hashing algorithms.
 </div>
 
-Click here for our bintray download 
-
 [![Download](https://api.bintray.com/packages/xyoraclenetwork/xyo/sdk-core-kotlin/images/download.svg?version=3.0.3)](https://bintray.com/xyoraclenetwork/xyo/sdk-core-kotlin/3.0.3/link)
 
 ## Getting Started
@@ -236,4 +234,4 @@ gradle test
 
 ## Sample Project 
 
-> A sample project demonstrating integration can be found [here](<https://github.com/XYOracleNetwork/sdk-ble-android/tree/master/ble-android-sample>)
+> A sample project demonstrating integration can be found [on GitHub](<https://github.com/XYOracleNetwork/sdk-ble-android/tree/master/ble-android-sample>)
