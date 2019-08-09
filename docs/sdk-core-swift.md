@@ -10,6 +10,8 @@ The library has heavily abstracted modules so that all operations will work with
 The XYO protocol for creating origin-blocks is specified in the [XYO Yellow Paper](https://docs.xyo.network/XYO-Yellow-Paper.pdf). It describes the behavior of how a node on the XYO network should create Bound Witnesses. Note, the behavior is not coupled with any particular technology constraints around transport layers, cryptographic algorithms, or hashing algorithms.
 </div>
 
+[![](https://img.shields.io/cocoapods/v/sdk-core-swift.svg?style=flat)](https://cocoapods.org/pods/sdk-core-swift)
+
 ## Getting Started
 
 ## Install
@@ -249,7 +251,7 @@ for i in 0..9 {
 
 ## Sample Projects
 
-> A sample project demonstrating integration with iOS can be found [here](<https://github.com/XYOracleNetwork/sdk-ble-swift/tree/master/SampleiOS>)
+> A sample project demonstrating integration with iOS can be found [on GitHub](<https://github.com/XYOracleNetwork/sdk-ble-swift/tree/master/SampleiOS>)
 
-> A sample project demonstrating integration with MacOS can be found [here](<https://github.com/XYOracleNetwork/sdk-ble-swift/tree/master/SampleMacOS>)
+> A sample project demonstrating integration with MacOS can be found [on GitHub](<https://github.com/XYOracleNetwork/sdk-ble-swift/tree/master/SampleMacOS>)
 

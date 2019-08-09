@@ -31,7 +31,8 @@ class HomeSplash extends React.Component {
                           className="btn btn-square mr-1"
                           style={{ backgroundColor: '#2c3e50', color: '#fff'}}
                         >
-                          Get
+                          <span className="pr-2">Get</span>
+                          <i className="fas fa-external-link-alt"></i>
                         </a>
                         <a 
                           href="https://github.com/XYOracleNetwork"
@@ -39,7 +40,8 @@ class HomeSplash extends React.Component {
                           target="_blank"
                           className="btn btn-secondary btn-square mr-1"
                         >
-                          GitHub
+                          <span className="pr-2">GitHub</span>
+                          <i className="fas fa-external-link-alt"></i>
                         </a>
                         <a 
                           href="https://developers.xyo.network/docs/en/bridge-x/"
@@ -70,7 +72,8 @@ class HomeSplash extends React.Component {
                       className="btn btn-square mr-1"
                       style={{ backgroundColor: '#2c3e50', color: '#fff'}}
                     >
-                      Get
+                      <span className="pr-2">Get</span>
+                      <i className="fas fa-external-link-alt"></i>
                     </a>
                     <a 
                       href="https://github.com/XYOracleNetwork" 
@@ -78,7 +81,8 @@ class HomeSplash extends React.Component {
                       target="_blank"
                       className="btn btn-secondary btn-square mr-1"
                     >
-                      GitHub
+                      <span className="pr-2">GitHub</span>
+                      <i className="fas fa-external-link-alt"></i>
                     </a>
                     <a
                       href="https://developers.xyo.network/docs/en/SDK-Core-Swift/"
