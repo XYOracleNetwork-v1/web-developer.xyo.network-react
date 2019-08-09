@@ -9,7 +9,7 @@ We've gone through the hoops of deploying dApps on the Ethereum Network and have
   Difficulty Level: Intermediate
 </div>
 
-# Let's Get Started
+## Getting Started
 
 1. Install from source to get access to the sample projects. Remember, 'YARN ALL THE THINGS' from the main project dir by running this:
 
@@ -68,7 +68,7 @@ echo "alias dapploy=\"/<path_to_project>/tool-dapploy-nodejs/dapploy\""| cat >> 
 
 ## Create a smart contract project
 
-### Feature #1: `dapploy init` - create a new smart contract project!
+### `dapploy init` - create a new smart contract project
 
 1. Create a new ERC20 project using dapploy:
 
@@ -106,7 +106,9 @@ cd samples/sample-datavault-solidity && dapploy
 cd ../sample-datavault-react && yarn start
 ```
 
-## Want to make your ABI public? dapploy to IPFS
+## Making your ABI public
+
+### dApploy to IPFS
 
 ```
 dapploy -p
@@ -115,7 +117,7 @@ dapploy -p
  $ View contracts at https://ipfs.xyo.network/ipfs/QmZ2Ezv4nsQ5tqGoHz4pUxa9GW88TWKMSzdxdMfxsHerWT
 ```
 
-## Would you like to Dapploy to public testnet or mainnet?
+## Dapploy to public testnet and mainnet
 
 1. [Sign up for Infura](https://infura.io/)
 
@@ -161,7 +163,9 @@ If you are feeling adventurous run a local testnet node:
 
 ### [Kovan testnet node setup (Parity)](<https://github.com/XYOracleNetwork/tool-dapploy-nodejs/wiki/Kovan-setup-(Parity)>)
 
-## Want your dApp to support multiple browsers?
+## Multiple Browser Support 
+
+### Portis
 
 1.  Setup account with [portis.io](https://portis.io)
 
@@ -179,7 +183,7 @@ Uncomment:
 # infuraApiKey=<INFURA_API_KEY>
 ```
 
-## Want to use S3 to host your ABI?
+### Amazon S3
 
 1.  Confugure your AWS credentials in terminal by creating credentials file. [S3 credential instructions here](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html):
 

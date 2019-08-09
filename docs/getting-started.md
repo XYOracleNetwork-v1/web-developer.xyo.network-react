@@ -5,17 +5,74 @@ sidebar_label: Getting Started
 ---
 
 <div class="alert alert-info text-center" role="alert">
-  <h2>Steps to learning about XYO</h2>
+  <p>Getting Started with XYO begins with learning about what XYO does, our plans for the future, our Explore application, our SDKs and our Clients</p>
 </div>
 
-- [Watch the video about XYO and proof of location](https://youtu.be/KhVLjX-k5ic)
-- [Read our Roadmap](https://xyo.network/roadmap/)
-- [Explore](https://explore.xyo.network)
-- [XYO App on the web](https://app.xyo.network/)
-- [Download and use our Android app](https://play.google.com/store/apps/details?id=network.xyo.app&hl=en_US) or
-- [Download and use our iOS app](https://itunes.apple.com/us/app/xyo-network/id1453770624?mt=8)
-- [Download and play with our COIN app on Android](https://play.google.com/store/apps/details?id=network.xyo.coin&hl=en_US)  
-- [Download and play with our COIN app on iOS](https://itunes.apple.com/us/app/coin-the-new-economy/id1450443351?mt=8) 
+## Steps to Learning About XYO
+
+  <a href="https://youtu.be/KhVLjX-k5ic" 
+      rel="noopener noreferrer"
+      target="_blank"
+     >
+        Watch the video about XYO and proof of location
+    <i class="p-2 fas fa-external-link-alt"></i>
+  </a>
+
+  <a href="https://xyo.network/roadmap/" 
+      rel="noopener noreferrer"
+      target="_blank"
+      >
+        Read our Roadmap
+    <i class="p-2 fas fa-external-link-alt"></i>
+  </a>
+
+  <a href="https://explore.xyo.network" 
+      rel="noopener noreferrer"
+      target="_blank"
+     >
+        Explore
+    <i class="p-2 fas fa-external-link-alt"></i>
+  </a>
+
+  <a href="https://app.xyo.network/" 
+      rel="noopener noreferrer"
+      target="_blank"
+     >
+        XYO App on the web
+    <i class="p-2 fas fa-external-link-alt"></i>
+  </a>
+
+  <a href="https://play.google.com/store/apps/details?id=network.xyo.app&hl=en_US" 
+      rel="noopener noreferrer"
+      target="_blank"
+     >
+        Download and use our Android app
+    <i class="p-2 fas fa-external-link-alt"></i>
+  </a>
+
+  <a href="https://itunes.apple.com/us/app/xyo-network/id1453770624?mt=8" 
+      rel="noopener noreferrer"
+      target="_blank"
+     >
+        Download and use our iOS app
+    <i class="p-2 fas fa-external-link-alt"></i>
+  </a>
+
+  <a href="https://play.google.com/store/apps/details?id=network.xyo.coin&hl=en_US" 
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+        Download and play with our COIN app on Android
+    <i class="p-2 fas fa-external-link-alt"></i>
+  </a>
+
+  <a href="https://itunes.apple.com/us/app/coin-the-new-economy/id1450443351?mt=8" 
+      rel="noopener noreferrer"
+      target="_blank"
+     >
+        Download and play with our COIN app on iOS
+    <i class="p-2 fas fa-external-link-alt"></i>
+  </a>
 
 ## SDK Guides
 
