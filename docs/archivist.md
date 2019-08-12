@@ -95,3 +95,7 @@ Options:
   -f, --fetch <string>  fetch from url
   -h, --help            output usage information
 ```
+
+<div class="alert alert-danger text-center" role="alert">
+Current update as of 8/12/2019 - Additional instructions to come on the 8/16 update
+</div>
