@@ -12,7 +12,7 @@ title: ARCHIVIST APP
   Difficulty Level: Intermediate
 </div>
 
-# Getting started with an XYO Archivist
+## Getting started with an XYO Archivist
 
 An archivist in the XYO network serves as the data-layer component between the bridge and the diviner.
 It accepts and aggregates data from bridges and makes that data available to Diviners via a GraphQL API. In essence it is the scribe node of the XYO network.
@@ -48,7 +48,7 @@ layer for doing bound-witness interactions between the Archivist and other Bridg
 
 - This node app wizard works macOS and Linux, and at this time this app is not Windows compatible
 
-## Getting Started
+## Installation and Setup
 
 ### Clone the repository 
 
@@ -68,7 +68,7 @@ cd sdk-core-nodejs
 yarn install
 ```
 
-### Build the SDK
+## Build the SDK
 
 ```sh
 yarn build
@@ -126,6 +126,8 @@ yarn start:archivist
 ```sh
 yarn mock-data
 ```
+
+## Run the Archivist
 
 ### Run your node package with a configuration
  - instead of going directly to `yarn start:archivist` you can run it with your own configuration: 
