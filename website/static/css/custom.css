@@ -5,6 +5,12 @@
   width: device-width;
 }
 
+@font-face {
+  font-family: 'Lato', sans-serif;
+  font-display: fallback;
+  src: local('Lato'), url('https://fonts.googleapis.com/css?family=Lato:900&display=swap');
+}
+
 body {
   font-family: 'Lato', sans-serif;
   color: black;
