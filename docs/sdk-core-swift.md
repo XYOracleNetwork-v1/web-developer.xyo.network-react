@@ -3,7 +3,7 @@ id: SDK-Core-Swift
 title: SWIFT CORE SDK
 ---
 <div class="alert alert-info text-center" role="alert">
-A library to preform all core XYO Network functions.
+A library to perform all core XYO Network functions.
 This includes creating an origin chain, maintaining an origin chain, negotiations for talking to other nodes, and other basic functionality.
 The library has heavily abstracted modules so that all operations will work with any crypto, storage, networking, etc.
 
