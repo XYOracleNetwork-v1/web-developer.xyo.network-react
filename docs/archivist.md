@@ -4,6 +4,12 @@ title: ARCHIVIST APP
 ---
 
 <div class="alert alert-danger text-center" role="alert">
+  <h3>Beta Software</h3>
+  This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested.
+</div>
+
+
+<div class="alert alert-danger text-center" role="alert">
   This guide is not for production ready Archivists, this is a product currently in development and will be updated often prior to mainnet release. 
   For production-ready Archivists you will be able to download an npm package for use in your application.
 </div>

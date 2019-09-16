@@ -2,6 +2,11 @@
 id: SDK-Core-Swift
 title: SWIFT CORE SDK
 ---
+<div class="alert alert-danger text-center" role="alert">
+  <h3>Beta Software</h3>
+  This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested.
+</div>
+
 <div class="alert alert-info text-center" role="alert">
 A library to perform all core XYO Network functions.
 This includes creating an origin chain, maintaining an origin chain, negotiations for talking to other nodes, and other basic functionality.
@@ -372,7 +377,10 @@ class ViewController: UIViewController {
 Go ahead and save the project and run the build by clicking on the play button on the top left hand side of the Xcode IDE
 
 <h1 align="left">
-  <img alt="location layout" src="/docs/assets/ios_layout.png" width="280px" height="600px">
+  <picture>
+    <source type="image/webp" srcset="/docs/assets/ios_layout.webp">
+    <img alt="location layout" src="/docs/assets/ios_layout.png" width="280px" height="600px">
+  </picture>
 </h1>
 
 You should now see the `Create Origin` button and when you tap it you should see a response on the screen with the hash value of the newly created bound witness chain. You can tap again for another bound witness chain. 

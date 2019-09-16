@@ -3,6 +3,12 @@ id: kotlin-getting-started
 title: KOTLIN CORE SDK
 ---
 
+<div class="alert alert-danger text-center" role="alert">
+    <h3>Beta Software</h3>
+    This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested.
+</div>
+
+
 <div class="alert alert-info text-center" role="alert">
 A library to perform all core XYO Network functions.
 This includes creating an origin chain, maintaining an origin chain, negotiations for talking to other nodes, and other basic functionality.
@@ -442,7 +448,10 @@ Once you click on the play button, it will build the application, and if not ins
 You should now see the app appear similar to your layout from the design viewer. 
 
 <h1 align="left">
-  <img alt="location layout" src="/docs/assets/android_first_layout.png" width="280px" height="600px">
+  <picture>
+    <source type="image/webp" srcset="/docs/assets/android_first_layout.webp">
+    <img alt="location layout" src="/docs/assets/android_first_layout.png" width="280px" height="600px">
+  </picture>
 </h1>
 
 Test the functionality by tapping on `create origin`, when you tap the button you should see a hash appear above in the `textArea`.
@@ -516,7 +525,10 @@ This permission element should be in the root and not in the `<application>` ele
 Here is what the permission dialog will look like
 
 <h1 align="left">
-  <img alt="location permission" src="/docs/assets/android_permission_image.png" width="320px" height="600px">
+  <picture>
+    <source type="image/webp" srcset="/docs/assets/android_permission_image.webp">
+    <img alt="location permission" src="/docs/assets/android_permission_image.png" width="320px" height="600px">
+  </picture>  
 </h1>
 
 
