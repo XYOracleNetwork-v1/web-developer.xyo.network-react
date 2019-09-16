@@ -219,5 +219,4 @@ The settings screen also exposes the ability to place the app in `developer` mod
 - Manual add of bridge devices
 - Required XYO login - it is now optional to log in using an xyo account 
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd5xPZlHl4zoFAYtBZIBTDO9ICmH1HsAFYFTA-5vep8UGjCEg/viewform?embedded=true" width="1000" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
