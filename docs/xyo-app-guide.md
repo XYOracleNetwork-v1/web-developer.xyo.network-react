@@ -31,7 +31,7 @@ title: XYO Network App
 
 - Swipe to switch contexts. View the data relevant to your device and nearby devices, or switch to the Data Ocean to see what's going on across XYO.
 
-> A note about this guide: The screenshots in this guide were taken from an early beta. Your experience may differ slightly, although the principles of navigation and design will not change on your use. 
+> A note about this guide: The screenshots in this guide were taken from an early beta. Your experience may differ slightly, although the principles of navigation and design should not change on your use. 
 
 ## Installing the app 
 
@@ -55,7 +55,7 @@ Your device (android or iOS)
   </picture>
 </h1>
 
-### Data Ocean Context 
+### Data Ocean context 
 
 The data ocean
 <h1 align="left">
@@ -66,9 +66,11 @@ The data ocean
 </h1>
 
 
-## Your device context
+## Device context
 
 Your device context centers around display of information relative to your device. This includes the proof of origin chain for your device and all devices near you. 
+
+You can tap on your device address at the top of the device context screen to copy your address. This is useful when looking up you device data on our XYO Explore app.
 
 ### Controlling the four components
 
@@ -96,7 +98,7 @@ You can tap on a component to either pause or disconnect, here are the status to
 - Archivist (connected or disconnected)
 - Diviner (connected or disconnected)
 
-## Looking at the chain of bound witnesses
+### Looking at the chain of bound witnesses
 
 To look at the chain of bound witnesses in your device's context, tap on the proof of origin interface in your device's context. 
 
@@ -120,9 +122,9 @@ When looking at the bound witness chain, you should see heuristics of the chain 
 - rssi
 - number of bytes
 - time of the bound witness interaction
-- index numbers of the devices in the bound witness interaction
+- index numbers of devices in the bound witness interaction
 
-Tap on the bound witness to reveal more details about it 
+Tap on the bound witness to reveal more details 
 
 <h1 align="left">
   <picture>
@@ -139,7 +141,7 @@ Details include:
 - hash of the interaction 
 - byte data from the interaction 
 
-## Looking at nearby devices
+### Looking at nearby devices
 
 To look at nearby devices, in your device context tap on the all devices interface
 
@@ -150,7 +152,9 @@ To look at nearby devices, in your device context tap on the all devices interfa
   </picture>
 </h1>
 
-Once you do you should see a scrollable list of the devices that have interacted with your device
+Once you do you should see a scrollable list of the devices that have interacted with your device. You should also be able to see all of the devices in your mining set up tagged with a favorite star. 
+
+> You will only see your devices favorited if you are logged in with the same XYO account that you previously used to use the XYO app and register your devices. 
 
 <h1 align="left">
   <picture>
@@ -162,12 +166,12 @@ Once you do you should see a scrollable list of the devices that have interacted
 This list should include:
 - the device type
 - the public key address of the device
-- whether it is a favorite device
-- whether the device is yours or not
+
+### Device context summary
 
 Looking at your device's context gives you data on all interactions with your device. This can help you estimate how much activity your device has in the XYO network. 
 
-## The data ocean context
+## Data Ocean context
 
 The data ocean context is not related to your device therefore it does not have any component interfaces. What it does have is valuable information about the health of the network and overall bound witness amounts for the current origin chain along with how many total bound witness have been collected by our archivist. 
 
@@ -178,11 +182,13 @@ The data ocean context is not related to your device therefore it does not have 
   </picture>
 </h1>
 
-This context does allow you to view bound witness data and devices that are near you and your favorites. The main use for this view in the current version is the current bound witness count from our the proof or origin chain and the total bound witnesses collected by our archivist.
+### Viewing bound witness data in the ocean
+
+This context does allow you to view bound witness data and devices that are near you and your favorites. The main use for this view is the current bound witness count from our the proof or origin chain and the total bound witnesses collected by our archivist. 
+
+Viewing collected bound witness include the overall number of bound witnesses created, the rate bound witnesses are collected (bound witnesses per minute), and the average block density of bound witnesses collected. 
 
 ## Settings 
-
-When you tap on the settings wheel in either context, you are directed to an informational page on the application. This includes:
 
 <h1 align="left">
   <picture>
@@ -190,6 +196,8 @@ When you tap on the settings wheel in either context, you are directed to an inf
     <img alt="settings-wheel" src="/docs/assets/settings_wheel.png">
   </picture>
 </h1>
+
+When you tap on the settings wheel in either context, you are directed to an informational page on the application. This includes:
 
 - the app version
 - your device name (i.e. iPhone, Pixel, Galaxy, etc.)
@@ -213,10 +221,13 @@ The settings screen also exposes the ability to place the app in `developer` mod
 2. Tap the **XYO Application Version** 9 times
 3. You should now see the option to turn on experimental features
 
+> Note that these experimental features are as described: experimental. There is absolutely no guarantee that any of the features in this mode will be part of any stable version.  
+
 ## Decprecated features after 3.0
 
 - Manual add of sentinel devices
 - Manual add of bridge devices
 - Required XYO login - it is now optional to log in using an xyo account 
+- Device firmware update 
 
 
