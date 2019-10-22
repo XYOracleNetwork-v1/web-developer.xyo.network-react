@@ -9,40 +9,7 @@
 // site configuration options.
 
 // List of projects/orgs using your project for the users page.
-const users = [
-  // {
-  //   caption: 'Coin',
-  //   // You will need to prepend the image path with your baseUrl
-  //   // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-  //   image: '/img/coin_horizontal_colored.png',
-  //   infoLink: 'https://xyo.network/',
-  //   pinned: true,
-  // },
-  // {
-  //   caption: 'Everipedia',
-  //   image: '/img/everipedia.png',
-  //   infoLink: 'https://everipedia.org/',
-  //   pinned: true
-  // },
-  // {
-  //   caption: 'DRVR',
-  //   image: '/img/drvr.png',
-  //   infoLink: 'http://www.drvr.co/',
-  //   pinned: true
-  // },
-  // {
-  //   caption: 'ESRI',
-  //   image: '/img/esri.png',
-  //   infoLink: 'https://www.esri.com/',
-  //   pinned: true
-  // },
-  // {
-  //   caption: 'SMK',
-  //   image: '/img/SMK-Logo.ico',
-  //   infoLink: 'https://www.smkusa.com/',
-  //   pinned: true
-  // }
-];
+const users = [];
 
 const products =
   [
@@ -3263,6 +3230,7 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     { doc: 'getting-started', label: 'Guides'},
+    { href: 'https://reference.xyo.network', label: 'Reference'},
   ],
 
   // If you have users set above, you add it here:
@@ -3270,7 +3238,7 @@ const siteConfig = {
   products,
 
   /* path to images for header/footer */
-  headerIcon: 'img/XYO_full_colored.png',
+  headerIcon: 'img/XYO_full_black.png',
   favicon: 'img/XYO_icon_colored.png',
   /* Colors for website */
   colors: {

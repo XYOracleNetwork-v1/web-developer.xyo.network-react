@@ -7,14 +7,16 @@ title: DAPPER
   Difficulty Level: Intermediate
 </div>
 
-# Getting Started
+## Getting Started
+
+### Install 
 
 `yarn` it out in the project directory:
 ```
 yarn
 ```
 
-## Run dapper
+### Run dapper
 ```
 yarn start
 ```
@@ -27,7 +29,11 @@ Before we do let's set up an array of account addresses using **Ganache**:
 
 There are two ways you can do this:
 
+### Install Ganache
+
 1. If you don't already have it, [download and install Ganache from their site](https://truffleframework.com/ganache)
+
+### Install MetaMask
 
 2. Same with [MetaMask from their site](https://metamask.io/)
 
@@ -42,6 +48,8 @@ There are two ways you can do this:
  
 5. Add ganache account to metamask
  - In your Ganache UI, you'll see a list of ~10 addresses.		
+
+### Other ganache options
 
 Or: 
 
@@ -107,10 +115,8 @@ Contracts stored to IPFS <your IPFS hash>
 
 ## Play with your Smart Contracts
 
-### You should now see your contracts in the `contract simulator`
+You should now see your contracts in the `contract simulator`
 
 <h1 align="left">
   <img alt="dapper-contract-simulator" src="/docs/assets/dapper_contract_simulator.png">
 </h1>
-
-# Congratulations! You can interact with your contracts in an easy to use UI.

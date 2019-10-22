@@ -2,6 +2,10 @@
 id: SDK-Package-Node
 title: NODE.JS CORE SDK
 ---
+<div class="alert alert-danger text-center" role="alert">
+  <h3>Beta Software</h3>
+  This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested.
+</div>
 
 ## Project Overview
 

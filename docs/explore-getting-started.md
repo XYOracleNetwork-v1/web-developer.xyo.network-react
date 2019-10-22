@@ -24,7 +24,10 @@ sidebar_label: Getting Started with Explore
 Everything in the Explore App starts with Queries
 
 <h1 align="left">
-  <img alt="queries in explore app" src="/docs/assets/explore_queries.png">
+  <picture>
+    <source type="image/webp" srcset="/docs/assets/explore_queries.webp">
+    <img alt="queries in explore app" src="/docs/assets/explore_queries.png">
+  </picture>
 </h1>
 
 ### Entering a Query
@@ -32,7 +35,10 @@ Everything in the Explore App starts with Queries
 Enter all queries described in this guide into this field on the dashboard page
 
 <h1 align="left">
-  <img alt="where to enter a query" src="/docs/assets/query_field.png">
+  <picture>
+    <source type="image/webp" srcset="/docs/assets/query_field.webp">
+    <img alt="where to enter a query" src="/docs/assets/query_field.png">
+  </picture>
 </h1>
 
 ### Block Hash Query
@@ -49,7 +55,10 @@ Enter the query
 You should see block contents upon a successful query
 
 <h1 align="left">
-  <img alt="where to enter a query" src="/docs/assets/block_hash_detail.png">
+  <picture>
+    <source type="image/webp" srcset="/docs/assets/block_hash_detail.webp">
+    <img alt="where to enter a query" src="/docs/assets/block_hash_detail.png">
+  </picture>
 </h1>
 
 Information included in the contents
@@ -75,7 +84,10 @@ Enter the query
 This is displayed as points on an interactive map
 
 <h1 align="left">
-  <img alt="mapped point with blocks from a gps query" src="/docs/assets/gps_query_result.png">
+  <picture>
+    <source type="image/webp" srcset="/docs/assets/gps_query_result.webp">
+    <img alt="mapped point with blocks from a gps query" src="/docs/assets/gps_query_result.png">
+  </picture>
 </h1>
 
 ### Recent Query
@@ -96,7 +108,10 @@ You will see your query value in the lower left corner of the map view.
 This is an exmaple after a `recent:030` query
 
 <h1 align="left">
-  <img alt="map result from recent block query" src="/docs/assets/map_view_recent_block_query.png">
+  <picture>
+    <source type="image/webp" srcset="/docs/assets/map_view_recent_block_query.webp">
+    <img alt="map result from recent block query" src="/docs/assets/map_view_recent_block_query.png">
+  </picture>
 </h1>
 
 Note that this query is `Getting the 30 most recent bound witnesses`
@@ -119,7 +134,10 @@ Enter the query
 This is displayed as points on an interactive map
 
 <h1 align="left">
-  <img alt="mapped point with blocks from a device query" src="/docs/assets/device_blocks_query_result.png">
+  <picture>
+    <source type="image/webp" srcset="/docs/assets/device_blocks_query_result.webp">
+    <img alt="mapped point with blocks from a device query" src="/docs/assets/device_blocks_query_result.png">
+  </picture>
 </h1>
 
 You can get further detail on the map by zooming in and clicking on specific points
@@ -131,7 +149,10 @@ You can get further detail on the map by zooming in and clicking on specific poi
 The detail of the point has a block hash, which when clicked executes a block hash query
 
 <h1 align="left">
-  <img alt="block hash details on map" src="/docs/assets/block_hash_on_map.png">
+  <picture>
+    <source type="image/webp" srcset="/docs/assets/block_hash_on_map.webp">
+    <img alt="block hash details on map" src="/docs/assets/block_hash_on_map.png">
+  </picture>
 </h1>
 
 ### Chain Query
@@ -148,7 +169,10 @@ The `chain` query retrieves the latest bound witness from an origin chain and cu
 Here you can also create an alias for the public key of your query which you can use in future queries.
 
 <h1 align="left">
-  <img alt="chain query result detail" src="/docs/assets/chain_query_result.png">
+  <picture>
+    <source type="image/webp" srcset="/docs/assets/chain_query_result.webp">
+    <img alt="chain query result detail" src="/docs/assets/chain_query_result.png">
+  </picture>
 </h1>
 
 This view also includes links to post this data to twitter, telegram, facebook, and reddit
@@ -177,7 +201,10 @@ Enter the query
 This is displayed as points on an interactive map
 
 <h1 align="left">
-  <img alt="geohash query result map" src="/docs/assets/geohash_query_map_result.png">
+  <picture>
+    <source type="image/webp" srcset="/docs/assets/geohash_query_map_result.webp">
+    <img alt="geohash query result map" src="/docs/assets/geohash_query_map_result.png">
+  </picture>
 </h1>
 
 Similar to other queries that return a result on the interactive map, the bound witness points represented by pins can be clicked to return a `hash` query.
@@ -496,7 +523,10 @@ This is a general schema, for more specfic responses please refer to the UI from
 Plugins from our node app present additional views that allow the user to see reports, make payments for queries, and view current rewards (rewards in Beta)
 
 <h1 align="left">
-  <img alt="plugins page view" src="/docs/assets/plugins_view.png">
+  <picture>
+    <source type="image/webp" srcset="/docs/assets/plugins_view.webp">
+    <img alt="plugins page view" src="/docs/assets/plugins_view.png">
+  </picture>
 </h1>
 
 ### Available plugins
@@ -515,7 +545,10 @@ Plugins from our node app present additional views that allow the user to see re
 The watchlist is a view of all devices linked to an account that is logged into XYO Explore 
 
 <h1 align="left">
-  <img alt="watchlist page view" src="/docs/assets/watchlist_view.png">
+  <picture>
+    <source type="image/webp" srcset="/docs/assets/watchlist_view.webp">
+    <img alt="watchlist page view" src="/docs/assets/watchlist_view.png">
+  </picture>
 </h1>
 
 Public keys per device are available and when clicked in this view execute a `chain` query
@@ -526,7 +559,10 @@ Clicking on **Add Alias** will allow the user to update a device with an alias i
 ## Other UI Elements to look for
 
 <h1 align="left">
-  <img alt="additional ui page view" src="/docs/assets/additional_ui_view.png">
+  <picture>
+    <source type="image/webp" srcset="/docs/assets/additional_ui_view.webp">
+    <img alt="additional ui page view" src="/docs/assets/additional_ui_view.png">
+  </picture>
 </h1>
 
 Under the Query field are six additional clickable elements that link directly to plugin views, map views, recent block query, and watchlist
@@ -538,7 +574,10 @@ Under the Query field are six additional clickable elements that link directly t
     - Takes the user to a heat map of node activity in the network
 
 <h1 align="left">
-  <img alt="world map view" src="/docs/assets/world_map_view.png">
+  <picture>
+    <source type="image/webp" srcset="/docs/assets/world_map_view.webp">
+    <img alt="world map view" src="/docs/assets/world_map_view.png">
+  </picture>
 </h1>
 
 - Recent Blocks 
