@@ -26,20 +26,45 @@ title: WCC Hackathon Guide
     <h3>Please use the recommended SDKs<h3>
 </div>
 
+
 ## Resources 
 
-## SDKs
+<h3><a href="https://github.com/XYOracleNetwork/sdk-xyo-android" rel="noreferrer noopener" target="_blank">SDK-XYO-ANDROID</a></h3>
+<h3><a href="https://github.com/XYOracleNetwork/sdk-xyo-swift" rel="noreferrer noopener" target="_blank">SDK-XYO-SWIFT</a></h3>
+
+## SDK Guides
+
+> Please note that our development team will be on site during the hackathon in a limited capacity to assist. 
 
 ### Android SDK
 
-**Installation**
+
+[![Download](https://api.bintray.com/packages/xyoraclenetwork/xyo/sdk-xyo-android/images/download.svg) ](https://bintray.com/xyoraclenetwork/xyo/sdk-xyo-android/_latestVersion)
+
+
+**Include in your gradle**
+
+```gradle
+    compile 'network.xyo:sdk-xyo-android:3.0.117'
+```
+
+**Include using Maven**
+
+```maven
+    <dependency>
+    <groupId>network.xyo</groupId>
+    <artifactId>sdk-xyo-android</artifactId>
+    <version>3.0.115</version>
+    <type>pom</type>
+    </dependency>
+```
 
 **How to use**
 
 One line is all it takes to start your node 
 
 ```kotlin
-val node = XyoNodeBuilder().build(context)
+    val node = XyoNodeBuilder().build(context)
 ```
 
 For a more complex test, create a listener callback.
@@ -118,21 +143,21 @@ You can also use a heuristic getter, here is an example to get GPS.
 **Build an XYO Node** 
 
 ```kotlin
-val builder = XYONodeBuilder()
+    val builder = XYONodeBuilder()
 ```
 
 After calling the node builder, you can start the build
 
 ```kotlin
-val node = XyoNode()
+    val node = XyoNode()
 
-node = builder.build(this)
+    node = builder.build(this)
 ```
 
 Once you have a build, you have access to properties to help you shape your node and what you want out of it. 
 
 ```kotlin
-node.networks["this can be "ble" or "tcpip""]
+    node.networks["this can be "ble" or "tcpip""]
 ```
 
 After choosing the network, you have these properties available
@@ -140,38 +165,38 @@ After choosing the network, you have these properties available
 **Client**
 
 ```kotlin
-// select the network
-val network = node.networks["network"]
+    // select the network
+    val network = node.networks["network"]
 
-// a flag to tell the client to automatically bridge
-network.client.autoBridge
+    // a flag to tell the client to automatically bridge
+    network.client.autoBridge
 
-// a flag to tell the client to automatically bound witness 
-network.client.autoBoundWitness
+    // a flag to tell the client to automatically bound witness 
+    network.client.autoBoundWitness
 
-// a flag to tell the client to automatically scan
-network.client.scan
+    // a flag to tell the client to automatically scan
+    network.client.scan
 ```
 
 **Server**
 
 ```kotlin
-// select the network 
-val network = node.networks["network"]
+    // select the network 
+    val network = node.networks["network"]
 
-// a flag to tell the server to automatically bridge
-network.server.autoBridge
+    // a flag to tell the server to automatically bridge
+    network.server.autoBridge
 
-// a flag to tell the client to automatically listen for bridging
-network.server.listen
-```
+    // a flag to tell the client to automatically listen for bridging
+    network.server.listen
+    ```
 
-These will allow your app to actively seek devices to bound witness with and bridge from the client to the server.
+    These will allow your app to actively seek devices to bound witness with and bridge from the client to the server.
 
-You can also get payload data from the bound witness 
+    You can also get payload data from the bound witness 
 
 ```kotlin
-node.listener.getPayloadData(target: XyoBoundWitnessTarget)
+    node.listener.getPayloadData(target: XyoBoundWitnessTarget)
 ```
 
 This will return a byteArray.
@@ -230,7 +255,20 @@ This sample app includes client bridging and bound witnessing with a BLE server 
 
 ### Swift SDK
 
-**Installation**
+[![](https://img.shields.io/cocoapods/v/sdk-xyo-swift.svg?style=flat)](https://cocoapods.org/pods/sdk-xyo-swift)
+
+**Include in your Podfile**
+
+```Podfile
+    source '<https://github.com/CocoaPods/Specs.git>'
+    platform :ios, '11.0'
+    use_frameworks!
+
+    target '<Your Target Name>' do
+        pod 'sdk-xyo-swift', '1.0.1'
+    end
+```
+
 
 **How to use**
 
@@ -259,41 +297,40 @@ Once you have a build, you have access to properties to help you shape your node
 Client
 
 ```swift
-// select the network - examples
-let bleNetwork = node.networks["ble"] as? XyoBleNetwork
-let tcpipNetwork = node.networks["tcpip"] as? XyoTcpipNetwork
+    // select the network - examples
+    let bleNetwork = node.networks["ble"] as? XyoBleNetwork
+    let tcpipNetwork = node.networks["tcpip"] as? XyoTcpipNetwork
 
-// a flag to tell the client to automatically scan
-bleNetwork?.client.scan = true
+    // a flag to tell the client to automatically scan
+    bleNetwork?.client.scan = true
 
-// a flag to tell the server to listen
-bleNetwork?.server.listen = true
+    // a flag to tell the server to listen
+    bleNetwork?.server.listen = true
 ```
 
 You can set bridges for the tcp/ip client for bridging. 
 
 ```swift
-// set local bridges for the tcpip client
-tcpipNetwork?.client.localBridges = ["public key of bridge", "public key of other bridge"]
+    // set local bridges for the tcpip client
+    tcpipNetwork?.client.localBridges = ["public key of bridge", "public key of other bridge"]
 ```
 
 You can set the bound witness delegate
 
 ```swift
-  func boundWitness(started withDeviceId: String) {
-    print("Started BW with (withDeviceId)")
-  }
+    func boundWitness(started withDeviceId: String) {
+        print("Started BW with (withDeviceId)")
+    }
 
-  func boundWitness(completed withDeviceId: String, withBoundWitness: XyoBoundWitness?) {
-    print("Completed BW with (withDeviceId)")
-
-  }
+    func boundWitness(completed withDeviceId: String, withBoundWitness: XyoBoundWitness?) {
+        print("Completed BW with (withDeviceId)")
+    }
 ```
 
 You can also get payload data from bound witness. 
 
 ```swift
-    class XyoExampleViewController: UIViewController, BoundWitnessDelegate {
+    class SomeViewController: UIViewController, BoundWitnessDelegate {
         ...
         func getPayloadData() {
             return [UInt8]
@@ -303,7 +340,31 @@ You can also get payload data from bound witness.
 
 This will return a byteArray.
 
-There are other properties from the client and server which you can find in the source code as well as a reference guide that we have prepared. 
+You can also try particular heuristic resolvers with the data you get, whether they are pre-made GPS, RSSI, or Time. You can also resolve heuristic data to a custom human readable form.
+
+**Time example**
+
+Bring in the time resolver
+
+```swift
+func resolveTimePayload() {
+    let resolver = TimeResolver()
+    XyoHumanHeuristics.resolvers[XyoSchemas.UNIX_TIME.id] = resolver
+    let key = resolver.getHumanKey(partyIndex: 1)
+    return XyoHumanHeuristics.getHumanHeuristics(boundWitness: self).index(forKey: key).debugDescription
+}
+```
+
+Bring in the RSSI resolver
+
+```swift
+    func resolveRssiPayload() {
+        let resolver = RssiResolver()
+        XyoHumanHeuristics.resolvers[XyoSchemas.RSSI.id] = resolver
+        let key = resolver.getHumanKey(partyIndex: 1)
+        return XyoHumanHeuristics.getHumanHeuristics(boundWitness: self).index(forKey: key).debugDescription
+    }
+```
 
 **Architecture**
 
