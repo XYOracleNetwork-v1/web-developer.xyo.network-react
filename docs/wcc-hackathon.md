@@ -366,6 +366,15 @@ Bring in the RSSI resolver
     }
 ```
 
+<h3><a href="https://github.com/XYOracleNetwork/sdk-xyo-swift/blob/master/Source/Heuristics/GpsResolver.swift" rel="noreferrer noopener" target="_blank">GPS Resolver
+</a></h3>
+
+<h3><a href="https://github.com/XYOracleNetwork/sdk-xyo-swift/blob/master/Source/Heuristics/RssiResolver.swift" rel="noreferrer noopener" target="_blank">RSSI Resolver</a></h3>
+
+<h3><a href="https://github.com/XYOracleNetwork/sdk-xyo-swift/blob/master/Source/Heuristics/TimeResolver.swift" rel="noreferrer noopener" target="_blank">Time Resolver</a></h3>
+
+<h3><a href="https://github.com/XYOracleNetwork/sdk-xyo-swift/blob/master/Source/Heuristics/StringResolver.swift" rel="noreferrer noopener" target="_blank">String Resolver</a></h3>
+
 **Architecture**
 
 This sdk is built on a client/server to ensure ease of understanding during development. (The client takes on "central" role, and the server the "peripheral"). This allows us to define roles with simplicity. 
