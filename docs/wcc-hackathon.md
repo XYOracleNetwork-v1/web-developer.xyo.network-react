@@ -38,6 +38,10 @@ title: WCC Hackathon Guide
 
 ### Android SDK
 
+
+[![Download](https://api.bintray.com/packages/xyoraclenetwork/xyo/sdk-xyo-android/images/download.svg) ](https://bintray.com/xyoraclenetwork/xyo/sdk-xyo-android/_latestVersion)
+
+
 **Include in your gradle**
 
 ```gradle
@@ -251,7 +255,20 @@ This sample app includes client bridging and bound witnessing with a BLE server 
 
 ### Swift SDK
 
-**Installation**
+[![](https://img.shields.io/cocoapods/v/sdk-xyo-swift.svg?style=flat)](https://cocoapods.org/pods/sdk-xyo-swift)
+
+**Include in your Podfile**
+
+```Podfile
+    source '<https://github.com/CocoaPods/Specs.git>'
+    platform :ios, '11.0'
+    use_frameworks!
+
+    target '<Your Target Name>' do
+        pod 'sdk-xyo-swift', '1.0.1'
+    end
+```
+
 
 **How to use**
 
