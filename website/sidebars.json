@@ -8,6 +8,8 @@
     "Sentinel": ["sentinel"],
     "Smart Contract Apps": ["dapploy", "dapper", "scsc"],
     "SDKs": [
+      "sdk-xyo-android",
+      "sdk-xyo-swift",
       "SDK-Package-Node",
       "SDK-Core-Swift",
       "kotlin-getting-started"
