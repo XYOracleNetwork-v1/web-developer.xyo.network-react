@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable no-undef */
 const gulp = require('gulp')
 const awspublish = require('gulp-awspublish')
 const parallel = require('concurrent-transform')
