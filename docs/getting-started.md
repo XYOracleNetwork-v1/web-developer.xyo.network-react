@@ -60,7 +60,7 @@ sidebar_label: Getting Started
 
 ## SDK Guides
 
-### [Swift XYO SDK](<https://developers.xyo.network/docs/en/sdk-xyo-swift/>
+### [Swift XYO SDK](https://developers.xyo.network/docs/en/sdk-xyo-swift/)
 ### [Android XYO SDK](https://developers.xyo.network/docs/en/sdk-xyo-android/)
 ### [NodeJS Core SDK](https://developers.xyo.network/docs/en/SDK-Package-Node/)
 ### [Swift Core SDK](https://developers.xyo.network/docs/en/SDK-Core-Swift/)
