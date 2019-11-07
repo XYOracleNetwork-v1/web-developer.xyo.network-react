@@ -42,22 +42,6 @@ sidebar_label: Getting Started
     <i class="p-2 fas fa-external-link-alt"></i>
   </a>
 
-  <!-- <a href="https://play.google.com/store/apps/details?id=network.xyo.app&hl=en_US" 
-      rel="noopener noreferrer"
-      target="_blank"
-     >
-        Download and use our new Android app
-    <i class="p-2 fas fa-external-link-alt"></i>
-  </a>
-
-  <a href="https://itunes.apple.com/us/app/xyo-network/id1453770624?mt=8" 
-      rel="noopener noreferrer"
-      target="_blank"
-     >
-        Download and use our new iOS app
-    <i class="p-2 fas fa-external-link-alt"></i>
-  </a> -->
-
   <a href="https://play.google.com/store/apps/details?id=network.xyo.coin&hl=en_US" 
       rel="noopener noreferrer"
       target="_blank"
