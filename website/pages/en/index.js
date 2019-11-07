@@ -8,11 +8,31 @@ class HomeSplash extends React.Component {
 
     // eslint-disable-next-line no-unused-vars
     const Products = () => (
-      <div className="pt-5">
-        <div className="pt-5">
-          <h1 className="text-center">THE PORTAL FOR DEVELOPMENT ON XYO</h1>
+      <div className="pt-2">
+        <div className="pt-2">
+          <h1 className="text-center">XYO DEVELOPER PORTAL</h1>
         </div>
-        <div className="p-5">
+        <div className="container text-center p-4">
+          <h3 className="row justify-content-center m-1">
+            XYO is a open source geospatial location protocol which leverages nodes staking to contribute to an incentivized proof of origin.
+            This allows applications to confirm location data certainty for a myriad of use cases.
+          </h3>
+          <h3>
+            We have two primary SDKs geared for development with iOS and Android. 
+            We also have smart contract libraries which can be used as reference for contract creation for non ERC20 protocols.
+          </h3>
+          <div className="p-5">
+            <a
+              href="https://developers.xyo.network/docs/en/getting-started/"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="btn btn-secondary btn-square mr-1"
+              >
+              GET STARTED HERE 
+            </a>
+          </div>
+        </div>
+        <div className="p-1">
           <div className="row justify-content-center">
             <div className="p-5 ">
                 <div className="card shadow">
@@ -85,20 +105,20 @@ class HomeSplash extends React.Component {
                       <i className="fas fa-external-link-alt"></i>
                     </a>
                     <a
-                      href="https://developers.xyo.network/docs/en/SDK-Core-Swift/"
+                      href="https://developers.xyo.network/docs/en/sdk-xyo-swift/"
                       rel="noopener noreferrer"
                       target="_blank"
                       className="btn btn-secondary btn-square mr-1"
                     >
-                      Swift Core Guide 
+                      XYO Swift Guide 
                     </a>
                     <a
-                      href="https://developers.xyo.network/docs/en/kotlin-getting-started/"
+                      href="https://developers.xyo.network/docs/en/sdk-xyo-android/"
                       rel="noopener noreferrer"
                       target="_blank"
                       className="btn btn-secondary btn-square mr-1"
                     >
-                      Kotlin Core Guide
+                      XYO Android Guide
                     </a>
                   </div>
                 </div>

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /**
  * Copyright (c) 2017-present, Facebook, Inc.
  *
@@ -26,7 +27,7 @@ class Footer extends React.Component {
       <footer className="nav-footer" id="footer">
         <div className="col-12 col-md-4">
         <section className="copyright">
-         <p className="text-dark">           
+         <p className="text-dark">
          <a
             href="https://xyo.network/"
             target="_blank"
@@ -66,6 +67,13 @@ class Footer extends React.Component {
             </div>
             <div>
               <h5>Community</h5>
+              <a
+                href="https://discord.gg/sGVp73B"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Discord
+              </a>
               <a
                 href="https://twitter.com/xyodevs"
                 target="_blank"
