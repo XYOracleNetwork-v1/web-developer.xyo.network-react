@@ -1,6 +1,6 @@
-[logo]: https://cdn.xy.company/img/brand/XY_Logo_GitHub.png
+[logo]: https://cdn.xy.company/img/brand/XYO_full_colored.png
 
-[![logo]](https://xy.company)
+[![logo]](https://xyo.network)
 
 ![Build Status](https://travis-ci.com/XYOracleNetwork/web-developer.xyo.network-react.svg?token=DwLaRUVjarU2ZypyaHXe&branch=master)
 
@@ -12,7 +12,7 @@
 </h3>
 
 Table of Contents
--[Sections](#sections)
+
 - [Title](#dev-portal)
 - [Short Description](#short-description)
 - [Long Description](#long-description)
@@ -66,7 +66,8 @@ $ yarn start
 
 **Suggestions:**
 
-### Maintainers 
+### Maintainers
+
 - Phillip Lorenzo
 
 ### Contributing
@@ -85,7 +86,7 @@ See the [LICENSE.md](LICENSE) file for license details.
 
 ## Credits
 
-Made with 🔥and ❄️ by [XY - The Persistent Company](https://www.xy.company)
+Made with 🔥and ❄️ by [XYO](https://www.xyo.network)
 
 This portal is developed with [Docusaurus](https://docusaurus.io/).
 
