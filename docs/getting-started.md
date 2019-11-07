@@ -140,12 +140,12 @@ We are looking at Q1 2020 for the initial launch of these pathways. This include
 
 Communication will be important in this effort to grow our open source. Chats, GitHub communication, and Discord chat are highly encouraged and recommended. 
 
-  <a
-    href="https://discord.gg/sGVp73B"
-    target="_blank"
-    rel="noreferrer noopener"
-  >
-    Join Our XYO Developer Community on Discord
+  <a href="https://discord.gg/sGVp73B" 
+      rel="noopener noreferrer"
+      target="_blank"
+     >
+        Join Our XYO Developer Community on Discord
+    <i class="p-2 fas fa-external-link-alt"></i>
   </a>
 
 ### Code of Conduct
