@@ -101,6 +101,14 @@ Direct contribution from developers is encouraged to our open source projects. T
 
 Direct contribution includes code contributions through pull requests, issue reporting, and feature proposals.
 
+  <a href="https://github.com/XYOracleNetwork/xyo-foundation/blob/master/bestpractices/contributing.md" 
+      rel="noopener noreferrer"
+      target="_blank"
+     >
+        Please view our contribution guidelines here.
+    <i class="p-2 fas fa-external-link-alt"></i>
+  </a>
+
 ### Community Collaboration
 
 Community collaboration on projects that are utilizing our tools for their use cases is highly encouraged. In the spirit of interoperability, we also encourage other projects in the dApp space to reach out and collaborate together on projects utilizing XYO tech. 
@@ -138,19 +146,21 @@ We are looking at Q1 2020 for the initial launch of these pathways. This include
 
 ### Communication
 
-Communication will be important in this effort to grow our open source. Chats, GitHub communication, and Discord chat are highly encouraged and recommended. 
+Communication will be important in this effort to grow our open source. GitHub communication through topics, pull requests, issue creation, and code reviews are highly encouraged and recommended. 
 
-  <a href="https://discord.gg/sGVp73B" 
+  <a href="https://github.com/XYOracleNetwork" 
       rel="noopener noreferrer"
       target="_blank"
      >
-        Join Our XYO Developer Community on Discord
+        Start at our GitHub
     <i class="p-2 fas fa-external-link-alt"></i>
   </a>
 
+Once you are in our GitHub organization page, find the repo that you are interested in and/or working on and click on the topic link under the title. 
+
 ### Code of Conduct
 
-[Please see our code of conduct here.]()
+[Please see our code of conduct here.](https://github.com/XYOracleNetwork/xyo-foundation/blob/master/CODE_OF_CONDUCT.md)
 
 ### Leaders
 
