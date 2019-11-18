@@ -14,7 +14,8 @@
       "SDK-Package-Node",
       "SDK-Core-Swift",
       "kotlin-getting-started"
-    ]
+    ],
+    "Tools": ["XYO-Tools"]
   },
   "docs-other": {
     "API-Reference": []
