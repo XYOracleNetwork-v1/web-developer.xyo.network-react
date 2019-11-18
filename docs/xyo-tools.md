@@ -4,7 +4,7 @@ title: XYO Tools
 ---
 
 <div class="alert alert-info text-center" role="alert">
-  <h3>Here is a complete listing of all XYO software tools in the wild.</h3> 
+  <h3>Here is a complete listing of all automation tools that XYO uses for SDKs, apps, and other tools in development.</h3> 
 </div>
 
 ## Finding our SDKs
