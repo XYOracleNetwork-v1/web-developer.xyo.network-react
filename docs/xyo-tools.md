@@ -137,6 +137,16 @@ Graded tool that lets you know well our code meets standards.
     <img src="https://api.codacy.com/project/badge/Grade/fafa47b9956b4b9fa05fee8619b79f38"/>
 </a>
 
+<h3 class="text-center">SDK Diviner NodeJS</h3>
+
+<a 
+  href="https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=XYOracleNetwork/sdk-diviner-nodejs&amp;utm_campaign=Badge_Grade"
+  rel="noopener noreferrer"
+  target="\_blank"
+  class="font-weight-bold">
+  <img src="https://api.codacy.com/project/badge/Grade/ac5532f7a9384c4a913301e74ea0ad6a"/>
+</a>
+
 <h3 class="text-center">SDK Dache NodeJS</h3>
 
 <a 
@@ -147,9 +157,9 @@ Graded tool that lets you know well our code meets standards.
     <img src="https://api.codacy.com/project/badge/Grade/9977150c536b421b849f5b196824a8e4"/>
 </a>
 
-### Synk
+### Snyk
 
-The state of the dependencies that our tools use. 
+We use snyk.io for the state of the dependencies that our tools use. 
 
 ### BetterCode Hub
 
@@ -158,3 +168,7 @@ Another tool that we use to ensure our code meets and/or exceeds standards.
 ### CodeClimate
 
 The maintainability of our code. 
+
+<div class="alert alert-danger text-center" role="alert">
+  <h3>Please note that the automated tools that we use are subject to change based on business needs and considered input by the development community and the dev staff at XYO</h3> 
+</div>
