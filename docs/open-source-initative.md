@@ -26,7 +26,7 @@ Direct contribution from developers is encouraged to our open source projects. T
 
 Direct contribution includes code contributions through pull requests, issue reporting, and feature proposals.
 
-  <a href="<https://github.com/XYOracleNetwork/xyo-foundation/blob/master/bestpractices/contributing.md>" 
+  <a href="https://github.com/XYOracleNetwork/xyo-foundation/blob/master/bestpractices/contributing.md" 
      rel="noopener noreferrer"
      target="\_blank">
      Please view our contribution guidelines here.
@@ -74,7 +74,7 @@ We are looking at Q1 2020 for the initial launch of these pathways. This include
 
 Communication will be important in this effort to grow our open source. GitHub communication through topics, pull requests, issue creation, and code reviews are highly encouraged and recommended. 
 
-  <a href="<https://github.com/XYOracleNetwork>" 
+  <a href="https://github.com/XYOracleNetwork" 
      rel="noopener noreferrer"
      target="\_blank"
      >
