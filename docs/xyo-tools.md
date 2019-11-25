@@ -28,7 +28,7 @@ This page is also intended as a reference for all of our SDK Downloads in the ca
   <p>CI/CD Solution</p> 
 </div>
 
-Our primary CI/CD solution is [TravisCI](https://travis-ci.org) due to it's ease of use in setup, easy integration with GitHub, as well as its reporting tools. Travis gives us the flexibility we need across language and platform to test and deploy production code. 
+Our primary CI/CD solution is [Travis CI](https://travis-ci.org) due to it's ease of use in setup, easy integration with GitHub, as well as its reporting tools. Travis gives us the flexibility we need across language and platform to test and deploy production code. 
 
 <div class="alert alert-info" role="alert">
   <p>Code Quality</p> 
@@ -68,7 +68,7 @@ This is where you can find our Android SDKs and additional tools. (All in kotlin
     <img src='https://api.bintray.com/packages/xyoraclenetwork/xyo/sdk-ble-android/images/download.svg'>
 </a>
 
-### Cocoapods
+### CocoaPods
 
 This is where you can find our Swift SDKs and tools. 
 
@@ -198,7 +198,7 @@ Graded tool that lets you know well our code meets standards.
 
 We use [snyk.io](https://snyk.io) for the state of the dependencies that our tools use. 
 
-### CodeClimate
+### Code Climate
 
 We use [Code Climate](https://codeclimate.com/quality/) for an additional measure of maintainability of our code. 
 
