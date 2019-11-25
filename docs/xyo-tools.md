@@ -3,9 +3,46 @@ id: XYO-Tools
 title: XYO Tools
 ---
 
-<div class="alert alert-info text-center" role="alert">
+<div class="alert alert-primary text-center" role="alert">
   <h3>Here is a complete listing of all automation tools that XYO uses for SDKs, apps, and other tools in development.</h3> 
 </div>
+
+## Why we use these tools
+
+At the XYO Foundation, we strive for high-quality code that builds with safety for integration internally and externally. Automated CI/CD, dependency testing, and maintainability grading are essential to ensure that our code is usable across solutions and dev teams' needs.
+
+These tools also focus and discipline our team to create the best possible experience for developers, and ultimately, our end users. 
+
+<a href="https://stackshare.io/xyo-network/xyo-network" 
+    rel="noopener noreferrer"
+    target="_blank"
+    class="alert alert-success text-center font-weight-bold"
+    >
+      For more information on our stack please check out our stackshare page.
+  <i class="p-2 fas fa-external-link-alt"></i>
+</a>
+
+This page is also intended as a reference for all of our SDK Downloads in the case that any links are missed in the search for these resources, as well as the current code quality state of our Foundation code repositories. 
+
+<div class="alert alert-primary" role="alert">
+  <p>CI/CD Solution</p> 
+</div>
+
+Our primary CI/CD solution is [TravisCI](https://travis-ci.org) due to it's ease of use in setup, easy integration with GitHub, as well as its reporting tools. Travis gives us the flexibility we need across language and platform to test and deploy production code. 
+
+<div class="alert alert-info" role="alert">
+  <p>Code Quality</p> 
+</div>
+
+For a quick view into the quality of our code, we use [Codacy](https://www.codacy.com) for static code analysis. This helps us with code coverage, finding unnecessary duplication, security, and code complexity. We also strive to reduce our technical debt early in our development process rather than in active production. 
+
+We also continue to integrate [Code Climate](https://codeclimate.com/quality/) into our projects for a second assessment of code quality for certain projects.
+
+<div class="alert alert-warning" role="alert">
+  <p>Dependency maintenance</p> 
+</div>
+
+For open source library vulnerability management, we use [snyk.io](https://snyk.io). We need to ensure that the libraries our projects may depend on are updated and secure. 
 
 ## Finding our SDKs
 
@@ -159,16 +196,16 @@ Graded tool that lets you know well our code meets standards.
 
 ### Snyk
 
-We use snyk.io for the state of the dependencies that our tools use. 
-
-### BetterCode Hub
-
-Another tool that we use to ensure our code meets and/or exceeds standards. 
+We use [snyk.io](https://snyk.io) for the state of the dependencies that our tools use. 
 
 ### CodeClimate
 
-The maintainability of our code. 
+We use [Code Climate](https://codeclimate.com/quality/) for an additional measure of maintainability of our code. 
 
 <div class="alert alert-danger text-center" role="alert">
   <h3>Please note that the automated tools that we use are subject to change based on business needs and considered input by the development community and the dev staff at XYO</h3> 
+</div>
+
+<div class="alert alert-primary text-center" role="alert">
+  <p>The XYO Foundation is open to suggestions and recommendations on tools to use in the building of software. We recommend those suggestions be sent either on our Dev Community Slack Channel or through an issue on a particular XYO repo.</p> 
 </div>

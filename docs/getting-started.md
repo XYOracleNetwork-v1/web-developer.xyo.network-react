@@ -78,6 +78,12 @@ sidebar_label: Getting Started
   <iframe width="960" height="450" src="https://www.youtube.com/embed/LfBP_Dlmtuk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
 
+## Partnerships with the XYO Foundation
+
+<div class="alert alert-info text-center" role="alert">
+  <h3>For partnership opportunities, including enterprise applications of XYO technologies, please email us at partnerships@xyo.network with details on your project.</h3>
+</div>
+
 ## XYO OPEN SOURCE INITIATIVE
 
 Here at XYO, we see the importance of open source in the dApp space. 
