@@ -11,6 +11,11 @@ title: XYO OPEN SOURCE INITIATIVE
 
 Inline with this initiative is the formation of the **XYO Foundation**, the governing body of all XYO software tools and protocols. This nonprofit orgranization has been formed to serve the greater development community and grow meaningful conributions across our codebase. 
 
+<div class="alert alert-info text-center" role="alert">
+  <h3>For partnership opportunities, including enterprise applications of XYO technologies, please email us at partnerships@xyo.network with details on your project.</h3>
+</div>
+
+
 The foundation has pathways of participation which will give developers across skill levels and interests an opportunity to contribute to XYO software and to a decentralized, incentive-based geo-spatial location protocol.
 
 ## Contribution Pathways
@@ -39,9 +44,11 @@ Community collaboration on projects that are utilizing our tools for their use c
 
 Community collaboration can be accomplished via direct communication with the development community manager or through forum communication with a proposal for interoperability or a demonstration of a product that currently integrates XYO tech in any way and capacity.
 
+We also have a slack channel here. 
+
 ### XYO Helping Hand
 
-With approved projects, XYO developer help can be made available. This is beyond a chat assistance session or GitHub code review. Helping hand involves opportunities including pair programming and live code reviews. With certain projects we could provide architectual assistance, this would be done on a case-by-case basis. We hope that with XYO Helping Hand we can help your project use the full power of the XYO network. 
+With approved projects, XYO developer help can be made available. This is beyond a chat assistance session or GitHub code review. Helping hand involves opportunities including pair programming and live code reviews. With certain projects we could provide architectual assistance, this would be done on a case-by-case basis. We hope that with XYO Helping Hand we can help your project use the full power of the XYO network. We will reveal selection criteria for projects by Q1 2020.
 
 ### Smart Contracts
 
