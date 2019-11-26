@@ -66,9 +66,7 @@ We are looking at Q1 2020 for the initial launch of these pathways. This include
 ### Current Projects
 
 -   XYO SDKs
-
 -   FlowStake
-
 -   QJump
 
 ## Community
