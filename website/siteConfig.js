@@ -3212,8 +3212,8 @@ const products =
 
 const siteConfig = {
    // Title for your website.
-  title: '', 
-  tagline: 'XYO Source for developers.',
+  title: 'XYO Foundation', 
+  tagline: 'Developer Portal',
   url: 'https://developers.xyo.network', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
