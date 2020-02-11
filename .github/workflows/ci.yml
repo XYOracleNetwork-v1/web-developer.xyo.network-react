@@ -10,6 +10,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with: 
+        node-version: '10.x'
+    - uses: sonarsource/sonarcloud-github-action@master
+      env: 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
     - name: Build
       run: | 
             cd website
