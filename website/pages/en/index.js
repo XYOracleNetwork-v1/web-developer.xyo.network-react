@@ -28,7 +28,7 @@ class HomeSplash extends React.Component {
               target="_blank"
               className="btn btn-secondary btn-square mr-1"
               >
-              GET STARTED HERE 
+              GET STARTED 
             </a>
           </div>
           <div className="p-3">
@@ -38,7 +38,7 @@ class HomeSplash extends React.Component {
               target="_blank"
               className="btn btn-primary btn-square mr-1"
               >
-              LATEST NEWS AND UPDATES 
+              LATEST NEWS
             </a>
           </div>
         </div>
