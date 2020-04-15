@@ -3213,13 +3213,14 @@ const products =
 
 const siteConfig = {
    // Title for your website.
-  title: 'XYO Foundation', 
+  title: 'XYO Foundation Dev Portal', 
   tagline: 'Developer Portal',
   url: 'https://developers.xyo.network', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
+  disableHeaderTitle: true,
 
   // Used for publishing and more
   projectName: 'xyo-devs',
@@ -3239,7 +3240,7 @@ const siteConfig = {
   products,
 
   /* path to images for header/footer */
-  headerIcon: 'img/XYO_full_black.png',
+  headerIcon: 'img/XYO_icon_white.png',
   favicon: 'img/XYO_icon_colored.png',
   /* Colors for website */
   colors: {
@@ -3249,7 +3250,7 @@ const siteConfig = {
 
   fonts: {
     myFont: [
-      "Lato",
+      "Spartan",
       "Helvetica Neue"
     ],
     myOtherFont: [
@@ -3284,7 +3285,7 @@ const siteConfig = {
   // Show documentation's last update time.
   enableUpdateTime: true,
 
-  stylesheets: ['https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css', 'https://use.fontawesome.com/releases/v5.8.1/css/all.css', 'https://fonts.googleapis.com/css?family=Lato&display=swap'],
+  stylesheets: ['https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css', 'https://use.fontawesome.com/releases/v5.8.1/css/all.css', 'https://fonts.googleapis.com/css2?family=Spartan:wght@531&display=swap'],
 
   useEnglishUrl: true,
 

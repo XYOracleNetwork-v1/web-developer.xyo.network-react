@@ -1,11 +1,11 @@
 ---
-id: News and Updates
+id: news-and-updates
 title: Latest Updates 
 sidebar_label: Latest Updates
 ---
 
 <div class="alert alert-primary text-center" role="alert">
-  Latest Updates
+  Current News and Updates about XYO Tools and Open Source
 </div>
 
 ## A New SDK Guide 
