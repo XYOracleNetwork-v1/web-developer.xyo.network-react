@@ -1,23 +1,23 @@
 /* your custom css */
-@import url('https://fonts.googleapis.com/css?family=Lato:900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@531&display=swap');
 
 @-ms-viewport{
   width: device-width;
 }
 
 @font-face {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Spartan', sans-serif;
   font-display: auto;
-  src: local('Lato'), url('https://fonts.googleapis.com/css?family=Lato:900&display=swap');
+  src: local('Spartan'), url('https://fonts.googleapis.com/css2?family=Spartan:wght@531&display=swap');
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Spartan', sans-serif;
   color: black;
 }
 
 h1 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Spartan', sans-serif;
   letter-spacing: 5px;
 }
 
@@ -54,8 +54,8 @@ a.docs-next.button:hover {
 }
 
 .fixedHeaderContainer {
-  background-color: #ecf0f1;
-  color: #2C3E50;
+  background-color: #000B22;
+  color: #ecf0f1;
   padding: 10px 15px;
 }
 
@@ -65,19 +65,15 @@ a.docs-next.button:hover {
 }
 
 .navigationSlider .slidingNav ul li a {
-  color: #95a5a6;
+  color: #ecf0f1;
 }
 
 .navigationSlider .slidingNav ul li.siteNavItemActive a {
-  color: #95a5a6;
+  color: #ecf0f1;
 }
 
 .navigationSlider .slidingNav ul li.siteNavGroupActive a {
-  color: #95a5a6;
-}
-
-.navigationSlider .slidingNav ul li a:hover {
-  color: #2C3E50;
+  color: #ecf0f1;
 }
 
 .nav-footer {
@@ -111,7 +107,7 @@ a.docs-next.button:hover {
 }
 
 .xyoContainer {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Spartan', sans-serif;
   background-color: #232756;
   color: black;
 }

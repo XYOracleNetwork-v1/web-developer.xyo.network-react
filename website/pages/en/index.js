@@ -28,7 +28,17 @@ class HomeSplash extends React.Component {
               target="_blank"
               className="btn btn-secondary btn-square mr-1"
               >
-              GET STARTED HERE 
+              GET STARTED 
+            </a>
+          </div>
+          <div className="p-3">
+            <a
+              href = "https://developers.xyo.network/docs/en/news-and-updates/"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="btn btn-primary btn-square mr-1"
+              >
+              LATEST NEWS
             </a>
           </div>
         </div>
