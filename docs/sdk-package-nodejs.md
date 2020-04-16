@@ -1,7 +1,11 @@
 ---
 id: SDK-Package-Node
 title: NODE.JS CORE SDK
+sidebar_label: Node Core SDK
 ---
+
+> The XYO Foundation provides this source code available in our efforts to advance the understanding of the XYO Procotol and its possible uses. We continue to maintain this software in the interest of developer education. Usage of this source code is not intended for production. 
+
 <div class="alert alert-danger text-center" role="alert">
   <h3>Beta Software</h3>
   This documentation contains preliminary information about an API or technology in development. This information is subject to change, and software implemented according to this documentation should be tested.

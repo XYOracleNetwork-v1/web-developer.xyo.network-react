@@ -1,8 +1,11 @@
 ---
 id: explore-getting-started
 title: XYO EXPLORE
-sidebar_label: Getting Started with Explore
+sidebar_label: How To Use
 ---
+
+> The XYO Foundation provides this source code available in our efforts to advance the understanding of the XYO Procotol and its possible uses. We continue to maintain this software in the interest of developer education. Usage of this source code is not intended for production. Developer usage of the Explore app is intended for educational purposes on geospatial location blockchain protocol. 
+
 
 <div class="alert alert-danger text-center" role="alert">
   Difficulty Level: Intermediate to Advanced

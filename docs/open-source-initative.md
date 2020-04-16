@@ -1,7 +1,11 @@
 ---
 id: open-source
 title: XYO OPEN SOURCE INITIATIVE
+sidebar_label: Open Source Initiative
 ---
+
+> The XYO Foundation provides this source code available in our efforts to advance the understanding of the XYO Procotol and its possible uses. We continue to maintain this software in the interest of developer education. Usage of this source code is not intended for production. 
+
 
 <div class="alert alert-info text-center" role="alert">
   Here at XYO, we see the importance of open source in the dApp space. 

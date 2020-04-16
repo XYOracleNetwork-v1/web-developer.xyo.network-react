@@ -1,7 +1,10 @@
 ---
 id: scsc
 title: SCSC LIBRARY
+sidebar_label: SCSC Library
 ---
+
+> The XYO Foundation provides this source code available in our efforts to advance the understanding of the XYO Procotol and its possible uses. We continue to maintain this software in the interest of developer education. Usage of this source code is not intended for production. 
 
 <div class="alert alert-danger text-center" role="alert">
   <h3>Beta Software</h3>

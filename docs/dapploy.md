@@ -1,7 +1,11 @@
 ---
 id: dapploy
 title: DAPPLOY
+sidebar_label: Dapploy
 ---
+
+> The XYO Foundation provides this source code available in our efforts to advance the understanding of the XYO Procotol and its possible uses. We continue to maintain this software in the interest of developer education. Usage of this source code is not intended for production. 
+
 
 We've gone through the hoops of deploying dApps on the Ethereum Network and have nuked out all of the annoying parts to make dapployment a breeze.
 

@@ -1,7 +1,10 @@
 ---
 id: sdk-xyo-swift
-title: SWIFT SDK 
+title: SWIFT SDK
+sidebar_label: Swift SDK
 ---
+
+> The XYO Foundation provides this source code available in our efforts to advance the understanding of the XYO Procotol and its possible uses. We continue to maintain this software in the interest of developer education. Usage of this source code is not intended for production. 
 
 [![](https://img.shields.io/cocoapods/v/sdk-xyo-swift.svg?style=flat)](https://cocoapods.org/pods/sdk-xyo-swift)
 

@@ -1,7 +1,10 @@
 ---
 id: sdk-xyo-android
-title: ANDROID SDK 
+title: ANDROID SDK
+sidebar_label: Android SDK
 ---
+
+> The XYO Foundation provides this source code available in our efforts to advance the understanding of the XYO Procotol and its possible uses. We continue to maintain this software in the interest of developer education. Usage of this source code is not intended for production. 
 
 [![Download](https://api.bintray.com/packages/xyoraclenetwork/xyo/sdk-xyo-android/images/download.svg) ](https://bintray.com/xyoraclenetwork/xyo/sdk-xyo-android/_latestVersion)
 

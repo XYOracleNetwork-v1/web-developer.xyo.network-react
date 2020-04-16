@@ -14,11 +14,11 @@ class HomeSplash extends React.Component {
         </div>
         <div className="container text-center p-4">
           <h3 className="row justify-content-center m-1">
-            XYO is a open source geospatial location protocol which leverages nodes staking to contribute to an incentivized proof of origin.
-            This allows applications to confirm location data certainty for a myriad of use cases.
+            This portal is used to educate the developer community on our open source geospatial location protocol which leverages node staking to contribute to an incentivized proof of origin.
+            This allows applications to confirm location data certainty for a myriad of use cases. All guides and source code from the XYO Foundation is intended to educate and advance the understanding of the XYO Protocol.
           </h3>
           <h3>
-            We have two primary SDKs geared for development with iOS and Android. 
+            We host code and guides for SDKs geared to start development with iOS and Android. 
             We also have smart contract libraries which can be used as reference for contract creation for non ERC20 protocols.
           </h3>
           <div className="p-5">

@@ -4,6 +4,8 @@ title: GETTING STARTED
 sidebar_label: Getting Started
 ---
 
+> The XYO Foundation provides this source code available in our efforts to advance the understanding of the XYO Procotol and its possible uses. We continue to maintain this software in the interest of developer education. Usage of this source code is not intended for production. 
+
 <div class="alert alert-info text-center" role="alert">
   <p>Getting Started with XYO begins with learning about what XYO does, our plans for the future, our Explore application, our SDKs and our Clients</p>
 </div>
