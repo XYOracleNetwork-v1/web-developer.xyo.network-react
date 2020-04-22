@@ -13,19 +13,40 @@ sidebar_label: Android SDK
 **Include in your gradle**
 
 ```gradle
-    compile 'network.xyo:sdk-xyo-android:3.0.117'
+    compile 'network.xyo:sdk-xyo-android:3.1.33'
 ```
 
 **Include using Maven**
 
 ```maven
     <dependency>
-    <groupId>network.xyo</groupId>
-    <artifactId>sdk-xyo-android</artifactId>
-    <version>3.0.115</version>
-    <type>pom</type>
+        <groupId>network.xyo</groupId>
+        <artifactId>sdk-xyo-android</artifactId>
+        <version>3.1.33</version>
+        <type>pom</type>    
     </dependency>
 ```
+
+When using Android Studio and an Android device to test BLE Client and Server be sure to enable permissions and add an initialization function in your `MainActivity` 
+
+`AndroidManifest.xml`
+
+```xml
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+```
+
+`MainActivity.kt`
+
+```kotlin
+GlobalScope.launch {
+  // place initialization function here for node build needed
+  // you can look at the sample app for code example
+}
+```
+
+> As you are developing on the SDK, be sure to keep an eye out for updates, as they may include core and ble updates 
 
 **How to use**
 

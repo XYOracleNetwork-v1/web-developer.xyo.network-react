@@ -17,8 +17,8 @@ sidebar_label: Swift SDK
     platform :ios, '11.0'
     use_frameworks!
 
-    target '<Your Target Name>' do
-        pod 'sdk-xyo-swift', '1.0.1'
+    target 'YourAppName' do
+        pod 'sdk-xyo-swift', '1.0.17'
     end
 ```
 
@@ -79,18 +79,46 @@ You can set the bound witness delegate
     }
 ```
 
-You can also get payload data from bound witness. 
+You can also set a string payload data on any node that gets passed in a bound witness
 
 ```swift
     class SomeViewController: UIViewController, BoundWitnessDelegate {
         ...
-        func getPayloadData() {
-            return [UInt8]
+        if var bleClient = (xyoNode?.networks["ble"] as? XyoBleNetwork)?.client {
+          bleClient.pollingInterval = 10
+          bleClient.stringHeuristic = "Hi I'm Client"
+        }
+        
+        if var bleServer = (xyoNode?.networks["ble"] as? XyoBleNetwork)?.server {
+          bleServer.stringHeuristic = "Yo I'm Server"
         }
     }
 ```
 
-This will return a byteArray.
+The following extensions can be used to pull data from a bound witness.  Party index 0 is the server, party 1 is the client.
+
+**Payload parsing**
+
+Given the above example of passing strings, you can resolve those strings for client/server using:
+
+```swift
+    if let resolveStr = withBoundWitness?.resolveString(forParty: 0) {
+      dataStr += "Server: " + resolveStr
+    }
+    if let resolveStr1 = withBoundWitness?.resolveString(forParty: 1) {
+      dataStr += " Client: " + resolveStr1
+    }
+```
+
+You can get all heuristics in a dictionary for a given bound witness
+
+```swift
+ extension XyoBoundWitness {
+    func allHeuristics() : [String:String] {
+      return XyoHumanHeuristics.getAllHeuristics(self)
+    }
+ }
+```
 
 You can also try particular heuristic resolvers with the data you get, whether they are pre-made GPS, RSSI, or Time. You can also resolve heuristic data to a custom human readable form.
 
