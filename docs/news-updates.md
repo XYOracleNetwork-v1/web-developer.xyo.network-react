@@ -10,66 +10,63 @@ sidebar_label: Latest Updates
   Current News and Updates about XYO Tools and Open Source
 </div>
 
-## A New SDK Guide 
-
-We are working on a new SDK Guide that will recommend which one to use depending on the application and/or level of integration with XYO Bound Witness protocol tools. 
-
-These recommendations will emphasize higher-level SDKs first (the XYO SDK), and then core SDKs (Swift, Kotlin, Node), etc. 
-
-<a href="https://github.com/XYOracleNetwork" 
-    rel="noopener noreferrer"
-    target="_blank"
-    >
-      Documentation for SDKs are available at the XYO Foundation GitHub
-  <i class="p-2 fas fa-external-link-alt"></i>
-</a>
-
-## Gitcoin Driven Issue Funding
-
-We are now included as a currency through Gitcoin for funding of issues, within Q2 we will introduce initial issues to be funded. We are also working on an document explaining the payment levels for successful bounty completion. 
-
-## Software Updates 
-
-### SDK Core Kotlin
-> Version 3.0.44
-
-What's included: 
-  
-  - Object Model updates
-  - Dependency updates
-
-### XYO Bluetooth SDK
-> Version 3.1.1145
-
-What's included: 
-  
-  - Core Kotlin Updates
-  - Dependency updates
-
-### SDK Core Swift
-> Version 1.0.16
-
-What's included: 
-  
-  - Object Model Bug Fixes and Updates
-  - Dependency updates
+## Software Updates
 
 ### XYO Swift SDK
-> Version 1.0.16
+
+> Version 1.0.17
 
 What's included: 
-  
-  - Core Swift Update
-  - Dependency updates
 
-## Continued Development 
+-   Core Updates
+-   Bridge packet conditional timing
+-   Minor guide updates
+-   Dependency updates
 
-### XYO Android SDK 
-> Upcoming version 3.1.34
+### XYO Android SDK
 
-- Device detection improvements
-- Bound Witness improvements
+> Version 3.1.35
 
-## Note on GitHub Actions
+What's included: 
 
-A reminder that all CI/CD Actions are now handled through GitHub Actions. When contributing to an issue through a Pull Request, please keep this in mind with code review. 
+-   Core Updates
+-   Bridge packet send timing
+-   Minor guide updates
+-   Dependency updates
+
+### XYO Node App
+
+> Version 0.6.30
+
+What's included: 
+
+-   Update to prompt logic
+-   Dependency updates
+-   Security updates
+
+### XYO Base Node.js SDK 
+
+> Version 0.6.9
+
+What's included: 
+
+-   Dependency updates
+-   Security updates
+
+### XYO Diviner SDK 
+
+> Version 0.15.9
+
+What's included: 
+
+-   Dependency updates
+-   Security updates
+
+### XYO Node Client SDK 
+
+> Version 0.4.9
+
+What's included: 
+
+-   Dependency updates
+-   Security updates

@@ -1,6 +1,7 @@
 {
   "docs": {
     "Latest Updates": ["news-and-updates"],
+    "Past News": ["archived-news"],
     "Getting Started": ["getting-started"],
     "XYO Foundation": ["open-source"],
     "XYO Network App": ["XYO-Network-App"],
