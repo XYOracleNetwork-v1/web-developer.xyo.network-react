@@ -18,13 +18,10 @@ We are working on a new SDK Guide that will recommend which one to use depending
 
 These recommendations will emphasize higher-level SDKs first (the XYO SDK), and then core SDKs (Swift, Kotlin, Node), etc. 
 
-&lt;a href="<https://github.com/XYOracleNetwork>" 
+<a href="<https://github.com/XYOracleNetwork>" 
     rel="noopener noreferrer"
-    target="\_blank"
-
-    >
+    target="_blank">
       Documentation for SDKs are available at the XYO Foundation GitHub
-
   <i class="p-2 fas fa-external-link-alt"></i>
 </a>
 
