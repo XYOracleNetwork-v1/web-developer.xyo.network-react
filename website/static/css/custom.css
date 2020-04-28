@@ -60,7 +60,7 @@ a.docs-next.button:hover {
 }
 
 .fixedHeaderContainer header img {
-  height: 30px;
+  height: 45px;
   margin-right: 10px;
 }
 
@@ -74,6 +74,26 @@ a.docs-next.button:hover {
 
 .navigationSlider .slidingNav ul li.siteNavGroupActive a {
   color: #ecf0f1;
+}
+
+@media only screen and (max-width: 1023px) {
+  .navigationSlider .slidingNav ul li a {
+    color: #ecf0f1;
+    background-color: #000B22;
+  }
+
+  #docsNav.docsNavContainer {
+    padding: 5px;
+    margin-top: -22px;
+  }
+
+  .fixedHeaderContainer {
+    display: flex;
+  }
+
+  .post {
+    margin-top: 50px;
+  }
 }
 
 .nav-footer {
