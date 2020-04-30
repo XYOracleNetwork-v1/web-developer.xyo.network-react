@@ -19,6 +19,15 @@ sidebar_label: SDK Guide
 
 This SDK Guide is specific to tools for mobile development and covering the sentinel and bridge nodes in the XYO protocol. For information on SDK and App Guides for Node, that will be coming soon with an update. 
 
+## Overview 
+
+### Why Integrate the XYO SDK
+
+  - Scan for devices
+  - Start Bound Witnesses 
+  - Complete Bound Witnesses
+  - Grab payload data
+
 ## For Integration 
 
 ### Bound Witness Protocol
