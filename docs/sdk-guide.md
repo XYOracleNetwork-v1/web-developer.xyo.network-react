@@ -115,9 +115,17 @@ Readme guides are also available in each SDK, and derive their examples from the
 
 Device scanning (client) and listening (server) are key to initiating Bound Witnesses. Keep in mind that the client to server association is not directly associated with the sentinel/bridge concept. This is specific to how we want devices to listen for and send bound witness blocks. 
 
+We need information from devices in order to get key heuristics that support bound witness strength like RSSI (Received Signal Strength Indicator), and additional data such as GPS, temperature, and manufacturer data. These heuristics can confirm bound witness participants without being dependent on each other. 
+
 ### BLE
 
+Mobile operating systems support Bluetooth Low Energy (BLE) which is also supported by various IoT devices. BLE is core to the XYO Bound Witness protocol to access a multitude of data available from IoT sensors such as beacons, temperature/pressure sensors, and applications in healthcare and security. 
+
+When using the XYO SDK and testing for scanning and bound witnessing, the user needs to ensure that the correct bluetooth settings and permissions are enabled on device. This adds accuracy to the testing of the integration and will help with debugging. 
+
 ### Bound Witness Packets
+
+Once we get a bound witness, we have to get the heuristics utilizing the `XyoObjectStructure` and `XyoIterableStructure` to collect the heuristics. We can use the client to add heurtistics that we want and then once a bound witness is created we can use the heuristics we added in the payload from the bound witness. 
 
 ## When to use Core and Base SDKs
 
