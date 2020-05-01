@@ -26,9 +26,39 @@ This SDK Guide is specific to tools for mobile development and covering the sent
   - Scan for devices
   - Start Bound Witnesses 
   - Complete Bound Witnesses
-  - Grab payload data
+  - Grab payload
+  - Send Bound Witness with complete payload
 
-## For Integration 
+## Node and Bound Witnessing
+
+### Using the Node Builder
+
+Integration with the XYO SDKs is built on a Node Builder which has methods for scanning and listening for devices, and bound witness bridging. The node builder is the primary object that should give you all the tooling you need to start bound witnessing between devices. 
+
+The node builder at its simplest is as follows: 
+
+Android
+
+```kotlin
+  val node = XyoNodeBuilder().build(context)
+```
+
+iOS
+
+```swift
+  let builder = XyoNodeBuilder().setBoundWitnessDelegate(self)
+
+  let node = try builder.build()
+
+```
+
+Flutter
+
+```dart
+
+final builder = XyoNodeBuilder();
+
+```
 
 ### Bound Witness Protocol
 
@@ -80,34 +110,6 @@ Flutter, as included peferably in the `Flexible` Widget.
       final count = bws.length;
 ```
 
-### Using the Node Builder
-
-Integration with the XYO SDKs is built on a Node Builder which has methods for scanning and listening for devices, and bound witness bridging. The node builder is the primary object that should give you all the tooling you need to start bound witnessing between devices. 
-
-The node builder at its simplest is as follows: 
-
-Android
-
-```kotlin
-  val node = XyoNodeBuilder().build(context)
-```
-
-iOS
-
-```swift
-  let builder = XyoNodeBuilder().setBoundWitnessDelegate(self)
-
-  let node = try builder.build()
-
-```
-
-Flutter
-
-```dart
-
-final builder = XyoNodeBuilder();
-
-```
 ## Sample Apps 
 
 ### For Android, iOS, Flutter
@@ -135,6 +137,8 @@ When using the XYO SDK and testing for scanning and bound witnessing, the user n
 ### Bound Witness Packets
 
 Once we get a bound witness, we have to get the heuristics utilizing the `XyoObjectStructure` and `XyoIterableStructure` to collect the heuristics. We can use the client to add heurtistics that we want and then once a bound witness is created we can use the heuristics we added in the payload from the bound witness. 
+
+With the payload set, we can now send this packet to an archivist. Your solution should account for how to store these bound witnesses for querying and for application functionality. You may also want your solution to initiate an event when the bound witness is complete with payload. 
 
 ## When to use Core and Base SDKs
 
