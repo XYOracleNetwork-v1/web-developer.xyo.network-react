@@ -49,7 +49,7 @@ class Footer extends React.Component {
             <div>
               <h5>Docs</h5>
               <a href="https://explore.xyo.network/" target="_blank" rel="noopener noreferrer">
-                Explore
+                Explore App
               </a>
               <a href="https://xyo.network/protocol/" target="_blank" rel="noopener noreferrer">
                 Protocol
