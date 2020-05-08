@@ -46,6 +46,41 @@ class LinkTag extends React.Component {
   }
 }
 
+class PrimaryGetLink extends React.Component {
+  
+  render() {
+    return (
+        <a
+          href={this.props.href} 
+          rel="noopener noreferrer"
+          target="_blank"
+          className="btn btn-square mr-1"
+          style={{ backgroundColor: '#2c3e50', color: '#fff'}}
+        >
+          <span className="pr-2">{this.props.children}</span>
+          <i className="fas fa-external-link-alt"></i>
+        </a>
+    )
+  }
+}
+
+class SecondaryGetLink extends React.Component {
+  
+  render() {
+    return (
+        <a
+          href={this.props.href} 
+          rel="noopener noreferrer"
+          target="_blank"
+          className="btn btn-secondary btn-square mr-1"
+        >
+          <span className="pr-2">{this.props.children}</span>
+          <i className="fas fa-external-link-alt"></i>
+        </a>
+    )
+  }
+}
+
 const IntroText = () => (
   <div>
     <h3 className="row justify-content-center m-1">
@@ -103,33 +138,21 @@ const Client = () => (
           <p className="card-text">Turn your devices into a Sentinel, Bridge, Archivist or Diviner</p>
           <div>
             <div>
-              <a 
+              <PrimaryGetLink 
                 href="https://xyo.network/install/"
-                rel="noopener noreferrer" 
-                target="_blank"
-                className="btn btn-square mr-1"
-                style={{ backgroundColor: '#2c3e50', color: '#fff'}}
               >
-                <span className="pr-2">Get</span>
-                <i className="fas fa-external-link-alt"></i>
-              </a>
-              <a 
+                Get
+              </PrimaryGetLink>
+              <SecondaryGetLink 
                 href="https://github.com/XYOracleNetwork"
-                rel="noopener noreferrer" 
-                target="_blank"
-                className="btn btn-secondary btn-square mr-1"
               >
-                <span className="pr-2">GitHub</span>
-                <i className="fas fa-external-link-alt"></i>
-              </a>
-              <a 
+                GitHub
+              </SecondaryGetLink>
+              <SecondaryGetLink 
                 href="https://developers.xyo.network/docs/en/bridge-x/"
-                rel="noopener noreferrer" 
-                target="_blank"
-                className="btn btn-secondary btn-square disabled mr-1"
               >
                 Docs - Coming Soon
-              </a>
+              </SecondaryGetLink>
             </div>
           </div>
         </div>
@@ -147,41 +170,26 @@ const SDK = () => (
         <h3 className="card-title">SDKs for XYO Components</h3>
         <p className="card-text">Add XYO Proof of Origin and Bound Witness functions to your project</p>
         <div>
-          <a 
+          <PrimaryGetLink 
             href="https://xyo.network/sdks/" 
-            rel="noopener noreferrer"
-            target="_blank"
-            className="btn btn-square mr-1"
-            style={{ backgroundColor: '#2c3e50', color: '#fff'}}
           >
-            <span className="pr-2">Get</span>
-            <i className="fas fa-external-link-alt"></i>
-          </a>
-          <a 
+            Get
+          </PrimaryGetLink>
+          <SecondaryGetLink 
             href="https://github.com/XYOracleNetwork" 
-            rel="noopener noreferrer"
-            target="_blank"
-            className="btn btn-secondary btn-square mr-1"
           >
-            <span className="pr-2">GitHub</span>
-            <i className="fas fa-external-link-alt"></i>
-          </a>
-          <a
+            GitHub
+          </SecondaryGetLink>
+          <SecondaryGetLink
             href="https://developers.xyo.network/docs/en/sdk-xyo-swift/"
-            rel="noopener noreferrer"
-            target="_blank"
-            className="btn btn-secondary btn-square mr-1"
           >
             XYO Swift Guide 
-          </a>
-          <a
+          </SecondaryGetLink>
+          <SecondaryGetLink
             href="https://developers.xyo.network/docs/en/sdk-xyo-android/"
-            rel="noopener noreferrer"
-            target="_blank"
-            className="btn btn-secondary btn-square mr-1"
           >
             XYO Android Guide
-          </a>
+          </SecondaryGetLink>
         </div>
       </div>
     </div>
