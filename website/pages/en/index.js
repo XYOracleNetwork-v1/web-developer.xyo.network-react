@@ -46,19 +46,25 @@ class LinkTag extends React.Component {
   }
 }
 
+const IntroText = () => (
+  <div>
+    <h3 className="row justify-content-center m-1">
+      This portal is used to educate the developer community on our open source geospatial location protocol which leverages node staking to contribute to an incentivized proof of origin.
+    </h3>
+    <h3>
+      We host code and guides for SDKs geared to start development with iOS and Android. 
+      We also have smart contract libraries which can be used as reference for contract creation for non ERC20 protocols.
+    </h3>
+  </div>
+)
+
 const Intro = () => (
   <div>
     <div className="pt-2">
       <h1 className="text-center">XYO DEVELOPER PORTAL</h1>
     </div>
       <div className="container text-center p-4">
-        <h3 className="row justify-content-center m-1">
-          This portal is used to educate the developer community on our open source geospatial location protocol which leverages node staking to contribute to an incentivized proof of origin.
-        </h3>
-        <h3>
-          We host code and guides for SDKs geared to start development with iOS and Android. 
-          We also have smart contract libraries which can be used as reference for contract creation for non ERC20 protocols.
-        </h3>
+        <IntroText />
         <div className="p-3">
           <LinkTag href="https://developers.xyo.network/docs/en/news-and-updates/">
             LATEST NEWS
