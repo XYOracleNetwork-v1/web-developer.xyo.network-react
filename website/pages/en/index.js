@@ -28,6 +28,24 @@ class HomeSplash extends React.Component {
   }
 }
 
+class LinkTag extends React.Component {
+  
+  render() {
+    return (
+      <div>
+        <a
+          href={this.props.href} 
+          rel="noopener noreferrer"
+          target="_blank"
+          className="btn btn-primary btn-square mr-1"
+        >
+          {this.props.children}
+        </a>
+      </div>
+    )
+  }
+}
+
 const Intro = () => (
   <div>
     <div className="pt-2">
@@ -41,7 +59,11 @@ const Intro = () => (
           We host code and guides for SDKs geared to start development with iOS and Android. 
           We also have smart contract libraries which can be used as reference for contract creation for non ERC20 protocols.
         </h3>
-        <NewsLink />
+        <div className="p-3">
+          <LinkTag href="https://developers.xyo.network/docs/en/news-and-updates/">
+            LATEST NEWS
+          </LinkTag>
+        </div>
         <br></br>
         <Changemaker />
       </div>    
@@ -56,7 +78,11 @@ const Changemaker = () => (
     <picture>
       <img alt="ucsd" className=".img-fluid p-3" src="/docs/assets/UCSanDiegoLogo-BlueGold.png"></img>
     </picture>
-    <ChangemakerLink />
+    <div className="p-5">
+      <LinkTag href="https://developers.xyo.network/docs/en/changemaker-challenge/">
+        CHANGEMAKER CHALLENGE 
+      </LinkTag>
+    </div>    
   </div>
 )
 
@@ -154,32 +180,6 @@ const SDK = () => (
       </div>
     </div>
   </div>
-)
-
-const NewsLink = () => (
-  <div className="p-3">
-    <a
-      href="https://developers.xyo.network/docs/en/news-and-updates/"
-      rel="noopener noreferrer"
-      target="_blank"
-      className="btn btn-primary btn-square mr-1"
-    >
-      LATEST NEWS
-    </a>
-  </div> 
-)
-
-const ChangemakerLink = () => (
-<div className="p-5">
-  <a
-    href="https://developers.xyo.network/docs/en/changemaker-challenge/"
-    rel="noopener noreferrer"
-    target="_blank"
-    className="btn btn-primary btn-square mr-1"
-    >
-    CHANGEMAKER CHALLENGE 
-  </a>
-</div>  
 )
 
 class Index extends React.Component {
