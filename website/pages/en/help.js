@@ -19,40 +19,36 @@ function Help(props) {
   const langPart = `${language ? `${language}/` : ''}`;
   const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
 
-  const supportLinks = [
-    {
-      content: `Learn more using the [documentation on this site.](${docUrl(
-        'introduction.html',
-      )})`,
-      title: 'Browse Docs',
-    },
-    {
-      content: 'Ask questions about the documentation and project',
-      title: '[Join the community](https://geohackers.xyo.network/)',
-    },
-    {
-      content: "Find out what's new with this project",
-      title: 'Stay up to date',
-    },
-  ];
-
   return (
-    <HelpWrapper />
+    <div className="docMainWrapper wrapper">
+      <Container className="mainContainer documentContainer postContainer">
+        <div className="post">
+          <header className="postHeader">
+            <h1>Need help?</h1>
+          </header>
+          <p>This project is maintained by the XYO team.</p>
+          <GridBlock contents={supportLinks} layout="threeColumn" />
+        </div>
+      </Container>
+    </div>
   );
 }
 
-const HelpWrapper = () => (
-    <div className="docMainWrapper wrapper">
-    <Container className="mainContainer documentContainer postContainer">
-      <div className="post">
-        <header className="postHeader">
-          <h1>Need help?</h1>
-        </header>
-        <p>This project is maintained by the XYO team.</p>
-        <GridBlock contents={supportLinks} layout="threeColumn" />
-      </div>
-    </Container>
-  </div>
-)
+const supportLinks = [{
+    content: `Learn more using the [documentation on this site.](${docUrl(
+      'introduction.html',
+    )})`,
+    title: 'Browse Docs',
+  },
+  {
+    content: 'Ask questions about the documentation and project',
+    title: '[Join the community](https://geohackers.xyo.network/)',
+  },
+  {
+    content: "Find out what's new with this project",
+    title: 'Stay up to date',
+  },
+];
+
 
 module.exports = Help;
