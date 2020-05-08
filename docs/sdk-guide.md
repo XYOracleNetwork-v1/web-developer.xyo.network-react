@@ -19,6 +19,8 @@ sidebar_label: SDK Guide
 
 This SDK Guide is specific to tools for mobile development and covering the sentinel and bridge nodes in the XYO protocol. For information on SDK and App Guides for Node, that will be coming soon with an update. 
 
+As this is an overview of our three mobile SDKs, please refer to the specific guide of choice. 
+
 ## Overview 
 
 ### Why Integrate the XYO SDK
@@ -29,11 +31,27 @@ This SDK Guide is specific to tools for mobile development and covering the sent
   - Grab payload
   - Send Bound Witness with complete payload
 
+## Naming conventions and Bluetooth Foundations
+
+As Bluetooth is based on a client-server architecture, we name the `central` and `peripheral` as `client` and `server` respectively. This allows developers to think about communicating data across devices.  
+
+For a Bluetooth Overview, please refer to these materials 
+
+<a href="https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/CoreBluetoothOverview/CoreBluetoothOverview.html" 
+    rel="noopener noreferrer"
+    target="_blank"
+    >
+      Apple developer Bluetooth Overview
+  <i class="p-2 fas fa-external-link-alt"></i>
+</a>
+
 ## Node and Bound Witnessing
 
 ### Using the Node Builder
 
 Integration with the XYO SDKs is built on a Node Builder which has methods for scanning and listening for devices, and bound witness bridging. The node builder is the primary object that should give you all the tooling you need to start bound witnessing between devices. 
+
+The node builder has methods that allow the client to identify which heurtistics to scan for, bridging, and bound witnessing. 
 
 The node builder at its simplest is as follows: 
 
