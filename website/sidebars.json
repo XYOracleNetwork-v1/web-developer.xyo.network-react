@@ -1,8 +1,8 @@
 {
   "docs": {
-    "Latest Updates": ["news-and-updates"],
-    "Past News": ["archived-news"],
     "Getting Started": ["getting-started"],
+    "Updates": ["news-and-updates", "archived-news"],
+    "Changemaker Challenge": ["changemaker-challenge"],
     "Using our Mobile SDKs": ["sdk-guide"],
     "XYO Foundation": ["open-source"],
     "XYO Network App": ["XYO-Network-App"],

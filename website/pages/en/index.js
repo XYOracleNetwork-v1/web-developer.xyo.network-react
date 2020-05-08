@@ -15,30 +15,36 @@ class HomeSplash extends React.Component {
         <div className="container text-center p-4">
           <h3 className="row justify-content-center m-1">
             This portal is used to educate the developer community on our open source geospatial location protocol which leverages node staking to contribute to an incentivized proof of origin.
-            This allows applications to confirm location data certainty for a myriad of use cases. All guides and source code from the XYO Foundation is intended to educate and advance the understanding of the XYO Protocol.
           </h3>
           <h3>
             We host code and guides for SDKs geared to start development with iOS and Android. 
             We also have smart contract libraries which can be used as reference for contract creation for non ERC20 protocols.
           </h3>
-          <div className="p-5">
-            <a
-              href="https://developers.xyo.network/docs/en/getting-started/"
-              rel="noopener noreferrer"
-              target="_blank"
-              className="btn btn-secondary btn-square mr-1"
-              >
-              GET STARTED 
-            </a>
-          </div>
           <div className="p-3">
             <a
-              href = "https://developers.xyo.network/docs/en/news-and-updates/"
+              href="https://developers.xyo.network/docs/en/news-and-updates/"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="btn btn-primary btn-square mr-1"
+            >
+              LATEST NEWS
+            </a>
+          </div>
+          <br></br>
+          <h3 className="p-3">
+            We are also proud to partner with UC San Diego on the first ever Changemaker Challenge.
+          </h3>
+          <picture>
+            <img alt="ucsd" className=".img-fluid p-3" src="/docs/assets/UCSanDiegoLogo-BlueGold.png"></img>
+          </picture>
+          <div className="p-5">
+            <a
+              href="https://developers.xyo.network/docs/en/changemaker-challenge/"
               rel="noopener noreferrer"
               target="_blank"
               className="btn btn-primary btn-square mr-1"
               >
-              LATEST NEWS
+              CHANGEMAKER CHALLENGE 
             </a>
           </div>
         </div>
