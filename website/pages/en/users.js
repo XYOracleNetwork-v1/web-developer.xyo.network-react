@@ -11,15 +11,15 @@ const CompLibrary = require('../../core/CompLibrary.js');
 
 const Container = CompLibrary.Container;
 
+const {config: siteConfig} = this.props;
+  if ((siteConfig.users || []).length === 0) {
+    return null;
+}
+
 const editUrl = `${siteConfig.repoUrl}/edit/master/website/siteConfig.js`;
 
 class Users extends React.Component {
   render() {
-    const {config: siteConfig} = this.props;
-    if ((siteConfig.users || []).length === 0) {
-      return null;
-    }
-
     const showcase = siteConfig.users.map(user => (
       <a href={user.infoLink} key={user.infoLink}>
         <img src={user.image} alt={user.caption} title={user.caption} />
