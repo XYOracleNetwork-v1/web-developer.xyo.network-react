@@ -4,6 +4,7 @@
 const React = require('react');
 
 class HomeSplash extends React.Component {
+
   render() {
 
     // eslint-disable-next-line no-unused-vars
@@ -40,16 +41,7 @@ const Intro = () => (
           We host code and guides for SDKs geared to start development with iOS and Android. 
           We also have smart contract libraries which can be used as reference for contract creation for non ERC20 protocols.
         </h3>
-        <div className="p-3">
-          <a
-            href="https://developers.xyo.network/docs/en/news-and-updates/"
-            rel="noopener noreferrer"
-            target="_blank"
-            className="btn btn-primary btn-square mr-1"
-          >
-            LATEST NEWS
-          </a>
-        </div>
+        <NewsLink />
         <br></br>
         <Changemaker />
       </div>    
@@ -64,16 +56,7 @@ const Changemaker = () => (
     <picture>
       <img alt="ucsd" className=".img-fluid p-3" src="/docs/assets/UCSanDiegoLogo-BlueGold.png"></img>
     </picture>
-    <div className="p-5">
-      <a
-        href="https://developers.xyo.network/docs/en/changemaker-challenge/"
-        rel="noopener noreferrer"
-        target="_blank"
-        className="btn btn-primary btn-square mr-1"
-        >
-        CHANGEMAKER CHALLENGE 
-      </a>
-    </div>    
+    <ChangemakerLink />
   </div>
 )
 
@@ -171,6 +154,32 @@ const SDK = () => (
       </div>
     </div>
   </div>
+)
+
+const NewsLink = () => (
+  <div className="p-3">
+    <a
+      href="https://developers.xyo.network/docs/en/news-and-updates/"
+      rel="noopener noreferrer"
+      target="_blank"
+      className="btn btn-primary btn-square mr-1"
+    >
+      LATEST NEWS
+    </a>
+  </div> 
+)
+
+const ChangemakerLink = () => (
+<div className="p-5">
+  <a
+    href="https://developers.xyo.network/docs/en/changemaker-challenge/"
+    rel="noopener noreferrer"
+    target="_blank"
+    className="btn btn-primary btn-square mr-1"
+    >
+    CHANGEMAKER CHALLENGE 
+  </a>
+</div>  
 )
 
 class Index extends React.Component {
