@@ -37,18 +37,22 @@ function Help(props) {
   ];
 
   return (
-    <div className="docMainWrapper wrapper">
-      <Container className="mainContainer documentContainer postContainer">
-        <div className="post">
-          <header className="postHeader">
-            <h1>Need help?</h1>
-          </header>
-          <p>This project is maintained by the XYO team.</p>
-          <GridBlock contents={supportLinks} layout="threeColumn" />
-        </div>
-      </Container>
-    </div>
+    <HelpWrapper />
   );
 }
+
+const HelpWrapper = () => (
+    <div className="docMainWrapper wrapper">
+    <Container className="mainContainer documentContainer postContainer">
+      <div className="post">
+        <header className="postHeader">
+          <h1>Need help?</h1>
+        </header>
+        <p>This project is maintained by the XYO team.</p>
+        <GridBlock contents={supportLinks} layout="threeColumn" />
+      </div>
+    </Container>
+  </div>
+)
 
 module.exports = Help;
