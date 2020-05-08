@@ -32,51 +32,31 @@ class LinkTag extends React.Component {
   
   render() {
     return (
-      <div>
-        <a
-          href={this.props.href} 
-          rel="noopener noreferrer"
-          target="_blank"
-          className="btn btn-primary btn-square mr-1"
-        >
-          {this.props.children}
-        </a>
-      </div>
+      <a
+        href={this.props.href} 
+        rel="noopener noreferrer"
+        target="_blank"
+        className={this.props.className}
+        style={this.props.style}
+      >
+        {this.props.children}
+      </a>
     )
   }
 }
 
-class PrimaryGetLink extends React.Component {
+class GetLink extends React.Component {
   
   render() {
     return (
-        <a
-          href={this.props.href} 
-          rel="noopener noreferrer"
-          target="_blank"
-          className="btn btn-square mr-1"
-          style={{ backgroundColor: '#2c3e50', color: '#fff'}}
+        <LinkTag
+          href={this.props.href}
+          className={this.props.className}
+          style={this.props.style}
         >
           <span className="pr-2">{this.props.children}</span>
           <i className="fas fa-external-link-alt"></i>
-        </a>
-    )
-  }
-}
-
-class SecondaryGetLink extends React.Component {
-  
-  render() {
-    return (
-        <a
-          href={this.props.href} 
-          rel="noopener noreferrer"
-          target="_blank"
-          className="btn btn-secondary btn-square mr-1"
-        >
-          <span className="pr-2">{this.props.children}</span>
-          <i className="fas fa-external-link-alt"></i>
-        </a>
+        </LinkTag>
     )
   }
 }
@@ -101,7 +81,10 @@ const Intro = () => (
       <div className="container text-center p-4">
         <IntroText />
         <div className="p-3">
-          <LinkTag href="https://developers.xyo.network/docs/en/news-and-updates/">
+          <LinkTag 
+            href="https://developers.xyo.network/docs/en/news-and-updates/"
+            className="btn btn-primary btn-square mr-1"
+          >
             LATEST NEWS
           </LinkTag>
         </div>
@@ -120,7 +103,10 @@ const Changemaker = () => (
       <img alt="ucsd" className=".img-fluid p-3" src="/docs/assets/UCSanDiegoLogo-BlueGold.png"></img>
     </picture>
     <div className="p-5">
-      <LinkTag href="https://developers.xyo.network/docs/en/changemaker-challenge/">
+      <LinkTag 
+        href="https://developers.xyo.network/docs/en/changemaker-challenge/"
+        className="btn btn-primary btn-square mr-1"
+      >
         CHANGEMAKER CHALLENGE 
       </LinkTag>
     </div>    
@@ -138,21 +124,25 @@ const Client = () => (
           <p className="card-text">Turn your devices into a Sentinel, Bridge, Archivist or Diviner</p>
           <div>
             <div>
-              <PrimaryGetLink 
+              <GetLink 
                 href="https://xyo.network/install/"
+                className="btn btn-square mr-1"
+                style={{ backgroundColor: '#2c3e50', color: '#fff'}}
               >
                 Get
-              </PrimaryGetLink>
-              <SecondaryGetLink 
+              </GetLink>
+              <GetLink 
                 href="https://github.com/XYOracleNetwork"
+                className="btn btn-secondary btn-square mr-1"
               >
                 GitHub
-              </SecondaryGetLink>
-              <SecondaryGetLink 
+              </GetLink>
+              <GetLink 
                 href="https://developers.xyo.network/docs/en/bridge-x/"
+                className="btn btn-secondary btn-square mr-1 disabled"
               >
                 Docs - Coming Soon
-              </SecondaryGetLink>
+              </GetLink>
             </div>
           </div>
         </div>
@@ -170,26 +160,31 @@ const SDK = () => (
         <h3 className="card-title">SDKs for XYO Components</h3>
         <p className="card-text">Add XYO Proof of Origin and Bound Witness functions to your project</p>
         <div>
-          <PrimaryGetLink 
+          <GetLink 
             href="https://xyo.network/sdks/" 
+            className="btn btn-square mr-1"
+            style={{ backgroundColor: '#2c3e50', color: '#fff'}}
           >
             Get
-          </PrimaryGetLink>
-          <SecondaryGetLink 
+          </GetLink>
+          <GetLink 
             href="https://github.com/XYOracleNetwork" 
+            className="btn btn-secondary btn-square mr-1"
           >
             GitHub
-          </SecondaryGetLink>
-          <SecondaryGetLink
+          </GetLink>
+          <GetLink
             href="https://developers.xyo.network/docs/en/sdk-xyo-swift/"
+            className="btn btn-secondary btn-square mr-1"
           >
             XYO Swift Guide 
-          </SecondaryGetLink>
-          <SecondaryGetLink
+          </GetLink>
+          <GetLink
             href="https://developers.xyo.network/docs/en/sdk-xyo-android/"
+            className="btn btn-secondary btn-square mr-1"
           >
             XYO Android Guide
-          </SecondaryGetLink>
+          </GetLink>
         </div>
       </div>
     </div>
