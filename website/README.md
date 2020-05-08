@@ -8,7 +8,7 @@ This website was created with [Docusaurus](https://docusaurus.io/).
 * [Adding Content](#adding-content)
 * [Full Documentation](#full-documentation)
 
-# Get Started in 5 Minutes
+## Get Started in 5 Minutes
 
 1. Make sure all the dependencies for the website are installed:
 
@@ -21,7 +21,7 @@ $ yarn
 # run from website
 $ cd website 
 ```
-2. Run your dev server:
+2.  Run your dev server:
 
 ```sh
 # Start the site
@@ -103,7 +103,7 @@ title: This Doc Needs To Be Edited
 My new content here..
 ```
 
-1. Refer to that doc's ID in an existing sidebar in `website/sidebar.json`:
+1.  Refer to that doc's ID in an existing sidebar in `website/sidebar.json`:
 
 ```javascript
 // Add newly-created-doc to the Getting Started category of docs

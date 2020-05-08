@@ -1,27 +1,23 @@
-[logo]: https://cdn.xy.company/img/brand/XYO_full_colored.png
-
 [![logo]](https://xyo.network)
 
 ![](https://github.com/XYOracleNetwork/web-developer.xyo.network-react/workflows/Build/badge.svg) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7da23984ca0c4a6f8148d0962374d878)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=XYOracleNetwork/web-developer.xyo.network-react&amp;utm_campaign=Badge_Grade)[![Maintainability](https://api.codeclimate.com/v1/badges/ff4a4267f57f95dc34fc/maintainability)](https://codeclimate.com/github/XYOracleNetwork/web-developer.xyo.network-react/maintainability) [![BCH compliance](https://bettercodehub.com/edge/badge/XYOracleNetwork/web-developer.xyo.network-react?branch=master&token=bacd296f4c007dc034b24e1066a3ab38a2659421)](https://bettercodehub.com/) [![DepShield Badge](https://depshield.sonatype.org/badges/XYOracleNetwork/web-developer.xyo.network-react/depshield.svg)](https://depshield.github.io) [![Known Vulnerabilities](https://snyk.io/test/github/XYOracleNetwork/web-developer.xyo.network-react/badge.svg?targetFile=website/package.json)](https://snyk.io/test/github/XYOracleNetwork/web-developer.xyo.network-react?targetFile=website/package.json)
-
 <h3 align="center">
   The Developer Portal for XYO 
 </h3>
 
 > The XYO Foundation provides this source code available in our efforts to advance the understanding of the XYO Procotol and its possible uses. We continue to maintain this software in the interest of developer education. Usage of this source code is not intended for production.
 
-
 Table of Contents
 
-- [Title](#dev-portal)
-- [Short Description](#short-description)
-- [Long Description](#long-description)
-- [Security](#security)
-- [Install](#install)
-- [Maintainers](#maintainers)
-- [Contributing](#contributing)
-- [License](#license)
-- [Credits](#credits)
+-   [Title](#dev-portal)
+-   [Short Description](#short-description)
+-   [Long Description](#long-description)
+-   [Security](#security)
+-   [Install](#install)
+-   [Maintainers](#maintainers)
+-   [Contributing](#contributing)
+-   [License](#license)
+-   [Credits](#credits)
 
 ## Sections
 
@@ -91,3 +87,4 @@ Made with 🔥and ❄️ by [XYO](https://www.xyo.network)
 This portal is developed with [Docusaurus](https://docusaurus.io/).
 
 
+[logo]: https://cdn.xy.company/img/brand/XYO_full_colored.png
