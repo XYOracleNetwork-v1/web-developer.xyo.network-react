@@ -30,7 +30,7 @@ $ yarn start
 
 ## Directory Structure
 
-Your project file structure should look something like this
+Your project file structure should look like this
 
 ```
 my-docusaurus/

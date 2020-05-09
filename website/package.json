@@ -1,7 +1,7 @@
 {
   "name": "@xyo-network/developers-portal",
-  "version": "3.0.0",
   "author": "XY Development Team",
+  "version": "3.0.0",
   "license": "LGPL-3.0",
   "scripts": {
     "start": "docusaurus-start",
