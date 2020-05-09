@@ -198,7 +198,7 @@ a.docs-next.button:hover {
 }
 
 *,
-::after, 
+::after,
 ::before {
   box-sizing: border-box;
 }
