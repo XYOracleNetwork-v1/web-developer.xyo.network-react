@@ -73,8 +73,9 @@ a.docs-next.button:hover {
   color: #95a5a6;
 }
 
-.nav-footer .sitemap a:hover {
-  color: #2c3e50;
+.logos a {
+  padding: 2rem;
+  color: rgb(0, 3, 5);
 }
 
 .xyoContainer a {
@@ -87,6 +88,10 @@ a.docs-next.button:hover {
 
 .navigationSlider .slidingNav ul li a {
   color: #ecf0f1;
+}
+
+.nav-footer .sitemap a:hover {
+  color: #2c3e50;
 }
 
 .navigationSlider .slidingNav ul li.siteNavItemActive a {
@@ -168,7 +173,7 @@ a.docs-next.button:hover {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 0;
 }
 
 .card-text {
@@ -192,7 +197,8 @@ a.docs-next.button:hover {
   height: 50px;
 }
 
-*, ::after, ::before {
+*, 
+::after, ::before {
   box-sizing: border-box;
 }
 
@@ -200,15 +206,6 @@ a.docs-next.button:hover {
   font-size: 24px;
 }
 
-.card {
-  border-radius: 0;
-}
-
 .smaller {
   font-size: 18px;
-}
-
-.logos a {
-  padding: 2rem;
-  color: rgb(0, 3, 5);
 }
