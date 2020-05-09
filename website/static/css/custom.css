@@ -30,8 +30,8 @@ p {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
 
 div {
@@ -107,15 +107,15 @@ a.docs-next.button:hover {
 }
 
 .nav-footer .sitemap {
-  margin: 0px;
+  margin: 0;
 }
 
 .nav-footer .sitemap a {
   color: #95a5a6;
 }
 
-.nav-footer .sitemap a:hover{
-  color: #2C3E50;
+.nav-footer .sitemap a:hover {
+  color: #2c3e50;
 }
 .nav-footer .sitemap h5 {
   color: #95a5a6;
@@ -141,10 +141,10 @@ a.docs-next.button:hover {
 }
 
 .mainContainer {
-  padding: 0px;
+  padding: 0;
 }
 
-.button{
+.button {
   min-width: 230px;
   margin-right: 25px;
 }
@@ -161,8 +161,8 @@ a.docs-next.button:hover {
   position: relative;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0,0,0,.125);
-  border-radius: .25rem;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: 0.25rem;
 }
 
 .card-text {
@@ -170,7 +170,7 @@ a.docs-next.button:hover {
 }
 
 .shadow {
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .15) !important;
 }
 
 .smallest {
@@ -207,7 +207,7 @@ img {
   font-size: 18px;
 }
 
-.logos a{
+.logos a {
   padding: 2rem;
   color: rgb(0, 3, 5);
 }
