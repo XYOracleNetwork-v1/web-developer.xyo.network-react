@@ -1,7 +1,7 @@
 /* your custom css */
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@531&display=swap');
 
-@-ms-viewport{
+@-ms-viewport {
   width: device-width;
 }
 
@@ -79,7 +79,7 @@ a.docs-next.button:hover {
 @media only screen and (max-width: 1023px) {
   .navigationSlider .slidingNav ul li a {
     color: #ecf0f1;
-    background-color: #000B22;
+    background-color: #000b22;
   }
 
   #docsNav.docsNavContainer {
@@ -110,14 +110,14 @@ a.docs-next.button:hover {
   margin: 0px;
 }
 
-.nav-footer .sitemap a{
+.nav-footer .sitemap a {
   color: #95a5a6;
 }
 
 .nav-footer .sitemap a:hover{
   color: #2C3E50;
 }
-.nav-footer .sitemap h5{
+.nav-footer .sitemap h5 {
   color: #95a5a6;
 }
 
@@ -170,7 +170,7 @@ a.docs-next.button:hover {
 }
 
 .shadow {
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 
 .smallest {
