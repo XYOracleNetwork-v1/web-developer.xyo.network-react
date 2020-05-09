@@ -26,7 +26,7 @@ function Help(props) {
       title: 'Browse Docs',
     },
     {
-      content: 'Ask questions about the documentation and project',
+      content: 'Ask questions about documentation and project',
       title: '[Join the community](https://geohackers.xyo.network/)',
     },
     {
