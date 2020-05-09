@@ -197,8 +197,9 @@ a.docs-next.button:hover {
   height: 50px;
 }
 
-*, 
-::after, ::before {
+*,
+::after, 
+::before {
   box-sizing: border-box;
 }
 
