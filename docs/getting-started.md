@@ -68,18 +68,6 @@ sidebar_label: Getting Started
 ### [Swift Core SDK](https://developers.xyo.network/docs/en/SDK-Core-Swift/)
 ### [Kotlin Core SDK](https://developers.xyo.network/docs/en/kotlin-getting-started/) 
 
-## Refresher on the mainnet (ethereum) and staking
-
-<figure class="video_container">
-  <iframe width="960" height="450" src="https://www.youtube.com/embed/CYfC2swVVNA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</figure>
-
-## How to stake an XYO node using the Matrix 
-
-<figure class="video_container">
-  <iframe width="960" height="450" src="https://www.youtube.com/embed/LfBP_Dlmtuk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</figure>
-
 ## Partnerships with the XYO Foundation
 
 <div class="alert alert-info text-center" role="alert">

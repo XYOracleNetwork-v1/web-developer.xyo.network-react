@@ -12,61 +12,28 @@ sidebar_label: Latest Updates
 
 ## Software Updates
 
-### XYO Swift SDK
-
-> Version 1.0.17
-
-What's included: 
-
--   Core Updates
--   Bridge packet conditional timing
--   Minor guide updates
--   Dependency updates
-
 ### XYO Android SDK
 
-> Version 3.1.35
+> Version 3.1.36
 
 What's included: 
 
--   Core Updates
--   Bridge packet send timing
--   Minor guide updates
--   Dependency updates
+-   Device detection across Android devices
 
-### XYO Node App
+### XYO Client Node.js
 
-> Version 0.6.30
+> Version 0.4.10
 
 What's included: 
 
--   Update to prompt logic
--   Dependency updates
--   Security updates
+-   Security patches
 
-### XYO Base Node.js SDK 
+### XYO Archivist Node.js
 
-> Version 0.6.9
+> Version 0.12.21
 
 What's included: 
 
+-   Security patches
 -   Dependency updates
--   Security updates
 
-### XYO Diviner SDK 
-
-> Version 0.15.9
-
-What's included: 
-
--   Dependency updates
--   Security updates
-
-### XYO Node Client SDK 
-
-> Version 0.4.9
-
-What's included: 
-
--   Dependency updates
--   Security updates

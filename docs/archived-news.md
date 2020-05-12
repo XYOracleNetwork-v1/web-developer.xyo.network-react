@@ -10,6 +10,69 @@ sidebar_label: News Archive
   Archived News and Updates about XYO Tools and Open Source
 </div>
 
+**April 24, 2020**
+
+## Software Updates
+
+### XYO Swift SDK
+
+> Version 1.0.17
+
+What's included: 
+
+-   Core Updates
+-   Bridge packet conditional timing
+-   Minor guide updates
+-   Dependency updates
+
+### XYO Android SDK
+
+> Version 3.1.35
+
+What's included: 
+
+-   Core Updates
+-   Bridge packet send timing
+-   Minor guide updates
+-   Dependency updates
+
+### XYO Node App
+
+> Version 0.6.30
+
+What's included: 
+
+-   Update to prompt logic
+-   Dependency updates
+-   Security updates
+
+### XYO Base Node.js SDK 
+
+> Version 0.6.9
+
+What's included: 
+
+-   Dependency updates
+-   Security updates
+
+### XYO Diviner SDK 
+
+> Version 0.15.9
+
+What's included: 
+
+-   Dependency updates
+-   Security updates
+
+### XYO Node Client SDK 
+
+> Version 0.4.9
+
+What's included: 
+
+-   Dependency updates
+-   Security updates
+
 **April 17, 2020**
 
 ## A New SDK Guide
