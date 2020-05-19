@@ -121,25 +121,43 @@ You can set the `autoBoundWitness` with a `boolean`:
 
 `network.client.autoBoundWitness = true`
 
-Bound Witness Method Examples (Starting and Completing a Bound Witness)
+Bound Witness View Method Examples 
+
+For your view you want to look for methods that indicate the `start`, `completed`, and/or `success`. We have worked to make it easy for you to initiate the bound witness and bridging process through the client `network` settings, so you would only have to tap into the `XyoBoundWitnessTarget` listener to grab the information from these events to display in the app UI. 
 
 Android 
 
 ```kotlin
-    val listener = object : XyoBoundWitnessTarget.Listener() {
-        override fun boundWitnessCompleted(boundWitness: XyoBoundWitness?, error: String?) {
-            super.boundWitnessCompleted(boundWitness, error)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-            println("New bound witness!")
+        (XyoSdk.nodes[0].networks["ble"] as? XyoBleNetwork)?.let { network ->
+
+            network.client.listeners["sample"] = object : XyoBoundWitnessTarget.Listener() {
+                override fun boundWitnessStarted(source: Any?, target: XyoBoundWitnessTarget) {
+                    super.boundWitnessStarted(source, target)
+                    addStatus("Bound Witness Started [${source?.javaClass?.name}]")
+                }
+
+                override fun boundWitnessCompleted(source: Any?, target: XyoBoundWitnessTarget, boundWitness: XyoBoundWitness?, error:String?) {
+                    super.boundWitnessCompleted(source, target, boundWitness, error)
+                    val index = target.relayNode.originState.index.valueCopy.toList().toString()
+                    if (error == null) {
+                        addStatus("Bound Witness Completed $index [${boundWitness?.completed}]")
+                    } else {
+                        addStatus("Bound Witness Failed [$error]")
+                    }
+                    addStatus("- - - - - -")
+                }
+            }
+
+            ui {
+                text_ble_client.text = ""
+                publicKey.text = network.client.publicKey
+            }
         }
+    }
 
-        override fun boundWitnessStarted() {
-            super.boundWitnessStarted()
-
-            println("Bound witness started!")
-
-        }
-    } 
 ```
 
 iOS 
