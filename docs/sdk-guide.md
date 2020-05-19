@@ -95,11 +95,31 @@ If you are wondering what a `procedureCatalog` is, it sets what the node can do,
 
 One more important configuration to cover is the `relayNode`. This object contains the `blockRepository`, `stateRepository`, `bridgeQueueRepository`, and `hashingProvider`. That is why the order of configuration is as listed above. In order to get the `relayNode` going we need to have its parameters. As you dive deeper into integration of the SDK, you would need to go into detail on how to get the `relayNode` and its contents, this is available in the platform guide of your choice. 
 
+With Swift, Android, or Flutter you can use a type check to bring in the `networks` to access the settings:
+
+Swift
+```swift
+  xyoNode?.networks["ble"] as? XyoBleNetwork
+```
+
+Kotlin
+```kotlin
+  (node.networks["ble"] as? XyoBleNetwork)?
+```
+
 ### Bound Witness Protocol
 
 The XYO SDK was designed to provide the developer with an easy tool to integrate the bound witness protocol with an app solution that wishes to address a use case designed for XYO. 
 
-You will most likely interact with Bound Witnessess through an Origin Chain, which is provided by an XYO Node. 
+You will most likely interact with Bound Witnessess through an Origin Chain, which is provided by an XYO Node (on the client side).
+
+When initializing the node you have access to the node builder `networks` setting. We have a setting called `autoBoundWitness`
+
+This setting must also meet certain conditions before it will actually complete the bound witness. The rssi, bridge (smartphone acting as bridge or BridgeX), and sentinels (smartphone acting as sentinel or SentinelX) must pass conditional statements. Once they do then the `autoBoundWitness` will attempt to complete a bound witness with a device. 
+
+You can set the `autoBoundWitness` with a `boolean`:
+
+`network.client.autoBoundWitness = true`
 
 Bound Witness Method Examples (Starting and Completing a Bound Witness)
 
