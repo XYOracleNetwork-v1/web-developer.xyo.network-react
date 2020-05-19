@@ -78,6 +78,23 @@ final builder = XyoNodeBuilder();
 
 ```
 
+As you can see across these differing platforms, calling the `build()` function starts up a node. What you don't see is what is also configured for you: 
+
+  - `storage`
+  - `hashingProvider`
+  - `blockRepository`
+  - `stateRepository`
+  - `bridgeQueueRepository`
+  - `procedureCatalog`
+  - `relayNode`
+  - `networks`
+
+It's not entirely important to know exactly what all of the settings are just yet, we do want to key on `networks` especially the `ble` network functionality. Here is one thing to keep in mind when the network is set up, if for any reason there is no `procedureCatalog` or `relayNode`, you will not be able to set the `network`.
+
+If you are wondering what a `procedureCatalog` is, it sets what the node can do, which includes transacting origin chains. Origin chains are collections of bound witnesses, and definitely want that since it is the core of our protocol. More on that below. 
+
+One more important configuration to cover is the `relayNode`. This object contains the `blockRepository`, `stateRepository`, `bridgeQueueRepository`, and `hashingProvider`. That is why the order of configuration is as listed above. In order to get the `relayNode` going we need to have its parameters. As you dive deeper into integration of the SDK, you would need to go into detail on how to get the `relayNode` and its contents, this is available in the platform guide of your choice. 
+
 ### Bound Witness Protocol
 
 The XYO SDK was designed to provide the developer with an easy tool to integrate the bound witness protocol with an app solution that wishes to address a use case designed for XYO. 
