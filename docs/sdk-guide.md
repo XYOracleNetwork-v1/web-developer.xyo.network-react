@@ -99,6 +99,8 @@ One more important configuration to cover is the `relayNode`. This object contai
 
 The XYO SDK was designed to provide the developer with an easy tool to integrate the bound witness protocol with an app solution that wishes to address a use case designed for XYO. 
 
+You will most likely interact with Bound Witnessess through an Origin Chain, which is provided by an XYO Node. 
+
 Bound Witness Method Examples (Starting and Completing a Bound Witness)
 
 Android 
