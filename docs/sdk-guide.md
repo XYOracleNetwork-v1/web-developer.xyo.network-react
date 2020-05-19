@@ -95,6 +95,8 @@ If you are wondering what a `procedureCatalog` is, it sets what the node can do,
 
 One more important configuration to cover is the `relayNode`. This object contains the `blockRepository`, `stateRepository`, `bridgeQueueRepository`, and `hashingProvider`. That is why the order of configuration is as listed above. In order to get the `relayNode` going we need to have its parameters. As you dive deeper into integration of the SDK, you would need to go into detail on how to get the `relayNode` and its contents, this is available in the platform guide of your choice. 
 
+### Network Settings
+
 With Swift, Android, or Flutter you can use a type check to bring in the `networks` to access the settings:
 
 Swift
@@ -106,6 +108,20 @@ Kotlin
 ```kotlin
   (node.networks["ble"] as? XyoBleNetwork)?
 ```
+
+The `networks` setting gives you access the `client` (central) or `server` (peripheral) from either `ble` or `tcpip`, since we are utilizing mobile in this guide, we will stay with `ble`.
+
+This is what a `client` can do: 
+  - `scan`
+  - `autoBoundWitness`
+  - `autoBridge`
+
+This is what a `server` can do: 
+
+  - `listen`
+  - `autoBridge`
+
+  The server acts as a bridge by default and would be the node that talks to the archivist or other form of database for your app. The client can also bridge should a server not be available when a bound witness is complete. 
 
 ### Bound Witness Protocol
 
@@ -184,6 +200,8 @@ Flutter, as included peferably in the `Flexible` Widget.
       if (bws == null) return Container();
       final count = bws.length;
 ```
+
+Another note on views, you can utilize the same listener on a client or server UI view. 
 
 ## Sample Apps 
 
