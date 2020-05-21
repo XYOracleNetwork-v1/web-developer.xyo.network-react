@@ -203,6 +203,64 @@ Flutter, as included peferably in the `Flexible` Widget.
 
 Another note on views, you can utilize the same listener on a client or server UI view. 
 
+#### Adding Heuristics 
+
+To take full advantage of the BLE devices you are using, you can add heuristics to a bound witness as supporting data. Adding a heuristic to the bound witness can be done using an `XyoHeuristicGetter` to grab what your device can provide to add to the `relayNode` for bound witness supporting data.
+
+`addHeuristic( String: "name of heuristic" or key: "name of heuristic", object: XyoHeuristicGetter or getter: getterFunction)`
+
+Kotlin
+
+```kotlin
+      (node.networks["ble"] as? XyoBleNetwork)?.client?.relayNode?.addHeuristic(
+          "GPS",
+          object: XyoHeuristicGetter {
+              override fun getHeuristic(): XyoObjectStructure? {
+                  val locationManager = applicationContext.getSystemService(Context.LOCATION_SERVICE) as LocationManager
+
+                  if (ContextCompat.checkSelfPermission(applicationContext, android.Manifest.permission.ACCESS_FINE_LOCATION)
+                      == PackageManager.PERMISSION_GRANTED) {
+                      val lastLocation = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER)
+
+                      if (lastLocation != null) {
+                          val encodedLat = ByteBuffer.allocate(8).putDouble(lastLocation.latitude).array()
+                          val encodedLng = ByteBuffer.allocate(8).putDouble(lastLocation.longitude).array()
+                          val lat = XyoObjectStructure.newInstance(XyoSchemas.LAT, encodedLat)
+                          val lng = XyoObjectStructure.newInstance(XyoSchemas.LNG, encodedLng)
+
+                          return XyoIterableStructure.createUntypedIterableObject(XyoSchemas.GPS, arrayOf(lat, lng))
+                      }
+                  }
+                  return null
+              }
+          }
+      )
+```
+
+Swift
+
+```swift
+    relayNode.addHeuristic(key: "GPS", getter: self)
+    ...
+    func getHeuristic() -> XyoObjectStructure? {
+        guard let lat: Double = locationManager.location?.coordinate.latitude else {
+            return nil
+        }
+        
+        guard let lng: Double = locationManager.location?.coordinate.longitude else {
+            return nil
+        }
+        
+        doLocation.text = "\(lat), \(lng)"
+        
+        let encodedLat = XyoObjectStructure.newInstance(schema: XyoSchemas.LAT, bytes: XyoBuffer(data: anyToBytes(lat)))
+        let encodedLng = XyoObjectStructure.newInstance(schema: XyoSchemas.LNG, bytes: XyoBuffer(data: anyToBytes(lng)))
+        return XyoIterableStructure.createUntypedIterableObject(schema: XyoSchemas.GPS, values: [encodedLat, encodedLng])
+        
+    }
+
+```
+
 ## Sample Apps 
 
 ### For Android, iOS, Flutter
