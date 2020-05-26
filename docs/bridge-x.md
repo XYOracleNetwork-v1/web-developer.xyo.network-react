@@ -7,6 +7,18 @@ sidebar_label: Bridge X
 > The XYO Foundation provides this source code available in our efforts to advance the understanding of the XYO Procotol and its possible uses. We continue to maintain this software in the interest of developer education. Usage of this source code is not intended for production. Developer usage of the BridgeX app is intended for educational purposes on geospatial location blockchain protocol.
 
 
+<div class="alert alert-primary text-center" role="alert">
+  There is an update to the Bridge software coming in Q3 2020. Although you can still download and use the current bridge in your Raspberry Pi 3. For Windows users, we highly encourage you to use Windows Subsystem for Linux (WSL) 2 with a Linux distribution. This will allow you to follow along the linux instructions for install and update. This guide will also be updated to coincide with the upcoming BridgeX update. 
+
+  <a href="https://docs.microsoft.com/en-us/windows/wsl/wsl2-about" 
+    rel="noopener noreferrer"
+    target="_blank"
+    >
+      WSL 2 Documentation
+  <i class="p-2 fas fa-external-link-alt"></i>
+</a>
+</div>
+
 <div class="alert alert-info text-center" role="alert">
   Difficulty Level: Intermediate
 </div>
