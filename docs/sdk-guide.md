@@ -15,6 +15,18 @@ sidebar_label: SDK Guide
   Please note that this guide is only a recommendation for use. If you have a custom integration in mind. 
 </div>
 
+## Conceptual Reading
+
+Please take a moment to go over the XYO Protocol concepts before diving in to the SDK.
+
+<a href="https://xyo.network/network/" 
+    rel="noopener noreferrer"
+    target="_blank"
+    >
+      Understanding the Protocol
+  <i class="p-2 fas fa-external-link-alt"></i>
+</a> 
+
 ## Platforms for these SDKs 
 
 This SDK Guide is specific to tools for mobile development and covering the sentinel and bridge nodes in the XYO protocol. For information on SDK and App Guides for Node, that will be coming soon with an update. 
@@ -23,14 +35,14 @@ As this is an overview of our three mobile SDKs, please refer to the specific gu
 
 ## Overview 
 
-### Why Integrate the XYO SDK
+### What the XYO SDK can do
 
-  - Scan for devices
-  - Start Bound Witnesses 
-  - Complete Bound Witnesses
-  - Grab payload
+  - Label and scan unknown and known XYO Enabled devices over bluetooth (BLE)
+  - Localized Plug-in-play client/server relationship
+  - Start Bound Witnesses
   - Send Bound Witness with complete payload
 
+ 
 ## Naming conventions and Bluetooth Foundations
 
 As Bluetooth is based on a client-server architecture, we name the `central` and `peripheral` as `client` and `server` respectively. This allows developers to think about communicating data across devices.  
@@ -44,6 +56,8 @@ For a Bluetooth Overview, please refer to these materials
       Apple developer Bluetooth Overview
   <i class="p-2 fas fa-external-link-alt"></i>
 </a>
+
+## Device Discoverability 
 
 ## Node and Bound Witnessing
 
@@ -109,25 +123,24 @@ Kotlin
   (node.networks["ble"] as? XyoBleNetwork)?
 ```
 
-The `networks` setting gives you access the `client` (central) or `server` (peripheral) from either `ble` or `tcpip`, since we are utilizing mobile in this guide, we will stay with `ble`.
+The `networks` setting gives you access the `client` or `server` from either `ble` or `tcpip`, since we are utilizing mobile in this guide, we will stay with `ble`.
 
 This is what a `client` can do: 
-  - `scan`
-  - `autoBoundWitness`
-  - `autoBridge`
+  - `scan` - scan for other devices with XYO Protocol capabilities 
+  - `autoBoundWitness` -   automatically bound witnesses with other devices
+  - `autoBridge` -   automatically bridges the bound witness
+
 
 This is what a `server` can do: 
 
-  - `listen`
-  - `autoBridge`
-
-  The server acts as a bridge by default and would be the node that talks to the archivist or other form of database for your app. The client can also bridge should a server not be available when a bound witness is complete. 
+  - `listen` -   listens for devices that are scanning for nodes 
+  - `autoBridge` - automatically bridges the bound witness
 
 ### Bound Witness Protocol
 
 The XYO SDK was designed to provide the developer with an easy tool to integrate the bound witness protocol with an app solution that wishes to address a use case designed for XYO. 
 
-You will most likely interact with Bound Witnessess through an Origin Chain, which is provided by an XYO Node (on the client side).
+You will most likely interact with Bound Witnessess through an a stream of completed bound witnesses. Adding heuristics and accessing data from the stream is an important key to integrating the SDK. 
 
 When initializing the node you have access to the node builder `networks` setting. We have a setting called `autoBoundWitness`
 
