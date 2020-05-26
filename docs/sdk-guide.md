@@ -15,6 +15,18 @@ sidebar_label: SDK Guide
   Please note that this guide is only a recommendation for use. If you have a custom integration in mind. 
 </div>
 
+## Conceptual Reading
+
+Please take a moment to go over the XYO Protocol concepts before diving in to the SDK.
+
+<a href="https://xyo.network/network/" 
+    rel="noopener noreferrer"
+    target="_blank"
+    >
+      Understanding the Protocol
+  <i class="p-2 fas fa-external-link-alt"></i>
+</a> 
+
 ## Platforms for these SDKs 
 
 This SDK Guide is specific to tools for mobile development and covering the sentinel and bridge nodes in the XYO protocol. For information on SDK and App Guides for Node, that will be coming soon with an update. 
@@ -23,14 +35,14 @@ As this is an overview of our three mobile SDKs, please refer to the specific gu
 
 ## Overview 
 
-### Why Integrate the XYO SDK
+### What the XYO SDK can do
 
-  - Scan for devices
-  - Start Bound Witnesses 
-  - Complete Bound Witnesses
-  - Grab payload
+  - Label and scan unknown and known XYO Enabled devices over bluetooth (BLE)
+  - Localized Plug-in-play client/server relationship
+  - Start Bound Witnesses
   - Send Bound Witness with complete payload
 
+ 
 ## Naming conventions and Bluetooth Foundations
 
 As Bluetooth is based on a client-server architecture, we name the `central` and `peripheral` as `client` and `server` respectively. This allows developers to think about communicating data across devices.  
@@ -44,6 +56,8 @@ For a Bluetooth Overview, please refer to these materials
       Apple developer Bluetooth Overview
   <i class="p-2 fas fa-external-link-alt"></i>
 </a>
+
+## Device Discoverability 
 
 ## Node and Bound Witnessing
 
@@ -78,29 +92,101 @@ final builder = XyoNodeBuilder();
 
 ```
 
+As you can see across these differing platforms, calling the `build()` function starts up a node. What you don't see is what is also configured for you: 
+
+  - `storage`
+  - `hashingProvider`
+  - `blockRepository`
+  - `stateRepository`
+  - `bridgeQueueRepository`
+  - `procedureCatalog`
+  - `relayNode`
+  - `networks`
+
+It's not entirely important to know exactly what all of the settings are just yet, we do want to key on `networks` especially the `ble` network functionality. Here is one thing to keep in mind when the network is set up, if for any reason there is no `procedureCatalog` or `relayNode`, you will not be able to set the `network`.
+
+If you are wondering what a `procedureCatalog` is, it sets what the node can do, which includes transacting origin chains. Origin chains are collections of bound witnesses, and definitely want that since it is the core of our protocol. More on that below. 
+
+One more important configuration to cover is the `relayNode`. This object contains the `blockRepository`, `stateRepository`, `bridgeQueueRepository`, and `hashingProvider`. That is why the order of configuration is as listed above. In order to get the `relayNode` going we need to have its parameters. As you dive deeper into integration of the SDK, you would need to go into detail on how to get the `relayNode` and its contents, this is available in the platform guide of your choice. 
+
+### Network Settings
+
+With Swift, Android, or Flutter you can use a type check to bring in the `networks` to access the settings:
+
+Swift
+```swift
+  xyoNode?.networks["ble"] as? XyoBleNetwork
+```
+
+Kotlin
+```kotlin
+  (node.networks["ble"] as? XyoBleNetwork)?
+```
+
+The `networks` setting gives you access the `client` or `server` from either `ble` or `tcpip`, since we are utilizing mobile in this guide, we will stay with `ble`.
+
+This is what a `client` can do: 
+  - `scan` - scan for other devices with XYO Protocol capabilities 
+  - `autoBoundWitness` -   automatically bound witnesses with other devices
+  - `autoBridge` -   automatically bridges the bound witness
+
+
+This is what a `server` can do: 
+
+  - `listen` -   listens for devices that are scanning for nodes 
+  - `autoBridge` - automatically bridges the bound witness
+
 ### Bound Witness Protocol
 
 The XYO SDK was designed to provide the developer with an easy tool to integrate the bound witness protocol with an app solution that wishes to address a use case designed for XYO. 
 
-Bound Witness Method Examples (Starting and Completing a Bound Witness)
+You will most likely interact with Bound Witnessess through an a stream of completed bound witnesses. Adding heuristics and accessing data from the stream is an important key to integrating the SDK. 
+
+When initializing the node you have access to the node builder `networks` setting. We have a setting called `autoBoundWitness`
+
+This setting must also meet certain conditions before it will actually complete the bound witness. The rssi, bridge (smartphone acting as bridge or BridgeX), and sentinels (smartphone acting as sentinel or SentinelX) must pass conditional statements. Once they do then the `autoBoundWitness` will attempt to complete a bound witness with a device. 
+
+You can set the `autoBoundWitness` with a `boolean`:
+
+`network.client.autoBoundWitness = true`
+
+Bound Witness View Method Examples 
+
+For your view you want to look for methods that indicate the `start`, `completed`, and/or `success`. We have worked to make it easy for you to initiate the bound witness and bridging process through the client `network` settings, so you would only have to tap into the `XyoBoundWitnessTarget` listener to grab the information from these events to display in the app UI. 
 
 Android 
 
 ```kotlin
-    val listener = object : XyoBoundWitnessTarget.Listener() {
-        override fun boundWitnessCompleted(boundWitness: XyoBoundWitness?, error: String?) {
-            super.boundWitnessCompleted(boundWitness, error)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-            println("New bound witness!")
+        (XyoSdk.nodes[0].networks["ble"] as? XyoBleNetwork)?.let { network ->
+
+            network.client.listeners["sample"] = object : XyoBoundWitnessTarget.Listener() {
+                override fun boundWitnessStarted(source: Any?, target: XyoBoundWitnessTarget) {
+                    super.boundWitnessStarted(source, target)
+                    addStatus("Bound Witness Started [${source?.javaClass?.name}]")
+                }
+
+                override fun boundWitnessCompleted(source: Any?, target: XyoBoundWitnessTarget, boundWitness: XyoBoundWitness?, error:String?) {
+                    super.boundWitnessCompleted(source, target, boundWitness, error)
+                    val index = target.relayNode.originState.index.valueCopy.toList().toString()
+                    if (error == null) {
+                        addStatus("Bound Witness Completed $index [${boundWitness?.completed}]")
+                    } else {
+                        addStatus("Bound Witness Failed [$error]")
+                    }
+                    addStatus("- - - - - -")
+                }
+            }
+
+            ui {
+                text_ble_client.text = ""
+                publicKey.text = network.client.publicKey
+            }
         }
+    }
 
-        override fun boundWitnessStarted() {
-            super.boundWitnessStarted()
-
-            println("Bound witness started!")
-
-        }
-    } 
 ```
 
 iOS 
@@ -126,6 +212,66 @@ Flutter, as included peferably in the `Flexible` Widget.
       final bws = snapshot.data;
       if (bws == null) return Container();
       final count = bws.length;
+```
+
+Another note on views, you can utilize the same listener on a client or server UI view. 
+
+#### Adding Heuristics 
+
+To take full advantage of the BLE devices you are using, you can add heuristics to a bound witness as supporting data. Adding a heuristic to the bound witness can be done using an `XyoHeuristicGetter` to grab what your device can provide to add to the `relayNode` for bound witness supporting data.
+
+`addHeuristic( String: "name of heuristic" or key: "name of heuristic", object: XyoHeuristicGetter or getter: getterFunction)`
+
+Kotlin
+
+```kotlin
+      (node.networks["ble"] as? XyoBleNetwork)?.client?.relayNode?.addHeuristic(
+          "GPS",
+          object: XyoHeuristicGetter {
+              override fun getHeuristic(): XyoObjectStructure? {
+                  val locationManager = applicationContext.getSystemService(Context.LOCATION_SERVICE) as LocationManager
+
+                  if (ContextCompat.checkSelfPermission(applicationContext, android.Manifest.permission.ACCESS_FINE_LOCATION)
+                      == PackageManager.PERMISSION_GRANTED) {
+                      val lastLocation = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER)
+
+                      if (lastLocation != null) {
+                          val encodedLat = ByteBuffer.allocate(8).putDouble(lastLocation.latitude).array()
+                          val encodedLng = ByteBuffer.allocate(8).putDouble(lastLocation.longitude).array()
+                          val lat = XyoObjectStructure.newInstance(XyoSchemas.LAT, encodedLat)
+                          val lng = XyoObjectStructure.newInstance(XyoSchemas.LNG, encodedLng)
+
+                          return XyoIterableStructure.createUntypedIterableObject(XyoSchemas.GPS, arrayOf(lat, lng))
+                      }
+                  }
+                  return null
+              }
+          }
+      )
+```
+
+Swift
+
+```swift
+    relayNode.addHeuristic(key: "GPS", getter: self)
+    ...
+    func getHeuristic() -> XyoObjectStructure? {
+        guard let lat: Double = locationManager.location?.coordinate.latitude else {
+            return nil
+        }
+        
+        guard let lng: Double = locationManager.location?.coordinate.longitude else {
+            return nil
+        }
+        
+        doLocation.text = "\(lat), \(lng)"
+        
+        let encodedLat = XyoObjectStructure.newInstance(schema: XyoSchemas.LAT, bytes: XyoBuffer(data: anyToBytes(lat)))
+        let encodedLng = XyoObjectStructure.newInstance(schema: XyoSchemas.LNG, bytes: XyoBuffer(data: anyToBytes(lng)))
+        return XyoIterableStructure.createUntypedIterableObject(schema: XyoSchemas.GPS, values: [encodedLat, encodedLng])
+        
+    }
+
 ```
 
 ## Sample Apps 
