@@ -89,15 +89,33 @@ const Intro = () => (
           </LinkTag>
         </div>
         <br></br>
+        <NFC />
         <Changemaker />
       </div>    
+  </div>
+)
+
+const NFC = () => (
+  <div>
+    <h3 className="p-3">
+      The XYO Foundation is excited about the latest product for SentinelX hardware, 
+      which will power the COIN app's location verification feature.
+    </h3>
+    <div className="p-5">
+      <LinkTag 
+        href="https://coinapp.co/sentinelx-nfc"
+        className="btn btn-primary btn-square mr-1"
+      >
+        SENTINELX NFC 
+      </LinkTag>
+    </div>    
   </div>
 )
 
 const Changemaker = () => (
   <div>
     <h3 className="p-3">
-      We are also proud to partner with UC San Diego on the first ever Changemaker Challenge.
+      Read more on our partnership with UC San Diego on the first ever Changemaker Challenge, and it's winner.
     </h3>
     <picture>
       <img alt="ucsd" className=".img-fluid p-3" src="/docs/assets/UCSanDiegoLogo-BlueGold.png"></img>

@@ -8,27 +8,11 @@ sidebar_label: UC San Diego and XYO
   <img alt="ucsd" className=".img-fluid" src="/docs/assets/UCSanDiegoLogo-BlueGold.png"></img>
 </picture>
 
-
 <div class="alert alert-primary text-center" role="alert">
-  Start Here for links to code guides, sample apps, and concepts for XYO Procotol for use in the 
-  UC San Diego Changemaker Challenge.
+  <h2>Congratulations to the winners of this year's Changemaker Challenge:
+
+  Team CoronaHealth!</h2>
 </div>
-
-## UC San Diego - XYO Resource List
-<br></br>
-### Have you registered? 
-
-<div class="alert alert-primary text-center" role="alert">
-  If you have not registered, you need to do so before participating. Registration is available through UC San Diego.
-</div>
-
-<a href="https://innovation.ucsd.edu/student-innovation/changemaker-challenge-contact-tracing-wellness/" 
-    rel="noopener noreferrer"
-    target="_blank"
-    >
-      Register through UC San Diego
-  <i class="p-2 fas fa-external-link-alt"></i>
-</a>
 
 <br></br>
 ### SDK Guide
