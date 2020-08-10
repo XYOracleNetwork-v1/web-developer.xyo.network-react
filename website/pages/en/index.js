@@ -76,19 +76,15 @@ const IntroText = () => (
 const Intro = () => (
   <div>
     <div className="pt-2">
-      <h1 className="text-center">XYO DEVELOPER PORTAL</h1>
+      <h1 className="text-center display-4">XYO DEVELOPER PORTAL</h1>
     </div>
       <div className="container text-center p-4">
         <IntroText />
         <div className="p-3">
-          <LinkTag 
-            href="https://developers.xyo.network/docs/en/news-and-updates/"
-            className="btn btn-primary btn-square mr-1"
-          >
+          <LinkTag href="https://developers.xyo.network/docs/en/news-and-updates/" className="btn btn-primary btn-square mr-1">
             LATEST NEWS
           </LinkTag>
         </div>
-        <br></br>
         <NFC />
         <Changemaker />
       </div>    
@@ -96,16 +92,14 @@ const Intro = () => (
 )
 
 const NFC = () => (
-  <div>
+  <div className="jumbotron ">
+    <h1 className="display-4">SENTINELX NFC</h1>
     <h3 className="p-3">
       The XYO Foundation is excited about the latest product for SentinelX hardware, 
       which will power the COIN app's location verification feature.
     </h3>
-    <div className="p-5">
-      <LinkTag 
-        href="https://coinapp.co/sentinelx-nfc"
-        className="btn btn-primary btn-square mr-1"
-      >
+    <div className="p-3">
+      <LinkTag href="https://coinapp.co/sentinelx-nfc" className="btn btn-primary btn-square mr-1">
         SENTINELX NFC 
       </LinkTag>
     </div>    
