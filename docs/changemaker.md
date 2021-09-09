@@ -45,7 +45,7 @@ sidebar_label: UC San Diego and XYO
 </a>
 
 <br></br>
-### XYO Foundation Github
+### XYO Foundation GitHub
 <div class="alert alert-info text-center" role="alert">
   Additional Resources available in our GitHub. 
 </div>
@@ -54,7 +54,7 @@ sidebar_label: UC San Diego and XYO
     rel="noopener noreferrer"
     target="_blank"
     >
-      XYO Foundation Github
+      XYO Foundation GitHub
   <i class="p-2 fas fa-external-link-alt"></i>
 </a>
 
